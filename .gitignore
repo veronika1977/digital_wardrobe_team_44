@@ -216,3 +216,33 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Frontend dependencies
+frontend/node_modules/
+frontend/.pnp/
+frontend/.pnp.js
+
+# Frontend build outputs
+frontend/dist/
+frontend/build/
+frontend/.next/
+
+# Frontend environment files
+frontend/.env
+frontend/.env.local
+
+# Logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# IDE (общие)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
