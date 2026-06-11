@@ -38,8 +38,11 @@ US-09  - Social Network - Won't Have - Removed
 - All additional pages: basket, calendar, outfits, capsuleas
 
 ### Covered user stories:
-- US-05
-- US-01 - the user  immediately gets into the application
+- US-01 - the user immediately gets into the application
+- US-02 - the prototype partially shows the adition of a new item 
+- US-04 - the user can choose category, season of a new clothes
+- US-05 - there is page with capsules
+
 
 
 ## MVP v0
