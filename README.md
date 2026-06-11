@@ -5,7 +5,7 @@ Digital wardrobe Telegram Mini App
 All user stories are documented in [`user-stories.md`](user-stories.md).
 
 ### Transcription
-The [interview's transcription](reports/week2/customer-meeting-transcript.md) is located in reports/week2/customer-meeting-transcript.md
+The interview's transcription is located in [reports/week2/customer-meeting-transcript.md](reports/week2/customer-meeting-transcript.md).
 
 ### Summary
 
