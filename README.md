@@ -15,7 +15,7 @@ US-08 - Automatic Background Removal - Must Have - Active
 US-04 - Tags for Clothing Items - Should Have - Active  
 US-05 - Capsule Wardrobes - Should Have - Active  
 US-06 - Edit Clothing Item - Should Have - Active   
-US-07 AI Material Detection - Could Have - Active   
+US-07 -  AI Material Detection - Could Have - Active   
 US-10 - Share Outfit by Link - Could Have - Active  
 US-03 - AI Outfit Generation - Won't Have - Removed  
 US-09  - Social Network - Won't Have - Removed  
