@@ -5,7 +5,7 @@ Digital wardrobe Telegram Mini App
 All user stories are documented in [`user-stories.md`](user-stories.md).
 
 ### Transcription
-[transcription](reports/week2/customer-meeting-transcript.md)
+[interview's transcription](reports/week2/customer-meeting-transcript.md)
 
 ### Summary
 
