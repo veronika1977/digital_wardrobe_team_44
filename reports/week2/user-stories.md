@@ -2,7 +2,7 @@
 
 ## US-01: Telegram Authentication
 
-**Requirement Status:** Active
+**Requirement Status:** Active  
 **MoSCoW priority:** Must Have
 
 As a new user,  
@@ -10,12 +10,12 @@ I want to log in to the app using only my Telegram account without any registrat
 so that I can instantly save my wardrobe data and access it from any device where Telegram is installed.
 
 ### Notes and constraints
-- Data is linked to Telegram ID
+- Data is linked to Telegram ID  
 - No separate registration required
 
 ## US-02: Add Clothing Item with Photo
 
-**Requirement Status:** Active
+**Requirement Status:** Active  
 **MoSCoW priority:** Must Have
 
 As a user,  
@@ -23,13 +23,13 @@ I want to upload a photo of my clothing item and input its category and season,
 so that I can start building my digital wardrobe.
 
 ### Notes and constraints
-- Categories: top, bottom, shoes, accessories
-- Seasons: summer, winter, spring, autumn and demiseason
-- Photo can be uploaded from gallery or camera
+- Categories: top, bottom, shoes, accessories  
+- Seasons: summer, winter, spring, autumn and demiseason  
+- Photo can be uploaded from gallery or camera  
 
 ## US-03: AI Outfit Generation
 
-**Requirement Status:** Removed
+**Requirement Status:** Removed  
 **Previous MoSCoW priority:** Won't Have
 
 As a non-fashion-expert user,  
@@ -40,7 +40,7 @@ so that I do not have to spend time thinking about what matches.
 
 ## US-04: Tags for Clothing Items
 
-**Requirement Status:** Active
+**Requirement Status:** Active  
 **MoSCoW priority:** Should Have
 
 As a user,  
@@ -52,7 +52,7 @@ so that I can organize them easily.
 
 ## US-05: Capsule Wardrobes
 
-**Requirement Status:** Active
+**Requirement Status:** Active  
 **MoSCoW priority:** Should Have
 
 As a user,  
@@ -60,13 +60,13 @@ I want to group specific items into capsules (e.g., 5/10, 8/3),
 so that I can manage my wardrobe faster.
 
 ### Notes and constraints
-- 8/3 = 8 items generate 3 outfits
-- 10/5 = 10 items generate 5 outfits
+- 8/3 = 8 items generate 3 outfits  
+- 10/5 = 10 items generate 5 outfits  
 - accessories are not included
 
 ## US-06: Edit Clothing Item
 
-**Requirement Status:** Active
+**Requirement Status:** Active  
 **MoSCoW priority:** Should Have
 
 As a user,  
@@ -78,7 +78,7 @@ so that I can correct mistakes or update information.
 
 ## US-07: AI Material and Season Detection
 
-**Requirement Status:** Active
+**Requirement Status:** Active  
 **MoSCoW priority:** Could Have
 
 As a busy user,  
@@ -90,7 +90,7 @@ so that I can save time.
 
 ## US-08: Automatic Background Removal
 
-**Requirement Status:** Active
+**Requirement Status:** Active  
 **MoSCoW priority:** Must Have
 
 As a user,  
@@ -102,7 +102,7 @@ so that my digital wardrobe looks clean and neat.
 
 ## US-09: Social Network
 
-**Requirement Status:** Removed
+**Requirement Status:** Removed  
 **Previous MoSCoW priority:** Won't Have
 
 As a social user,  
@@ -113,7 +113,7 @@ so that I can share with my followers.
 
 ## US-10: Share Outfit by Link
 
-**Requirement Status:** Active
+**Requirement Status:** Active  
 **MoSCoW priority:** Could Have
 
 As a social user,  
@@ -125,7 +125,7 @@ so that I can match and get feedback.
 
 ## Initial proposed MVP v1 scope
 
-For MVP v1, the following "Must Have" stories are proposed:
-- US-01: Telegram Authentication
-- US-02: Add Clothing Item with Photo
-- US-08: Automatic Background Removal
+For MVP v1, the following "Must Have" stories are proposed:  
+- US-01: Telegram Authentication  
+- US-02: Add Clothing Item with Photo  
+- US-08: Automatic Background Removal  
