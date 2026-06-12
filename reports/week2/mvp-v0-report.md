@@ -1,3 +1,16 @@
+## Purpose and Description of the MVP v0 Foundation
+
+The MVP v0 delivery for **Closet Flow** establishes a unified, runnable technical foundation.
+
+The core purpose of this baseline is to provide stakeholders and developers with an early, tangible demonstration of how the application will look, feel, and function in its final environment. Instead of implementing complete backend logic or complex processing pipelines, MVP v0 focuses entirely on interface reachability, structural layout validation, and end-to-end deployment verification.
+
+### Key Objectives of the MVP v0 Baseline:
+* **Visual and Interactive Framework:** It renders the initial structural layout, typography, and primary branding of "Closet Flow," allowing users to experience the intended design system firsthand.
+* **Core Flow & State Exploration:** It implements lightweight client-side state hooks (such as adding/removing mock items, category filtering, and interactive capsule/outfit toggles). This lets anyone interact with the UI to understand the basic navigation, flow, and user journey constraints without crashing the system.
+* **Platform Reachability:** It proves that our continuous integration pipeline is functional, demonstrating that the frontend layer successfully initializes both as a standard browser application and as a responsive standalone experience seamlessly wrapped inside the native Telegram Webview wrapper.
+
+Ultimately, MVP v0 serves as a living proof-of-concept that establishes a secure, zero-credential ecosystem, ensuring the team has a reliable and verified pipeline ready for incremental feature development.
+
 ## Deployment URL for website
 [https://agent-6a29aac2b0946--benevolent-frangollo-a08785.netlify.app](https://agent-6a29aac2b0946--benevolent-frangollo-a08785.netlify.app)
 
