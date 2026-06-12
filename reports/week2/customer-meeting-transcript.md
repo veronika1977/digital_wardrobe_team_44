@@ -90,6 +90,6 @@
 
 [19:03.39] Interviewer: Not for now.
 
-[19:22.35] Customer: Goodbye.
+[19:22.35] Customer: Goodbye!
 
 [19:22.35] Interviewer: Thank you, goodbye, all the best.
