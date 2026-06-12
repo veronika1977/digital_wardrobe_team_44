@@ -115,3 +115,17 @@ This project is licensed under the [MIT License](LICENSE)
 `http://localhost:5173` - Local development server; not accessible from GitHub   
 `https://www.linkedin.com/*` - Requires authentication; blocks automated checkersManual check passed  
 `https://github.com/veronika1977/digital_wardrobe_team_44/.*`- Internal repository links  
+
+## Screenshots
+
+### Branch Protection Settings
+![Branch protection settings](images/branch-protection-1.png)
+![Branch protection settings](images/branch-protection-2.png)
+![Branch protection settings](images/branch-protection-3.png)
+
+### Example Reviewed PR
+![Example Reviewed PR](images/example_reviewed_PR_1.png)
+![Example Reviewed PR](images/example_reviewed_PR_2.png)
+
+### Prototype
+![Prototype](images/prototype.png)
