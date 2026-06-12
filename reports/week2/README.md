@@ -1,4 +1,4 @@
-# digital_wardrobe_team_44
+# Digital Wardrobe
 
 Digital wardrobe Telegram Mini App
 
