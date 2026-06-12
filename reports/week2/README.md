@@ -72,7 +72,7 @@ npm install
 # Start development server
 
 npm run dev
-
+```
 The frontend of app  will be available at http://localhost:5173
 
 
