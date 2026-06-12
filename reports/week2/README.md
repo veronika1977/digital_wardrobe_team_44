@@ -2,6 +2,8 @@
 
 Digital wardrobe Telegram Mini App
 
+Digital wardrobe app that helps users organize clothing items, create outfits, capsules and track wear frequency.
+
 ## User Stories
 
 All user stories are documented in [user-stories.md](user-stories.md).
