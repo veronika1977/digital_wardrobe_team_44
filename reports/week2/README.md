@@ -87,3 +87,14 @@ The frontend of app  will be available at http://localhost:5173
 ## License
 
 This project is licensed under the [MIT License](LICENSE)
+
+## Lychee Link Checker
+
+- **CI Configuration:** [.github/workflows/lychee.yml](../../.github/workflows/lychee.yml)
+- **Latest successful run:** [GitHub Actions](https://github.com/veronika1977/digital_wardrobe_team_44/actions/workflows/lychee.yml)
+
+### Excluded Links and Justification  
+
+`http://localhost:5173` - Local development server; not accessible from GitHub   
+`https://www.linkedin.com/*` - Requires authentication; blocks automated checkersManual check passed  
+`https://github.com/veronika1977/digital_wardrobe_team_44/.*`- Internal repository links  
