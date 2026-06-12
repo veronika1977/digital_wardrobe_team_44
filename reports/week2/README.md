@@ -76,7 +76,7 @@ npm run dev
 The frontend of app  will be available at http://localhost:5173
 
 
-##Links
+## Links
 
 - [Week 2 Report](README.md)
 - [MVP v0 Report](mvp-v0-report.md)
@@ -84,6 +84,6 @@ The frontend of app  will be available at http://localhost:5173
 - [Frontend Repository](https://github.com/veronika1977/digital_wardrobe_777)
 - [License](LICENSE)
 
-##License
+## License
 
 This project is licensed under the [MIT License](LICENSE)
