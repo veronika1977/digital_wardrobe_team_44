@@ -19,6 +19,7 @@ jobs:
           args: >-
             --verbose
             --no-progress
+            --exclude 'http://localhost:5173'
             --exclude 'https://www.linkedin.com/*'
             --exclude 'https://github.com/veronika1977/digital_wardrobe_team_44/.*'
             --exclude 'https://agent-6a29aac2b0946--benevolent-frangollo-a08785.netlify.app'
