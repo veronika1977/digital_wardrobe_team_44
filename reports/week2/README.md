@@ -77,6 +77,21 @@ npm run dev
 ```
 The frontend of app  will be available at http://localhost:5173
 
+## 📊 Requirements Coverage Analysis
+
+### 1. Graphical Interface Prototype Coverage
+Our interactive Figma prototype maps out the visual user journeys, layout transitions, and interface components representing the following stable user-story IDs:
+* **US-01 (Telegram Authentication):** Covered via the application's instant entry screen flow, demonstrating how a user accesses the main digital wardrobe canvas seamlessly without encountering traditional manual credential gates.
+* **US-02 & US-04 (Add Clothing Item & Tags):** Fully represented through the interactive "Add Item" modal window flow. This sequence showcases functional layout placeholders for clothing photo containers, category option dropdowns, and target season check-boxes.
+* **US-05 (Capsule Wardrobes):** Visualized within the primary application navigation layout, including the dedicated grid design for compiled capsule management cards and core auxiliary views (wardrobe grid, calendar tracker, and active outfit builders).
+
+### 2. Deployed MVP v0 Foundation Coverage
+The runnable technical product baseline establishes early structural and routing dependencies across target platforms. While running entirely on volatile client-side states without persistent cloud-hosted database logic, it establishes the core technical foundations for the following requirements:
+* **US-01 (Telegram Authentication Framework):** Successfully covered through baseline platform integration constraints. The frontend application layer reads initial session parameters cleanly and boots directly inside the native Telegram Webview runtime container.
+* **US-02 (Add Clothing Item with Photo):** Covered through mock interface data-flows. The executable frontend handles local device file upload prompts and allows users to trigger client-side state changes, dynamically updating the volatile layout repository to append or remove item cards on the dashboard.
+* **US-08 (Automatic Background Removal):** Addressed at the infrastructure layout level. The interface provisions the structural buttons and processing states for the upcoming AI segmentation pipeline, though the actual computer vision backend contract will be integrated during the MVP v1 development phase.
+
+*The full technical deployment specifications, architectural limitations, and comprehensive verification procedures are documented in our [MVP v0 Report](mvp-v0-report.md), which serves as the primary reference for executing our repeatable smoke-check scenarios.*
 
 ## Links
 
@@ -85,11 +100,11 @@ The frontend of app  will be available at http://localhost:5173
 * **Protected Repository Tree State:** [https://github.com/veronika1977/digital_wardrobe_team_44/tree/77da6283661caf30acd9833697de821359a5695e](https://github.com/veronika1977/digital_wardrobe_team_44/tree/77da6283661caf30acd9833697de821359a5695e)
 * **User Stories Document:** [https://github.com/veronika1977/digital_wardrobe_team_44/blob/77da6283661caf30acd9833697de821359a5695e/reports/week2/user-stories.md](https://github.com/veronika1977/digital_wardrobe_team_44/blob/77da6283661caf30acd9833697de821359a5695e/reports/week2/user-stories.md)
 * **MVP v0 Evaluation Report:** [https://github.com/veronika1977/digital_wardrobe_team_44/blob/77da6283661caf30acd9833697de821359a5695e/reports/week2/mvp-v0-report.md](https://github.com/veronika1977/digital_wardrobe_team_44/blob/77da6283661caf30acd9833697de821359a5695e/reports/week2/mvp-v0-report.md)
-* **Customer Meeting Summary:** [https://github.com/veronika1977/digital_wardrobe_team_44/blob/77da6283661caf30acd9833697de821359a5695e/reports/week2/customer-meeting-summary.md](https://github.com/veronika1977/digital_wardrobe_team_44/blob/77da6283661caf30acd9833697de821359a5695e/reports/week2/customer-meeting-summary.md)
+* **Customer Meeting Summary:** [https://github.com/veronika1977/digital_wardrobe_team_44/blob/a1afcc298aa855792d4a088d177e2995be2d6f65/reports/week2/customer-meeting-summary.md](https://github.com/veronika1977/digital_wardrobe_team_44/blob/a1afcc298aa855792d4a088d177e2995be2d6f65/reports/week2/customer-meeting-summary.md)
 * **Customer Meeting Validation Report (Transcript):** [https://github.com/veronika1977/digital_wardrobe_team_44/blob/77da6283661caf30acd9833697de821359a5695e/reports/week2/customer-meeting-report.md](https://github.com/veronika1977/digital_wardrobe_team_44/blob/77da6283661caf30acd9833697de821359a5695e/reports/week2/customer-meeting-report.md)
-* **Weekly Analysis Report:** [https://github.com/veronika1977/digital_wardrobe_team_44/blob/77da6283661caf30acd9833697de821359a5695e/reports/week2/analysis.md](https://github.com/veronika1977/digital_wardrobe_team_44/blob/77da6283661caf30acd9833697de821359a5695e/reports/week2/analysis.md)
-* **LLM Usage Log Report:** [https://github.com/veronika1977/digital_wardrobe_team_44/blob/77da6283661caf30acd9833697de821359a5695e/reports/week2/llm-report.md](https://github.com/veronika1977/digital_wardrobe_team_44/blob/77da6283661caf30acd9833697de821359a5695e/reports/week2/llm-report.md)
-* **Minimal Pull Request Template:** [https://github.com/veronika1977/digital_wardrobe_team_44/blob/77da6283661caf30acd9833697de821359a5695e/.github/pull_request_template.md](https://github.com/veronika1977/digital_wardrobe_team_44/blob/77da6283661caf30acd9833697de821359a5695e/.github/pull_request_template.md)
+* **Weekly Analysis Report:** [https://github.com/veronika1977/digital_wardrobe_team_44/blob/a1afcc298aa855792d4a088d177e2995be2d6f65/reports/week2/analysis.md](https://github.com/veronika1977/digital_wardrobe_team_44/blob/a1afcc298aa855792d4a088d177e2995be2d6f65/reports/week2/analysis.md)
+* **LLM Usage Log Report:** [https://github.com/veronika1977/digital_wardrobe_team_44/blob/main/reports/week2/llm-report.md](https://github.com/veronika1977/digital_wardrobe_team_44/blob/main/reports/week2/llm-report.md)
+* **Minimal Pull Request Template:** [https://github.com/veronika1977/digital_wardrobe_team_44/blob/main/.github/pull_request_template.md](https://github.com/veronika1977/digital_wardrobe_team_44/blob/main/.github/pull_request_template.md)
 * **Sample Reviewed Peer Pull Request:** [https://github.com/veronika1977/digital_wardrobe_team_44/pull/24](https://github.com/veronika1977/digital_wardrobe_team_44/pull/24)
 * **Lychee Link Checker Workflow Config:** [https://github.com/veronika1977/digital_wardrobe_team_44/blob/77da6283661caf30acd9833697de821359a5695e/.github/workflows/lychee.yml](https://github.com/veronika1977/digital_wardrobe_team_44/blob/77da6283661caf30acd9833697de821359a5695e/.github/workflows/lychee.yml)
 * **Lychee Automated CI Execution Dashboard:** [https://github.com/veronika1977/digital_wardrobe_team_44/actions/workflows/lychee.yml](https://github.com/veronika1977/digital_wardrobe_team_44/actions/workflows/lychee.yml)
