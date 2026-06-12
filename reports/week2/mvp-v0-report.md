@@ -51,7 +51,7 @@ The video shows:
 
 ## Repeatable smoke-check scenarios
 
-### Access instructions for the site
+### Access instructions for the website
 1. Open a browser (Chrome, Safari, Firefox)
 2. Go to: https://agent-6a29aac2b0946--benevolent-frangollo-a08785.netlify.app
 
@@ -68,7 +68,9 @@ The video shows:
 
 - The main screen of the application is displayed and functioning
 - All buttons are pressed and do their job
-- Successful addition and removal of item
+- Successful addition and removal of items
+- Successful additon of capsules
+- Successful filtering
 
 ### Access instructions for the Telegram Mini App
 1. Open a web browser or launch your native Telegram application.
@@ -87,3 +89,5 @@ The video shows:
 - The main screen of the application is displayed and functioning
 - All buttons are pressed and do their job
 - Successful addition and removal of item
+- Successful additon of capsules
+- Successful filtering
