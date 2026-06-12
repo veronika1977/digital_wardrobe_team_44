@@ -77,7 +77,7 @@ npm run dev
 ```
 The frontend of app  will be available at http://localhost:5173
 
-## 📊 Requirements Coverage Analysis
+## Requirements Coverage Analysis
 
 ### 1. Graphical Interface Prototype Coverage
 Our interactive Figma prototype maps out the visual user journeys, layout transitions, and interface components representing the following stable user-story IDs:
