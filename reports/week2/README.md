@@ -43,11 +43,47 @@ US-09  - Social Network - Won't Have - Removed
 - US-04 - the user can choose category, season of a new clothes
 - US-05 - there is page with capsules
 
-
-
 ## MVP v0
 
+No local setup is required  
 - [MVP v0 Report](mvp-v0-report.md)
 - [Deployed URL](https://agent-6a29aac2b0946--benevolent-frangollo-a08785.netlify.app)
 -[Link on Telegram app](https://t.me/digital_wardrobe_app_bot/digital_wardrobe_app)
 - [Video Demonstration](https://drive.google.com/drive/folders/1q9JeW3Yv7yADk_KCXJ51OTBXAKSWv8RX?usp=drive_link)
+
+
+## Local Setup
+
+### Prerequisites
+- Node.js 18+
+- npm or bun
+
+### Clone and run the frontend
+
+```bash
+# Clone the frontend repository
+git clone https://github.com/veronika1977/digital_wardrobe_777.git
+cd digital_wardrobe_777
+
+# Install dependencies
+
+npm install
+
+# Start development server
+
+npm run dev
+
+The frontend of app  will be available at http://localhost:5173
+
+
+##Links
+
+- [Week 2 Report](README.md)
+- [MVP v0 Report](mvp-v0-report.md)
+- [User Stories](user-stories.md)
+- [Frontend Repository](https://github.com/veronika1977/digital_wardrobe_777)
+- [License](LICENSE)
+
+##License
+
+This project is licensed under the [MIT License](LICENSE)
