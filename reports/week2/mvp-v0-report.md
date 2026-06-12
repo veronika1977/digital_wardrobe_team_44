@@ -36,19 +36,38 @@ The video shows:
 
 [Local setup instructions](README.md)
 
-## Repeatable smoke-check scenario
+## Repeatable smoke-check scenarios
 
-### Access instructions
+### Access instructions for the site
 1. Open a browser (Chrome, Safari, Firefox)
 2. Go to: https://agent-6a29aac2b0946--benevolent-frangollo-a08785.netlify.app
 
 ### Steps
 
-1. Verify the page loads without errors
-2. Check that the title "CLOSET FLOW" is visible
-3. Click any button (e.g., "Add item", "Create outfit")
-4. Filters and add item work
-5. The possibility of creating outfits, capsules and mark that the user wear today
+#### Steps
+1. Verify that the page loads completely without any console or network errors.
+2. Check that the application title **"CLOSET FLOW"** is visible on the main screen.
+3. Click the **"Add item"** button, fill in the placeholder fields, and submit.
+4. Apply any available category filters on the dashboard.
+5. Click the **"Create outfit"** button to interact with the outfit/capsule building component.
+
+### Expected result
+
+- The main screen of the application is displayed and functioning
+- All buttons are pressed and do their job
+- Successful addition and removal of item
+
+### Access instructions for the Telegram Mini App
+1. Open a web browser or launch your native Telegram application.
+2. Navigate directly to the Mini App link: https://t.me/digital_wardrobe_app_bot/digital_wardrobe_app
+3. Confirm the Telegram prompt to launch the built-in web application view.
+
+### Steps
+
+1. Verify that the application initializes successfully inside the Telegram Webview interface.
+2. Ensure the branding header **"CLOSET FLOW"** renders perfectly without layout breaking.
+3. Interact with the primary action buttons (e.g., tap **"Add item"** or **"Create outfit"**).
+4. Test the mock functionality for creating outfits, organizing capsules, or checking the "wear today" state tracking.
 
 ### Expected result
 
