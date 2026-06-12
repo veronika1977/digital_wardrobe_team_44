@@ -11,6 +11,13 @@
 
 ## 2. DeepSeek
 
-* **Purpose / Activity:** Transcription processing and localization.
+* **Purpose / Activity:** Transcription processing and localization, help with customer meeting summary
 * **Specific Tasks:** 
   * Translated and structured the Russian dialogue from the customer interview into the English transcript.
+  * Summarized the meeting transcript
+
+## 3. Chat GPT
+
+* **Purpose / Activity:** Structurizing analysis of the week
+* **Specific Tasks:** 
+  * Helped to structure the original analysis of the week
