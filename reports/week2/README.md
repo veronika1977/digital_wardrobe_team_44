@@ -146,3 +146,11 @@ This project is licensed under the [MIT License](LICENSE)
 
 ### Prototype
 ![Prototype](images/prototype.png)
+
+### Deployed MVP v0
+![Deployed MVP v0](images/mvp_v0_1.png)
+![Deployed MVP v0](images/mvp_v0_2.png)
+![Deployed MVP v0](images/mvp_v0_3.png)
+![Deployed MVP v0](images/mvp_v0_4.png)
+![Deployed MVP v0](images/mvp_v0_5.png)
+![Deployed MVP v0](images/mvp_v0_6.png)
