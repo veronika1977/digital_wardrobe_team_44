@@ -10,11 +10,9 @@ Digital wardrobe app that helps users organize clothing items, create outfits, c
 
 ## MVP v0
 
-Deployed website version (smoke check):  
-[https://agent-6a29aac2b0946--benevolent-frangollo-a08785.netlify.app](https://agent-6a29aac2b0946--benevolent-frangollo-a08785.netlify.app)
+[Deployed website version (smoke check)](https://agent-6a29aac2b0946--benevolent-frangollo-a08785.netlify.app)
 
-Deployed Telegram version (smoke check):  
-[http://t.me/digital_wardrobe_app_bot/digital_wardrobe_app](http://t.me/digital_wardrobe_app_bot/digital_wardrobe_app)
+[Deployed Telegram version (smoke check)](http://t.me/digital_wardrobe_app_bot/digital_wardrobe_app)
 
 ## Links
 
