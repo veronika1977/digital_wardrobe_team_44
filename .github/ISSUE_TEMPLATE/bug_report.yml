@@ -1,0 +1,44 @@
+name: Bug Report
+description: Report about bug
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of problems
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Playback steps
+      placeholder: "1. Go to...\n2. Click...\n3. See..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: "- OS:\n- Browser:\n- App Version:"
+    validations:
+      required: true
+  - type: textarea
+    id: fix_acceptance
+    attributes:
+      label: Acceptance criteria for the fix
+      placeholder: "- [ ] The error is no longer repeated\n- [ ] Autotest has been added"
+    validations:
+      required: true
