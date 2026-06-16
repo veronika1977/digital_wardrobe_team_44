@@ -25,6 +25,7 @@ body:
       placeholder: "@username"
     validations:
       required: true
+
   - type: input
     id: reviewer
     attributes:
@@ -73,4 +74,22 @@ body:
   - type: textarea
     id: environment
     attributes:
-     
+      label: Environment
+      placeholder: |
+        - OS: [e.g., Windows 11, macOS 14]
+        - Browser: [e.g., Chrome 120, Telegram Desktop 4.x]
+        - App Version: [e.g., MVP v0]
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria for the fix
+      description: "How do we verify the bug is fixed? Must be specific, observable, and testable."
+      placeholder: |
+        - [ ] Given [context], When [action], Then [expected behavior works correctly]
+        - [ ] The error no longer occurs
+        - [ ] Regression test added (if applicable)
+    validations:
+      required: true
