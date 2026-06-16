@@ -22,3 +22,5 @@ Deployed Telegram version (smoke check):
 - [MVP v0 Report](reports/week2/mvp-v0-report.md)
 - [User Stories](reports/week2/user-stories.md)
 - [License](LICENSE)
+- [Repository with backend](https://github.com/Mrxfg/digital-wardrobe)
+- [Repository with frontend](https://github.com/veronika1977/digital_wardrobe_777)
