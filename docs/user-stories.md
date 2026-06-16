@@ -16,13 +16,14 @@ This document maintains the list of all User Stories with their stable IDs to en
 | **US-08** | Automatic Background Removal | Must Have | Active | # |
 | **US-09** | Social Network | Won't Have | Removed | # |
 | **US-10** | Share Outfit by Link | Could Have | Active | # |
-
+| **US-11** | Delete Item (Soft Delete) | Must Have | Active | # |
 
 
 ## Detailed User Stories
 
 ### US-01: Telegram Authentication
-**Requirement Status:** Active **MoSCoW:** Must Have
+**Requirement Status:** Active  
+**MoSCoW:** Must Have
 
 As a new user,  
 I want to log in to the app using only my Telegram account without any registration forms,  
@@ -43,7 +44,8 @@ Feature: New user authentication
     And I should see an empty wardrobe screen with an "Add a first item" button
 
 ### US-02: Add Clothing Item with Photo
-**Requirement Status:** Active **MoSCoW:** Must Have
+**Requirement Status:** Active  
+**MoSCoW:** Must Have
 
 As a user,  
 I want to upload a photo of my clothing item and input its category and season,  
@@ -71,7 +73,8 @@ Feature: Add clothing item
     And I see a validation error message prompting me to fill in the missing fields
 
 ### US-03: AI Outfit Generation
-**Requirement Status:** Removed **MoSCoW:** Won't Have
+**Requirement Status:** Removed  
+**MoSCoW:** Won't Have
 
 As a non-fashion-expert user,  
 I want AI to automatically generate outfit combinations based on my wardrobe,  
@@ -81,7 +84,8 @@ so that I do not have to spend time thinking about what matches.
 - Reason for removal: The customer explicitly stated they do not want to use AI for generating outfits.
 
 ### US-04: Tags for Clothing Items
-**Requirement Status:** Active **MoSCoW:** Should Have
+**Requirement Status:** Active  
+**MoSCoW:** Should Have
 
 As a user,  
 I want to add category and season tags to clothing items,  
@@ -98,7 +102,8 @@ Feature: Tagging and filtering clothing items
     Then only the clothing items matching the selected tag are displayed
 
 ### US-05: Capsule Wardrobes
-**Requirement Status:** Active **MoSCoW:** Should Have
+**Requirement Status:** Active  
+**MoSCoW:** Should Have
 
 As a user,  
 I want to group specific items into capsules (e.g., 5/10, 8/3),  
@@ -119,7 +124,8 @@ Feature: Capsule wardrobe creation
     And it displays the 8 selected items and generates 3 outfit combinations
 
 ### US-06: Edit Clothing Item
-**Requirement Status:** Active **MoSCoW:** Should Have
+**Requirement Status:** Active  
+**MoSCoW:** Should Have
 
 As a user,  
 I want to edit the details of a clothing item (category, season, photo),  
@@ -138,7 +144,8 @@ Feature: Edit clothing item details
     And the wardrobe list reflects the new details immediately
 
 ### US-07: AI Material and Season Detection
-**Requirement Status:** Active **MoSCoW:** Could Have
+**Requirement Status:** Active  
+**MoSCoW:** Could Have
 
 As a busy user,  
 I want AI to define materials, seasons, and color from my photo,  
@@ -156,7 +163,8 @@ Feature: AI auto-detection of item attributes
     And I can manually edit these fields if the detection is incorrect
 
 ### US-08: Automatic Background Removal
-**Requirement Status:** Active **MoSCoW:** Must Have
+**Requirement Status:** Active  
+**MoSCoW:** Must Have
 
 As a user,  
 I want the app to automatically remove the background from my photos,  
@@ -174,7 +182,8 @@ Feature: Automatic background removal for clothing photos
     And the saved photo displays the clothing item with a transparent or clean solid-color background
 
 ### US-09: Social Network
-**Requirement Status:** Removed **MoSCoW:** Won't Have
+**Requirement Status:** Removed  
+**MoSCoW:** Won't Have
 
 As a social user,  
 I want to post my outfits and accept comments as in a social network,  
@@ -184,7 +193,8 @@ so that I can share with my followers.
 - Reason for removal: Turns the app into a full social network. Out of scope for MVP.
 
 ### US-10: Share Outfit by Link
-**Requirement Status:** Active **MoSCoW:** Could Have
+**Requirement Status:** Active  
+**MoSCoW:** Could Have
 
 As a social user,  
 I want to share my outfits with friends by link in the Telegram mini app,  
@@ -200,6 +210,40 @@ Feature: Share outfit via link
     When I click the "Share" button for this outfit
     Then a unique Telegram Mini App link is generated
     And the link is automatically copied to my clipboard for sharing
+
+### US-11: Delete Item (Soft Delete with 14-day Retention)
+**Requirement Status:** Active  
+**MoSCoW:** Must Have
+
+As a user,  
+I want to move deleted clothing items to a "Trash" basket for 14 days before permanent deletion,  
+so that I can easily recover accidentally deleted items and keep my active wardrobe view clean.
+
+**Notes and constraints:**
+- Deleted items are moved to a separate "Trash" view, not permanently deleted immediately.
+- Items remain in the Trash for exactly 14 days.
+- After 14 days, the system automatically permanently deletes the item and its photo.
+- Users can manually restore items from the Trash before the 14-day period expires.
+
+**Acceptance criteria:**
+
+Feature: Soft delete and trash management
+  Scenario: Moving an item to the Trash basket
+    Given I have a clothing item in my active wardrobe
+    When I select the item and click the "Delete" button
+    Then the item is removed from the active wardrobe view
+    And the item appears in the "Trash" basket with a deletion timestamp
+
+  Scenario: Permanent deletion after 14 days
+    Given an item has been in the "Trash" basket for 14 days
+    When the system runs its daily cleanup job
+    Then the item and its associated photo are permanently deleted from the database
+
+  Scenario: Restoring an item from the Trash
+    Given an item is in the "Trash" basket and has been there for less than 14 days
+    When I select the item and click the "Restore" button
+    Then the item is removed from the "Trash" basket
+    And the item reappears in my active wardrobe view
 
 ---
 
