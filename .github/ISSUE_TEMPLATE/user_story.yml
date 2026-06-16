@@ -4,7 +4,7 @@ title: "US-XX: Short title"
 labels: ["user-story"]
 body:
   - type: dropdown
-    id: status
+    id: requirement_status
     attributes:
       label: Requirement status
       options:
@@ -13,6 +13,22 @@ body:
         - Deferred
     validations:
       required: true
+
+  - type: dropdown
+    id: work_status
+    attributes:
+      label: Work Status
+      description: "Use only: To Do, Ready, In Progress, Review, Done"
+      options:
+        - To Do
+        - Ready
+        - In Progress
+        - Review
+        - Done
+      default: 0
+    validations:
+      required: true
+
   - type: dropdown
     id: moscow
     attributes:
@@ -24,6 +40,7 @@ body:
         - Won't Have
     validations:
       required: true
+
   - type: input
     id: persona
     attributes:
@@ -45,21 +62,47 @@ body:
       placeholder: "so that [I achieve a specific goal or value]"
     validations:
       required: true
+
+  - type: input
+    id: implementer
+    attributes:
+      label: Implementer (@username)
+      description: "The person responsible for doing the work."
+      placeholder: "@username"
+    validations:
+      required: true
+  - type: input
+    id: reviewer
+    attributes:
+      label: Reviewer (@username)
+      description: "A DIFFERENT person responsible for reviewing the work and confirming it is ready."
+      placeholder: "@username"
+    validations:
+      required: true
+
   - type: textarea
     id: notes
     attributes:
-      label: Notes and constraints
-      description: Relevant notes, constraints, assumptions, or open questions.
+      label: Notes, constraints, assumptions, or open questions
     validations:
       required: false
+
   - type: textarea
     id: acceptance
     attributes:
       label: Acceptance Criteria
-      description: Define the conditions that must be met for this story to be complete.
+      description: "Must be specific, observable, and testable (Given/When/Then recommended)."
       placeholder: |
-        - [ ] Criterion 1
+        - [ ] Given [context], When [action], Then [outcome]
         - [ ] Criterion 2
-        - [ ] Criterion 3
     validations:
       required: true
+
+  - type: textarea
+    id: traceability
+    attributes:
+      label: Traceability & Links
+      description: "Link related PBIs, parent Epic, or expected PR/MR here."
+      placeholder: "- Related to: #\n- Blocked by: #"
+    validations:
+      required: false
