@@ -1,0 +1,30 @@
+name: Course Task / PBI
+description: Tasks for assignments
+title: "[Task]: "
+labels: ["task"]
+body:
+  - type: dropdown
+    id: task_type
+    attributes:
+      label: Type of task
+      options:
+        - Feature
+        - Technical Debt
+        - Documentation
+        - DevOps / CI/CD
+        - Research
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Criterions 
+      placeholder: "- [ ] Criterion 1\n- [ ] Criterion 2"
+    validations:
+      required: true
