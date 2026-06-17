@@ -18,16 +18,16 @@ During the Assignment 2 review, the customer provided the following feedback, wh
 ### 2. Weather Integration
 - **Feedback:** The customer requested weather-based outfit recommendations.
 - **Action Taken:** Created US-12 (Weather Integration, 5 SP) and added it to the Product Backlog.
-- **Status:** Weather wiil be integrated in MVP v2 
+- **Status:** Weather will be integrated in MVP v2 
 
 ## Sprint Goal
- Enable users to securely log in via Telegram and manage their clothing items (add with photo upload, name, material, season, and delete). The MVP v1 focuses on core wardrobe CRUD operations with Telegram authentication as the entry point.
+ Enable users to securely log in via Telegram and manage their clothing items (add with photo upload, name, material, season, tags, and delete). The MVP v1 focuses on core wardrobe CRUD operations with Telegram authentication as the entry point.
 
 ## Story Points
 
-- **Total Product Backlog size:** [63] SP 
-- **Total Current Sprint 1 size:** [34] SP 
-- **Tasks in Sprint 1:** 9
+- **Total Product Backlog size:** 63 SP 
+- **Total Current Sprint 1 size:** 34 SP 
+- **Tasks in Sprint 1:** 19
 - **Tasks in Future:** 6
 
 ## MVP v1 Scope Description
@@ -44,11 +44,37 @@ The MVP v1 scope includes the following Must Have user stories and supporting te
 - API Documentation and Setup Instructions
 - Create UI Kit and Design System for Telegram Mini App
  
+## Sprint Backlog Decomposition
+
+The following User Stories have been decomposed into smaller technical PBIs:
+
+**US-01: Telegram Authentication - 3 subtasks:**
+
+- Backend Telegram Auth Endpoint
+- Frontend Telegram SDK Integration
+- Auth State Management 
+
+**US-02: Add Clothing Item - 3 subtasks:**
+- Backend POST /api/items Endpoint
+- Frontend Add Item
+- Photo Upload Mechanism
+
+**US-04: Tags for Clothing Items - 2 subtasks:**
+
+- Backend Tags Model and API
+- Frontend Tags 
+
+**US-11: Delete Item - 2 subtasks:**
+
+- Backend Delete Logic 
+- Delete Button in Frontend
 
 ## Contribution Traceability Table
 
 | Team Member | Issues Created | PRs Created | PRs Reviewed | Meaningful Comments Left |
 | :--- | :--- | :--- | :--- | :--- |
-| [Your Name] | [#15, #16] | [#17, #18] | [#19] | [#20] |
-| [Teammate 1 Name] | [#...] | [#...] | [#...] | [#...] |
-| [Teammate 2 Name] | [#...] | [#...] | [#...] | [#...] |
+| Veronika Drozd (@veronika1977) | [#15, #16] | [#17, #18] | [#19] | [#20] |
+| Evgeni1a (@Evgeni1a) | [#...] | [#...] | [#...] | [#...] |
+| CatherineHar (@CatherineHar) | [#...] | [#...] | [#...] | [#...] |
+| DarinaLuch (@DarinaLuch) | [#...] | [#...] | [#...] | [#...] |
+| Mrxfg (@Mrxfg) | [#...] | [#...] | [#...] | [#...] |
