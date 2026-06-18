@@ -161,5 +161,6 @@ All MVP v1 PBIs will be verified against their Acceptance Criteria:
 ![Delivered MVP v1 deployment 5](images/photo_mvp_v1_5.png)
 ![Delivered MVP v1 deployment 6](images/photo_mvp_v1_6.png)
 ![Delivered MVP v1 deployment 7](images/photo_mvp_v1_7.png)
+![Delivered MVP v1 deployment 8](images/photo_mvp_v1_8.png)
 ![Example of a reviewed issue-linked PR/MR 1](images/PR1.png)
 ![Example of a reviewed issue-linked PR/MR 2](images/PR2.png)
