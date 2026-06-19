@@ -108,7 +108,7 @@ Following the shared Process Requirements:
 - [PR #1: Telegram Auth Backend](#) *(replace with actual PR link)*
 - [PR #2: Add Item Backend](#) *(replace with actual PR link)*
 - [PR #3: Telegram Auth Frontend](#) *(replace with actual PR link)*
-- [PR #4: Add Item Frontend](#) *(replace with actual PR link)*
+- [PR #4: Add Item Frontend](https://github.com/veronika1977/digital_wardrobe_777/pull/4)
 - [PR #5: Sprint Report Update](#) *(replace with actual PR link)*
 
 ### Issue & PR Templates
@@ -124,18 +124,21 @@ Following the shared Process Requirements:
 All MVP v1 PBIs will be verified against their Acceptance Criteria:
 - [US-01 verification](https://github.com/veronika1977/digital_wardrobe_team_44/issues/84) *(add comment link after verification)*
 - [US-02 verification](https://github.com/veronika1977/digital_wardrobe_team_44/issues/85)
+(add comment link after verification)*
 - [US-04 verification](https://github.com/veronika1977/digital_wardrobe_team_44/issues/87)
+(add comment link after verification)*
 - [US-11 verification](https://github.com/veronika1977/digital_wardrobe_team_44/issues/77)
+(add comment link after verification)*
 
 ## Delivered MVP v1
 
-- [**Live Frontend**](https://yourapp.netlify.app) *(replace after deploy)*
+- [**Live Frontend**](https://digwardrobe.netlify.app/)
 - [**Backend API**](https://yourapp.railway.app) *(replace after deploy)*
-- [**Telegram Bot**](https://t.me/YourBotName) *(replace with actual username)*
+- [**Telegram Bot**](https://t.me/digital_wardrobe_app_bot/digital_wardrobe_app)
 - [**Full Setup Guide**](../../README.md)
 
 ## Video Demonstration
-[**Link**](#) *(replace with actual link)*
+[**Link**](https://drive.google.com/drive/folders/1U6ZyvhWXD34KY7kA_3uiMyZwmU-Z02DT?usp=sharing)
 
 ## Contribution Traceability Table
 
@@ -152,7 +155,6 @@ All MVP v1 PBIs will be verified against their Acceptance Criteria:
 ![Product Backlog view][#]
 ![Sprint Backlog view][#]
 ![Sprint milestone][#]
-![MVP version field (grouped/filtered view)][#]
 ![SemVer release][#]
 ![Delivered MVP v1 deployment 1](images/photo_mvp_v1_1.png)
 ![Delivered MVP v1 deployment 2](images/photo_mvp_v1_2.png)
