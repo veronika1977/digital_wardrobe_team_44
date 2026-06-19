@@ -2,17 +2,19 @@
 
 ## What went well
 
-1. [e.g., The team strictly followed the Definition of Done, resulting in zero merged PRs without approval.]
-2. [e.g., Communication in the Telegram group was highly effective for quick blockers resolution.]
-3. [e.g., The new issue templates saved significant time during backlog creation.]
+1. The team strictly followed the Definition of Done, resulting in zero merged PRs without approval.
+2. Communication in the Telegram group was effective for quick blockers resolution.
+3. The new issue templates saved significant time during backlog creation.
+4. The customer agreed with MVP v1.
+5. All tasks on Sprint 1 Backlog were solved.
 
 ## What did not go well
 
-1. [e.g., Estimation sessions took longer than expected due to unclear technical requirements for some PBIs.]
-2. [e.g., One team member had environment setup issues that delayed the start of their first PBI.]
-3. [e.g., The link-check CI workflow initially failed due to relative path issues in Markdown.]
+1. Some problems with Telegram Bot as Telegram are blocked in Russia.
+2. New requirements form customer.
+3. Organizing meeting with team are difficult as students have different schedule.
 
 ## Action points
 
-1. [e.g., Allocate 15 minutes at the start of the next refinement session to clarify technical assumptions before Planning Poker. (Owner: @username)]
-2. [e.g., Update the root README.md with a detailed, step-by-step local environment setup guide. (Owner: @username)]
+1. Allocate 15 minutes at the start of the next refinement session to clarify technical assumptions before Planning Poker. (Owner: @Evgeni1a)
+2. Update the root README.md with a detailed, step-by-step local environment setup guide. (Owner: @veronika1977)
