@@ -26,15 +26,15 @@ Getting Started
 /settings - Update your location (for weather-based recommendations).
 
 ## Table of Contents
-- [Configuration](#configuration)
-- [Authentication](#authentication)
-- [Clothes Endpoints](#clothes-endpoints)
-- [Outfits Endpoints](#outfits-endpoints)
-- [Capsules Endpoints](#capsules-endpoints)
-- [Wear Records Endpoints](#wear-records-endpoints)
-- [Upload Endpoint](#upload-endpoint)
-- [Health Check](#health-check)
-- [Error Responses](#error-responses)
+- Configuration
+- Authentication
+- Clothes Endpoints
+- Outfits Endpoints
+- Capsules Endpoints
+- [Wear Records Endpoints
+- Upload Endpoint
+- Health Check
+- Error Responses
 
 ---
 
