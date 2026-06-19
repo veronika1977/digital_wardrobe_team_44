@@ -10,6 +10,7 @@ All notable changes to the Digital Wardrobe project will be documented in this f
 - GitHub Issue Templates
 - Initial README with setup instructions
 - Added a delete button to clothing item cards in the wardrobe view, allowing users to remove items with visual feedback and error handling [#77]
+- Added tagging system for clothing items (category, season, material, color) and wardrobe filtering by tags [#87]
 
 ## [0.1.0] - 2026-06-16
 ### Added
