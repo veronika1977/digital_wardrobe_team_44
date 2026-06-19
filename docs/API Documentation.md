@@ -31,7 +31,7 @@ Getting Started
 - Clothes Endpoints
 - Outfits Endpoints
 - Capsules Endpoints
-- [Wear Records Endpoints
+- Wear Records Endpoints
 - Upload Endpoint
 - Health Check
 - Error Responses
@@ -58,7 +58,7 @@ DATABASE_URL=postgresql://postgres:postgres123@localhost:5432/digital_wardrobe
 
 **JWT Configuration:**
 ```env
-SECRET_KEY=8f2c9a1e7d4b6f3a9c8e5d2b7f1a4c6e
+SECRET_KEY=<your_jwt_secret_key_here>
 ALGORITHM=HS256
 ```
 
@@ -66,7 +66,7 @@ ALGORITHM=HS256
 
 **Bot Token:**
 ```env
-BOT_TOKEN=8930175741:AAFn20YgCQWSDh-avVP10H2gQrJml8-9m-I
+BOT_TOKEN=<your_telegram_bot_token_here>
 ```
 
 ### API Configuration
