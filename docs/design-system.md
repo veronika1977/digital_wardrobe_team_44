@@ -4,7 +4,6 @@ This document describes the design system for the Digital Wardrobe Telegram Mini
 
 **Figma File:** [Digital Wardrobe Design System](https://www.figma.com/design/bH3tg2a626fBWdNWXmsB3b/UI-Components?node-id=8-6&t=ooSLwReyyrNfCI4r-1)
 
----
 
 ## Color Palette
 
@@ -39,14 +38,13 @@ All colors are defined as Variables in Figma. The app uses a light theme only.
 | **Home** | Home tab in bottom navigation |
 | **More items** | Expand dropdown, show more options |
 
----
 
 ### Save
 - Background: `accent/primary` (`#151414`)
 - Label color: `bg/card` (`#FFFFFF`)
 - Label: **"Сохранить"**
 - **Used for:** saving a clothing item after filling in all fields (UC-1), saving an outfit (UC-2), saving a capsule (UC-6)
----
+
  
 ### Add item
 - Background: `accent/primary` (`#151414`)
@@ -66,7 +64,7 @@ Two buttons inside:
 - **"Отмена"** — background: `bg/card` (`#FFFFFF`), label color: `text/primary` (`#151414`), border: `border` (`#D4D3D1`)
 **Used for:** confirming item deletion before moving to trash (UC-8). Always shown before any irreversible action.
  
----
+
  
 ### Filtering
 A horizontal row of dropdown chips. Each chip shows a label and a **More items** icon.
@@ -79,7 +77,6 @@ Chips in the set: **Категория**, **Материал**, **Цвет**, **
  
 > Note: Material options differ by category — clothing, outerwear, footwear, and accessories each have their own material list. Color options are shared across all categories. Multi-color selection is supported: if a user sets red as one of several colors, the item appears in red-filtered results (UC-9).
  
----
  
 ### Category (dropdown)
 A full-width dropdown selector.
@@ -92,7 +89,6 @@ Dropdowns in the Add item form: **Категория**, **Сезон**, **Цве
  
 **Used for:** filling in item attributes when adding or editing a clothing item (UC-1).
  
----
  
 ### Name item
 A full-width text input field.
@@ -118,7 +114,6 @@ Accepted formats: jpg, jpeg, png, pdf, up to 10 MB. If the file fails validation
  
 **Used for:** uploading or replacing a clothing item photo (UC-1).
  
----
  
 ### Find
 A circular icon button.
@@ -140,7 +135,6 @@ Paired with the **Cansel** icon button to cancel the restore action. Both icons 
  
 **Used for:** restoring a deleted item or outfit from trash (UC-8).
  
----
  
 ### Nav
 Bottom navigation bar with two tabs.
@@ -151,7 +145,6 @@ Bottom navigation bar with two tabs.
 Tabs:
 - **Home** tab — uses **Home** icon
 - **Person** tab — uses **Person** icon
----
  
 ### Capsules
 Pill-shaped tags showing capsule summary info.
@@ -162,7 +155,6 @@ Examples: **"8 items : 3 outfits"** (active), **"10 items : 5 outfits"** (inacti
  
 **Used for:** selecting or displaying capsules on the capsules screen (UC-6).
  
----
 ## Usage Guidelines
 
 ### When to use the Choose bar
