@@ -27,7 +27,7 @@
 
 ## Planned response
 
-- **API contract first**: Before starting implementation in the next sprint, we will finalize and agree on the API contract (`docs/api-contract.md`) so frontend and backend developers can work in parallel without blocking each other.
-- **Stricter MVP scoping**: For MVP v2, we will apply a stricter "Must Have vs Should Have" filter during Sprint Planning to avoid scope creep.
+- **API contract first**: Before starting implementation in the next sprint, we will finalize and agree on the API contract (`docs/api-contract.md`) so frontend and backend developers can work in parallel without blocking each other. This will be tracked in [Sprint 2 milestone](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/2)
+- **Stricter MVP scoping**: For MVP v2, we will apply a stricter "Must Have vs Should Have" filter during Sprint Planning to avoid scope creep. This affects PBIs in [Sprint 2](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/2) and will be reflected in the [Product Roadmap](../../docs/roadmap.md).
 - **Earlier customer check-ins**: Instead of waiting for the formal Sprint Review, we will share incremental demos with the customer mid-sprint to catch misalignments earlier.
 - **Earlier Sprint Backlog**: Instead of doing Sprint Backlog before 4 days of deadline, it is better to do it on the first day of the week, so team will have more time on solving tasks.

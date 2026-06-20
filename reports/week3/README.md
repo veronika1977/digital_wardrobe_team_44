@@ -69,11 +69,11 @@ In Sprint 2, we will focus on advanced organization features: automatic AI backg
 
 ### Supporting Technical PBIs
 
-- Setup Telegram Bot API (#94)
-- Create Telegram Bot with /start Command (#95)
-- Research AI background removal API (#96)
-- API Documentation (#97)
-- Create UI Kit and Design System (#98)
+- Setup Telegram Bot API [#94](https://github.com/veronika1977/digital_wardrobe_team_44/issues/94#issue-4683945852)
+- Create Telegram Bot with /start Command [#95](https://github.com/veronika1977/digital_wardrobe_team_44/issues/95#issue-4683990483)
+- Research AI background removal API [#96](https://github.com/veronika1977/digital_wardrobe_team_44/issues/96#issue-4684079479)
+- API Documentation [#97](https://github.com/veronika1977/digital_wardrobe_team_44/issues/97#issue-4684106195)
+- Create UI Kit and Design System [#98](https://github.com/veronika1977/digital_wardrobe_team_44/issues/98#issue-4684187410)
 
 ### Task Decomposition
 
@@ -148,6 +148,7 @@ All MVP v1 PBIs will be verified against their Acceptance Criteria:
 ![Product Backlog view](images/Backlog.png)
 ![Sprint Backlog view](images/Sprint_1_Backlog.png)
 ![Sprint milestone](images/milestone_1.png)
+![MVP v1 field](images/mvp_v1_field.png)
 ![SemVer release](images/Releases.png)
 ![Delivered MVP v1 deployment 1](images/photo_mvp_v1_1.png)
 ![Delivered MVP v1 deployment 2](images/photo_mvp_v1_2.png)
