@@ -22,7 +22,6 @@ During Assignment 2 review, the customer requested:
 
 - [Historical User Stories (Assignment 2)](../week2/user-stories.md)
 - [Current User Stories Index](../../docs/user-stories.md)
-- [Sprint Report](./sprint-report.md)
 - [Product Backlog Board](https://github.com/users/veronika1977/projects/1/views/2)
 - [Sprint 1 Backlog Board](https://github.com/users/veronika1977/projects/1/views/6)
 - [Sprint 1 Milestone](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/1)
@@ -105,11 +104,19 @@ Following the shared Process Requirements:
 
 ### Reviewed Issue-Linked PRs
 
+<<<<<<< Updated upstream
 - [PR #1: Telegram Auth Backend](#) *(replace with actual PR link)*
 - [PR #2: Add Item Backend](#) *(replace with actual PR link)*
 - [PR #3: Telegram Auth Frontend](#) *(replace with actual PR link)*
 - [PR #4: Add Item Frontend](https://github.com/veronika1977/digital_wardrobe_777/pull/4)
 - [PR #5: Sprint Report Update](#) *(replace with actual PR link)*
+=======
+- [PR: Backend Telegram Auth Endpoint](https://github.com/Mrxfg/digital-wardrobe/pull/13#issue-4700574010)
+- [PR: Photo Upload Mechanism](https://github.com/Mrxfg/digital-wardrobe/pull/17#issue-4702207955)
+- [PR: Frontend Telegram SDK Integration](https://github.com/veronika1977/digital_wardrobe_777/pull/12)
+- [PR: Frontend Add Item](https://github.com/veronika1977/digital_wardrobe_777/pull/4)
+
+>>>>>>> Stashed changes
 
 ### Issue & PR Templates
 
@@ -144,11 +151,19 @@ All MVP v1 PBIs will be verified against their Acceptance Criteria:
 
 | Team Member | Issues Created | PRs Created | PRs Reviewed | Meaningful Comments |
 | :--- | :--- | :--- | :--- | :--- |
+<<<<<<< Updated upstream
 | Veronika Drozd (@veronika1977) | [#77, #82, #84, #85, #87] | [ ] | [ ] | [ ] |
 | Evgeni1a (@Evgeni1a) | [#94, #95, #96, #97, #98] | [ ] | [ ] | [ ] |
 | Catherine Har (@CatherineHar) | [ ] | [ ] | [ ] | [ ] |
 | Darina Luch (@DarinaLuch) | [ ] | [ ] | [ ] | [ ] |
 | Mrxfg (@Mrxfg) | [ ] | [ ] | [ ] | [ ] |
+=======
+| Veronika Drozd (@veronika1977) | [#77](https://github.com/veronika1977/digital_wardrobe_team_44/issues/77#issue-4674006802), [#85](https://github.com/veronika1977/digital_wardrobe_team_44/issues/85#issue-4678164428), [#87](https://github.com/veronika1977/digital_wardrobe_team_44/issues/87#issue-4678207198),[#103](https://github.com/veronika1977/digital_wardrobe_team_44/issues/103#issue-4685452047), [#104](https://github.com/veronika1977/digital_wardrobe_team_44/issues/104#issue-4685486734),[#106](https://github.com/veronika1977/digital_wardrobe_team_44/issues/106#issue-4685580014), [#107](https://github.com/veronika1977/digital_wardrobe_team_44/issues/107#issue-4685646081), [#108](https://github.com/veronika1977/digital_wardrobe_team_44/issues/108#issue-4685679546),[#109](https://github.com/veronika1977/digital_wardrobe_team_44/issues/109#issue-4685715427), [#110](https://github.com/veronika1977/digital_wardrobe_team_44/issues/110#issue-4685765359), [#111](https://github.com/veronika1977/digital_wardrobe_team_44/issues/111#issue-4685918887), [#112](https://github.com/veronika1977/digital_wardrobe_team_44/issues/112#issue-4685953051) | [#78](https://github.com/veronika1977/digital_wardrobe_team_44/pull/78#issue-4674106568),[#92](https://github.com/veronika1977/digital_wardrobe_team_44/pull/92#issue-4678334304) [#93](https://github.com/veronika1977/digital_wardrobe_team_44/pull/93#issue-4678407380), [#125](https://github.com/veronika1977/digital_wardrobe_team_44/pull/125#issue-4694064176), [#132](https://github.com/veronika1977/digital_wardrobe_team_44/pull/132#issue-4699172212), [#143](https://github.com/veronika1977/digital_wardrobe_team_44/pull/143#issue-4703045662) | [#118](https://github.com/veronika1977/digital_wardrobe_team_44/pull/118#issue-4691426934), [#120](https://github.com/veronika1977/digital_wardrobe_team_44/pull/120#issue-4691612725), [#122](https://github.com/veronika1977/digital_wardrobe_team_44/pull/122#issue-4691826053), [#128](https://github.com/veronika1977/digital_wardrobe_team_44/pull/128#issue-4698428149), [#135](https://github.com/veronika1977/digital_wardrobe_team_44/pull/135#issue-4699820761), [#136](https://github.com/veronika1977/digital_wardrobe_team_44/pull/136#issue-4699903881) | [#118](https://github.com/veronika1977/digital_wardrobe_team_44/pull/118#pullrequestreview-4523979310), [#120](https://github.com/veronika1977/digital_wardrobe_team_44/pull/120#pullrequestreview-4524156540),  [#125](https://github.com/veronika1977/digital_wardrobe_team_44/pull/128#pullrequestreview-4530556006) [#122](https://github.com/veronika1977/digital_wardrobe_team_44/pull/122#pullrequestreview-4524370717), [#128](https://github.com/veronika1977/digital_wardrobe_team_44/pull/128#issue-4698428149)|
+| Evgeni1a (@Evgeni1a) | [#94](https://github.com/veronika1977/digital_wardrobe_team_44/issues/94#issue-4683945852), [#95](https://github.com/veronika1977/digital_wardrobe_team_44/issues/95#issue-4683990483), [#96](https://github.com/veronika1977/digital_wardrobe_team_44/issues/96#issue-4684079479), [#97](https://github.com/veronika1977/digital_wardrobe_team_44/issues/97#issue-4684106195), [#98](https://github.com/veronika1977/digital_wardrobe_team_44/issues/98#issue-4684187410),[#119](https://github.com/veronika1977/digital_wardrobe_team_44/issues/119#issue-4691592395), [#121](https://github.com/veronika1977/digital_wardrobe_team_44/issues/121#issue-4691823866) | [#120](https://github.com/veronika1977/digital_wardrobe_team_44/pull/120#issue-4691612725), [#122](https://github.com/veronika1977/digital_wardrobe_team_44/pull/122#issue-4691826053), [#135](https://github.com/veronika1977/digital_wardrobe_team_44/pull/135#issue-4699820761), [#136](https://github.com/veronika1977/digital_wardrobe_team_44/pull/136#issue-4699903881) | [#125](https://github.com/veronika1977/digital_wardrobe_team_44/pull/125#issue-4694064176), [#132](https://github.com/veronika1977/digital_wardrobe_team_44/pull/132#issue-4699172212), [#134](https://github.com/veronika1977/digital_wardrobe_team_44/pull/134#issue-4699301927) | [#125](https://github.com/veronika1977/digital_wardrobe_team_44/pull/125#pullrequestreview-4526675157), [#130](https://github.com/veronika1977/digital_wardrobe_team_44/pull/130#pullrequestreview-4530893575), [#132](https://github.com/veronika1977/digital_wardrobe_team_44/pull/132#pullrequestreview-4531324793), [#134](https://github.com/veronika1977/digital_wardrobe_team_44/pull/134#pullrequestreview-4531482118)|
+| Catherine Har (@CatherineHar) | [#117](https://github.com/veronika1977/digital_wardrobe_team_44/issues/117#issue-4690961343) | [#118](https://github.com/veronika1977/digital_wardrobe_team_44/pull/118#issue-4691426934) | [#78](https://github.com/veronika1977/digital_wardrobe_team_44/pull/78#issue-4674106568), [#92](https://github.com/veronika1977/digital_wardrobe_team_44/pull/92#issue-4678334304), [#93](https://github.com/veronika1977/digital_wardrobe_team_44/pull/93#issue-4678407380), [#143](https://github.com/veronika1977/digital_wardrobe_team_44/pull/143#issue-4703045662) | [#93](https://github.com/veronika1977/digital_wardrobe_team_44/pull/93#pullrequestreview-4510806710), [#143](https://github.com/veronika1977/digital_wardrobe_team_44/pull/143#pullrequestreview-4534897734) |
+| Darina Luch (@DarinaLuch) | [#129](https://github.com/veronika1977/digital_wardrobe_team_44/issues/129#issue-4698734905) | [#128](https://github.com/veronika1977/digital_wardrobe_team_44/pull/128#issue-4698428149),[#130](https://github.com/veronika1977/digital_wardrobe_team_44/pull/130#issue-4698758725) | [#148](https://github.com/veronika1977/digital_wardrobe_team_44/pull/148#issue-4705687160) | [#148](https://github.com/veronika1977/digital_wardrobe_team_44/pull/148#pullrequestreview-4536747445) |
+| Mrxfg (@Mrxfg) | [#133](https://github.com/veronika1977/digital_wardrobe_team_44/issues/133#issue-4699280968) | [#134](https://github.com/veronika1977/digital_wardrobe_team_44/pull/134#issue-4699301927) | [#142](https://github.com/veronika1977/digital_wardrobe_team_44/pull/142#issue-4702243424) | [#142](https://github.com/veronika1977/digital_wardrobe_team_44/pull/142#pullrequestreview-4534257243) |
+>>>>>>> Stashed changes
 
 ## Screenshots
 
