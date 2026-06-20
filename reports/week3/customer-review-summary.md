@@ -5,7 +5,7 @@
 
 ## Scope Reviewed
 
-The team presented MVP Version 1, which includes the following functionality: Login through Telegram, Adding items from files or by taking a photo, Manual addition of name and tags (season, material, category), Deleting items with 14-day storage in the recycle bin, Restoring items from the recycle bin, Creating and deleting outfits
+The team presented MVP Version 1, which includes the following functionality: Login through Telegram, Adding items from files or by taking a photo, manual addition of name and tags (season, material, category), deleting items with 14-day storage in the recycle bin, restoring items from the recycle bin.
 
 The following features were explicitly excluded from MVP Version 1, to add in further versions:
 
@@ -54,6 +54,7 @@ The team demonstrated a working Telegram Mini App with the following screens:
 8. The customer will provide detailed feedback (critical vs. non-critical) after testing.
 
 ## Resulting Product Backlog or Scope Changes:
+
 - Search bar removed from MVP Version 1 scope
 - Recycle bin moved to bottom bar
 - Confirmation prompt added for deleting items used in outfits
@@ -61,4 +62,4 @@ The team demonstrated a working Telegram Mini App with the following screens:
 - Statistics feature (wear history) added to product backlog
 - AI stylist confirmed as part of the project scope – customer will provide API key
 - Custom tags, capsules, background removal, and weather integration remain deferred to future versions
-- Sprint 1 backlog currently contains 25 tasks for the current week
+- Sprint 1 backlog currently contains 19 tasks for the current week

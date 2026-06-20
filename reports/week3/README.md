@@ -25,8 +25,8 @@ During Assignment 2 review, the customer requested:
 - [Product Backlog Board](https://github.com/users/veronika1977/projects/1/views/2)
 - [Sprint 1 Backlog Board](https://github.com/users/veronika1977/projects/1/views/6)
 - [Sprint 1 Milestone](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/1)
-- [MVP v1 Scope View](#) *(replace with actual GitHub Project filtered view link)*
-- [SemVer Release](#) *(replace with actual GitHub Release link)*
+- [MVP v1 Scope View](https://github.com/users/veronika1977/projects/1/views/7)
+- [SemVer Release](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v1.0.0)
 - [CHANGELOG](../../CHANGELOG.md)
 - [Process Requirements](../../Process_Requirements.md)
 
@@ -53,7 +53,12 @@ During Assignment 2 review, the customer requested:
 Enable users to securely log in via Telegram and manage their clothing items (add with photo upload or files upload, name, material, season, colors, and delete). The MVP v1 focuses on core wardrobe CRUD operations with Telegram authentication as the entry point.
 
 ## MVP v1 Scope
+
+MVP v1 includes the core Telegram authentication flow, the ability to add new clothing items with photo uploads, basic tagging for organization, and soft-delete functionality. It establishes the foundational CRUD operations and UI kit for the Digital Wardrobe Mini App.
+
 ## Next Steps
+
+In Sprint 2, we will focus on advanced organization features: automatic AI background removal for uploaded photos, capsule wardrobe grouping, and weather integration. We will also continue improving the frontend UI based on customer feedback.
 
 ### User Stories
 
@@ -95,12 +100,6 @@ Following the shared Process Requirements:
 
 [Full roadmap](../../docs/roadmap.md)
 
-## Current Product Status
-
-**MVP v1 Status:** 
-
-
-## Workflow Evidence
 
 ### Reviewed Issue-Linked PRs
 
@@ -121,18 +120,13 @@ Following the shared Process Requirements:
 ## Verification Evidence
 
 All MVP v1 PBIs will be verified against their Acceptance Criteria:
-- [US-01 verification](https://github.com/veronika1977/digital_wardrobe_team_44/issues/84) *(add comment link after verification)*
-- [US-02 verification](https://github.com/veronika1977/digital_wardrobe_team_44/issues/85)
-(add comment link after verification)*
-- [US-04 verification](https://github.com/veronika1977/digital_wardrobe_team_44/issues/87)
-(add comment link after verification)*
-- [US-11 verification](https://github.com/veronika1977/digital_wardrobe_team_44/issues/77)
-(add comment link after verification)*
+- [US-01 verification](https://github.com/veronika1977/digital_wardrobe_team_44/pull/153#issuecomment-4757708206)
+- [US-02 verification](https://github.com/veronika1977/digital_wardrobe_team_44/pull/144#issue-4703087310)
+- [US-04 verification](https://github.com/veronika1977/digital_wardrobe_team_44/pull/143#issue-4703045662)
+- [US-11 verification](https://github.com/veronika1977/digital_wardrobe_team_44/pull/142#issue-4702243424)
 
 ## Delivered MVP v1
 
-- [**Live Frontend**](https://digwardrobe.netlify.app/)
-- [**Backend API**](https://yourapp.railway.app) *(replace after deploy)*
 - [**Telegram Bot**](https://t.me/digital_wardrobe_app_bot/digital_wardrobe_app)
 - [**Full Setup Guide**](../../README.md)
 
@@ -151,10 +145,10 @@ All MVP v1 PBIs will be verified against their Acceptance Criteria:
 
 ## Screenshots
 
-![Product Backlog view][#]
-![Sprint Backlog view][#]
-![Sprint milestone][#]
-![SemVer release][#]
+![Product Backlog view](images/Backlog.png)
+![Sprint Backlog view](images/Sprint_1_Backlog.png)
+![Sprint milestone](images/milestone_1.png)
+![SemVer release](images/Releases.png)
 ![Delivered MVP v1 deployment 1](images/photo_mvp_v1_1.png)
 ![Delivered MVP v1 deployment 2](images/photo_mvp_v1_2.png)
 ![Delivered MVP v1 deployment 3](images/photo_mvp_v1_3.png)
