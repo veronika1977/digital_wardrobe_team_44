@@ -104,19 +104,11 @@ Following the shared Process Requirements:
 
 ### Reviewed Issue-Linked PRs
 
-<<<<<<< Updated upstream
-- [PR #1: Telegram Auth Backend](#) *(replace with actual PR link)*
-- [PR #2: Add Item Backend](#) *(replace with actual PR link)*
-- [PR #3: Telegram Auth Frontend](#) *(replace with actual PR link)*
-- [PR #4: Add Item Frontend](https://github.com/veronika1977/digital_wardrobe_777/pull/4)
-- [PR #5: Sprint Report Update](#) *(replace with actual PR link)*
-=======
 - [PR: Backend Telegram Auth Endpoint](https://github.com/Mrxfg/digital-wardrobe/pull/13#issue-4700574010)
 - [PR: Photo Upload Mechanism](https://github.com/Mrxfg/digital-wardrobe/pull/17#issue-4702207955)
 - [PR: Frontend Telegram SDK Integration](https://github.com/veronika1977/digital_wardrobe_777/pull/12)
 - [PR: Frontend Add Item](https://github.com/veronika1977/digital_wardrobe_777/pull/4)
 
->>>>>>> Stashed changes
 
 ### Issue & PR Templates
 
