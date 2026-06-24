@@ -31,17 +31,44 @@ To help users easily organize their wardrobe directly in Telegram, without compl
 ## Sprint 2: Organization & Filtering
 - **Milestone:** [Sprint 2](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/2)
 - **Dates:** 22.06.2026 – 28.06.2026
-- **Sprint Goal:** Enable users to organize their added items using tags and edit existing items, improving the usability of the digital wardrobe.
+- **Sprint Goal:** Enable users to organize their added items using tags and edit existing items, improving the usability of the digital wardrobe, 
+while establishing quality automation infrastructure (CI/CD, quality requirements, automated tests).
 - **Focus:** Item metadata, filtering, and edit capabilities.
+- **Release:** v1.1.0 (MVP v2)
 
 **Planned Items:**
+
 - [US-06: Edit Clothing Item](https://github.com/veronika1977/digital_wardrobe_team_44/issues/89)
 - [US-05: Capsule Wardrobes](https://github.com/veronika1977/digital_wardrobe_team_44/issues/88)
 - [US-08: Automatic Background Removal](https://github.com/veronika1977/digital_wardrobe_team_44/issues/86)
 
+*Customer Feedback PBIs:*
+
+- [#170: Replace "Demiseason" with "Base" Category](https://github.com/veronika1977/digital_wardrobe_team_44/issues/170)
+- [#171: Add days remaining counter in basket (frontebd)](https://github.com/veronika1977/digital_wardrobe_team_44/issues/171)
+- [#172: Days remaining in basket (backend)](https://github.com/veronika1977/digital_wardrobe_team_44/issues/172)
+
+*Quality & Automation Work:*
+- CI/CD pipeline configuration for frontend, backend, and docs repositories
+- Quality Requirements definition (QR-001, QR-002, QR-003)
+- Automated Quality Requirement Tests in backend (QRT-001, QRT-002, QRT-003)
+- Unit and integration tests for critical modules in backend (≥30% coverage)
+- Branch protection rules for all repositories
+
+
+## Sprint 3: Assignment 5
+- **Milestone:** [Sprint 3](in Assignment5)
+- **Dates:** 29.06.2026 – 05.07.2026
+- **Sprint Goal:** Enhance product with weather integration.
+- **Focus:** US-12 (Weather Integration),  additional UX improvements.
+
+**Planned Items:**
+- [US-12: Weather Integration](https://github.com/veronika1977/digital_wardrobe_team_44/issues/82)
+- Follow-up UX improvements based on customer feedback
+
+
 ## Future Sprints
 
-- **Sprint 3:** Weather Integration ([US-12](https://github.com/veronika1977/digital_wardrobe_team_44/issues/82)).
 - **Sprint 4:** Sharing capabilities ([US-10](https://github.com/veronika1977/digital_wardrobe_team_44/issues/91)) and AI Material Detection ([US-07](https://github.com/veronika1977/digital_wardrobe_team_44/issues/90)).
 
 ## Removed 
