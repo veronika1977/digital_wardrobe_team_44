@@ -8,27 +8,39 @@ This document defines automated tests that verify quality requirements.
 
 **Verification method:** Automated integration test with timing measurement.
 
+**Test file:** [`backend/tests/quality/test_qr001_response_time.py`](https://github.com/Mrxfg/digital-wardrobe/blob/main/backend/tests/quality/test_qr001_response_time.py)
+
 **Test data, setup, or environment:** 
-- Backend running on localhost:8000
+- Backend running on localhost:127.0.0.1
 - Valid JWT token for authenticated requests
 - Sample clothing item data (name, category, season, color, material)
 
 **Automated command or CI check:** 
 ```bash
-npm run test:integration -- --grep "response time"
+cd backend
+pytest tests/quality/test_qr001_response_time.py -v
 ```
 
 **Expected measurable result:**
 
 - API responds within 3 seconds for 95% of requests
 - Test logs: "Response time: 1.2s < 3s threshold"
+
 **Evidence link:** Latest CI run showing test results and timing metrics.
 
 
 ## QRT-002: Background Removal Fault Tolerance
 
-**Linked quality requirement: QR-002 **
+**Linked quality requirement:** QR-002
+
 **Verification method:** Automated integration test with mocked Rembg failure.
+
+**Test file:** [`backend/tests/quality/test_qr002_fault_tolerance.py`](https://github.com/Mrxfg/digital-wardrobe/blob/main/backend/tests/quality/test_qr002_fault_tolerance.py)
+
+**Related tests:** 
+
+- [backend/tests/test_fallback_strategy.py](https://github.com/Mrxfg/digital-wardrobe/blob/main/backend/tests/test_fallback_strategy.py) — 8 tests covering success, corrupted image, timeout scenarios
+- [backend/tests/test_background_removal.py](https://github.com/Mrxfg/digital-wardrobe/blob/main/backend/tests/test_background_removal.py) — 10 tests (3 unit + 5 integration + 2 edge cases)
 
 **Test data, setup, or environment:**
 - Backend running on localhost:127.0.0.1
@@ -38,7 +50,10 @@ npm run test:integration -- --grep "response time"
 **Automated command or CI check:**
 
 ```bash
-npm run test:integration -- --grep "background removal failure"
+cd backend
+pytest tests/quality/test_qr002_fault_tolerance.py -v
+pytest tests/test_fallback_strategy.py -v
+pytest tests/test_background_removal.py -v
 ```
 
 **Expected measurable result:**
@@ -55,18 +70,21 @@ npm run test:integration -- --grep "background removal failure"
 
 **Verification method:** Automated coverage check in CI.
 
-**Test data, setup, or environment:**
+**Test files:**
+- [backend/tests/test_items.py](https://github.com/Mrxfg/digital-wardrobe/blob/main/backend/tests/test_items.py?spm=a2ty_o01.29997173.0.0.6b5d55fbdW2YOD&file=test_items.py)
+- [backend/tests/test_background_removal.py](https://github.com/Mrxfg/digital-wardrobe/blob/main/backend/tests/test_background_removal.py?spm=a2ty_o01.29997173.0.0.6b5d55fbdW2YOD&file=test_background_removal.py)
+- [backend/tests/test_fallback_strategy.py](https://github.com/Mrxfg/digital-wardrobe/blob/main/backend/tests/test_fallback_strategy.py?spm=a2ty_o01.29997173.0.0.6b5d55fbdW2YOD&file=test_fallback_strategy.py)
 
-1. Standard CI environment
-2. Unit tests for critical modules:
-  - src/auth/ (authentication logic)
-  - src/items/ (item management)
-  - src/rembg/ (background removal)
+**Critical modules:**
+- [app/auth/] (authentication logic)
+- [app/items/] (item management)
+- [app/rembg/] (background removal)
 
 **Automated command or CI check:**
 
 ```bash
-npm run test:unit -- --coverage --coverageThreshold='{"global":{"lines":30}}'
+cd backend
+pytest tests/ --cov=app --cov-report=term-missing --cov-fail-under=30
 ```
 
 **Expected measurable result:**
@@ -79,9 +97,9 @@ npm run test:unit -- --coverage --coverageThreshold='{"global":{"lines":30}}'
 
 | QRT ID | Linked QR | Test Type | Command | Status | Evidence |
 |--------|-----------|-----------|---------|--------|----------|
-| QRT-001 | QR-001 | Integration | `npm run test:integration` |  Not implemented yet | *(link on running)* |
-| QRT-002 | QR-002 | Integration | `npm run test:integration` | Not implemented yet | *(link on running)* |
-| QRT-003 | QR-003 | Unit + Coverage | `npm run test:unit -- --coverage` | Not implemented yet | *(link on running)* |
+| QRT-001 | QR-001 | Integration | `pytest tests/quality/test_qr001_response_time.py` | Implemented | *(link on running)* |
+| QRT-002 | QR-002 | Integration | `pytest tests/quality/test_qr002_fault_tolerance.py` | Implemented | *(link on running)* |
+| QRT-003 | QR-003 | Unit + Coverage | `pytest tests/ --cov=app --cov-fail-under=30` | Implemented  | *(link on running)* |
 
 
 Last updated: June 24, 2026
