@@ -111,9 +111,9 @@ All repositories have branch protection rules enabled for `main`:
 
 | Repository | Protection rules | Evidence |
 |------------|-----------------|----------|
-| Frontend | Require PR, 1 approval, status checks | [Settings](https://github.com/veronika1977/digital_wardrobe_777/settings/branches) |
-| Backend | Require PR, 1 approval, status checks | [Settings](https://github.com/Mrxfg/digital-wardrobe/branches) |
-| Main repo | Require PR, 1 approval, Lychee check | [Settings](https://github.com/veronika1977/digital_wardrobe_team_44/settings/branches) |
+| Frontend | Require PR, 1 approval, status checks | [Screenshot](../reports/week4/images/branch-protection_1.png), [Screenshot](../reports/week4/images/branch-protection_2.png), [Screenshot](../reports/week4/images/branch-protection_3.png) |
+| Backend | Require PR, 1 approval, status checks | [Screenshot](../reports/week4/images/branch-protection-backend_1.png), [Screenshot](../reports/week4/images/branch-protection-backend_2.png), [Screenshot](../reports/week4/images/branch-protection-backend_3.png)|
+| Main repo | Require PR, 1 approval, Lychee check | [Screenshot](../reports/week4/images/branch-protection-main_1.png), [Screenshot](../reports/week4/images/branch-protection-main_2.png), [Screenshot](../reports/week4/images/branch-protection-main_3.png) |
 
 ---
 
