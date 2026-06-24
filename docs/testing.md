@@ -22,10 +22,10 @@ This document tracks testing status, coverage, and quality gates for Digital War
 
 | Test type | Scope | Command or CI check | Latest result | Evidence |
 |-----------|-------|---------------------|---------------|----------|
-| Unit tests | Critical product logic (backend) | `pytest tests/unit/` | Not implemented | — |
-| Integration tests | API endpoints (backend) | `pytest tests/integration/` | Not implemented | — |
-| Automated QRTs | QR-001, QR-002, QR-003 | `pytest tests/quality/` | Not implemented | — |
-| Frontend unit tests | UI components (React) | `npm run test` | Not implemented | — |
+| Unit tests | Critical product logic (backend) | `pytest tests/unit/` | Passing  | — |
+| Integration tests | API endpoints (backend) | `pytest tests/integration/` | Passing  | — |
+| Automated QRTs | QR-001, QR-002, QR-003 | `pytest tests/quality/` | Passing  | — |
+| Frontend unit tests | UI components (React) | `npm run test` | Passing  | [Frontend CI - Unit Tests](https://github.com/veronika1977/digital_wardrobe_777/actions/runs/28116661926/job/83257929559) |
 
 ---
 
