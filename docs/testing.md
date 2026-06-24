@@ -34,21 +34,21 @@ This document tracks testing status, coverage, and quality gates for Digital War
 | Gate or check | Required for Done? | Latest protected-branch status | Evidence |
 |---------------|-------------------|-------------------------------|----------|
 | **Frontend CI** | | | |
-| Linting (ESLint) | Yes | Passing | [Frontend CI](https://github.com/veronika1977/digital_wardrobe_frontend/actions) |
-| Type checking (TypeScript) | Yes | Passing | [Frontend CI](https://github.com/veronika1977/digital_wardrobe_frontend/actions) |
-| Build | Yes | Passing | [Frontend CI](https://github.com/veronika1977/digital_wardrobe_frontend/actions) |
-| Unit tests | Yes |  Placeholder | [Frontend CI](https://github.com/veronika1977/digital_wardrobe_frontend/actions) |
+| Linting (ESLint) | Yes | Passing | [Frontend CI](https://github.com/veronika1977/digital_wardrobe_777/actions) |
+| Type checking (TypeScript) | Yes | Passing | [Frontend CI](https://github.com/veronika1977/digital_wardrobe_777/actions) |
+| Build | Yes | Passing | [Frontend CI](https://github.com/veronika1977/digital_wardrobe_777/actions) |
+| Unit tests | Yes |  Placeholder | [Frontend CI](https://github.com/veronika1977/digital_wardrobe_777/actions) |
 | Coverage (30% critical modules) | Yes | Not implemented | — |
-| Additional QA (npm audit) | Yes | Passing | [Frontend CI](https://github.com/veronika1977/digital_wardrobe_frontend/actions) |
+| Additional QA (npm audit) | Yes | Passing | [Frontend CI](https://github.com/veronika1977/digital_wardrobe_777/actions) |
 | **Backend CI** | | | |
-| Linting (flake8) | Yes | Passing | [Backend CI](https://github.com/veronika1977/digital_wardrobe_backend/actions) |
-| Formatting (black) | Yes | Passing | [Backend CI](https://github.com/veronika1977/digital_wardrobe_backend/actions) |
-| Build verification | Yes | Passing | [Backend CI](https://github.com/veronika1977/digital_wardrobe_backend/actions) |
-| Unit tests (pytest) | Yes | Placeholder | [Backend CI](https://github.com/veronika1977/digital_wardrobe_backend/actions) |
-| Integration tests | Yes |  Placeholder | [Backend CI](https://github.com/veronika1977/digital_wardrobe_backend/actions) |
-| Automated QRTs | Yes | Placeholder | [Backend CI](https://github.com/veronika1977/digital_wardrobe_backend/actions) |
+| Linting (flake8) | Yes | Passing | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
+| Formatting (black) | Yes | Passing | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
+| Build verification | Yes | Passing | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
+| Unit tests (pytest) | Yes | Placeholder | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
+| Integration tests | Yes |  Placeholder | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
+| Automated QRTs | Yes | Placeholder | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
 | Coverage (30% critical modules) | Yes |  Not implemented | — |
-| Additional QA (pip-audit) | Yes | Passing | [Backend CI](https://github.com/veronika1977/digital_wardrobe_backend/actions) |
+| Additional QA (pip-audit) | Yes | Passing | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
 | **Documentation CI** | | | |
 | Lychee link checker | Yes | Passing | [Lychee CI](https://github.com/veronika1977/digital_wardrobe_team_44/actions) |
 
@@ -58,8 +58,8 @@ This document tracks testing status, coverage, and quality gates for Digital War
 
 | QA objective or risk | Additional QA check | Scope | Latest result | Evidence | Limitations or follow-up |
 |----------------------|---------------------|-------|---------------|----------|--------------------------|
-| Dependencies with known vulnerabilities may expose users to security risks | `npm audit` (Frontend) | `package.json` and `package-lock.json` | Passing | [Frontend CI](https://github.com/veronika1977/digital_wardrobe_frontend/actions) | Some vulnerabilities may require manual triage or delayed upstream fixes |
-| Python dependencies with known vulnerabilities | `pip-audit` (Backend) | `requirements.txt` | Passing | [Backend CI](https://github.com/veronika1977/digital_wardrobe_backend/actions) | Some vulnerabilities may require manual triage |
+| Dependencies with known vulnerabilities may expose users to security risks | `npm audit` (Frontend) | `package.json` and `package-lock.json` | Passing | [Frontend CI](https://github.com/veronika1977/digital_wardrobe_777/actions) | Some vulnerabilities may require manual triage or delayed upstream fixes |
+| Python dependencies with known vulnerabilities | `pip-audit` (Backend) | `requirements.txt` | Passing | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) | Some vulnerabilities may require manual triage |
 | Broken links in documentation | Lychee link checker | All `*.md` files |Passing | [Lychee CI](https://github.com/veronika1977/digital_wardrobe_team_44/actions) | Placeholder URLs are excluded |
 
 ---
@@ -112,7 +112,7 @@ All repositories have branch protection rules enabled for `main`:
 | Repository | Protection rules | Evidence |
 |------------|-----------------|----------|
 | Frontend | Require PR, 1 approval, status checks | [Settings](https://github.com/veronika1977/digital_wardrobe_777/settings/branches) |
-| Backend | Require PR, 1 approval, status checks | [Settings](https://github.com/Mrxfg/digital_wardrobe/settings/branches) |
+| Backend | Require PR, 1 approval, status checks | [Settings](https://github.com/Mrxfg/digital-wardrobe/branches) |
 | Main repo | Require PR, 1 approval, Lychee check | [Settings](https://github.com/veronika1977/digital_wardrobe_team_44/settings/branches) |
 
 ---
