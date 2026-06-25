@@ -27,10 +27,10 @@ This document defines end-user-facing scenarios for customer validation.
 3. Tap the "+ Добавить вещь" (Add item) button
 4. Tap "Выбрать фото" (Choose photo) and select an image from device
 5. Verify photo preview is displayed
-6. Enter item name: "Blue Denim Jacket"
+6. Enter item name: "футболка"
 7. Select category: "Верх" (Top)
-8. Select season: "Осень" (Autumn)
-9. Select color: "Синий" (Blue)
+8. Select season: "Демисезон" (Demiseason)
+9. Select color: "Зелёный" (Green)
 10. Select material: "Хлопок" (Cotton)
 11. Tap "Сохранить" (Save) button
 12. Verify the item appears in the wardrobe gallery
@@ -38,17 +38,20 @@ This document defines end-user-facing scenarios for customer validation.
 **Expected outcome:**
 
 - Photo is displayed correctly in the gallery
-- Item name "Blue Denim Jacket" is visible under the photo
+- Item name "футболка" is visible under the photo
 - All selected attributes (category, season, color, material) are saved
 - Item appears in the wardrobe grid immediately after saving
 
 **Execution results:**
 
-- Date: [TBD]
-- Executed by: [Customer name]
-- Result: [Pending]
-- Customer comments: —
-- Follow-up PBI or issue: —
+- Date: 24.06.20026
+- Executed by: Customer
+- Result: Passed
+- Customer comments: 
+    - "Adding items is intuitive"
+    - "I'd like to see the actual color, not just the word 'blue'"
+- Follow-up PBI or issue:
+   - PBI #179: Replace color text label with color swatch
 
 ---
 
@@ -86,12 +89,15 @@ This document defines end-user-facing scenarios for customer validation.
 
 **Execution results:**
 
-- Date: [TBD]
-- Executed by: [Customer name]
-- Result: [Pending]
-- Customer comments: —
-- Follow-up PBI or issue: —
-
+- Date: 24.06.2026
+- Executed by: Customer
+- Result: Passed
+- Customer comments:
+    - Replace delete badgewith explicit "delete" button
+- Follow-up PBI or issue:
+    - PBI #168 : Replace delete badge with explicit "Delete" button
+    - PBI #169: Add confirmation dialog for restore from cart
+ 
 ---
 
 ## UAT-003: Filter Wardrobe Items by Season
@@ -128,11 +134,11 @@ This document defines end-user-facing scenarios for customer validation.
 - Filter works without page reload (instant UI update)
 
 **Execution results:**
-- Date: [TBD]
-- Executed by: [Customer name]
-- Result: [Pending]
-- Customer comments: —
-- Follow-up PBI or issue: —
+- Date: 24.06.2026
+- Executed by: Customer
+- Result: Passed
+- Customer comments:
+    - No problems, all good
 
 ---
 
@@ -140,9 +146,9 @@ This document defines end-user-facing scenarios for customer validation.
 
 | UAT ID | Date | Executed by | Result | Customer Comments | Follow-up PBI |
 |--------|------|-------------|--------|-------------------|---------------|
-| UAT-001 | [TBD] | [Customer] | Pending | — | — |
-| UAT-002 | [TBD] | [Customer] |  Pending | — | — |
-| UAT-003 | [TBD] | [Customer] |  Pending | — | — |
+| UAT-001 | 25.06.2026 | Customer | Passed | "I'd like to see the actual color, not just the word 'blue'" | PBI #179 |
+| UAT-002 | 25.06.2026 | Customer | Passed | "Delete badge too small; add confirmation for restore" | PBI #168, PBI #169 |
+| UAT-003 | 25.06.2026 | Customer | Passed | "No problems, all good" | — |
 
 ---
 
