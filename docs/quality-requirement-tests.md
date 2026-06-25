@@ -97,9 +97,9 @@ pytest tests/ --cov=app --cov-report=term-missing --cov-fail-under=30
 
 | QRT ID | Linked QR | Test Type | Command | Status | Evidence |
 |--------|-----------|-----------|---------|--------|----------|
-| QRT-001 | QR-001 | Integration | `pytest tests/quality/test_qr001_response_time.py` | Implemented | *(link on running)* |
-| QRT-002 | QR-002 | Integration | `pytest tests/quality/test_qr002_fault_tolerance.py` | Implemented | *(link on running)* |
-| QRT-003 | QR-003 | Unit + Coverage | `pytest tests/ --cov=app --cov-fail-under=30` | Implemented  | *(link on running)* |
+| QRT-001 | QR-001 | Integration | `pytest tests/quality/test_qr001_response_time.py` | Implemented | (https://github.com/Mrxfg/digital-wardrobe/actions/runs/28171379831/job/83437074741) |
+| QRT-002 | QR-002 | Integration | `pytest tests/quality/test_qr002_fault_tolerance.py` | Implemented | https://github.com/Mrxfg/digital-wardrobe/actions/runs/28171379831/job/83437074741 |
+| QRT-003 | QR-003 | Unit + Coverage | `pytest tests/ --cov=app --cov-fail-under=30` | Implemented  | (https://github.com/Mrxfg/digital-wardrobe/actions/runs/28171379831/job/83436651084) |
 
 
 Last updated: June 24, 2026
