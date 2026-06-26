@@ -1,5 +1,8 @@
 name: Lychee Link Checker
 
+# Validates all markdown links in the repository
+# Exclusions are documented and justified in: docs/lychee-exclusions.md
+
 on:
   push:
     branches: [ main ]
