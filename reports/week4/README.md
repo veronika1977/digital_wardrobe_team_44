@@ -178,7 +178,8 @@ Full details: [docs/user-acceptance-tests.md](docs/user-acceptance-tests.md)
 | Testing Status | [docs/testing.md](docs/testing.md) |
 | Definition of Done | [docs/definition-of-done.md](docs/definition-of-done.md) |
 | Roadmap | [docs/roadmap.md](docs/roadmap.md) |
-| Customer Review Transcript | [reports/week4/customer-review-transcript.md](reports/week4/customer-review-transcript.md) |
+| Customer Review Transcript | [reports/week4/customer-review-transcript.md](reports/week4/customer-review-transcript.md) | 
+|Lychee Exclusions Justification | [docs/lychee-exclusions.md](docs/lychee-exclusions.md) |
 
 ## Continuity: How Quality Gates Govern Future Work
 
