@@ -10,7 +10,7 @@ This document serves as the public index for the Assignment 4 submission.
 - **License:** [LICENSE](../../LICENSE)
 
 ### Deployed Product
-- **Telegram Mini App:** [@YourBotName](https://t.me/YourBotName)
+- **Telegram Mini App:** [Vestis](https://t.me/digital_wardrobe_app_bot)
 
 **Description:**  
 

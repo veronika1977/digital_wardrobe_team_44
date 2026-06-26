@@ -3,8 +3,18 @@ name: Lychee Link Checker
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'docs/**'
+      - 'reports/**'
+      - 'README.md'
+      - '.lychee.toml'
+      - '.github/workflows/lychee.yml'
   pull_request:
     branches: [ main ]
+    paths:
+      - 'docs/**'
+      - 'reports/**'
+      - 'README.md'
   workflow_dispatch:
 
 jobs:
@@ -19,10 +29,11 @@ jobs:
           args: >-
             --verbose
             --no-progress
-            --exclude 'http://localhost:5173'
-            --exclude 'https://www.linkedin.com/*'
-            --exclude 'https://github.com/veronika1977/digital_wardrobe_team_44/.*'
-            --exclude 'https://agent-6a29aac2b0946--benevolent-frangollo-a08785.netlify.app'
+            --exclude 'http://localhost'
+            --exclude 'http://127.0.0.1'
+            --exclude '^mailto:'
             './**/*.md'
           fail: true
           failIfEmpty: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
