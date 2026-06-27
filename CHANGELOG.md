@@ -24,6 +24,20 @@ All notable changes to the Digital Wardrobe project will be documented in this f
   - Backend: CPU-optimized `rembg` integration, model pre-downloaded during Docker build, strict file validation (JPEG/PNG only)
   - Frontend: Upload flow with loading state
   - backend integration tests covering success paths, fallback scenarios, invalid inputs, and timeout handling
+- **US-05: Capsule Wardrobes** — users can create named capsule collections (e.g., "Office", "Vacation") to group clothing items by occasion [#88](https://github.com/veronika1977/digital_wardrobe_team_44/issues/88)
+  - Full CRUD lifecycle: create, view details, edit (add/remove items), and delete capsules
+  - Deleting a capsule preserves all clothing items in the main wardrobe (soft-delete protection)
+  - Backend: new `capsules` and `capsule_items` tables, REST API (`POST/GET/PUT/DELETE /api/capsules`)
+  - Frontend: creation modal, multi-select item picker, capsule gallery view
+  - Validation: prevents duplicate names, requires at least 1 item, isolates capsules per user
+-  **Quality Requirements & CI/CD** — established automated quality gates based on ISO/IEC 25010 in backend repository (https://github.com/Mrxfg/digital-wardrobe/pull/27)
+  - QR-001 (Time Behaviour): API response time < 3 seconds, verified by QRT-001
+  - QR-002 (Fault Tolerance): Rembg failures preserve original photo, verified by QRT-002
+  - QR-003 (Testability): test coverage ≥ 30%, achieved 61%, verified by QRT-003
+  - Backend CI pipeline with 7 quality gates (linting, type checking, build, unit tests, integration tests, QRT, security scan)
+  - Frontend CI pipeline with linting, type checking, build, and Vitest unit tests
+  - Branch protection rules on all 3 repositories (main branch requires PR + 1 review + passing CI)
+  - Lychee link checker for documentation with narrow, justified exclusions
 
 ## [1.0.0] - 2026-06-21
 ### Added
