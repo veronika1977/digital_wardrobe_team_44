@@ -3,6 +3,7 @@
 All notable changes to the Digital Wardrobe project will be documented in this file.
 
 ## [Unreleased]
+
 ### Added
 - Confirmation dialog for restoring items from cart (PBI #169)
 
@@ -20,7 +21,6 @@ All notable changes to the Digital Wardrobe project will be documented in this f
   - Backend: CPU-optimized `rembg` integration, model pre-downloaded during Docker build, strict file validation (JPEG/PNG only)
   - Frontend: Upload flow with loading state
   - backend integration tests covering success 
-
 
 ## [1.0.0] - 2026-06-21
 ### Added
