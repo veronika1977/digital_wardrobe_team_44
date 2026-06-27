@@ -12,6 +12,7 @@ All notable changes to the Digital Wardrobe project will be documented in this f
 - Replaced color text labels with visual color swatches (PBI #179)
 
 ## [1.1.0] - 2026-06-27
+
 ### Added
 
 - **US-08: Automatic Background Removal** — integrated Rembg AI to automatically remove backgrounds from uploaded clothing photos [#86](https://github.com/veronika1977/digital_wardrobe_team_44/issues/86)
