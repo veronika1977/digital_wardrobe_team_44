@@ -2,6 +2,29 @@
 
 All notable changes to the Digital Wardrobe project will be documented in this file.
 
+## [Unreleased]
+
+### Added
+
+- Confirmation dialog for restoring items from cart (PBI #169)
+
+
+### Changed
+
+- Replaced small delete badge (✕) with explicit "Удалить" button on item cards (PBI #168)
+- Replaced color text labels with visual color swatches (PBI #179)
+
+
+# [1.1.0] - 2026-06-25
+### Added
+- **US-08: Automatic Background Removal** — integrated Rembg AI to automatically remove backgrounds from uploaded clothing photos [#86](https://github.com/veronika1977/digital_wardrobe_team_44/issues/86)
+  - Unified `/upload` endpoint: accepts image, processes it, saves both original and processed versions
+  - Processing time < 5 seconds for standard images (validates QR-001)
+  - Fault-tolerant design: if Rembg fails or times out, original photo is retained (validates QR-002)
+  - Backend: CPU-optimized `rembg` integration, model pre-downloaded during Docker build, strict file validation (JPEG/PNG only)
+  - Frontend: Upload flow with loading state
+  - backend integration tests covering success paths, fallback scenarios, invalid inputs, and timeout handling
+
 ## [1.0.0] - 2026-06-21
 ### Added
 - Team Definition of Done (`docs/definition-of-done.md`)
