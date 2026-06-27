@@ -39,6 +39,16 @@ All notable changes to the Digital Wardrobe project will be documented in this f
   - Branch protection rules on all 3 repositories (main branch requires PR + 1 review + passing CI)
   - Lychee link checker for documentation with narrow, justified exclusions
 
+### Changed
+
+- **US-06: Edit Clothing Item** — users can now modify all attributes of an existing clothing item after creation [#101](https://github.com/veronika1977/digital_wardrobe_team_44/issues/101)
+  - Edit form pre-fills current values and applies the same validation rules as creation
+  - Supports editing: name, category, season, color, material, and photo
+  - Photo replacement triggers automatic background removal
+  - Backend: `PUT /api/items/{id}` endpoint with transactional updates and optimistic concurrency
+  - Frontend: edit button on item detail, responsive form with save/cancel, instant UI refresh
+  - Changes propagate immediately to wardrobe grid, capsules, and season filters
+
 ## [1.0.0] - 2026-06-21
 ### Added
 - Team Definition of Done (`docs/definition-of-done.md`)
