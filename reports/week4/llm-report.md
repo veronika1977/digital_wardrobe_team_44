@@ -20,10 +20,15 @@
 
 * **Purpose / Activity:** Task decomposition assistance and requirements analysis.
 
-* **Specific Tasks:** 
+* **Specific Tasks:**
+
+  * Reviewing, writing, finding bags in fronted
+  * Structuring, understanding assignment, partial writing and correction of documentation
   
 ## 4. Claude
 
 * **Purpose / Activity:** Backend debugging and creation.
 
-* **Specific Tasks:** 
+* **Specific Tasks:**
+  * Adapting the course's required structure (context, demo, team, requirements, roadmap, client collaboration, links) to a strict 5-minute time budget.
+  * Reviewed the draft slide deck and drafted spoken narration text for each slide (problem/solution, requirements, roadmap, demo walkthrough).
