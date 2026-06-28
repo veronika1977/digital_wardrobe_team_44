@@ -155,7 +155,7 @@ Customer validation session held on June 25, 2026 with customer.
 
 **Recording:** Submitted privately via Moodle (not in public repo).
 
-Full details: [docs/user-acceptance-tests.md](docs/user-acceptance-tests.md)
+Full details: [docs/user-acceptance-tests.md](../../docs/user-acceptance-tests.md)
 
 ## Demo & Presentation
 
@@ -172,14 +172,45 @@ Full details: [docs/user-acceptance-tests.md](docs/user-acceptance-tests.md)
 
 | Document | Link |
 |----------|------|
-| Quality Requirements | [docs/quality-requirements.md](docs/quality-requirements.md) |
-| Quality Requirement Tests | [docs/quality-requirement-tests.md](docs/quality-requirement-tests.md) |
-| User Acceptance Tests | [docs/user-acceptance-tests.md](docs/user-acceptance-tests.md) |
-| Testing Status | [docs/testing.md](docs/testing.md) |
-| Definition of Done | [docs/definition-of-done.md](docs/definition-of-done.md) |
-| Roadmap | [docs/roadmap.md](docs/roadmap.md) |
-| Customer Review Transcript | [reports/week4/customer-review-transcript.md](reports/week4/customer-review-transcript.md) | 
-|Lychee Exclusions Justification | [docs/lychee-exclusions.md](docs/lychee-exclusions.md) |
+| Quality Requirements | [docs/quality-requirements.md](../../docs/quality-requirements.md) |
+| Quality Requirement Tests | [docs/quality-requirement-tests.md](../../docs/quality-requirement-tests.md) |
+| User Acceptance Tests | [docs/user-acceptance-tests.md](../../docs/user-acceptance-tests.md) |
+| Testing Status | [docs/testing.md](../../docs/testing.md) |
+| Definition of Done | [docs/definition-of-done.md](../../docs/definition-of-done.md) |
+| Roadmap | [docs/roadmap.md](../../docs/roadmap.md) |
+| Customer Review Transcript | [customer-review-transcript.md](customer-review-transcript.md) | 
+|Lychee Exclusions Justification | [docs/lychee-exclusions.md](../../docs/lychee-exclusions.md) |
+
+## Additional Automated QA Check Summary
+
+To satisfy the Assignment 4 strict QA requirements, the team evaluated potential quality assurance tools distinct from required building, linting, formatting, type checking, link checking, or standard testing.
+
+### 1. Options Considered
+
+- **Bandit:** Static analysis security linter to detect common security vulnerabilities in Python code.
+- **Vulture:** Static analysis tool designed to find dead (unused) code, classes, functions, and properties.
+- **Safety:** Checks installed dependencies for known security vulnerabilities.
+
+### 2. Tool Selected
+
+The team selected **Vulture** to monitor the quality of the backend code.
+
+### 3. QA Objective & Risk Addressed
+
+Over time, as features like background removal (`app/services/upload.py`) evolve or get refactored, legacy helper functions and unused dependencies remain in the repository. This dead code increases the application's overall complexity and introduces confusion during maintenance.
+
+### 4. Why it Matters
+
+In an MVP project like Digital Wardrobe, maintaining a clean and small code footprint is vital for long-term support. Dead code makes tracking true test coverage difficult and can hide logic bugs under unexecuted branches.
+
+### 5. CI/CD Integration
+
+Vulture runs as an isolated step in the Backend CI workflow (`.github/workflows/backend-ci.yml`) on every pull request targeting the main branch.
+
+### 6. Limitations & Deferred QA Work
+
+Vulture operates purely on static analysis. It may occasionally produce false positives for dynamically evaluated object paths or API routes. The team has deferred writing dynamic path exclusions to the next sprint if custom frameworks are introduced.
+
 
 ## Continuity: How Quality Gates Govern Future Work
 
@@ -207,7 +238,8 @@ The following gates from Assignment 4 will continue to govern all subsequent spr
 - **Forward compatible:** Sprint 3 will build on this foundation
 
 **Screenshot:**  
-![SemVer Release](images/SemVer.png)
+![SemVer Release1](images/SemVer1.png)
+![SemVer Release2](images/SemVer2.png)
 
 ### Changelog
 [CHANGELOG.md](../../CHANGELOG.md)
