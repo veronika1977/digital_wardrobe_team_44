@@ -10,16 +10,24 @@ A task is considered complete **only when** ALL items in this checklist are sati
 - **Traceability** is maintained: the Issue contains a link to the corresponding Pull Request / Merge Request (or vice versa, the PR/MR links to the Issue, e.g., `Closes #XX`).
 
 ## 2. Code Quality & Review
-- Code is written according to the project style guide (properly formatted, no "junk" code or commented-out legacy fragments).
+- Code is written according to the project style guide:
+  - **Backend (Python/FastAPI):** Formatted with `black`, linted with `flake8`, type-checked with `mypy`
+  - **Frontend (React/TypeScript):** Formatted with Prettier, linted with `ESLint`, type-checked with `tsc --noEmit`
 - The Pull Request / Merge Request has been reviewed and received an **Approval** from the designated Reviewer.
 - There are no merge conflicts with the protected default branch (`main` or `master`).
 - All review comments have been addressed before merge.
 
 ## 3. CI/CD & Automated Checks
 - All required GitHub Actions (or other CI pipelines) have completed **successfully** (green status).
-- Linters (code style checks) pass without errors.
-- Formatting and type checking pass (if applicable to the stack).
-- Build succeeds without errors.
+-  **Backend CI checks pass:**
+  - Linting: `flake8` (code style)
+  - Formatting: `black` (auto-formatted)
+  - Type checking: `mypy` (static type analysis)
+  - Build verification: project builds without errors
+- **Frontend CI checks pass:**
+  - Linting: `ESLint` (code style)
+  - Type checking: `tsc --noEmit` (TypeScript compilation)
+  - Build verification: `npm run build` succeeds
 - **Branch protection rules** are enforced (no direct pushes to `main`, required approvals).
 
 ## 4. Testing & Coverage

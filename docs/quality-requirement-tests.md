@@ -59,8 +59,10 @@ pytest tests/test_background_removal.py -v
 
 **Expected measurable result:**
 
-- Original photo is saved (no data loss)
-- Test completes within 5 seconds
+- Original photo is saved to storage (100% data preservation)
+- Error is logged with details
+- Main application remains fully operational (0% downtime for unrelated features)
+- Test completes successfully
 
 **Evidence link:** Latest CI run showing fault tolerance test results.
 

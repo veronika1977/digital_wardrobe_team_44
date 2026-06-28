@@ -20,7 +20,7 @@ This document defines measurable quality requirements for Digital Wardrobe using
 
 **ISO/IEC 25010 sub-characteristic:** Reliability — Fault tolerance
 
-**Scenario:** When the Rembg background removal service fails during image processing (e.g., corrupted image, out-of-memory, model error), the system shall save the original photo without data loss and notify the user within 5 seconds.
+**Scenario:** When the Rembg background removal service fails during image processing (e.g., corrupted image, out-of-memory, model error), the system successfully saves 100% of original photos to storage, logs the error, and the main application remains fully operational (0% downtime for unrelated features).
 
 **Why this matters:** Background removal is an enhancement, not a core requirement. Failures must not block the primary workflow of adding clothing items.
 

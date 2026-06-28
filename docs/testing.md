@@ -98,10 +98,11 @@ The following quality gates are **mandatory** for all PBIs starting from Assignm
 - **QR-003: Critical Module Testability** — verified via coverage report (66% > 30%)
 
 ### Documentation
+
 - CHANGELOG.md updated for user-visible changes (US-05, US-06, US-08)
-- Testing status documented in `docs/testing.md`
-- Quality requirements documented in `docs/quality-requirements.md`
-- QRT documented in `docs/quality-requirement-tests.md`
+- Testing status documented in [docs/testing.md](testing.md)
+- Quality requirements documented in [docs/quality-requirements.md](quality-requirements.md)
+- QRT documented in [docs/quality-requirement-tests.md](quality-requirement-tests.md)
 
 ---
 

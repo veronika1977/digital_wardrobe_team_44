@@ -27,5 +27,13 @@
 ## Planned response
 
 1. **Expand frontend testing** — write tests for App.tsx and core components, target 50% frontend coverage by Sprint 3 end.
+   - Related docs: [`docs/testing.md`](/docs/testing.md), [`docs/quality-requirement-tests.md`](/docs/quality-requirement-tests.md)
+   - Related milestone: [Sprint 3](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/3)
+
 2. **Update docs per PBI** — add "Documentation Updated" checkbox to PR template; reviewer verifies before approval.
-3. **Close next user stories** — implement US-12 (Weather integration), improve quality of app's work in Sprint 3 with full test coverage.
+   - Related docs: [`.github/pull_request_template.md`](/.github/pull_request_template.md), [`docs/definition-of-done.md`](/docs/definition-of-done.md)
+   - Related QR: QR-003 (Testability)
+
+3. **Close next user stories** — implement [US-12: Weather Integration](https://github.com/veronika1977/digital_wardrobe_team_44/issues/82) and improve app quality in Sprint 3.
+   - Related QRs: QR-001 (API response time), QR-002 (Fault tolerance)
+   - Related milestone: [Sprint 3](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/3)

@@ -20,7 +20,11 @@ The following were noted as not yet fully refined:
 - Shadows on items (to be removed)
 - Background removal – currently cropping only, not AI-enhanced
 
-## UAT Results
+
+# UAT
+
+## Results
+
 **Date of UAT interview:** 2026-06-25
 **Participants:** Veronika Drozd, Ekaterina Kharamanian
 ### Which UAT scenarios passed:
@@ -40,9 +44,9 @@ The following were noted as not yet fully refined:
 3. **MEDIUM:** Add confirmation dialog for restore from cart (PBI #169)
 
 ### Resulting PBIs:
-- [ ] **#168:** Replace delete badge with explicit "Delete" button (3 SP, Must Have)
-- [ ] **#169:** Add confirmation dialog for restore from cart (2 SP, Should Have)
-- [ ] **#179:** Replace color text label with color swatch (3 SP, Should Have)
+- **#168:** Replace delete badge with explicit "Delete" button (3 SP, Must Have)
+- **#169:** Add confirmation dialog for restore from cart (2 SP, Should Have)
+- **#179:** Replace color text label with color swatch (3 SP, Should Have)
 
 **Total follow-up work:** 8 SP
 
