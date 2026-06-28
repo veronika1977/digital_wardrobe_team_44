@@ -51,7 +51,7 @@ The team presented the following quality metrics and practices:
 - Automated tests added to prevent regression
 - Documentation updated
 - Continuous Integration (CI) is green
-- Backend test coverage: 61%
+- Backend test coverage: 66%
 - Frontend test coverage: 100%
 
 Three Quality Requirements defined based on ISO/IEC 25010:

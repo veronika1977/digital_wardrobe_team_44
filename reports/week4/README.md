@@ -37,13 +37,13 @@ All feedback points are traced to Product Backlog decisions per Process Requirem
 ### Feedback from UAT
 
 The following feedback was received during UAT:
-- **PBI #168** Delete badge:
-- **PBI #169** Restore confirmation
-- **PBI #179** Color swatch
+- [**PBI #168**](https://github.com/veronika1977/digital_wardrobe_team_44/issues/168) Delete badge
+- [**PBI #169**](https://github.com/veronika1977/digital_wardrobe_team_44/issues/169) Restore confirmation
+- [**PBI #179**](https://github.com/veronika1977/digital_wardrobe_team_44/issues/179) Color swatch
 
 ## Sprint 2 Increment (MVP v2)
 
-This sprint focused on **quality gates, CI/CD, and customer validation**.
+This sprint focused on quality gates, CI/CD, and customer validation.
 
 ### User Stories Delivered
 - US-06: Edit Clothing Item (3 SP)
@@ -51,22 +51,23 @@ This sprint focused on **quality gates, CI/CD, and customer validation**.
 - US-08: Automatic Background Removal (15 SP)
 
 ### Quality Improvements
+
 - CI/CD pipelines for backend and frontend
 - Branch protection rules on all repositories
 - Automated QRT tests (QRT-001, QRT-002, QRT-003)
-- 61% code coverage (exceeds 30% requirement)
-- 34 backend tests + 3 frontend tests passing
+- 66% code coverage (exceeds 30% requirement)
+- 64 backend tests + 3 frontend tests passing
 
 **Total Sprint 2 velocity:** 41 SP
 
 **Sprint Goal:** Deliver MVP v2 with quality gates, CI/CD automation, and customer validation  
-**Sprint Dates:** June 18 – June 25, 2026  
+**Sprint Dates:** June 22 – June 28, 2026  
 **Scope:** 3 User Stories (US-05, US-06, US-08) + Quality Gates (QRT-001/002/003) + CI/CD setup
 
 **Quality Requirements:**
-- QR-001: API Response Time < 3s — [Verified](link)
-- QR-002: Fault Tolerance — [Verified](link)
-- QR-003: Test Coverage ≥30% — [61% achieved](link)
+- QR-001: API Response Time < 3s — [Verified](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304967461/job/83859755265)
+- QR-002: Fault Tolerance — [Verified](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304967461/job/83859629619)
+- QR-003: Test Coverage ≥30% — [66% achieved](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304967461/job/83859629619)
 
 ## Quality Model (ISO/IEC 25010)
 
@@ -87,9 +88,9 @@ This sprint focused on **quality gates, CI/CD, and customer validation**.
 
 | Repository | CI Status | Branch Protection | Coverage |
 |------------|:---------:|:-----------------:|:--------:|
-| Backend | [Passing](link) | Configured | 61% |
-| Frontend | [Passing](link) |Configured | 100% (wardrobe.ts)  |
-| Main (docs) | [Passing](link)  Configured | - |
+| Backend | [Passing](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304967461/job/83859629619) | Configured | 66% |
+| Frontend | [Passing](https://github.com/veronika1977/digital_wardrobe_777/actions/runs/28297177214/job/83839064870) |Configured | 100% (wardrobe.ts)  |
+| Main (docs) | [Passing](https://github.com/veronika1977/digital_wardrobe_team_44/actions/runs/28306512649) | Configured | - |
 
 ## Branch Protection Evidence
 
@@ -148,9 +149,9 @@ Customer validation session held on June 25, 2026 with customer.
 3. Add confirmation dialog for restore from cart
 
 **Resulting PBI:**
-- [ ] #168: Replace delete badge (3 SP, Must Have)
-- [ ] #169: Restore confirmation dialog (2 SP, Should Have)
-- [ ] #179: Color swatch instead of text (3 SP, Should Have)
+- [x] #168: Replace delete badge (3 SP, Must Have)
+- [x] #169: Restore confirmation dialog (2 SP, Should Have)
+- [x] #179: Color swatch instead of text (3 SP, Should Have)
 
 **Recording:** Submitted privately via Moodle (not in public repo).
 
@@ -158,9 +159,8 @@ Full details: [docs/user-acceptance-tests.md](docs/user-acceptance-tests.md)
 
 ## Demo & Presentation
 
-- Demo Video: Submitted via Moodle
-- Rehearsed Presentation: Submitted via Moodle
-- Slides: [presentation](link)
+- [Demo Video](https://drive.google.com/drive/folders/11g03djGSts4WhYvRZkQ2ZdtfoOnMf1PW?usp=sharing)
+- Slides: [presentation](Presentation_team_44.pdf) and in the Moodle
 
 ### Backlog Links
 - **Product Backlog:** [GitHub Projects Board](https://github.com/users/veronika1977/projects/1)
@@ -188,7 +188,7 @@ The following gates from Assignment 4 will continue to govern all subsequent spr
 | Gate | Enforcement | Future Impact |
 |------|-------------|---------------|
 | **Branch Protection** | Required on all repos | Every PR needs 1 review + passing CI |
-| **Coverage Threshold** | ≥30% enforced in CI | Must maintain as code grows |
+| **Coverage Threshold** |  ≥30% required per DoD  | Must maintain as code grows |
 | **QRT Tests** | Run on every PR | QR-001/002/003 must stay green |
 | **DoD Checklist** | Manual PR checklist | Applied to all PRs going forward |
 | **Lychee Link Check** | Runs on doc changes | Prevents broken doc links |
@@ -199,7 +199,7 @@ The following gates from Assignment 4 will continue to govern all subsequent spr
 
 ## SemVer Release
 
-### Release: [v1.1.0 (MVP v2)](link)
+### Release: [v1.1.0 (MVP v2)](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v1.1.0)
 
 **Version bump rationale:**
 - **Minor (1.0.0 → 1.1.0):** New features added (Edit Item, Capsules, Background Removal)
@@ -207,7 +207,7 @@ The following gates from Assignment 4 will continue to govern all subsequent spr
 - **Forward compatible:** Sprint 3 will build on this foundation
 
 **Screenshot:**  
-![SemVer Release](link)
+![SemVer Release](images/SemVer.png)
 
 ### Changelog
 [CHANGELOG.md](../../CHANGELOG.md)
@@ -216,28 +216,29 @@ The following gates from Assignment 4 will continue to govern all subsequent spr
 
 ## Contribution Summary
 
+This table shows contributions only to the main repository (digital_wardrobe_team_44). However, team members also actively work in two separate repositories (backend and frontend) following the GitHub workflow.
+
+**Sprint 2 Contribution Summary:**
+- **@CatherineHar:** Frontend development
+- **@Mrxfg:** Backend development
+- **@veronika1977:** Tests, GitHub reports for Assignment 4, issues/PBIs creation, presentation support
+- **@Evgeni1a:** Customer review transcript and summary
+- **@DarinaLuch:** Presentation and LLM report
+
 | Team Member | Role | Issues | PRs | Reviews | Comments |
 |-------------|------|:------:|:---:|:-------:|:--------:|
-| @veronika1977 | Scrum Master | - | - | - | - |
-| @Evgeni1a | Developer | - | - | - | - |
-| @CatherineHar | Developer | - | - | - | - |
-| @DarinaLuch | Scrum Owner | - |  | - | - |
-| @Mrxfg | Developer | - | - | - | - |
+| @veronika1977 | Scrum Master | [#86](https://github.com/veronika1977/digital_wardrobe_team_44/issues/86), [#89](https://github.com/veronika1977/digital_wardrobe_team_44/issues/89), [#180](https://github.com/veronika1977/digital_wardrobe_team_44/issues/180#issue-4741123981), [#202](https://github.com/veronika1977/digital_wardrobe_team_44/issues/202), [#208](https://github.com/veronika1977/digital_wardrobe_team_44/issues/208#issue-4761875818) | [#181](https://github.com/veronika1977/digital_wardrobe_team_44/pull/181#issue-4741144560), [#198](https://github.com/veronika1977/digital_wardrobe_team_44/issues/198#issue-4758796132), [#201](https://github.com/veronika1977/digital_wardrobe_team_44/pull/201#issue-4759043204),[#203](https://github.com/veronika1977/digital_wardrobe_team_44/pull/203) | [#191](https://github.com/veronika1977/digital_wardrobe_team_44/pull/191), [#193](https://github.com/veronika1977/digital_wardrobe_team_44/pull/193),[#199](https://github.com/veronika1977/digital_wardrobe_team_44/pull/199#issue-4758810557) | (https://github.com/veronika1977/digital_wardrobe_team_44/pull/122#pullrequestreview-4524370717), (https://github.com/veronika1977/digital_wardrobe_team_44/pull/120#pullrequestreview-4524156540) |
+| @Evgeni1a | Developer |[#119](https://github.com/veronika1977/digital_wardrobe_team_44/issues/119#issue-4691592395), [#121](https://github.com/veronika1977/digital_wardrobe_team_44/issues/121#issue-4691823866) | [#120](https://github.com/veronika1977/digital_wardrobe_team_44/pull/120#issue-4691612725), [#122](https://github.com/veronika1977/digital_wardrobe_team_44/pull/122#issue-4691826053) | [#181](https://github.com/veronika1977/digital_wardrobe_team_44/pull/181#issue-4741144560) | (https://github.com/veronika1977/digital_wardrobe_team_44/pull/181#pullrequestreview-4568345997) |
+| @CatherineHar | Developer | [#206](https://github.com/veronika1977/digital_wardrobe_team_44/issues/206#issue-4761828114) | [#207](https://github.com/veronika1977/digital_wardrobe_team_44/pull/207#issue-4761834956) | [#200](https://github.com/veronika1977/digital_wardrobe_team_44/pull/200#issue-4758913009), [#201](https://github.com/veronika1977/digital_wardrobe_team_44/pull/201#issue-4759043204) | (https://github.com/veronika1977/digital_wardrobe_team_44/pull/201#pullrequestreview-4585674093) |
+| @DarinaLuch | Scrum Owner | [#194](https://github.com/veronika1977/digital_wardrobe_team_44/issues/194#issue-4758600820)| [#195](https://github.com/veronika1977/digital_wardrobe_team_44/pull/195#issue-4758648032) | [#207](https://github.com/veronika1977/digital_wardrobe_team_44/pull/207#issue-4761834956) | (https://github.com/veronika1977/digital_wardrobe_team_44/pull/207#pullrequestreview-4587366695) |
+| @Mrxfg | Developer | [#204](https://github.com/veronika1977/digital_wardrobe_team_44/issues/204#issue-4760444513) | [#205](https://github.com/veronika1977/digital_wardrobe_team_44/pull/205#issue-4760508929) | [#199](https://github.com/veronika1977/digital_wardrobe_team_44/pull/199#issue-4758810557), [#203](https://github.com/veronika1977/digital_wardrobe_team_44/pull/203) | (https://github.com/veronika1977/digital_wardrobe_team_44/pull/199#pullrequestreview-4585574765), (https://github.com/veronika1977/digital_wardrobe_team_44/pull/203#pullrequestreview-4586532174) |
 
-## Detailed Contribution Traceability
 
-| Team Member | Issues Created | PRs Created | PRs Reviewed | Meaningful Comments |
-| :--- | :--- | :--- | :--- | :--- |
-| Veronika Drozd (@veronika1977) |  |  |  |  |
-| Evgeni1a (@Evgeni1a) |  |  |  |  |
-| Catherine Har (@CatherineHar) |  |  |  |  |
-| Darina Luch (@DarinaLuch) |  |  |  |  |
-| Mrxfg (@Mrxfg) |  |  |  |  |
 
 ## Current Product Status
 
 ### Health Metrics
-- **Backend:** Deployed, stable, 61% coverage
+- **Backend:** Deployed, stable, 66% coverage
 - **Frontend:** Deployed, stable, 100% coverage (tested modules)
 - **CI/CD:** All 3 pipelines green
 - **Quality Gates:** 3/3 QRT passing
@@ -247,8 +248,10 @@ The following gates from Assignment 4 will continue to govern all subsequent spr
   - Telegram works only with VPN or proxy
 
 ---
+
 ## Next Steps (Sprint 3)
-For next sprint we want to close another US, get feedback from customer and make PBIs and solve them. Moreover, it wiil be good if we impove backend quality
+
+For next sprint we want to close another user stories, get feedback from customer and make PBIs and solve them. Moreover, it wiil be good if we impove backend quality.
 
 ---
 
@@ -259,24 +262,22 @@ For next sprint we want to close another US, get feedback from customer and make
 - [Reflection](reflection.md)
 - [Retrospective](retrospective.md)
 - [LLM Report](llm-report.md)
-- [Presentation](link)
-
+- [Presentation](Presentation_team_44.pdf)
 ## Evidence Screenshots
 
 ### Sprint Milestone
-![Sprint Milestone](link)
+![Sprint Milestone](images/Milestone2.png)
 
 ### Latest Protected CI Run
-![CI Run](link)
+![CI Run](images/CI_run.png)
 
 ### Coverage Report
-![Coverage](link)
+![Coverage](images/Coverage.png)
 
-### Additional QA Check (Safety Scan)
-![QA Check](link)
+### Additional QA Check (Vulture)
+![QA Check](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304967461)
 
-### SemVer Release
-![Release](link)
 
 ### Reviewed Issue-Linked PR
-![Reviewed PR](link)
+![Reviewed PR1](images/PR1.png)
+![Reviewed PR2](images/PR2.png)
