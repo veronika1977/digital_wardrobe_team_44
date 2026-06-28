@@ -21,11 +21,11 @@ The following were noted as not yet fully refined:
 - Background removal – currently cropping only, not AI-enhanced
 
 ## UAT Results
-**Date of UAT interview:** 2026-06-24
+**Date of UAT interview:** 2026-06-25
 **Participants:** Veronika Drozd, Ekaterina Kharamanian
 ### Which UAT scenarios passed:
 - **UAT-001:** Add Clothing Item with Photo — PASSED
-- **UAT-002:** Delete Item and Verify in Cart — PASSED (with feedback)
+- **UAT-002:** Delete Item and Verify in Cart — PASSED with minor UX feedback
 - **UAT-003:** Filter Wardrobe by Season — PASSED
 
 ### Which UAT scenarios failed or need product changes:
@@ -37,7 +37,7 @@ The following were noted as not yet fully refined:
 ### Most important feedback points received:
 1. **HIGH:** Replace delete badge with explicit "Delete" button (PBI #168)
 2. **HIGH:** Replace color text label with color swatch (PBI #179)
-2. **MEDIUM:** Add confirmation dialog for restore from cart (PBI #169)
+3. **MEDIUM:** Add confirmation dialog for restore from cart (PBI #169)
 
 ### Resulting PBIs:
 - [ ] **#168:** Replace delete badge with explicit "Delete" button (3 SP, Must Have)
@@ -57,9 +57,9 @@ The team presented the following quality metrics and practices:
 Three Quality Requirements defined based on ISO/IEC 25010:
 - Time behavior – API response under 3 seconds
 - Fault tolerance – data preservation during failures
-- Traceability – test coverage ≥ 30%
+- Testability – test coverage ≥ 30%
   
-Seven automated quality checks implemented: linting, code style, formatting, type checking, build verification, unit tests, integration tests, quality requirement tests, security scans, Branch Protection configured, so no direct merges to Main without pull request and review.
+Automated quality checks implemented: linting, code style, formatting, type checking, build verification, unit tests, integration tests, quality requirement tests, security scans, Branch Protection configured, so no direct merges to Main without pull request and review.
 
 ## Feedback
 The customer provided the following feedback:
@@ -67,7 +67,7 @@ The customer provided the following feedback:
 - Overall, the product's design looks good
 - The sprint and tasks for the next sprint are approved
 - Shadows on items should be removed
-- Question raised about AI enhancement for images – currently only cropping is used, AI enhancement is being considered.The customer suggested adding AI to convert casual photos to studio-quality images
+- Question raised about AI enhancement for images – currently only cropping is used, AI enhancement is being considered. The customer suggested adding AI to convert casual photos to studio-quality images
 
 ## Approvals
 The customer approved the MVP Version 2 increment as presented and confirmed that the sprint and the tasks for the next sprint look good.

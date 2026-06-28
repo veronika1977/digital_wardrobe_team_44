@@ -50,6 +50,6 @@ This document defines measurable quality requirements for Digital Wardrobe using
 
 
 
-**Last updated:** June 24, 2026  
+**Last updated:** June 28, 2026  
 **Author:** @veronika1977  
 **Reviewer:** @CatherineHar

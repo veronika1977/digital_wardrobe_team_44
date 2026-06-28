@@ -45,7 +45,7 @@ while establishing quality automation infrastructure (CI/CD, quality requirement
 *Customer Feedback PBIs:*
 
 - [#170: Replace "Demiseason" with "Base" Category](https://github.com/veronika1977/digital_wardrobe_team_44/issues/170)
-- [#171: Add days remaining counter in basket (frontebd)](https://github.com/veronika1977/digital_wardrobe_team_44/issues/171)
+- [#171: Add days remaining counter in basket (frontend)](https://github.com/veronika1977/digital_wardrobe_team_44/issues/171)
 - [#172: Days remaining in basket (backend)](https://github.com/veronika1977/digital_wardrobe_team_44/issues/172)
 
 *Quality & Automation Work:*

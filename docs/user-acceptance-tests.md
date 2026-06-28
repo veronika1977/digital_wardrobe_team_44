@@ -2,7 +2,7 @@
 
 This document defines end-user-facing scenarios for customer validation.
 
-**Last updated:** June 24, 2026  
+**Last updated:** June 25, 2026  
 **Author:** @veronika1977  
 **Reviewer:** @CatherineHar
 
@@ -29,7 +29,7 @@ This document defines end-user-facing scenarios for customer validation.
 5. Verify photo preview is displayed
 6. Enter item name: "футболка"
 7. Select category: "Верх" (Top)
-8. Select season: "Демисезон" (Demiseason)
+8. Select season: "Демисезон" (Demiseason) — *Note: Later renamed to "Base" per PBI #170*
 9. Select color: "Зелёный" (Green)
 10. Select material: "Хлопок" (Cotton)
 11. Tap "Сохранить" (Save) button
@@ -44,7 +44,7 @@ This document defines end-user-facing scenarios for customer validation.
 
 **Execution results:**
 
-- Date: 24.06.20026
+- Date: 25.06.2026
 - Executed by: Customer
 - Result: Passed
 - Customer comments: 
@@ -89,11 +89,11 @@ This document defines end-user-facing scenarios for customer validation.
 
 **Execution results:**
 
-- Date: 24.06.2026
+- Date: 25.06.2026
 - Executed by: Customer
 - Result: Passed
 - Customer comments:
-    - Replace delete badgewith explicit "delete" button
+    - "Replace delete badge with explicit 'Delete' button"
 - Follow-up PBI or issue:
     - PBI #168 : Replace delete badge with explicit "Delete" button
     - PBI #169: Add confirmation dialog for restore from cart
@@ -134,7 +134,7 @@ This document defines end-user-facing scenarios for customer validation.
 - Filter works without page reload (instant UI update)
 
 **Execution results:**
-- Date: 24.06.2026
+- Date: 25.06.2026
 - Executed by: Customer
 - Result: Passed
 - Customer comments:

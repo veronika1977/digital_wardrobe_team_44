@@ -24,7 +24,7 @@ pytest tests/quality/test_qr001_response_time.py -v
 **Expected measurable result:**
 
 - API responds within 3 seconds for 95% of requests
-- Test logs: "Response time: 1.2s < 3s threshold"
+- Test logs: "Response time: 0.75s < 3s threshold"
 
 **Evidence link:** Latest CI run showing test results and timing metrics.
 
@@ -43,6 +43,7 @@ pytest tests/quality/test_qr001_response_time.py -v
 - [backend/tests/test_background_removal.py](https://github.com/Mrxfg/digital-wardrobe/blob/main/backend/tests/test_background_removal.py) — 10 tests (3 unit + 5 integration + 2 edge cases)
 
 **Test data, setup, or environment:**
+
 - Backend running on localhost:127.0.0.1
 - Mocked Rembg service that throws error
 - Sample image file (valid png)
@@ -59,7 +60,6 @@ pytest tests/test_background_removal.py -v
 **Expected measurable result:**
 
 - Original photo is saved (no data loss)
-- User notification is returned: "Background removal unavailable"
 - Test completes within 5 seconds
 
 **Evidence link:** Latest CI run showing fault tolerance test results.
@@ -89,7 +89,7 @@ pytest tests/ --cov=app --cov-report=term-missing --cov-fail-under=30
 
 **Expected measurable result:**
 - Each critical module has ≥30% line coverage
-- Coverage report shows: "Lines: 42% (threshold: 30%)"
+- Coverage report shows: "Lines: 66% (threshold: 30%)"
 
 **Evidence link:** Latest CI run showing coverage report.
 
@@ -97,11 +97,11 @@ pytest tests/ --cov=app --cov-report=term-missing --cov-fail-under=30
 
 | QRT ID | Linked QR | Test Type | Command | Status | Evidence |
 |--------|-----------|-----------|---------|--------|----------|
-| QRT-001 | QR-001 | Integration | `pytest tests/quality/test_qr001_response_time.py` | Implemented | (https://github.com/Mrxfg/digital-wardrobe/actions/runs/28171379831/job/83437074741) |
-| QRT-002 | QR-002 | Integration | `pytest tests/quality/test_qr002_fault_tolerance.py` | Implemented | https://github.com/Mrxfg/digital-wardrobe/actions/runs/28171379831/job/83437074741 |
-| QRT-003 | QR-003 | Unit + Coverage | `pytest tests/ --cov=app --cov-fail-under=30` | Implemented  | (https://github.com/Mrxfg/digital-wardrobe/actions/runs/28171379831/job/83436651084) |
+| QRT-001 | QR-001 | Integration | `pytest tests/quality/test_qr001_response_time.py` | Implemented |  [CI run](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304967461/job/83859755265) |
+| QRT-002 | QR-002 | Integration | `pytest tests/quality/test_qr002_fault_tolerance.py` | Implemented |  [CI run](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304967461/job/83859755265) |
+| QRT-003 | QR-003 | Unit + Coverage | `pytest tests/ --cov=app --cov-fail-under=30` | Implemented  |  [CI run](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304967461/job/83859755265) |
 
 
-Last updated: June 24, 2026
+Last updated: June 28, 2026
 Author: @veronika1977
 Reviewer: @Evgeni1a
