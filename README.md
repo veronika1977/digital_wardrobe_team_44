@@ -1,23 +1,21 @@
-# Telegram Mini App for digital wardrobe
+# Telegram Mini App for Digital Wardrobe
 
 Digital wardrobe app that helps users organize clothing items, create outfits, capsules and track wear frequency.
 
 ## Technology Stack
 
 - **Frontend:** React + TypeScript + Vite
-- **Backend:** Python
+- **Backend:** Python (FastAPI) + Rembg
 - **Deployment:** Netlify (Frontend), Local (Backend for development)
 
 ## MVP v0 (Week 2 Deliverable)
 
 - [Deployed website version (smoke check)](https://agent-6a29aac2b0946--benevolent-frangollo-a08785.netlify.app)
-
 - [Deployed Telegram version (smoke check)](http://t.me/digital_wardrobe_app_bot/digital_wardrobe_app)
 
 ## MVP v1 (Week 3 Deliverable)
 
 - **[Live Telegram Mini App](https://t.me/digital_wardrobe_app_bot/digital_wardrobe_app)** — main production deployment
-
 - **[Live Website Version](https://digwardrobe.netlify.app/)** — web preview for testing
 
 ### Features included in MVP v1:
@@ -28,6 +26,20 @@ Digital wardrobe app that helps users organize clothing items, create outfits, c
 - Soft delete with 14-day trash retention
 - Restore items from trash
 
+## MVP v2 (Assignment 4 / Sprint 2)
+
+- **[Live Telegram Mini App](https://t.me/digital_wardrobe_app_bot/digital_wardrobe_app)** — main production deployment
+- **[SemVer Release v1.1.0](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v1.1.0)**
+- **[Demo Video](https://drive.google.com/drive/folders/11g03djGSts4WhYvRZkQ2ZdtfoOnMf1PW?usp=sharing)**
+
+### Features added in MVP v2:
+- **US-05:** Capsule Wardrobes — create and manage clothing capsules
+- **US-06:** Edit Clothing Item — edit items with soft delete
+- **US-08:** Automatic Background Removal — AI-powered background removal with fallback
+- **Quality Gates:** CI/CD pipelines, automated tests, QRT, Vulture
+- **66% code coverage** (exceeds 30% requirement)
+- **64 backend tests + 3 frontend tests**
+
 ## Documentation
 
 ### Maintained Artifacts
@@ -36,20 +48,24 @@ Digital wardrobe app that helps users organize clothing items, create outfits, c
 - [Product Roadmap](docs/roadmap.md)
 - [Changelog](CHANGELOG.md)
 
-### Course reports
+### Quality & Testing
+- [Quality Requirements](docs/quality-requirements.md)
+- [Quality Requirement Tests](docs/quality-requirement-tests.md)
+- [Testing Status](docs/testing.md)
+- [User Acceptance Tests](docs/user-acceptance-tests.md)
+
+### Course Reports
 - [Week 2 Report](reports/week2/README.md)
 - [MVP v0 Report](reports/week2/mvp-v0-report.md)
-- [User Stories (week 2)](reports/week2/user-stories.md)
 - [Week 3 Report](reports/week3/README.md)
+- **[Week 4 Report (Assignment 4)](reports/week4/README.md)**
 
 ### License
+- [MIT License](LICENSE)
 
-- [License](LICENSE)
-
-### Related Repositories 
-- [Repository with backend](https://github.com/Mrxfg/digital-wardrobe)
-- [Repository with frontend](https://github.com/veronika1977/digital_wardrobe_777)
-
+### Related Repositories
+- [Backend Repository](https://github.com/Mrxfg/digital-wardrobe)
+- [Frontend Repository](https://github.com/veronika1977/digital_wardrobe_777)
 
 ## Quick Start
 
@@ -66,7 +82,6 @@ cd digital_wardrobe_777
 npm install
 npm run dev 
 ```
-
 ### Backend (Local Development Only)
 
 ```bash

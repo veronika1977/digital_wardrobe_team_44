@@ -14,7 +14,7 @@
 1. **FastAPI + PostgreSQL stack works well** — no major issues encountered during implementation.
 2. **pytest is the right choice for backend testing** — easy to set up, good coverage reporting, integrates well with CI.
 3. **30% coverage requirement is too low** — we achieved 66% easily, proving the bar should be higher.
-4. **connect feedback with backend is harder then we expected**
+4. **FastAPI REST API is easy to consume from React** — confirmed through successful integration of all endpoints.
 ---
 
 ## Friction and gaps

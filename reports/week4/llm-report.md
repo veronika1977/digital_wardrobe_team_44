@@ -22,13 +22,14 @@
 
 * **Specific Tasks:**
 
-  * Reviewing, writing, finding bags in fronted
+  * Reviewing, writing, finding bugs in frontend
   * Structuring, understanding assignment, partial writing and correction of documentation
   
 ## 4. Claude
 
-* **Purpose / Activity:** Backend debugging and creation.
+* **Purpose / Activity:** Backend debugging and creation. Presentation creation.
 
 * **Specific Tasks:**
   * Adapting the course's required structure (context, demo, team, requirements, roadmap, client collaboration, links) to a strict 5-minute time budget.
   * Reviewed the draft slide deck and drafted spoken narration text for each slide (problem/solution, requirements, roadmap, demo walkthrough).
+  * Finding bugs in backend and include tests.

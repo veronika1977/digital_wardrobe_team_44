@@ -2,7 +2,7 @@
 
 ## Interview 1 UAT execution
 
-**Date:** 2026-06-24  
+**Date:** 2026-06-25 
 **Participants:** Veronika Drozd, Ekaterina Kharamanian 
 
 [00:16.12] Interviewer: Can you hear us?
@@ -11,7 +11,7 @@
 
 [00:20.85] Interviewer: Just to confirm again, may we record and publish this?
 
-[00:19.23] Customer: Yes, you may.
+[00:29.23] Customer: Yes, you may.
 
 [00:35.00] Interviewer: Now we need to run the user acceptance tests. There are three tests total. During these tests, we would appreciate it if you could comment aloud and give feedback on how the application works. The first scenario we need to verify is adding an item to the wardrobe. I have sent you the link to the Telegram bot. Could you also share your screen?
 
@@ -153,11 +153,11 @@
 
 [00:02.16] Interviewers: Good afternoon, may we record you?
 
-[00:02.16] Customer: Yes.
+[00:03.06] Customer: Yes.
 
-[00:02.16] Interviewers: May we publish the transcript of our dialogue in the GitHub repository?
+[00:04.10] Interviewers: May we publish the transcript of our dialogue in the GitHub repository?
 
-[00:02.16] Customer: Yes.
+[00:05.20] Customer: Yes.
 
 [00:10.00] Interviewers: Today we need to discuss our next sprint with you. The goal of this sprint is to release MVP Version 2 with three key user stories: wardrobe capsules, editing items, and automatic background removal. In parallel, we have configured Quality Gate and continuous integration. The total volume is 41 story points. During the Sprint Review, we fixed some style errors based on your previous feedback, which we will show you today. We removed the search button from the main screen, and in this sprint we implemented item editing, capsules, and background removal. We will demonstrate this today.
 
@@ -169,7 +169,7 @@
 
 [00:42.00] Interviewers: Alright.
 
-[01:31.72] Interviewers: While we are opening it, let me continue. We added automated tests to ensure nothing breaks. We updated the documentation and verified that our continuous integration is green. Backend test coverage is 61%, frontend is 100%. Based on the ISO/IEC 25010 standard, we defined three Quality Requirements. The first is time behavior – the API should respond in under 3 seconds, which is important for UX in Telegram. The second is fault tolerance – during failures and login issues, the original data should be preserved and user data returned. The third is traceability – test coverage must be at least 30%. This ensures we don't break existing functionality. We also configured automated quality checks that will work for all future versions and sprints. We need to list the 7 types of checks we implemented: linting, code style, no formatting errors, type checking, build verification (project builds without errors), unit tests for critical logic, integration tests, quality requirement tests, and security scans to check for vulnerabilities in dependencies. We also configured Branch Protection so no one can merge code into Main without a pull request and review. Now we can present you our mini app.
+[01:31.72] Interviewers: While we are opening it, let me continue. We added automated tests to ensure nothing breaks. We updated the documentation and verified that our continuous integration is green. Backend test coverage is 66%, frontend is 100%. Based on the ISO/IEC 25010 standard, we defined three Quality Requirements. The first is time behavior – the API should respond in under 3 seconds, which is important for UX in Telegram. The second is fault tolerance – during failures and login issues, the original data should be preserved and user data returned. The third is testability – test coverage must be at least 30%. This ensures we don't break existing functionality. We also configured automated quality checks that will work for all future versions and sprints. We need to list the 7 types of checks we implemented: linting, code style, no formatting errors, type checking, build verification (project builds without errors), unit tests for critical logic, integration tests, quality requirement tests, and security scans to check for vulnerabilities in dependencies. We also configured Branch Protection so no one can merge code into Main without a pull request and review. Now we can present you our mini app.
 
 [02:50.00] Customer: Let's see it.
 

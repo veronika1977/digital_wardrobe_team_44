@@ -4,19 +4,9 @@ All notable changes to the Digital Wardrobe project will be documented in this f
 
 ## [Unreleased]
 
-### Added
-
-- Confirmation dialog for restoring items from cart (PBI #169)
-
-
-### Changed
-
-- Replaced small delete badge (✕) with explicit "Удалить" button on item cards (PBI #168)
-- Replaced color text labels with visual color swatches (PBI #179)
-
-
 # [1.1.0] - 2026-06-25
 ### Added
+- Confirmation dialog for restoring items from cart (PBI #169)
 - **US-08: Automatic Background Removal** — integrated Rembg AI to automatically remove backgrounds from uploaded clothing photos [#86](https://github.com/veronika1977/digital_wardrobe_team_44/issues/86)
   - Unified `/upload` endpoint: accepts image, processes it, saves both original and processed versions
   - Processing time < 5 seconds for standard images (validates QR-001)
@@ -33,7 +23,7 @@ All notable changes to the Digital Wardrobe project will be documented in this f
 -  **Quality Requirements & CI/CD** — established automated quality gates based on ISO/IEC 25010 in backend repository (https://github.com/Mrxfg/digital-wardrobe/pull/27)
   - QR-001 (Time Behaviour): API response time < 3 seconds, verified by QRT-001
   - QR-002 (Fault Tolerance): Rembg failures preserve original photo, verified by QRT-002
-  - QR-003 (Testability): test coverage ≥ 30%, achieved 61%, verified by QRT-003
+  - QR-003 (Testability): test coverage ≥ 30%, achieved 66%, verified by QRT-003
   - Backend CI pipeline with 7 quality gates (linting, type checking, build, unit tests, integration tests, QRT, security scan)
   - Frontend CI pipeline with linting, type checking, build, and Vitest unit tests
   - Branch protection rules on all 3 repositories (main branch requires PR + 1 review + passing CI)
@@ -41,6 +31,8 @@ All notable changes to the Digital Wardrobe project will be documented in this f
 
 ### Changed
 
+- Replaced small delete badge (✕) with explicit "Удалить" button on item cards (PBI #168)
+- Replaced color text labels with visual color swatches (PBI #179)
 - **US-06: Edit Clothing Item** — users can now modify all attributes of an existing clothing item after creation [#101](https://github.com/veronika1977/digital_wardrobe_team_44/issues/101)
   - Edit form pre-fills current values and applies the same validation rules as creation
   - Supports editing: name, category, season, color, material, and photo

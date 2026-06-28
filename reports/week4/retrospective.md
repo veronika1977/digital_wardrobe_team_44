@@ -3,7 +3,7 @@
 ## What Went Well
 
 1. **Test coverage exceeded requirements** — achieved 66% global coverage (requirement: 30%), critical modules at 72-100%.
-2. **Quality Requirement Tests implemented** — QRT-001 (response time < 3s) and QRT-002 (fault tolerance) are automated and passing.
+2. **Quality Requirement Tests implemented** — QRT-001 (response time < 3s), QRT-003 and QRT-002 (fault tolerance) are automated and passing.
 3. **Customer UAT provided valuable feedback** — UAT on June 25 led to issues #170, #171, both closed within Sprint 2.
 4. **CI pipeline fully operational** — backend (linting, tests, coverage, QRT, Vulture), frontend (linting, type checking, tests), and documentation (Lychee) all working.
 5. **Additional QA check added** — Vulture detects dead code, improving maintainability.

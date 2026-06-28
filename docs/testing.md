@@ -123,12 +123,18 @@ All repositories have branch protection rules enabled for `main`:
 
 ---
 
+## Sprint 2 Completed Testing Work
+
+- Unit tests for critical backend modules — 64 tests passing
+- Integration tests for API endpoints — passing
+- QRT for QR-001, QR-002, QR-003 — 4 tests passing
+- Achieved ≥30% coverage for backend critical modules (66% global, 72-100% per module)
+
 ## Next Steps (Sprint 3)
 
-1. **DONE:** Unit tests for critical backend modules — 64 tests passing
-2. **DONE:** Integration tests for API endpoints — passing
-3. **DONE:** QRT for QR-001, QR-002 — 4 tests passing
-4. **DONE:** Achieve ≥30% coverage for backend critical modules (67%)
-5. Continue updating this document with Sprint 3 test results
+1. Expand frontend testing — write tests for App.tsx and core components
+2. Target 50% frontend coverage by Sprint 3 end
+3. Add integration tests for frontend-backend communication
+4. Continue updating this document with Sprint 3 test results
 
 ---

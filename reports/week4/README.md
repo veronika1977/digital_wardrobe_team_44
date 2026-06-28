@@ -160,7 +160,7 @@ Full details: [docs/user-acceptance-tests.md](docs/user-acceptance-tests.md)
 ## Demo & Presentation
 
 - [Demo Video](https://drive.google.com/drive/folders/11g03djGSts4WhYvRZkQ2ZdtfoOnMf1PW?usp=sharing)
-- Slides: [presentation](Presentation_team_44.pdf) and in the Moodle
+- **Slides:** [Presentation_team_44.pdf](Presentation_team_44.pdf) (also submitted via Moodle)
 
 ### Backlog Links
 - **Product Backlog:** [GitHub Projects Board](https://github.com/users/veronika1977/projects/1)
@@ -227,11 +227,11 @@ This table shows contributions only to the main repository (digital_wardrobe_tea
 
 | Team Member | Role | Issues | PRs | Reviews | Comments |
 |-------------|------|:------:|:---:|:-------:|:--------:|
-| @veronika1977 | Scrum Master | [#86](https://github.com/veronika1977/digital_wardrobe_team_44/issues/86), [#89](https://github.com/veronika1977/digital_wardrobe_team_44/issues/89), [#180](https://github.com/veronika1977/digital_wardrobe_team_44/issues/180#issue-4741123981), [#202](https://github.com/veronika1977/digital_wardrobe_team_44/issues/202), [#208](https://github.com/veronika1977/digital_wardrobe_team_44/issues/208#issue-4761875818) | [#181](https://github.com/veronika1977/digital_wardrobe_team_44/pull/181#issue-4741144560), [#198](https://github.com/veronika1977/digital_wardrobe_team_44/issues/198#issue-4758796132), [#201](https://github.com/veronika1977/digital_wardrobe_team_44/pull/201#issue-4759043204),[#203](https://github.com/veronika1977/digital_wardrobe_team_44/pull/203) | [#191](https://github.com/veronika1977/digital_wardrobe_team_44/pull/191), [#193](https://github.com/veronika1977/digital_wardrobe_team_44/pull/193),[#199](https://github.com/veronika1977/digital_wardrobe_team_44/pull/199#issue-4758810557) | (https://github.com/veronika1977/digital_wardrobe_team_44/pull/122#pullrequestreview-4524370717), (https://github.com/veronika1977/digital_wardrobe_team_44/pull/120#pullrequestreview-4524156540) |
-| @Evgeni1a | Developer |[#119](https://github.com/veronika1977/digital_wardrobe_team_44/issues/119#issue-4691592395), [#121](https://github.com/veronika1977/digital_wardrobe_team_44/issues/121#issue-4691823866) | [#120](https://github.com/veronika1977/digital_wardrobe_team_44/pull/120#issue-4691612725), [#122](https://github.com/veronika1977/digital_wardrobe_team_44/pull/122#issue-4691826053) | [#181](https://github.com/veronika1977/digital_wardrobe_team_44/pull/181#issue-4741144560) | (https://github.com/veronika1977/digital_wardrobe_team_44/pull/181#pullrequestreview-4568345997) |
-| @CatherineHar | Developer | [#206](https://github.com/veronika1977/digital_wardrobe_team_44/issues/206#issue-4761828114) | [#207](https://github.com/veronika1977/digital_wardrobe_team_44/pull/207#issue-4761834956) | [#200](https://github.com/veronika1977/digital_wardrobe_team_44/pull/200#issue-4758913009), [#201](https://github.com/veronika1977/digital_wardrobe_team_44/pull/201#issue-4759043204) | (https://github.com/veronika1977/digital_wardrobe_team_44/pull/201#pullrequestreview-4585674093) |
-| @DarinaLuch | Scrum Owner | [#194](https://github.com/veronika1977/digital_wardrobe_team_44/issues/194#issue-4758600820)| [#195](https://github.com/veronika1977/digital_wardrobe_team_44/pull/195#issue-4758648032) | [#207](https://github.com/veronika1977/digital_wardrobe_team_44/pull/207#issue-4761834956) | (https://github.com/veronika1977/digital_wardrobe_team_44/pull/207#pullrequestreview-4587366695) |
-| @Mrxfg | Developer | [#204](https://github.com/veronika1977/digital_wardrobe_team_44/issues/204#issue-4760444513) | [#205](https://github.com/veronika1977/digital_wardrobe_team_44/pull/205#issue-4760508929) | [#199](https://github.com/veronika1977/digital_wardrobe_team_44/pull/199#issue-4758810557), [#203](https://github.com/veronika1977/digital_wardrobe_team_44/pull/203) | (https://github.com/veronika1977/digital_wardrobe_team_44/pull/199#pullrequestreview-4585574765), (https://github.com/veronika1977/digital_wardrobe_team_44/pull/203#pullrequestreview-4586532174) |
+| @veronika1977 | Scrum Master | [#86](https://github.com/veronika1977/digital_wardrobe_team_44/issues/86), [#89](https://github.com/veronika1977/digital_wardrobe_team_44/issues/89), [#180](https://github.com/veronika1977/digital_wardrobe_team_44/issues/180#issue-4741123981), [#202](https://github.com/veronika1977/digital_wardrobe_team_44/issues/202), [#208](https://github.com/veronika1977/digital_wardrobe_team_44/issues/208#issue-4761875818) | [#181](https://github.com/veronika1977/digital_wardrobe_team_44/pull/181#issue-4741144560), [#198](https://github.com/veronika1977/digital_wardrobe_team_44/issues/198#issue-4758796132), [#201](https://github.com/veronika1977/digital_wardrobe_team_44/pull/201#issue-4759043204),[#203](https://github.com/veronika1977/digital_wardrobe_team_44/pull/203) | [#191](https://github.com/veronika1977/digital_wardrobe_team_44/pull/191), [#193](https://github.com/veronika1977/digital_wardrobe_team_44/pull/193),[#199](https://github.com/veronika1977/digital_wardrobe_team_44/pull/199#issue-4758810557) | [Review #122](https://github.com/veronika1977/digital_wardrobe_team_44/pull/122#pullrequestreview-4524370717), [Review #120](https://github.com/veronika1977/digital_wardrobe_team_44/pull/120#pullrequestreview-4524156540) |
+| @Evgeni1a | Developer |[#119](https://github.com/veronika1977/digital_wardrobe_team_44/issues/119#issue-4691592395), [#121](https://github.com/veronika1977/digital_wardrobe_team_44/issues/121#issue-4691823866) | [#120](https://github.com/veronika1977/digital_wardrobe_team_44/pull/120#issue-4691612725), [#122](https://github.com/veronika1977/digital_wardrobe_team_44/pull/122#issue-4691826053) | [#181](https://github.com/veronika1977/digital_wardrobe_team_44/pull/181#issue-4741144560) | [Review #181](https://github.com/veronika1977/digital_wardrobe_team_44/pull/181#pullrequestreview-4568345997) |
+| @CatherineHar | Developer | [#206](https://github.com/veronika1977/digital_wardrobe_team_44/issues/206#issue-4761828114) | [#207](https://github.com/veronika1977/digital_wardrobe_team_44/pull/207#issue-4761834956) | [#200](https://github.com/veronika1977/digital_wardrobe_team_44/pull/200#issue-4758913009), [#201](https://github.com/veronika1977/digital_wardrobe_team_44/pull/201#issue-4759043204) | [Review #201](https://github.com/veronika1977/digital_wardrobe_team_44/pull/201#pullrequestreview-4585674093) |
+| @DarinaLuch | Scrum Owner | [#194](https://github.com/veronika1977/digital_wardrobe_team_44/issues/194#issue-4758600820)| [#195](https://github.com/veronika1977/digital_wardrobe_team_44/pull/195#issue-4758648032) | [#207](https://github.com/veronika1977/digital_wardrobe_team_44/pull/207#issue-4761834956) | [Review #207](https://github.com/veronika1977/digital_wardrobe_team_44/pull/207#pullrequestreview-4587366695) |
+| @Mrxfg | Developer | [#204](https://github.com/veronika1977/digital_wardrobe_team_44/issues/204#issue-4760444513) | [#205](https://github.com/veronika1977/digital_wardrobe_team_44/pull/205#issue-4760508929) | [#199](https://github.com/veronika1977/digital_wardrobe_team_44/pull/199#issue-4758810557), [#203](https://github.com/veronika1977/digital_wardrobe_team_44/pull/203) | [Review #199](https://github.com/veronika1977/digital_wardrobe_team_44/pull/199#pullrequestreview-4585574765), [Review #203](https://github.com/veronika1977/digital_wardrobe_team_44/pull/203#pullrequestreview-4586532174) |
 
 
 
@@ -251,7 +251,7 @@ This table shows contributions only to the main repository (digital_wardrobe_tea
 
 ## Next Steps (Sprint 3)
 
-For next sprint we want to close another user stories, get feedback from customer and make PBIs and solve them. Moreover, it wiil be good if we impove backend quality.
+For the next sprint, we want to close other user stories, get feedback from the customer, and create and solve PBIs. Moreover, it will be good if we improve backend quality.
 
 ---
 
@@ -275,7 +275,7 @@ For next sprint we want to close another user stories, get feedback from custome
 ![Coverage](images/Coverage.png)
 
 ### Additional QA Check (Vulture)
-![QA Check](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304967461)
+![QA Check](images/Vulture.png)
 
 
 ### Reviewed Issue-Linked PR
