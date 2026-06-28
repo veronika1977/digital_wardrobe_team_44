@@ -63,7 +63,7 @@ The following quality gates are **mandatory** for all PBIs starting from Assignm
 - Build verification
 - Unit + integration tests
 - Coverage reporting
-- Additional QA check (e.g., dependency vulnerability scan)
+- Additional QA check (Vulture — static analysis for dead code)
 
 ### Quality Requirements
 - QR-001: API Response Time < 3 seconds
@@ -84,6 +84,6 @@ If any of these items are not applicable to a specific task, this must be explic
 
 If a quality requirement or QRT is not applicable to the current task, document why in the PR/MR description and link to the relevant QR/QRT documentation.
 
-**Last updated:** June 24, 2026  
+**Last updated:** June 28, 2026  
 **Author:** @veronika1977  
 **Reviewer:** @Evgeni1a
