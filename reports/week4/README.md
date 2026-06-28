@@ -155,7 +155,7 @@ Customer validation session held on June 25, 2026 with customer.
 
 **Recording:** Submitted privately via Moodle (not in public repo).
 
-Full details: [docs/user-acceptance-tests.md](/docs/user-acceptance-tests.md)
+Full details: [docs/user-acceptance-tests.md](../../docs/user-acceptance-tests.md)
 
 ## Demo & Presentation
 
@@ -172,14 +172,14 @@ Full details: [docs/user-acceptance-tests.md](/docs/user-acceptance-tests.md)
 
 | Document | Link |
 |----------|------|
-| Quality Requirements | [docs/quality-requirements.md](/docs/quality-requirements.md) |
-| Quality Requirement Tests | [docs/quality-requirement-tests.md](/docs/quality-requirement-tests.md) |
-| User Acceptance Tests | [docs/user-acceptance-tests.md](/docs/user-acceptance-tests.md) |
-| Testing Status | [docs/testing.md](/docs/testing.md) |
-| Definition of Done | [docs/definition-of-done.md](/docs/definition-of-done.md) |
-| Roadmap | [docs/roadmap.md](/docs/roadmap.md) |
+| Quality Requirements | [docs/quality-requirements.md](../../docs/quality-requirements.md) |
+| Quality Requirement Tests | [docs/quality-requirement-tests.md](../../docs/quality-requirement-tests.md) |
+| User Acceptance Tests | [docs/user-acceptance-tests.md](../../docs/user-acceptance-tests.md) |
+| Testing Status | [docs/testing.md](../../docs/testing.md) |
+| Definition of Done | [docs/definition-of-done.md](../../docs/definition-of-done.md) |
+| Roadmap | [docs/roadmap.md](../../docs/roadmap.md) |
 | Customer Review Transcript | [customer-review-transcript.md](customer-review-transcript.md) | 
-|Lychee Exclusions Justification | [docs/lychee-exclusions.md](/docs/lychee-exclusions.md) |
+|Lychee Exclusions Justification | [docs/lychee-exclusions.md](../../docs/lychee-exclusions.md) |
 
 ## Additional Automated QA Check Summary
 

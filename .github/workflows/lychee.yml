@@ -33,10 +33,10 @@ jobs:
           args: >-
             --verbose
             --no-progress
-            --exclude "http://localhost"
-            --exclude "http://127.0.0.1"
-            --exclude "^mailto:"
-            **/*.md
+            --exclude 'http://localhost'
+            --exclude 'http://127.0.0.1'
+            --exclude '^mailto:'
+            './**/*.md'
           fail: true
           failIfEmpty: false
         env:
