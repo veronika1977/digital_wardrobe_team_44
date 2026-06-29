@@ -56,20 +56,81 @@ while establishing quality automation infrastructure (CI/CD, quality requirement
 - Branch protection rules for all repositories
 
 
-## Sprint 3: Assignment 5
-- **Milestone:** [Sprint 3](in Assignment5)
+## Sprint 5: Assignment 5
+- **Milestone:** [Sprint 5](in Assignment 5)(https://github.com/veronika1977/digital_wardrobe_team_44/milestone/3)
 - **Dates:** 29.06.2026 – 05.07.2026
-- **Sprint Goal:** Enhance product with weather integration.
-- **Focus:** US-12 (Weather Integration),  additional UX improvements.
+- **Sprint Goal:** Deliver MVP v2 with weather information display (US-12) and calendar/outfit planning (US-13), while documenting system architecture through three architectural views, creating ADRs, and establishing hosted documentation.
+- **Focus:** Weather display, calendar/outfit planning, architecture documentation, ADRs, hosted docs.
+- **Release:** MVP v2
 
 **Planned Items:**
-- [US-12: Weather Integration](https://github.com/veronika1977/digital_wardrobe_team_44/issues/82)
-- Follow-up UX improvements based on customer feedback
 
+*User Stories:*
+
+**US-12: Weather Integration (5 SP)** — [Issue #82](https://github.com/veronika1977/digital_wardrobe_team_44/issues/82)
+- Display current weather on the main screen so users can make informed decisions about what to wear.
+- **PBI: Weather API Backend Integration (3 SP)**
+  - Integrate OpenWeatherMap API
+  - Endpoint: `GET /api/weather?lat={lat}&lon={lon}`
+  - Caching (6 hours)
+  - Fallback mechanism for API failures
+- **PBI: Weather Display Frontend (2 SP)**
+  - Weather component on main screen
+  - Temperature, icon, description display
+  - Manual refresh button
+  - Loading and error states
+
+**US-13: Calendar with Outfits (8 SP)** — [Issue #216](https://github.com/veronika1977/digital_wardrobe_team_44/issues/216)
+- Plan outfits in a weekly/monthly calendar view so users can organize their wardrobe for the week ahead.
+- **PBI: Calendar Backend API (5 SP)**
+  - `CalendarEntry` model (date, outfit_id, user_id)
+  - CRUD endpoints: `POST/GET/PUT/DELETE /api/calendar`
+  - Validation (prevent duplicates)
+- **PBI: Calendar UI with Weather Display (3 SP)**
+  - Interactive calendar component
+  - Display planned outfits on dates
+  - Weather forecast integration (icons)
+  - Navigation between months
+
+*Architecture Work:*
+- Component diagram (static view)
+- Sequence diagram (dynamic view)
+- Deployment diagram (deployment view)
+- 3 Architecture Decision Records (ADRs)
+- `docs/development-process.md` with Mermaid gitGraph
+- Hosted documentation site (GitHub Pages / Netlify)
+
+*Quality & Testing:*
+- Extend tests for US-12, US-13
+- Update `docs/testing.md`, `docs/quality-requirement-tests.md`, `docs/definition-of-done.md`
+
+**Total Sprint 5 velocity:** 13 SP (user stories only) + architecture work
 
 ## Future Sprints
 
-- **Sprint 4:** Sharing capabilities ([US-10](https://github.com/veronika1977/digital_wardrobe_team_44/issues/91)) and AI Material Detection ([US-07](https://github.com/veronika1977/digital_wardrobe_team_44/issues/90)).
+### Sprint 6: AI Stylist & Daily Wear Tracking
+- **Focus:** AI-powered outfit suggestions and daily wear tracking
+
+**Planned User Stories:**
+- [US-14: AI Stylist for Outfit Generation](https://github.com/veronika1977/digital_wardrobe_team_44/issues/217) (13 SP)
+  - AI-generated outfit suggestions based on wardrobe, weather, and occasion
+  - User can save or reject suggestions
+  - AI learns from user preferences
+- [US-15: Telegram Bot Daily Wear Tracking](https://github.com/veronika1977/digital_wardrobe_team_44/issues/218) (8 SP)
+  - Daily reminder at 7:00 PM: "What did you wear today?"
+  - Quick marking of worn items
+  - Wear statistics and analytics
+
+### Sprint 7: Sharing & AI Material Detection
+- **Focus:** Social features and advanced AI capabilities
+
+**Planned User Stories:**
+- [US-10: Share Outfit by Link](https://github.com/veronika1977/digital_wardrobe_team_44/issues/91) (3 SP)
+  - Share outfits with friends via Telegram
+  - Public wardrobe profiles (optional)
+- [US-07: AI Material Detection](https://github.com/veronika1977/digital_wardrobe_team_44/issues/90) (13 SP)
+  - Automatic material detection from photos
+  - Integration with existing material tags
 
 ## Removed 
 
