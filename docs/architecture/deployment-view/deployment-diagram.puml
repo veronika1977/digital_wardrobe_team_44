@@ -1,0 +1,123 @@
+@startuml Deployment Diagram
+!theme plain
+
+skinparam node {
+  BackgroundColor WhiteSmoke
+  BorderColor DarkBlue
+  ArrowColor #444444
+}
+
+skinparam component {
+  BackgroundColor White
+  BorderColor Black
+}
+
+skinparam cloud {
+  BackgroundColor LightCyan
+  BorderColor DarkCyan
+}
+
+skinparam database {
+  BackgroundColor White
+  BorderColor Black
+}
+
+title Digital Wardrobe Deployment Diagram (Physical View)
+actor User
+node "Telegram Client\n(Mobile/Desktop/Web)" <<device>> as tg_client
+
+cloud "Frontend Repository (Separate)" {
+  node "Development Environment" <<execution environment>> {
+    component [React 19.2.6 + TypeScript 6.0.2] as react_ts
+    component [Vite 8.0.12 Bundler] as vite
+    component [@telegram-apps/sdk-react 3.3.9] as tg_sdk
+    component [@telegram-apps/telegram-ui 2.1.13] as tg_ui
+  }
+  
+  node "Testing Environment" <<execution environment>> {
+    component [Vitest 4.1.9 + jsdom 29.1.1] as vitest
+    component [@testing-library/react 16.3.2] as test_lib
+    component [@vitest/coverage-v8 4.1.9] as coverage
+  }
+  
+  node "Production Build" <<artifact>> {
+    component [dist/\n(Optimized Static Assets)] as dist_folder
+  }
+}
+
+cloud "Cloudflare Pages + Global CDN" {
+  node "Cloudflare Edge Network" <<CDN>> {
+    component [Cloudflare Pages\n(Static Hosting)] as cf_pages
+    component [Global CDN Cache] as cf_cdn
+    component [Managed SSL/TLS] as cf_ssl
+    component [DDoS Protection & WAF] as cf_security
+  }
+}
+
+node "Backend Server (VPS/Cloud)" <<server>> as BackendServer {
+  
+  node "Docker Compose Stack" <<execution environment>> {
+        node "Backend Container (Python 3.10+)" as BackendContainer {
+      component [Uvicorn ASGI Server\n(Port 8000)] as uvicorn
+      component [FastAPI Application] as fastapi
+      component [Rembg Service\n(U2-Net Model ~170MB)] as rembg
+      
+      node "Application Services" {
+        component [Auth Service\n(JWT + HMAC-SHA256)] as auth_svc
+        component [Wardrobe Service\n(Items, Capsules, Calendar)] as wardrobe_svc
+        component [Weather Service\n(httpx client)] as weather_svc
+      }
+    }
+    
+    node "PostgreSQL Container" as DBContainer {
+      database [PostgreSQL 15\n(digital_wardrobe DB)\nlocalhost:5432] as postgres
+      component [SQLAlchemy Connection Pool] as db_pool
+    }
+    
+    node "Docker Volume" <<storage>> {
+      component [./backend/uploads/original/\n(Original Images)] as storage_originals
+      component [./backend/uploads/processed/\n(Background Removed)] as storage_processed
+    }
+  }
+  
+  component [.env file\n(DATABASE_URL, TELEGRAM_BOT_TOKEN)] as env_file
+}
+
+cloud "External Ecosystem" {
+  component [Telegram Bot API\n(Auth Validation)] as telegram_api
+  component [OpenWeatherMap API\n(Weather Data)] as owm_api
+}
+
+User --> tg_client : Opens Telegram Mini App
+tg_client --> cf_ssl : Load Mini App (HTTPS Webview)
+cf_ssl --> cf_cdn : Route to nearest edge
+cf_cdn --> cf_pages : Serve React bundle from cache
+
+react_ts --> vite : tsc -b && vite build
+vite --> dist_folder : Generate Static Bundle
+dist_folder --> cf_pages : Deploy via Cloudflare Pages CI/CD
+react_ts --> vitest : Run Tests
+vitest --> coverage : Generate Coverage Report
+
+cf_pages --> uvicorn : REST API Calls (HTTPS)\nPort 8000\nOrigin: *.pages.dev
+
+uvicorn --> fastapi : ASGI Protocol
+fastapi --> auth_svc : Dependency Injection
+fastapi --> wardrobe_svc : Dependency Injection
+fastapi --> weather_svc : Dependency Injection
+fastapi --> rembg : In-Process Call (Synchronous)
+
+rembg --> storage_originals : Save Original (File I/O)
+rembg --> storage_processed : Save Processed (File I/O)
+wardrobe_svc --> storage_processed : Read Processed Images (File I/O)
+
+auth_svc --> db_pool : TCP 5432 (SQLAlchemy)
+wardrobe_svc --> db_pool : TCP 5432 (SQLAlchemy)
+db_pool --> postgres : Query / Transaction
+
+auth_svc --> telegram_api : HTTPS (Validate initData HMAC)
+weather_svc --> owm_api : HTTPS (Fetch Forecast)
+
+fastapi ..> env_file : Load Config (python-dotenv)
+
+@enduml
