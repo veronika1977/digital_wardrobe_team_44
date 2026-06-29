@@ -56,8 +56,8 @@ while establishing quality automation infrastructure (CI/CD, quality requirement
 - Branch protection rules for all repositories
 
 
-## Sprint 5: Assignment 5
-- **Milestone:** [Sprint 5](in Assignment 5)(https://github.com/veronika1977/digital_wardrobe_team_44/milestone/3)
+## Sprint 3: Assignment 5
+- **Milestone:** [Sprint 3](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/3)
 - **Dates:** 29.06.2026 – 05.07.2026
 - **Sprint Goal:** Deliver MVP v2 with weather information display (US-12) and calendar/outfit planning (US-13), while documenting system architecture through three architectural views, creating ADRs, and establishing hosted documentation.
 - **Focus:** Weather display, calendar/outfit planning, architecture documentation, ADRs, hosted docs.
@@ -104,11 +104,11 @@ while establishing quality automation infrastructure (CI/CD, quality requirement
 - Extend tests for US-12, US-13
 - Update `docs/testing.md`, `docs/quality-requirement-tests.md`, `docs/definition-of-done.md`
 
-**Total Sprint 5 velocity:** 13 SP (user stories only) + architecture work
+**Total Sprint 3 velocity:** 13 SP (user stories only) + architecture work
 
 ## Future Sprints
 
-### Sprint 6: AI Stylist & Daily Wear Tracking
+### Sprint 4: AI Stylist & Daily Wear Tracking
 - **Focus:** AI-powered outfit suggestions and daily wear tracking
 
 **Planned User Stories:**
@@ -121,7 +121,7 @@ while establishing quality automation infrastructure (CI/CD, quality requirement
   - Quick marking of worn items
   - Wear statistics and analytics
 
-### Sprint 7: Sharing & AI Material Detection
+### Sprint 5: Sharing & AI Material Detection
 - **Focus:** Social features and advanced AI capabilities
 
 **Planned User Stories:**
