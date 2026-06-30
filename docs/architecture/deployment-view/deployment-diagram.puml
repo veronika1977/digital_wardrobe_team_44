@@ -1,4 +1,4 @@
-@startuml
+@startuml deployment_diagram
 title Digital Wardrobe Deployment Diagram (Physical View)
 
 !theme plain
