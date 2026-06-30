@@ -1,0 +1,178 @@
+@startuml Component Diagram
+!theme plain
+
+title Digital Wardrobe - Architecture Component Diagram
+
+actor "User\n(Telegram Account)" as user #LightBlue
+
+cloud "Telegram Mini App\n(Frontend Hosting)" as telegram_miniapp #LightYellow
+cloud "Telegram Bot API" as telegram_bot_api #LightYellow
+cloud "Telegram Webhook" as telegram_webhook #LightYellow
+
+package "Frontend Application" {
+  component "React SPA\n(TypeScript + Vite)" as frontend #LightGreen
+  component "UI Components\n(React Components)" as ui_components #LightGreen
+  component "State Management\n(Zustand/Redux)" as state_mgmt #LightGreen
+  component "API Client\n(Axios/Fetch)" as api_client #LightGreen
+  component "Telegram SDK\n(WebApp Integration)" as telegram_sdk #LightGreen
+}
+
+package "Backend Application (FastAPI)" {
+  package "API Layer (Routers)" {
+    component "Auth Router\n(/auth)" as auth_router #LightCoral
+    component "Clothes Router\n(/clothes)" as clothes_router #LightCoral
+    component "Outfits Router\n(/outfits)" as outfits_router #LightCoral
+    component "Capsules Router\n(/capsules)" as capsules_router #LightCoral
+    component "Wear Records Router\n(/wear-records)" as wear_router #LightCoral
+    component "Upload Router\n(/upload/image)" as upload_router #LightCoral
+    component "Health Check\n(/health)" as health_router #LightCoral
+  }
+  package "Business Logic Layer (Services)" {
+    component "Auth Service\n(JWT Generation)" as auth_service #LightSalmon
+    component "Clothes Service\n(CRUD + Filters)" as clothes_service #LightSalmon
+    component "Outfits Service\n(Collections)" as outfits_service #LightSalmon
+    component "Capsules Service\n(8-item Limit)" as capsules_service #LightSalmon
+    component "Wear Records Service\n(Statistics)" as wear_service #LightSalmon
+    component "Upload Service\n(Image Processing)" as upload_service #LightSalmon
+  }
+  package "Data Access Layer (Repositories)" {
+    component "User Repository" as user_repo #LightBlue
+    component "Clothes Repository\n(Soft Delete Support)" as clothes_repo #LightBlue
+    component "Outfits Repository\n(CASCADE Delete)" as outfits_repo #LightBlue
+    component "Capsules Repository\n(CASCADE Delete)" as capsules_repo #LightBlue
+    component "Wear Records Repository" as wear_repo #LightBlue
+  }
+  package "Middleware & Utilities" {
+    component "JWT Authentication\n(Bearer Token)" as jwt_middleware #Lavender
+    component "CORS Middleware\n(Telegram Origins)" as cors_middleware #Lavender
+    component "Error Handler\n(Global Exception)" as error_handler #Lavender
+    component "Input Validation\n(Pydantic Schemas)" as validation #Lavender
+  }
+  package "External Integrations" {
+    component "Telegram Bot Client" as bot_client #Thistle
+    component "Image Processor\n(Pillow + rembg)" as image_processor #Thistle
+  }
+}
+
+database "PostgreSQL 15\n(Digital Wardrobe DB)" as postgres_db #MediumBlue
+folder "File Storage\n(uploads/ directory)" as file_storage #LightGray
+cloud "Background Removal AI\n(rembg CPU Model)" as rembg_ai #LightYellow
+cloud "Telegram Bot\n(Webhook Callbacks)" as telegram_bot #LightYellow
+
+user --> telegram_miniapp : "Opens Mini App\n(HTTPS)"
+user --> telegram_bot_api : "Interacts with Bot\n(HTTPS/Webhook)"
+telegram_miniapp --> frontend : "Loads SPA\n(HTTPS)"
+frontend --> ui_components : "Renders UI"
+frontend --> state_mgmt : "Manages State"
+frontend --> api_client : "API Calls"
+frontend --> telegram_sdk : "Telegram Bridge\n(JS SDK)"
+
+api_client --> auth_router : "POST /auth/telegram\n(HTTPS/REST)"
+api_client --> clothes_router : "GET/POST/PATCH/DELETE /clothes\n(HTTPS/REST + JWT)"
+api_client --> outfits_router : "GET/POST/PATCH/DELETE /outfits\n(HTTPS/REST + JWT)"
+api_client --> capsules_router : "GET/POST/PATCH/DELETE /capsules\n(HTTPS/REST + JWT)"
+api_client --> wear_router : "GET/POST/DELETE /wear-records\n(HTTPS/REST + JWT)"
+api_client --> upload_router : "POST /upload/image\n(HTTPS/REST + Multipart + JWT)"
+api_client --> health_router : "GET /health\n(HTTPS/REST)"
+
+auth_router --> auth_service : "Calls"
+clothes_router --> clothes_service : "Calls"
+outfits_router --> outfits_service : "Calls"
+capsules_router --> capsules_service : "Calls"
+wear_router --> wear_service : "Calls"
+upload_router --> upload_service : "Calls"
+
+auth_service --> user_repo : "SQLAlchemy ORM"
+clothes_service --> clothes_repo : "SQLAlchemy ORM"
+outfits_service --> outfits_repo : "SQLAlchemy ORM"
+capsules_service --> capsules_repo : "SQLAlchemy ORM"
+wear_service --> wear_repo : "SQLAlchemy ORM"
+
+user_repo --> postgres_db : "AsyncPG"
+clothes_repo --> postgres_db : "AsyncPG"
+outfits_repo --> postgres_db : "AsyncPG"
+capsules_repo --> postgres_db : "AsyncPG"
+wear_repo --> postgres_db : "AsyncPG"
+
+upload_router --> upload_service : "Processes"
+upload_service --> image_processor : "Image Processing"
+image_processor --> rembg_ai : "AI Background Removal"
+upload_service --> file_storage : "Saves Files"
+
+auth_router --> jwt_middleware : "Verifies"
+clothes_router --> jwt_middleware : "Verifies"
+outfits_router --> jwt_middleware : "Verifies"
+capsules_router --> jwt_middleware : "Verifies"
+wear_router --> jwt_middleware : "Verifies"
+upload_router --> jwt_middleware : "Verifies"
+
+auth_router --> cors_middleware : "Applies"
+clothes_router --> cors_middleware : "Applies"
+outfits_router --> cors_middleware : "Applies"
+capsules_router --> cors_middleware : "Applies"
+wear_router --> cors_middleware : "Applies"
+upload_router --> cors_middleware : "Applies"
+
+auth_router --> validation : "Validates"
+clothes_router --> validation : "Validates"
+outfits_router --> validation : "Validates"
+capsules_router --> validation : "Validates"
+wear_router --> validation : "Validates"
+upload_router --> validation : "Validates"
+
+auth_router --> error_handler : "Uses"
+clothes_router --> error_handler : "Uses"
+outfits_router --> error_handler : "Uses"
+capsules_router --> error_handler : "Uses"
+wear_router --> error_handler : "Uses"
+upload_router --> error_handler : "Uses"
+
+auth_service --> bot_client : "Telegram API Calls"
+bot_client --> telegram_bot_api : "HTTPS/Telegram Bot API"
+upload_service --> telegram_bot : "Webhook Callback"
+
+note right of postgres_db
+  <b>Tables:</b>
+  • users
+  • clothing_items
+  • outfits
+  • outfit_items
+  • capsules
+  • capsule_items
+  • wear_records
+end note
+
+note right of upload_service
+  <b>Image Processing:</b>
+  1. HEIC/HEIF support
+  2. Background removal
+  3. Compression
+  4. Dual storage
+end note
+
+note bottom of frontend
+  <b>Tech Stack:</b>
+  React 18 + TypeScript
+  Vite + ESLint
+  Telegram WebApp SDK
+end note
+
+note bottom of auth_router
+  <b>Backend Tech Stack:</b>
+  FastAPI + SQLAlchemy
+  Pydantic + Uvicorn
+  Python 3.12
+end note
+
+legend right
+  | <b>Protocol</b> | <b>Usage</b> |
+  | HTTPS/REST | Frontend ↔ Backend |
+  | SQLAlchemy/AsyncPG | Backend ↔ Database |
+  | Telegram Bot API | Backend ↔ Telegram |
+  | Multipart Form-Data | Image Uploads |
+  | File I/O | File Storage Operations |
+  | Dependency Injection | Router → Service |
+  | ORM Queries | Service → Repository |
+end legend
+
+@enduml
