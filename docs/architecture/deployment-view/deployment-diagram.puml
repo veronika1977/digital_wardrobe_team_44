@@ -1,4 +1,6 @@
-@startuml Deployment Diagram
+@startuml
+title Digital Wardrobe Deployment Diagram (Physical View)
+
 !theme plain
 
 skinparam node {
@@ -22,7 +24,6 @@ skinparam database {
   BorderColor Black
 }
 
-title Digital Wardrobe Deployment Diagram (Physical View)
 actor User
 node "Telegram Client\n(Mobile/Desktop/Web)" <<device>> as tg_client
 
@@ -57,7 +58,8 @@ cloud "Cloudflare Pages + Global CDN" {
 node "Backend Server (VPS/Cloud)" <<server>> as BackendServer {
   
   node "Docker Compose Stack" <<execution environment>> {
-        node "Backend Container (Python 3.10+)" as BackendContainer {
+    
+    node "Backend Container (Python 3.10+)" as BackendContainer {
       component [Uvicorn ASGI Server\n(Port 8000)] as uvicorn
       component [FastAPI Application] as fastapi
       component [Rembg Service\n(U2-Net Model ~170MB)] as rembg
@@ -65,7 +67,7 @@ node "Backend Server (VPS/Cloud)" <<server>> as BackendServer {
       node "Application Services" {
         component [Auth Service\n(JWT + HMAC-SHA256)] as auth_svc
         component [Wardrobe Service\n(Items, Capsules, Calendar)] as wardrobe_svc
-        component [Weather Service\n(httpx client)] as weather_svc
+        component [Location Service\n(Geolocation from Telegram)] as location_svc
       }
     }
     
@@ -86,7 +88,9 @@ node "Backend Server (VPS/Cloud)" <<server>> as BackendServer {
 cloud "External Ecosystem" {
   component [Telegram Bot API\n(Auth Validation)] as telegram_api
   component [OpenWeatherMap API\n(Weather Data)] as owm_api
+  component [Browser Geolocation API\n(navigator.geolocation)] as geo_api
 }
+
 
 User --> tg_client : Opens Telegram Mini App
 tg_client --> cf_ssl : Load Mini App (HTTPS Webview)
@@ -98,13 +102,12 @@ vite --> dist_folder : Generate Static Bundle
 dist_folder --> cf_pages : Deploy via Cloudflare Pages CI/CD
 react_ts --> vitest : Run Tests
 vitest --> coverage : Generate Coverage Report
-
 cf_pages --> uvicorn : REST API Calls (HTTPS)\nPort 8000\nOrigin: *.pages.dev
 
 uvicorn --> fastapi : ASGI Protocol
 fastapi --> auth_svc : Dependency Injection
 fastapi --> wardrobe_svc : Dependency Injection
-fastapi --> weather_svc : Dependency Injection
+fastapi --> location_svc : Dependency Injection
 fastapi --> rembg : In-Process Call (Synchronous)
 
 rembg --> storage_originals : Save Original (File I/O)
@@ -113,10 +116,18 @@ wardrobe_svc --> storage_processed : Read Processed Images (File I/O)
 
 auth_svc --> db_pool : TCP 5432 (SQLAlchemy)
 wardrobe_svc --> db_pool : TCP 5432 (SQLAlchemy)
+location_svc --> db_pool : TCP 5432 (User location cache)
 db_pool --> postgres : Query / Transaction
 
 auth_svc --> telegram_api : HTTPS (Validate initData HMAC)
-weather_svc --> owm_api : HTTPS (Fetch Forecast)
+
+
+cf_pages --> location_svc : GET /api/user/location\n(Returns {lat, lon})
+
+cf_pages --> owm_api : HTTPS GET /weather?lat={lat}&lon={lon}\nAPI Key: VITE_WEATHER_KEY (public)
+
+tg_client --> geo_api : navigator.geolocation.getCurrentPosition()
+geo_api --> cf_pages : Returns {lat, lon} to React component
 
 fastapi ..> env_file : Load Config (python-dotenv)
 
