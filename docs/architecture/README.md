@@ -49,7 +49,7 @@ This document provides a comprehensive overview of the Digital Wardrobe system a
 
 ### Rendered Diagram
 
-![Deployment Diagram](deployment-view/Deployment_Diagram.svg)
+![Deployment Diagram](deployment-view/deployment_diagram.svg)
 
 ### PlantUML Source
 
