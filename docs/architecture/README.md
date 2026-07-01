@@ -92,12 +92,11 @@ The deployment diagram illustrates the physical runtime topology of the Digital 
 * [ADR-002: Rembg for Background Removal](adr/ADR-002-rembg-background-removal.md)
 * [ADR-003: Telegram Authentication](adr/ADR-003-telegram-authentication.md)
 
----
 
 ## Architecture Decision Records (Summary)
 The following ADRs document key architectural decisions and how they fit together:
 
-| ADR | Decision | Impact on Architecture |
+| ADR | Decision | Impact on Architecture & Quality Requirements |
 | :--- | :--- | :--- |
 | **[ADR-001](adr/ADR-001-fastapi-backend.md)** | FastAPI + PostgreSQL | Defines the core backend runtime, async API layer, and data persistence strategy. Enables QR-001 (performance) and QR-003 (testability via dependency injection). |
 | **[ADR-002](adr/ADR-002-rembg-background-removal.md)** | CPU-based Rembg | Dictates the Docker container size (~170MB model) and requires local file storage (`uploads/`). Directly supports QR-002 (fault tolerance via fallback). |
@@ -106,6 +105,3 @@ The following ADRs document key architectural decisions and how they fit togethe
 **How architecture and decisions fit together:**  
 The three views (Static, Dynamic, Deployment) and three ADRs form a cohesive architectural baseline. The **Deployment View** shows *where* components run (Cloudflare + Docker Compose), the **Static View** shows *how* they are structured logically (React UI → FastAPI Services → PostgreSQL), and the **Dynamic View** traces *critical flows* (Auth → Upload → Rembg → Weather). Together with the ADRs, they justify technology choices, map them to Quality Requirements (QR-001/002/003), and provide a traceable foundation for future scaling (e.g., migrating local storage to S3, adding async queues for Rembg).
 
-
-
-**Last updated:** [TODO: Date]  

@@ -1,5 +1,15 @@
 # ADR-003: Telegram Authentication
 
+## Quality Requirements Impact
+
+| QR | Impact | Evidence |
+|----|--------|----------|
+| **QR-001: API Response Time < 3s** | Supports | HMAC validation is <200ms; JWT stateless auth avoids DB lookup on each request |
+| **QR-002: Fault Tolerance (100% data preservation)** |  Neutral | Auth layer doesn't handle user data; failures return 401 without data loss |
+| **QR-003: Testability (≥30% critical module coverage)** | Supports | `initData` parsing and JWT generation are pure functions; easily unit-tested |
+
+**Rationale:** Telegram's HMAC validation is fast and stateless JWT avoids per-request DB hits, supporting low latency (QR-001). The auth layer is isolated from data operations, so failures don't risk user content (QR-002 neutral). Core auth logic is pure and mockable for tests (QR-003).
+
 ## Status
 Accepted
 

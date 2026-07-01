@@ -1,5 +1,16 @@
 # ADR-002: Rembg for Background Removal
 
+### Quality Requirements Impact
+
+| QR | Impact | Evidence |
+|----|--------|----------|
+| **QR-001: API Response Time < 3s** | Supports | CPU-based inference completes fast enough; total `/upload` response stays < 3s (verified in local/load tests) |
+| **QR-002: Fault Tolerance (100% data preservation)** | Supports | Fallback logic: if rembg fails, original image is saved; no data loss |
+| **QR-003: Testability (≥30% critical module coverage)** | Supports | easily mocked for unit tests |
+
+**Rationale:**  The U2-Net model inference is optimized and completes within the time budget, keeping the overall endpoint response under 3 seconds (QR-001). The explicit fallback mechanism ensures data integrity if AI processing fails (QR-002). The clear service boundary enables isolated, deterministic testing (QR-003).
+
+
 ## Status
 
 Accepted
