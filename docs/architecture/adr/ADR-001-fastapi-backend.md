@@ -1,5 +1,15 @@
 # ADR-001: FastAPI + PostgreSQL Backend
 
+## Quality Requirements Impact
+
+| QR | Impact | Evidence |
+|----|--------|----------|
+| **QR-001: API Response Time < 3s** | Supports | FastAPI async design + SQLAlchemy connection pooling reduce latency; load tests in `reports/week5/` |
+| **QR-002: Fault Tolerance (100% data preservation)** | Supports | PostgreSQL ACID transactions + structured error handling prevent data loss |
+| **QR-003: Testability (≥30% critical module coverage)** | Supports | Dependency injection enables isolated unit tests; pytest fixtures mock DB/external APIs |
+
+**Rationale:** FastAPI's async architecture and SQLAlchemy's connection management directly reduce request latency (QR-001). Built-in transaction support and error handling preserve data integrity under failure (QR-002). The framework's test client and DI pattern make critical services easily testable (QR-003).
+
 ## Status
 
 Accepted
@@ -38,6 +48,7 @@ The team selected **FastAPI** with **PostgreSQL** as the backend stack.
 - **File uploads:** `python-multipart` (multipart/form-data handling)
 
 **Rationale:**
+
 1. **Async-first design:** FastAPI's async support enables concurrent handling of multiple requests, critical for AI service calls (Rembg) and weather API integration via `httpx`
 2. **Automatic API documentation:** OpenAPI/Swagger docs generated automatically, reducing documentation maintenance effort
 3. **Type safety:** Pydantic integration provides request/response validation out of the box
@@ -80,6 +91,4 @@ The team selected **FastAPI** with **PostgreSQL** as the backend stack.
 - [docs/architecture/README.md](../README.md)
 - [docs/development-process.md](../../development-process.md)
 
----
 
-**Date:** 2026-06-29  
