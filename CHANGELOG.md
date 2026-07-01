@@ -4,6 +4,23 @@ All notable changes to the Digital Wardrobe project will be documented in this f
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-07-01
+### Added
+- **US-12: Weather Integration**
+  - Backend: `GET /api/user/location` endpoint (extracts coords from Telegram `initData` + supports manual override)
+  - Frontend: Direct OpenWeatherMap API calls, weather UI component, hybrid flow (Backend → coords → Frontend → weather)
+  - Architecture: Updated Deployment & Component diagrams to reflect hybrid weather flow
+  - Docs: Acceptance criteria, QR-001/002 traceability, ADR synchronization
+
+### Changed
+- Aligned CI/CD quality gates with QR-003 (≥30% critical module coverage minimum)
+- Fixed markdown rendering in `docs/development-process.md` (closed mermaid blocks, relative links)
+- Finalized ADR-001/002/003 with explicit Quality Requirements Impact sections
+
+### Documentation
+- Added Traceability Matrix to `docs/architecture/README.md`
+- Completed `docs/development-process.md` (branching, PR workflow, CI/CD, release strategy)
+
 # [1.1.0] - 2026-06-25
 ### Added
 - Confirmation dialog for restoring items from cart (PBI #169)
