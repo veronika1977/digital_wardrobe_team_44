@@ -138,4 +138,65 @@ All repositories have branch protection rules enabled for `main`:
 3. Add integration tests for frontend-backend communication
 4. Continue updating this document with Sprint 3 test results
 
----
+## Sprint 3 MVP v2 Testing Scope
+
+Testing for MVP v2 focuses on newly introduced features. Coverage extended **credibly** for critical paths — no artificial inflation.
+
+> **Repository map:**
+
+> • Backend tests: [`digital-wardrobe/backend/tests/`](https://github.com/Mrxfg/digital-wardrobe/tree/main/backend/tests)
+> • Documentation: [`digital_wardrobe_team_44/docs/`](https://github.com/veronika1977/digital_wardrobe_team_44/tree/main/docs)
+
+### US-12: Weather Integration
+
+| Critical module | Why critical | Required coverage | Current coverage | Evidence |
+|-----------------|--------------|------------------:|-----------------:|----------|
+| `app/routers/weather.py` | US-12: OWM proxy + error handling | 30% | 41% | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
+| `app/routers/user.py` | US-12: `GET /api/user/location` logic | 30% | 53% | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
+
+**Automated tests:**
+| Test | Scope | Command | Result | Evidence |
+|------|-------|---------|--------|----------|
+| `test_qr004_weather_location.py` | Endpoint structure + error handling (200/404) | `pytest tests/quality/test_qr004_weather_location.py -v` | Passed | [CI run](https://github.com/Mrxfg/digital-wardrobe/actions) |
+| UAT-004 | Real flow: location → weather → fallback | Manual execution in Telegram Mini App | Passed | [`docs/user-acceptance-tests.md#uat-004`](./user-acceptance-tests.md#UAT-004) |
+
+### US-13: Calendar Planning
+
+| Critical module | Why critical | Required coverage | Current coverage | Evidence |
+|-----------------|--------------|------------------:|-----------------:|----------|
+| `app/routers/capsules.py` | US-13: Outfit CRUD + date sync | 30% | 84% | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
+| `app/models/outfit.py` | US-13: Data model for scheduled outfits | 30% | 100% | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
+
+**Automated tests:**
+| Test | Scope | Command | Result | Evidence |
+|------|-------|---------|--------|----------|
+| `test_qr005_calendar_outfit.py` | OpenAPI schema includes outfit routes | `pytest tests/quality/test_qr005_calendar_outfit.py -v` | Passed | [CI run](https://github.com/Mrxfg/digital-wardrobe/actions) |
+| UAT-005 | Real flow: select date → pick items → save → verify | Manual execution in Telegram Mini App | Passed | [`docs/user-acceptance-tests.md#uat-005`](./user-acceptance-tests.md#UAT-005) |
+
+### CI & Coverage Gates
+
+| Gate | Required | Current | Evidence |
+|------|----------|---------|----------|
+| **Backend coverage ≥30%** (critical modules) | Yes | **66% global**, 72-100% per module | [CI report](https://github.com/Mrxfg/digital-wardrobe/actions) |
+| **QRT-004/005 pass in CI** | Yes | 2/2 passed | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
+| **PlantUML validation** | Yes | All 3 views render to SVG | [Docs CI](https://github.com/veronika1977/digital_wardrobe_team_44/actions) |
+| **Lychee link check** | Yes | 221/222 links valid (1 excluded) | [Lychee CI](https://github.com/veronika1977/digital_wardrobe_team_44/actions) |
+
+### Quick Commands
+
+```bash
+# Run new QRTs (backend repo)
+cd backend
+pytest tests/quality/test_qr004_weather_location.py tests/quality/test_qr005_calendar_outfit.py -v
+
+# Generate coverage report
+pytest tests/ --cov=app --cov-report=html
+# Open: backend/htmlcov/index.html
+```
+
+### Evidence Summary
+
+| Feature | Automated Test | UAT | Coverage | CI Status |
+|---------|---------------|-----|----------|-----------|
+| **US-12 Weather** | `test_qr004_weather_location.py` | [UAT-004](./user-acceptance-tests.md#uat-004)  | 41-53% |  Passing |
+| **US-13 Calendar** | `test_qr005_calendar_outfit.py`  | [UAT-005](./user-acceptance-tests.md#uat-005) | 84-100% |  Passing |

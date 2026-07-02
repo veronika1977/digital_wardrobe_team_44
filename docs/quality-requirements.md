@@ -12,7 +12,10 @@ This document defines measurable quality requirements for Digital Wardrobe using
 
 **Why this matters:** Users expect immediate feedback when adding items to their wardrobe. Slow responses block the main workflow and reduce user satisfaction.
 
-**Linked quality requirement tests:** [QRT-001](quality-requirement-tests.md#qrt-001-api-response-time)
+**Linked quality requirement tests:** 
+- [QRT-001](quality-requirement-tests.md#qrt-001-api-response-time)
+- [QRT-004](quality-requirement-tests.md#qrt-004-weather-integration-performance--fault-tolerance-us-12) (US-12)
+- [QRT-005](quality-requirement-tests.md#qrt-005-calendar-planning-responsiveness--persistence-us-13) (US-13)
 
 ---
 
@@ -24,7 +27,9 @@ This document defines measurable quality requirements for Digital Wardrobe using
 
 **Why this matters:** Background removal is an enhancement, not a core requirement. Failures must not block the primary workflow of adding clothing items.
 
-**Linked quality requirement tests:** [QRT-002](quality-requirement-tests.md#qrt-002-background-removal-fault-tolerance)
+**Linked quality requirement tests:** 
+- [QRT-002](quality-requirement-tests.md#qrt-002-background-removal-fault-tolerance)
+- [QRT-005](quality-requirement-tests.md#qrt-005-calendar-planning-responsiveness--persistence-us-13) (US-13 cascade safety)
 
 ---
 
@@ -44,12 +49,19 @@ This document defines measurable quality requirements for Digital Wardrobe using
 
 | Quality Requirement | Related User Stories | Related PBIs |
 |---------------------|----------------------|--------------|
-| QR-001: API Response Time | US-02, US-06 | API endpoints |
+| QR-001: API Response Time | US-02, US-06, US-12, US-13 | API endpoints |
 | QR-002: Background Removal Fault Tolerance | US-08 | Rembg integration |
-| QR-003: Critical Module Testability | US-01, US-02, US-08 | Auth, Items, Rembg modules |
+| QR-003: Critical Module Testability | US-01, US-02, US-08, US-12, US-13 | Auth, Items, Rembg modules |
 
 
+## MVP v2 Verification Summary (Sprint 5)
 
-**Last updated:** June 28, 2026  
+| QR | Metric | MVP v2 Result | Evidence |
+|----|--------|--------------|----------|
+| **QR-001** | API < 3s | Weather: <500ms, Calendar: schema load <200ms | [QRT-004](quality-requirement-tests.md#qrt-004-weather-integration-performance--fault-tolerance-us-12), [QRT-005](quality-requirement-tests.md#qrt-005-calendar-planning-responsiveness--persistence-us-13), CI logs |
+| **QR-002** | Graceful degradation | Weather API failure → placeholder UI, cascade-safe deletes | [UAT-004](user-acceptance-tests.md#uat-004), [QRT-004](quality-requirement-tests.md#qrt-004-weather-integration-performance--fault-tolerance-us-12), integration tests |
+| **QR-003** | Coverage ≥30% | **51% overall**, critical modules 100% | `htmlcov/`, [CI report](https://github.com/Mrxfg/digital-wardrobe/actions) |
+
+**Last updated:** July 2, 2026  
 **Author:** @veronika1977  
 **Reviewer:** @CatherineHar
