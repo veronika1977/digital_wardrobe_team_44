@@ -1,0 +1,41 @@
+@startuml sequence-diagram
+title Add Clothing Item with Automatic Background Removal
+
+actor "User" as User
+participant "Frontend\n(React + Vite)" as FE
+participant "Backend API\n(FastAPI)" as API
+participant "Rembg Service\n(U2-Net model)" as BG
+database "PostgreSQL" as DB
+collections "Uploads Volume\n(Docker Volume)" as FS
+
+User -> FE: Select photo, submit "Add item"
+FE -> API: POST /items (image, metadata)
+activate API
+
+API -> FS: Save raw image
+API -> DB: Insert item row (status = "processing")
+API --> FE: 202 Accepted (item id, status: processing)
+deactivate API
+
+API -> BG: Send image for background removal
+activate BG
+
+alt Background removal succeeds
+    BG --> API: Return processed image (transparent bg)
+    API -> FS: Save processed image
+    API -> DB: Update item (status = "ready", image_url)
+else Background removal fails or times out
+    BG --> API: Error / timeout
+    API -> DB: Update item (status = "fallback", image_url = original)
+end
+deactivate BG
+
+FE -> API: GET /items/{id} (poll or refresh)
+activate API
+API -> DB: Read item status
+API --> FE: 200 OK (item, current status)
+deactivate API
+
+FE --> User: Show item in wardrobe (processed or original image)
+
+@enduml
