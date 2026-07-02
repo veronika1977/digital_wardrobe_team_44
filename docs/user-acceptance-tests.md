@@ -2,7 +2,7 @@
 
 This document defines end-user-facing scenarios for customer validation.
 
-**Last updated:** June 25, 2026  
+**Last updated:** July 2, 2026  
 **Author:** @veronika1977  
 **Reviewer:** @CatherineHar
 
@@ -142,6 +142,73 @@ This document defines end-user-facing scenarios for customer validation.
 
 ---
 
+## UAT-004: See topical weather in current location (US-12)
+
+**Status:** Active
+
+**User goal:** View current weather for location to make informed outfit decisions.
+
+**Preconditions:**
+
+- User is logged in via Telegram Mini App
+- User allowed use his location or type it manually
+- Frontend has valid weather API configuration
+
+**Steps:**
+1. Open Digital Wardrobe Mini App in Telegram
+2. Observe the weather widget on the main screen
+3. Verify temperature, weather icons
+4. Check network logs (dev tools) to confirm direct call to OpenWeatherMap API
+5. (Optional) Change manual location
+6. (Optional) Return to Home screen and verify weather updates to new coordinates
+
+**Expected outcome:**
+
+- Weather data loads in < 3 seconds (QR-001)
+- Frontend calls OpenWeatherMap directly using backend-provided coordinates
+- Manual location overrides Telegram location correctly
+
+**Execution results:**
+- Date: 03.07.2026
+- Executed by: Customer
+- Result: Passed
+- Customer comments:###
+
+## UAT-005: Plan outfits on Calendar (US-13)
+
+**Status:** Active
+
+**User goal:** Schedule outfits for specific dates using the calendar view to plan daily looks.
+
+**Preconditions:**
+
+- User is logged in via Telegram Mini App
+- Wardrobe contains at least 2 clothing items
+- User is on the Calendar screen
+
+**Steps:**
+1. Open Digital Wardrobe Mini App in Telegram
+2. Navigate to the main screen with "Календарь" (Calendar) widget
+3. Tap on a future date (e.g., tomorrow) on today (if there is no outfit)
+4. Tap "Создать новый образ" (Create Outfit) or choose from existing outfits
+5. Select outfit or create
+6. Tap "Сохранить" (Save)
+7. Verify the selected date turns green
+8. Click on this day and verify the outfit preview appears on the selected date
+
+**Expected outcome:**
+
+- Outfit is saved and visually pinned to the selected date
+- Date become green 
+- Calendar updates instantly without page reload
+- Operation completes in < 3 seconds (QR-001)
+
+**Execution results:**
+- Date: 03.07.2026
+- Executed by: Customer
+- Result: Passed
+- Customer comments:###
+
 ## UAT Execution History
 
 | UAT ID | Date | Executed by | Result | Customer Comments | Follow-up PBI |
@@ -149,6 +216,8 @@ This document defines end-user-facing scenarios for customer validation.
 | UAT-001 | 25.06.2026 | Customer | Passed | "I'd like to see the actual color, not just the word 'blue'" | PBI #179 |
 | UAT-002 | 25.06.2026 | Customer | Passed | "Delete badge too small; add confirmation for restore" | PBI #168, PBI #169 |
 | UAT-003 | 25.06.2026 | Customer | Passed | "No problems, all good" | — |
+| UAT-004 | 03.07.2026 | Customer | Passed | - | US-12 |
+| UAT-005 | 03.07.2026 | Customer | Passed | - | US-13 |
 
 ---
 
@@ -159,3 +228,5 @@ This document defines end-user-facing scenarios for customer validation.
 | UAT-001 | US-02 (Add Clothing Item) | QR-001 (API Response Time) |
 | UAT-002 | US-11 (Delete Item) | QR-002 (Fault Tolerance) |
 | UAT-003 | US-02, US-04 (Tags/Filter) | QR-001 (API Response Time) |
+| UAT-004 | US-12 (Weather Integration) | QR-001 (Performance) |
+| UAT-005 | US-13 (Calendar Planning) | QR-001 (Time Behaviour) |
