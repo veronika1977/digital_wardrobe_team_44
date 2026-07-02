@@ -160,7 +160,7 @@ This document defines end-user-facing scenarios for customer validation.
 3. Verify temperature, weather icons
 4. Check network logs (dev tools) to confirm direct call to OpenWeatherMap API
 5. (Optional) Change manual location
-6. Return to Home screen and verify weather updates to new coordinates
+6. (Optional) Return to Home screen and verify weather updates to new coordinates
 
 **Expected outcome:**
 
@@ -188,7 +188,7 @@ This document defines end-user-facing scenarios for customer validation.
 
 **Steps:**
 1. Open Digital Wardrobe Mini App in Telegram
-2. Navigate to the "Календарь" (Calendar) screen
+2. Navigate to the main screen with "Календарь" (Calendar) widget
 3. Tap on a future date (e.g., tomorrow) on today (if there is no outfit)
 4. Tap "Создать новый образ" (Create Outfit) or choose from existing outfits
 5. Select outfit or create
