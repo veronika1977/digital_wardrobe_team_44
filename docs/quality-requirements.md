@@ -27,6 +27,8 @@ This document defines measurable quality requirements for Digital Wardrobe using
 
 **Why this matters:** Background removal is an enhancement, not a core requirement. Failures must not block the primary workflow of adding clothing items.
 
+**Linked ADR:** [ADR-002: CPU-based Rembg](architecture/adr/ADR-002-rembg-background-removal.md) this ADR's decision to run background removal as a best-effort step is what this quality requirement formalizes as a testable guarantee.
+
 **Linked quality requirement tests:** 
 - [QRT-002](quality-requirement-tests.md#qrt-002-background-removal-fault-tolerance)
 - [QRT-005](quality-requirement-tests.md#qrt-005-calendar-planning-responsiveness--persistence-us-13) (US-13 cascade safety)

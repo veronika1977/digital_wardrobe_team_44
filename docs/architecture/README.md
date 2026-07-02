@@ -37,11 +37,11 @@ This document provides a comprehensive overview of the Digital Wardrobe system a
 
 **Source:** [dynamic-view/sequence-diagram.puml](dynamic-view/sequence-diagram.puml)
 
-**Scenario:** [TODO: Describe the scenario]
+**Scenario:** The end-to-end flow when a user uploads a photo of a clothing item, from the frontend request through backend persistence, the Rembg background-removal call, and the fallback path when that external processing step fails.
 
-**Why this scenario is important:** [TODO: Explain importance]
+**Why this scenario is important:** This is the core content-creation flow of the product (every wardrobe item enters the system this way) and it is the one flow with a real external dependency (Rembg) that can fail independently of the rest of the system.
 
-**Architecture decisions and quality requirements:** [TODO: Link to ADRs and QRs]
+**Architecture decisions and quality requirements:** This flow implements the decision recorded in [ADR-002: CPU-based Rembg](adr/ADR-002-rembg-background-removal.md) to run background removal as a *best-effort* step rather than a hard dependency of item creation. The diagram shows the integration boundary between the Backend API and the external Rembg service, and the fallback branch (original image saved, item marked with fallback status) is the concrete mechanism that satisfies [QR-002: Background Removal Fault Tolerance](../quality-requirements.md#qr-002-background-removal-fault-tolerance) 100% of original photos are saved and the rest of the application stays operational even when Rembg fails.
 
 ---
 
