@@ -56,11 +56,13 @@ Configured via GitHub repository settings:
 ## Pull Request & Code Review Process
 
 ### 1. PR Creation
+
 - Use the **Pull Request Template** (`.github/pull_request_template.md`)
 - Link to related Issue/User Story
 - Include: description, testing steps, screenshots (if UI), and risk assessment
 
 ### 2. Self-Review Checklist
+
 Before requesting review, the author must verify:
 - [ ] Code follows ESLint/Pylint/Black standards
 - [ ] All tests pass locally (`npm test` / `pytest`)
