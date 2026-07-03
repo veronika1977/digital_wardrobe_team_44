@@ -20,10 +20,25 @@ The following issues were acknowledged as work in progress:
 - Backend not fully implemented for outfit loading via calendar
 
 ---
-# UAT Results
+
+# UAT
+
+## Results
+
 **Date of UAT interview:** 2026-07-03
+
 **Participants:** Veronika Drozd, Ekaterina Kharamanian, Evgeniia Zakharova
 
+### Which UAT scenarios passed:
+- **UAT-001:** Add Clothing Item with Photo — PASSED
+- **UAT-002:** Delete Item and Verify in Cart — PASSED
+- **UAT-003:** Filter Wardrobe by Season — PASSED
+- **UAT-004:** See topical weather in current location — PASSED
+- **UAT-005:** Plan outfits on Calendar - PASSED
+
+### Post-UAT Adjustments & Notes:
+
+- **UAT-004:** The customer didn't have geolocation access on their laptop, so the weather wasn't showing automatically. Also, during testing, we didn't have a button to manually change the geolocation. To ensure the client had everything working on their computer, we fixed the button visibility bug immediately after UAT.
 
 ---
 ## Architecture Evidence Discussed
@@ -68,6 +83,7 @@ The rembg library may slow down CPU with traffic growth
 6. The team will continue work on calendar, outfit planning, and bot notifications in subsequent sprints.
 
 ## Resulting Product Backlog or Scope Changes
+
 Added to backlog:
 - Fix outfit arrangement saving
 - Fix outfit loading from calendar
