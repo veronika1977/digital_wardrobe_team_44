@@ -65,6 +65,7 @@ Improvement requests:
 The customer approved the MVP Version 2 increment as presented and confirmed that the sprint and tasks look good. 
 
 ## Requested changes
+
 - Fix outfit arrangement saving to preserve user layout.
 - Fix outfit loading from calendar to display as complete outfits rather than separate items and capsules.
 - Add a direct button on the main panel to load an outfit for today.
