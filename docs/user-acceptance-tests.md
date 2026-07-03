@@ -172,7 +172,7 @@ This document defines end-user-facing scenarios for customer validation.
 - Date: 03.07.2026
 - Executed by: Customer
 - Result: Passed
-- Customer comments:###
+- Customer comments: Weather loads <3s and displays accurate local conditions. Geolocation button was initially hidden due to device permissions; fallback to manual city selection verified and button visibility fixed post-UAT.
 
 ## UAT-005: Plan outfits on Calendar (US-13)
 
@@ -207,7 +207,7 @@ This document defines end-user-facing scenarios for customer validation.
 - Date: 03.07.2026
 - Executed by: Customer
 - Result: Passed
-- Customer comments:###
+- Customer comments: Core scheduling works and dates highlight correctly. Noted UX gaps: outfit arrangement not preserved, outfits load as individual items instead of grouped sets. All feedback captured as PBIs for next Sprints.
 
 ## UAT Execution History
 

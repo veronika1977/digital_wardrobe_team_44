@@ -8,6 +8,19 @@
 
 ---
 
+## Customer Feedback MVP v1  Response Table (Interview 2 — 2026-06-27)
+
+| Feedback point | Resulting PBI or issue | Status | Response |
+|---|---|---|---|
+| "Remove shadows on item cards – they look strange and unprofessional." | UI Polish PBI | Backlog | Deferred to Sprint 4. Visual refinements (shadows, spacing, card layout) scheduled after core US-12/13 delivery and architecture documentation. |
+| "Add AI enhancement function to convert casual photos to studio quality." |AI Photo Improvment | Backlog | Deferred to Sprint 4+. Requires external AI model integration, API quota management, and additional testing. MVP v2 prioritized architecture hardening and credible verification (QRT-004/005). |
+| "Overall direction and sprint planning approved." | N/A | Acknowledged | Customer validated MVP v2 scope (US-12 Weather, US-13 Calendar) and approved continuation with bot notifications and calendar enhancements for next sprint. |
+
+**Justification for Deferred Feedback:**  
+
+MVP v2 prioritized delivering core US-12 (Weather) and US-13 (Calendar) flows. Deferred items require external AI model integration, visual design polish, or non-critical UX enhancements. Postponing these ensured the team could meet the architecture hardening, quality traceability, and delivery deadlines required for Assignment 5 without compromising system stability.
+
+
 ## Navigation
 
 ### Backlogs and Milestones
@@ -44,12 +57,18 @@ See [CHANGELOG.md#mvp-v2](../../CHANGELOG.md#MVP-v2) for detailed release notes.
 
 ---
 
-## Customer Feedback and Response
+## Customer Feedback and Response for mvp v2
 
 | Feedback Point | Resulting PBI or Issue | Status |
 |---------------|----------------------|--------|
-| Weather | - | - |
-| Calendar | - | - |
+| Weather loads <3s and matches local conditions — positive validation | N/A | Acknowledged |
+| Geolocation button not visible on some devices; fallback to manual city selection needed | Frontend repository [PR #72](https://github.com/veronika1977/digital_wardrobe_777/pull/72#issue-4802930074) | Done |
+| Outfit arrangement does not preserve user layout | [PBI #271](https://github.com/veronika1977/digital_wardrobe_team_44/issues/271#issue-4805020609) | Backlog |
+| Outfits load as separate items instead of complete sets | [PBI #270](https://github.com/veronika1977/digital_wardrobe_team_44/issues/270#issue-4804987098) | Backlog |
+| Add direct "load outfit for today" button on main panel | Backlog item | Deferred |
+| Calendar green highlight is intuitive; date-state sync works as expected | N/A | Acknowledged |
+
+**Note:** Core features Weather (US-12) and Calendar (US-13) were delivered and validated during UAT. Positive feedback is acknowledged above; improvement requests are tracked in backlog.
 
 ### Feedback Not Addressed
 
@@ -183,11 +202,11 @@ Digital Wardrobe MVP v2 is production-ready for the defined scope:
 
 | Team Member | Role | Issues | PRs | Reviews Given | Comments |
 |-------------|------|--------|-----|--------------|----------|
-| @veronika1977 | Scrum Master / Developer | [#214](https://github.com/veronika1977/digital_wardrobe_team_44/issues/214), [#216](https://github.com/veronika1977/digital_wardrobe_team_44/issues/216) (US-13), [#217](https://github.com/veronika1977/digital_wardrobe_team_44/issues/217) (US-14), [#218](https://github.com/veronika1977/digital_wardrobe_team_44/issues/218) (US-15), [#219](https://github.com/veronika1977/digital_wardrobe_team_44/issues/219), [#220](https://github.com/veronika1977/digital_wardrobe_team_44/issues/220), [#221](https://github.com/veronika1977/digital_wardrobe_team_44/issues/221), [#222](https://github.com/veronika1977/digital_wardrobe_team_44/issues/222), [#223](https://github.com/veronika1977/digital_wardrobe_team_44/issues/223), [#225](https://github.com/veronika1977/digital_wardrobe_team_44/issues/225), [#227](https://github.com/veronika1977/digital_wardrobe_team_44/issues/227), [#239](https://github.com/veronika1977/digital_wardrobe_team_44/issues/239), [#241](https://github.com/veronika1977/digital_wardrobe_team_44/issues/241) | [#215](https://github.com/veronika1977/digital_wardrobe_team_44/pull/215), [#240](https://github.com/veronika1977/digital_wardrobe_team_44/pull/240), [#242](https://github.com/veronika1977/digital_wardrobe_team_44/pull/242), [#243](https://github.com/veronika1977/digital_wardrobe_team_44/pull/243), [#244](https://github.com/veronika1977/digital_wardrobe_team_44/pull/244), [#226](https://github.com/veronika1977/digital_wardrobe_team_44/pull/226), [#228](https://github.com/veronika1977/digital_wardrobe_team_44/pull/228) | — | [#224](https://github.com/veronika1977/digital_wardrobe_team_44/pull/224#issuecomment-...) (meaningful), [#252](https://github.com/veronika1977/digital_wardrobe_team_44/pull/252#issuecomment-...) |
-| @Evgeni1a | Developer | [#231](https://github.com/veronika1977/digital_wardrobe_team_44/issues/231), [#255](https://github.com/veronika1977/digital_wardrobe_team_44/issues/255#issue-4803325961) | [#232](https://github.com/veronika1977/digital_wardrobe_team_44/pull/232), [#233](https://github.com/veronika1977/digital_wardrobe_team_44/pull/233), [#245](https://github.com/veronika1977/digital_wardrobe_team_44/pull/245), [#256](https://github.com/veronika1977/digital_wardrobe_team_44/pull/256#issue-4803330394) | — | — |
-| @Mrxfg | Developer | — | [#224](https://github.com/veronika1977/digital_wardrobe_team_44/pull/224) | [#215](https://github.com/veronika1977/digital_wardrobe_team_44/pull/215#pullrequestreview-...), [#228](https://github.com/veronika1977/digital_wardrobe_team_44/pull/228#pullrequestreview-...) | [#224](https://github.com/veronika1977/digital_wardrobe_team_44/pull/224#issuecomment-...) (meaningful) |
-| @CatherineHar | Developer / Reviewer | — | — | [#240](https://github.com/veronika1977/digital_wardrobe_team_44/pull/240#pullrequestreview-...), [#242](https://github.com/veronika1977/digital_wardrobe_team_44/pull/242#pullrequestreview-...), [#243](https://github.com/veronika1977/digital_wardrobe_team_44/pull/243#pullrequestreview-...), [#226](https://github.com/veronika1977/digital_wardrobe_team_44/pull/226#pullrequestreview-...) | — |
-| @DarinaLuch | Scrum Owner / Developer | [#248](https://github.com/veronika1977/digital_wardrobe_team_44/issues/248), [#249](https://github.com/veronika1977/digital_wardrobe_team_44/issues/249) | [#250](https://github.com/veronika1977/digital_wardrobe_team_44/pull/250), [#251](https://github.com/veronika1977/digital_wardrobe_team_44/pull/251) | [#252](https://github.com/veronika1977/digital_wardrobe_team_44/pull/252#issue-4801144689) | [#252](https://github.com/veronika1977/digital_wardrobe_team_44/pull/252#pullrequestreview-4623626087) |
+| @veronika1977 | Scrum Master | [#214](https://github.com/veronika1977/digital_wardrobe_team_44/issues/214), [#216](https://github.com/veronika1977/digital_wardrobe_team_44/issues/216), [#217](https://github.com/veronika1977/digital_wardrobe_team_44/issues/217), [#218](https://github.com/veronika1977/digital_wardrobe_team_44/issues/218), [#219](https://github.com/veronika1977/digital_wardrobe_team_44/issues/219), [#223](https://github.com/veronika1977/digital_wardrobe_team_44/issues/223), [#225](https://github.com/veronika1977/digital_wardrobe_team_44/issues/225), [#227](https://github.com/veronika1977/digital_wardrobe_team_44/issues/227), [#239](https://github.com/veronika1977/digital_wardrobe_team_44/issues/239), [#241](https://github.com/veronika1977/digital_wardrobe_team_44/issues/241) | [#215](https://github.com/veronika1977/digital_wardrobe_team_44/pull/215), [#226](https://github.com/veronika1977/digital_wardrobe_team_44/pull/226),  [#228](https://github.com/veronika1977/digital_wardrobe_team_44/pull/228), [#240](https://github.com/veronika1977/digital_wardrobe_team_44/pull/240), [#242](https://github.com/veronika1977/digital_wardrobe_team_44/pull/242), [#243](https://github.com/veronika1977/digital_wardrobe_team_44/pull/243), [#244](https://github.com/veronika1977/digital_wardrobe_team_44/pull/244) | [#232](https://github.com/veronika1977/digital_wardrobe_team_44/pull/232#issue-4775383937), [#234](https://github.com/veronika1977/digital_wardrobe_team_44/pull/234#issue-4775465733), [#256](https://github.com/veronika1977/digital_wardrobe_team_44/pull/256#issue-4803330394)  | [#232](https://github.com/veronika1977/digital_wardrobe_team_44/pull/232#pullrequestreview-4598998194), [#234](https://github.com/veronika1977/digital_wardrobe_team_44/pull/234#pullrequestreview-4599076168)  |
+| @Evgeni1a | Developer | [#231](https://github.com/veronika1977/digital_wardrobe_team_44/issues/231), [#233](https://github.com/veronika1977/digital_wardrobe_team_44/pull/233), [#255](https://github.com/veronika1977/digital_wardrobe_team_44/issues/255#issue-4803325961) | [#232](https://github.com/veronika1977/digital_wardrobe_team_44/pull/232), [#234](https://github.com/veronika1977/digital_wardrobe_team_44/pull/234#issue-4775465733), [#256](https://github.com/veronika1977/digital_wardrobe_team_44/pull/256#issue-4803330394)  | [#245](https://github.com/veronika1977/digital_wardrobe_team_44/pull/245) | [#245](https://github.com/veronika1977/digital_wardrobe_team_44/pull/245#pullrequestreview-4617556496) |
+| @Mrxfg | Developer | [#265](https://github.com/veronika1977/digital_wardrobe_team_44/issues/265#issue-4803932793) | [#265](https://github.com/veronika1977/digital_wardrobe_team_44/issues/265#issue-4803932793) | [#215](https://github.com/veronika1977/digital_wardrobe_team_44/pull/215), [#228](https://github.com/veronika1977/digital_wardrobe_team_44/pull/228) | [#215](https://github.com/veronika1977/digital_wardrobe_team_44/pull/215#pullrequestreview-4590760097), [#228](https://github.com/veronika1977/digital_wardrobe_team_44/pull/228#pullrequestreview-4594676791) |
+| @CatherineHar | Developer | [#263](https://github.com/veronika1977/digital_wardrobe_team_44/issues/263#issue-4803815918) | [#264](https://github.com/veronika1977/digital_wardrobe_team_44/pull/264#issue-4803823776) | [#226](https://github.com/veronika1977/digital_wardrobe_team_44/pull/226), [#240](https://github.com/veronika1977/digital_wardrobe_team_44/pull/240), [#242](https://github.com/veronika1977/digital_wardrobe_team_44/pull/242#), [#243](https://github.com/veronika1977/digital_wardrobe_team_44/pull/243) | [#240](https://github.com/veronika1977/digital_wardrobe_team_44/pull/240#pullrequestreview-4611671031), [#243](https://github.com/veronika1977/digital_wardrobe_team_44/pull/243#pullrequestreview-4612675179) |
+| @DarinaLuch | Scrum Owner | [#248](https://github.com/veronika1977/digital_wardrobe_team_44/issues/248), [#249](https://github.com/veronika1977/digital_wardrobe_team_44/issues/249) | [#250](https://github.com/veronika1977/digital_wardrobe_team_44/pull/250), [#251](https://github.com/veronika1977/digital_wardrobe_team_44/pull/251) | [#252](https://github.com/veronika1977/digital_wardrobe_team_44/pull/252#issue-4801144689) | [#252](https://github.com/veronika1977/digital_wardrobe_team_44/pull/252#pullrequestreview-4623626087) |
 
 ---
 
@@ -215,7 +234,9 @@ Digital Wardrobe MVP v2 is production-ready for the defined scope:
 
 ### Reviewed PR Example
 
-![Example PR Review](images/example-pr-review.png)
+![Example PR Review](images/PR1.png)
+
+![Example PR Review](images/PR2.png)
 
 ### Product Access Artifact
 
