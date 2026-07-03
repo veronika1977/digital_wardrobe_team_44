@@ -31,3 +31,5 @@
 
 * **Specific Tasks:**
   * Finding bugs in backend and include tests.
+  * Understanding assignment
+  * Helping with uml code and diagram for dynamic view in documentation

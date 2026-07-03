@@ -4,22 +4,35 @@ All notable changes to the Digital Wardrobe project will be documented in this f
 
 ## [Unreleased]
 
-## [1.2.0] - 2026-07-01
+### [MVP v2] - 2026-07-03
 ### Added
 - **US-12: Weather Integration**
   - Backend: `GET /api/user/location` endpoint (extracts coords from Telegram `initData` + supports manual override)
   - Frontend: Direct OpenWeatherMap API calls, weather UI component, hybrid flow (Backend → coords → Frontend → weather)
   - Architecture: Updated Deployment & Component diagrams to reflect hybrid weather flow
   - Docs: Acceptance criteria, QR-001/002 traceability, ADR synchronization
+  - Testing: QRT-004 automated test (`test_qr004_weather_location.py`), UAT-004 passed
+
+- **US-13: Calendar Planning**
+  - Backend: Capsule/outfit CRUD endpoints with date sync (`/api/capsules`, `/api/outfits`)
+  - Frontend: Calendar view with green date highlight, instant save, outfit preview modal
+  - Architecture: Updated Static & Dynamic and Deployment views to include calendar flow
+  - Docs: Acceptance criteria, QR-001/002 traceability, ADR synchronization
+  - Testing: QRT-005 automated test (`test_qr005_calendar_outfit.py`), UAT-005 passed
 
 ### Changed
+
 - Aligned CI/CD quality gates with QR-003 (≥30% critical module coverage minimum)
-- Fixed markdown rendering in `docs/development-process.md` (closed mermaid blocks, relative links)
 - Finalized ADR-001/002/003 with explicit Quality Requirements Impact sections
+- Updated `docs/testing.md`, `docs/quality-requirements.md`, `docs/definition-of-done.md` for MVP v2 scope
 
 ### Documentation
-- Added Traceability Matrix to `docs/architecture/README.md`
+- Added Traceability Matrix (`ADR ↔ QR ↔ Views`) to `docs/architecture/README.md`
 - Completed `docs/development-process.md` (branching, PR workflow, CI/CD, release strategy)
+- Added MVP v2 Testing Scope + Evidence Summary to `docs/testing.md`
+- Added QRT-004/005 with evidence links to `docs/quality-requirement-tests.md`
+- Added MVP v2 Verification Summary to `docs/quality-requirements.md`
+- Added MVP v2 Additions checklist to `docs/definition-of-done.md`
 
 # [1.1.0] - 2026-06-25
 ### Added
