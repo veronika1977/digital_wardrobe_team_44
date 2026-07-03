@@ -19,13 +19,17 @@ This document provides a comprehensive overview of the Digital Wardrobe system a
 
 **Source:** [static-view/component-diagram.puml](static-view/component-diagram.puml)
 
-**What this diagram shows:** [TODO: Explain the component diagram]
+**What this diagram shows:** The logical decomposition of the system into major components: the React Frontend (Vite), the FastAPI Backend (routers, services, models), the PostgreSQL database, and external systems (Telegram API, OpenWeatherMap, Rembg). It illustrates how the frontend communicates with the backend via REST endpoints and how the backend orchestrates services for authentication, image processing, and data persistence.
 
-**Coupling and cohesion:** [TODO: Analyze coupling and cohesion]
+**Coupling and cohesion:** The architecture exhibits **high cohesion** by grouping related responsibilities into isolated services (`auth`, `upload`, `rembg`, `items`). **Loose coupling** is maintained through well-defined API boundaries (FastAPI routers), Pydantic DTO schemas, and dependency injection. The frontend and backend are completely decoupled, communicating only over HTTPS. Database access is abstracted via SQLAlchemy models, preventing direct SQL leakage.
 
-**Maintainability implications:** [TODO: Discuss maintainability]
+**Maintainability implications:** The modular, service-oriented structure allows independent development, testing, and future replacement of components. Standard patterns (Pydantic schemas, repository-like service layer, React hooks) enforce consistency across the codebase. Upgrading or swapping a component (e.g., replacing local Rembg with a cloud AI, migrating to S3 storage) only requires changes within that service's boundary, minimizing regression risk.
 
-**Quality requirements supported:** [TODO: Link to QRs]
+**Quality requirements supported:** 
+
+- **QR-001 (Performance):** Async FastAPI architecture and direct frontend-to-weather-API calls reduce round-trip latency.
+- **QR-002 (Fault Tolerance):** Explicit isolation of the `rembg` component enables graceful fallback when the external model fails.
+- **QR-003 (Testability):** Clear component boundaries allow isolated unit tests (services) and integration tests (routers + DB) without cross-component mocking overhead.
 
 ---
 
@@ -41,7 +45,7 @@ This document provides a comprehensive overview of the Digital Wardrobe system a
 
 **Why this scenario is important:** This is the core content-creation flow of the product (every wardrobe item enters the system this way) and it is the one flow with a real external dependency (Rembg) that can fail independently of the rest of the system.
 
-**Architecture decisions and quality requirements:** This flow implements the decision recorded in [ADR-002: CPU-based Rembg](adr/ADR-002-rembg-background-removal.md) to run background removal as a *best-effort* step rather than a hard dependency of item creation. The diagram shows the integration boundary between the Backend API and the external Rembg service, and the fallback branch (original image saved, item marked with fallback status) is the concrete mechanism that satisfies [QR-002: Background Removal Fault Tolerance](../quality-requirements.md#qr-002-background-removal-fault-tolerance) 100% of original photos are saved and the rest of the application stays operational even when Rembg fails.
+**Architecture decisions and quality requirements:** This flow implements the decision recorded in [ADR-002: CPU-based Rembg](adr/ADR-002-rembg-background-removal.md) to run background removal as a *best-effort* step rather than a hard dependency of item creation. The diagram shows the integration boundary between the Backend API and the external Rembg service, and the fallback branch (original image saved, item marked with fallback status) is the concrete mechanism that satisfies [QR-002: Background Removal Fault Tolerance](../../quality-requirements.md#qr-002-background-removal-fault-tolerance): 100% of original photos are saved and the rest of the application stays operational even when Rembg fails.
 
 ---
 
@@ -88,12 +92,14 @@ The deployment diagram illustrates the physical runtime topology of the Digital 
 | **QR-003: Testability** | Isolated Docker containers allow independent testing of API and DB. Mock services used for external APIs during CI. Frontend Vitest suite runs in isolated jsdom environment. | Unit test coverage reports (`coverage/` folder). |
 
 ### Link to Architecture Decisions
+
 * [ADR-001: FastAPI + PostgreSQL Backend](adr/ADR-001-fastapi-backend.md)
 * [ADR-002: Rembg for Background Removal](adr/ADR-002-rembg-background-removal.md)
 * [ADR-003: Telegram Authentication](adr/ADR-003-telegram-authentication.md)
 
 
 ## Architecture Decision Records (Summary)
+
 The following ADRs document key architectural decisions and how they fit together:
 
 | ADR | Decision | Impact on Architecture & Quality Requirements |
@@ -103,5 +109,5 @@ The following ADRs document key architectural decisions and how they fit togethe
 | **[ADR-003](adr/ADR-003-telegram-authentication.md)** | Telegram Mini App Auth | Drives the Cloudflare Pages deployment (hosting the Mini App UI) and dictates the JWT/HMAC flow between Telegram, Frontend, and Backend. |
 
 **How architecture and decisions fit together:**  
-The three views (Static, Dynamic, Deployment) and three ADRs form a cohesive architectural baseline. The **Deployment View** shows *where* components run (Cloudflare + Docker Compose), the **Static View** shows *how* they are structured logically (React UI → FastAPI Services → PostgreSQL), and the **Dynamic View** traces *critical flows* (Auth → Upload → Rembg → Weather). Together with the ADRs, they justify technology choices, map them to Quality Requirements (QR-001/002/003), and provide a traceable foundation for future scaling (e.g., migrating local storage to S3, adding async queues for Rembg).
 
+The three views (Static, Dynamic, Deployment) and three ADRs form a cohesive architectural baseline. The **Deployment View** shows *where* components run (Cloudflare + Docker Compose), the **Static View** shows *how* they are structured logically (React UI → FastAPI Services → PostgreSQL), and the **Dynamic View** traces *critical flows* (Auth → Upload → Rembg → Weather). Together with the ADRs, they justify technology choices, map them to Quality Requirements (QR-001/002/003), and provide a traceable foundation for future scaling (e.g., adding async queues for Rembg).
