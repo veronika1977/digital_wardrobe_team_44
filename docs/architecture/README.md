@@ -19,6 +19,8 @@ This document provides a comprehensive overview of the Digital Wardrobe system a
 
 **Source:** [static-view/component-diagram.puml](static-view/component-diagram.puml)
 
+**Rendered in CI:** SVG auto-generated on push; source `.puml` is the single source of truth.
+
 **What this diagram shows:** The logical decomposition of the system into major components: the React Frontend (Vite), the FastAPI Backend (routers, services, models), the PostgreSQL database, and external systems (Telegram API, OpenWeatherMap, Rembg). It illustrates how the frontend communicates with the backend via REST endpoints and how the backend orchestrates services for authentication, image processing, and data persistence.
 
 **Coupling and cohesion:** The architecture exhibits **high cohesion** by grouping related responsibilities into isolated services (`auth`, `upload`, `rembg`, `items`). **Loose coupling** is maintained through well-defined API boundaries (FastAPI routers), Pydantic DTO schemas, and dependency injection. The frontend and backend are completely decoupled, communicating only over HTTPS. Database access is abstracted via SQLAlchemy models, preventing direct SQL leakage.
@@ -45,7 +47,7 @@ This document provides a comprehensive overview of the Digital Wardrobe system a
 
 **Why this scenario is important:** This is the core content-creation flow of the product (every wardrobe item enters the system this way) and it is the one flow with a real external dependency (Rembg) that can fail independently of the rest of the system.
 
-**Architecture decisions and quality requirements:** This flow implements the decision recorded in [ADR-002: CPU-based Rembg](adr/ADR-002-rembg-background-removal.md) to run background removal as a *best-effort* step rather than a hard dependency of item creation. The diagram shows the integration boundary between the Backend API and the external Rembg service, and the fallback branch (original image saved, item marked with fallback status) is the concrete mechanism that satisfies [QR-002: Background Removal Fault Tolerance](../../quality-requirements.md#qr-002-background-removal-fault-tolerance): 100% of original photos are saved and the rest of the application stays operational even when Rembg fails.
+**Architecture decisions and quality requirements:** This flow implements the decision recorded in [ADR-002: CPU-based Rembg](adr/ADR-002-rembg-background-removal.md) to run background removal as a *best-effort* step rather than a hard dependency of item creation. The diagram shows the integration boundary between the Backend API and the external Rembg service, and the fallback branch (original image saved, item marked with fallback status) is the concrete mechanism that satisfies [QR-002: Background Removal Fault Tolerance](../quality-requirements.md#QR-002-background-removal-fault-tolerance): 100% of original photos are saved and the rest of the application stays operational even when Rembg fails.
 
 ---
 

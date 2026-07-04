@@ -37,13 +37,14 @@ MVP v2 prioritized delivering core US-12 (Weather) and US-13 (Calendar) flows. D
 ### Product Access
 
 - [Live Application: Telegram Mini App](https://t.me/digital_wardrobe_app_bot)
-- [Run Instructions: docs/development-process.md]()
+- [Run Instructions](../../README.md#quick-start)
 
 ---
 
 ## Delivered Increment Summary
 
 ### MVP v2 Changes
+
 See [CHANGELOG.md#mvp-v2](../../CHANGELOG.md#MVP-v2) for detailed release notes.
 
 **Key additions:**
@@ -59,14 +60,13 @@ See [CHANGELOG.md#mvp-v2](../../CHANGELOG.md#MVP-v2) for detailed release notes.
 
 ## Customer Feedback and Response for mvp v2
 
-| Feedback Point | Resulting PBI or Issue | Status |
-|---------------|----------------------|--------|
-| Weather loads <3s and matches local conditions — positive validation | N/A | Acknowledged |
-| Geolocation button not visible on some devices; fallback to manual city selection needed | Frontend repository [PR #72](https://github.com/veronika1977/digital_wardrobe_777/pull/72#issue-4802930074) | Done |
-| Outfit arrangement does not preserve user layout | [PBI #271](https://github.com/veronika1977/digital_wardrobe_team_44/issues/271#issue-4805020609) | Backlog |
-| Outfits load as separate items instead of complete sets | [PBI #270](https://github.com/veronika1977/digital_wardrobe_team_44/issues/270#issue-4804987098) | Backlog |
-| Add direct "load outfit for today" button on main panel | Backlog item | Deferred |
-| Calendar green highlight is intuitive; date-state sync works as expected | N/A | Acknowledged |
+| Feedback Point | Resulting PBI or Issue | Status | Response |
+|---------------|----------------------|--------|----------|
+| Weather loads <3s and matches local conditions — positive validation | N/A | Acknowledged | Validated during UAT-004; no changes required. |
+| Geolocation button not visible on some devices; fallback to manual city selection needed | [PR #72](https://github.com/veronika1977/digital_wardrobe_777/pull/72) | Done | Fixed fallback UI post-UAT; button visibility restored. |
+| Outfit arrangement does not preserve user layout | [PBI #271](https://github.com/veronika1977/digital_wardrobe_team_44/issues/271) | Backlog | State persistence refactor scheduled for Sprint 4 |
+| Outfits load as separate items instead of complete sets | [PBI #270](https://github.com/veronika1977/digital_wardrobe_team_44/issues/270) | Backlog | Backend schema + frontend component update in Sprint 4 |
+| Calendar green highlight is intuitive; date-state sync works as expected | N/A | Acknowledged | Validated during UAT-005; no changes required. |
 
 **Note:** Core features Weather (US-12) and Calendar (US-13) were delivered and validated during UAT. Positive feedback is acknowledged above; improvement requests are tracked in backlog.
 
@@ -89,12 +89,16 @@ See [CHANGELOG.md#mvp-v2](../../CHANGELOG.md#MVP-v2) for detailed release notes.
 - [User Acceptance Tests](../../docs/user-acceptance-tests.md)
 - [Development Process](../../docs/development-process.md)
 
+### Hosted Documentation
+
+- [Browse Maintained Docs](https://veronika1977.github.io/digital_wardrobe_team_44/)
+
 ### Architecture
 
 - [Architecture Overview](../../docs/architecture/README.md)
-- [Static View](../../docs/architecture/static-view/README.md) | [Diagram](../../docs/architecture/static-view/component-diagram.svg)
-- [Dynamic View](../../docs/architecture/dynamic-view/README.md) | [Diagram](../../docs/architecture/dynamic-view/sequence-diagram.svg)
-- [Deployment View](../../docs/architecture/deployment-view/README.md) | [Diagram](../../docs/architecture/deployment-view/deployment_diagram.svg)
+- [Static View](../../docs/architecture/static-view.puml) | [Diagram](../../docs/architecture/static-view/component-diagram.svg)
+- [Dynamic View](../../docs/architecture/dynamic-view.puml) | [Diagram](../../docs/architecture/dynamic-view/sequence-diagram.svg)
+- [Deployment View](../../docs/architecture/deployment-view.puml) | [Diagram](../../docs/architecture/deployment-view/deployment_diagram.svg)
 - [ADR Directory](../../docs/architecture/adr/)
 
 ### Architecture Summary
@@ -127,8 +131,8 @@ Quality requirements QR-001 (response time), QR-002 (fault tolerance), and QR-00
 - [CI Pipeline: Backend](https://github.com/Mrxfg/digital-wardrobe/actions)
 - [CI Pipeline: Frontend](https://github.com/veronika1977/digital_wardrobe_777/actions)
 - [CI Pipeline: Documentation](https://github.com/veronika1977/digital_wardrobe_team_44/actions)
-- [Latest Protected-Branch CI Run: Backend](https://github.com/Mrxfg/digital-wardrobe/actions)
-- [Latest Protected-Branch CI Run: Documentation](https://github.com/veronika1977/digital_wardrobe_team_44/actions)
+- [Latest Protected-Branch CI Run: Backend](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28704907059)
+- [Latest Protected-Branch CI Run: Documentation](https://github.com/veronika1977/digital_wardrobe_team_44/actions/runs/28706736300)
 
 ### Release and Changelog
 
@@ -140,7 +144,8 @@ Quality requirements QR-001 (response time), QR-002 (fault tolerance), and QR-00
 ## Demonstration and Evidence
 
 ### Demo Video
-[Public sanitized demo video](https://drive.google.com/drive/folders/1e94sniKBmWwJYCnyYjfly6F-1X1qXroW) 
+
+**Demo Video:** Sanitized product demo (<2 min) shared via Moodle private channel (instructor access only).
 
 ### UAT Results Summary
 
@@ -153,16 +158,10 @@ See [User Acceptance Tests](../../docs/user-acceptance-tests.md) for detailed sc
 - UAT-005 (Calendar): Passed, outfit scheduling and green highlight function as expected
 
 ### Sprint Review Publication
+
 - [Sprint Review Summary](./sprint-review-summary.md)
 - [Sprint Review Transcript](./sprint-review-transcript.md)
 
----
-
-## Deviations from Expected Artifacts
-
-[TODO: If any artifact, evidence pattern, or access arrangement differs from the expected default, justify that deviation explicitly. Example:]
-- Backend CI coverage report uses `htmlcov/` directory instead of uploading to external service due to MVP scope; full report available in CI artifacts.
-- Demo video hosted on YouTube (public) for grader accessibility; alternative: share via Moodle if privacy required.
 
 ---
 
@@ -190,13 +189,11 @@ Digital Wardrobe MVP v2 is production-ready for the defined scope:
 ### Next Steps
 
 1. Add AI-stylist in app (US-14)
-2. Create Telegram Bot notifications for daily outfis (US-15)
+2. Create Telegram Bot notifications for daily outfits (US-15)
 3. Monetization
-4. Make task according customer feedback from UAT and Sprint 3 Review
+4. Address UAT/Sprint Review feedback: outfit layout persistence (PBI #271), grouped outfit rendering (PBI #270).
 
 ---
-
-## Contribution Traceability
 
 ## Contribution Traceability
 
@@ -222,7 +219,7 @@ Digital Wardrobe MVP v2 is production-ready for the defined scope:
 
 ### Sprint 3 Board View
 
-![Sprint 3 Board](images/Sprint_3_Board.png.png)
+![Sprint 3 Board](images/Sprint_3_Board.png)
 
 ### CI Run Status
 
