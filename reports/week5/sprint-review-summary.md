@@ -8,6 +8,7 @@
 The Sprint Goal for MVP Version 2 was presented: deliver two key user stories – weather integration and built-in outfit planning with the calendar. The team also created architectural documentation (three UML diagrams: Static, Dynamic, and Deployment) and linked all technical decisions to quality requirements.
 
 ## Delivered Increment Discussed
+
 The team demonstrated the following implemented functionality:
 - Welcome Page with geolocation-based weather display
 - City selection for weather (manual or automatic via GPS)
@@ -18,6 +19,14 @@ The following issues were acknowledged as work in progress:
 - Outfits and capsules are not yet synced
 - Weather city selection button is not visible for some users
 - Backend not fully implemented for outfit loading via calendar
+
+**Traceability:**
+
+- US-12 (Weather): [#82](https://github.com/veronika1977/digital_wardrobe_team_44/issues/82) → [PR #243](https://github.com/veronika1977/digital_wardrobe_team_44/pull/243)
+- US-13 (Calendar): [#216](https://github.com/veronika1977/digital_wardrobe_team_44/issues/216) → [PR #252](https://github.com/veronika1977/digital_wardrobe_team_44/pull/252)
+- Sprint 3 Milestone: [Link](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/3)
+- Related PBIs: [#270](https://github.com/veronika1977/digital_wardrobe_team_44/issues/270) (grouped outfits), [#271](https://github.com/veronika1977/digital_wardrobe_team_44/issues/271) (layout persistence)
+
 
 ---
 
@@ -30,6 +39,7 @@ The following issues were acknowledged as work in progress:
 **Participants:** Veronika Drozd, Ekaterina Kharamanian, Evgeniia Zakharova
 
 ### Which UAT scenarios passed:
+
 - **UAT-001:** Add Clothing Item with Photo — PASSED
 - **UAT-002:** Delete Item and Verify in Cart — PASSED
 - **UAT-003:** Filter Wardrobe by Season — PASSED
@@ -54,6 +64,7 @@ Positive:
 - The interface is improving
 
 Improvement requests:
+
 - Fix outfit arrangement saving to preserve user layout
 - Fix outfit loading from calendar – should display as full outfit, not as separate items
 - Add a direct button on the main panel to load an outfit for today
@@ -96,3 +107,9 @@ Confirmed for future sprints:
 - AI stylist integration
 - Telegram bot notifications (reminders for forgotten outfits)
 - Further calendar and outfit planning enhancements
+
+## Publication Status
+
+- **Recording permitted:** Yes, customer consented to recording before session start.
+- **Public transcript publication permitted:** Yes, sanitized transcript published in [`sprint-review-transcript.md`](./sprint-review-transcript.md).
+- **Private instructor sharing:** Full recording and exact timecodes submitted via Moodle private channel.

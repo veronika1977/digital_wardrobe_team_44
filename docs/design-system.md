@@ -27,7 +27,7 @@ All colors are defined as Variables in Figma. The app uses a light theme only.
 
 | Icon name | Usage in the app |
 |---|---|
-| **Cansel** | Dismiss modal, cancel action, clear search field |
+| **Cancel** | Dismiss modal, cancel action, clear search field |
 | **Search** | Search field trigger in wardrobe and outfits screens |
 | **Arrow** | Navigation forward, redirect to outfit builder |
 | **Add** | Add item button, add outfit, add to capsule |
@@ -131,7 +131,7 @@ An icon button using the **button** (undo) icon.
  
 - Background: transparent
 - Icon color: `text/primary` (`#151414`)
-Paired with the **Cansel** icon button to cancel the restore action. Both icons color: `text/primary` (`#151414`).
+Paired with the **Cancel** icon button to cancel the restore action. Both icons color: `text/primary` (`#151414`).
  
 **Used for:** restoring a deleted item or outfit from trash (UC-8).
  

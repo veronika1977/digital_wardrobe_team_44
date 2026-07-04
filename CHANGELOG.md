@@ -4,8 +4,12 @@ All notable changes to the Digital Wardrobe project will be documented in this f
 
 ## [Unreleased]
 
-### [MVP v2] - 2026-07-03
+*No unreleased changes at this time.*
+
+## [2.0.0] - 2026-07-03
+
 ### Added
+
 - **US-12: Weather Integration**
   - Backend: `GET /api/user/location` endpoint (extracts coords from Telegram `initData` + supports manual override)
   - Frontend: Direct OpenWeatherMap API calls, weather UI component, hybrid flow (Backend → coords → Frontend → weather)
@@ -34,7 +38,7 @@ All notable changes to the Digital Wardrobe project will be documented in this f
 - Added MVP v2 Verification Summary to `docs/quality-requirements.md`
 - Added MVP v2 Additions checklist to `docs/definition-of-done.md`
 
-# [1.1.0] - 2026-06-25
+## [1.1.0] - 2026-06-25
 ### Added
 - Confirmation dialog for restoring items from cart (PBI #169)
 - **US-08: Automatic Background Removal** — integrated Rembg AI to automatically remove backgrounds from uploaded clothing photos [#86](https://github.com/veronika1977/digital_wardrobe_team_44/issues/86)
