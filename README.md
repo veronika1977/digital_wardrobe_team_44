@@ -23,9 +23,9 @@
     <a href="https://veronika1977.github.io/digital_wardrobe_team_44/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://t.me/digital_wardrobe_app_bot">📱 Try Live Product</a>
+    <a href="https://t.me/digital_wardrobe_app_bot">Try Live Product</a>
     ·
-    <a href="<Demo Video Link>">🎥 Watch Demo</a>
+    <a href="<Demo Video Link>">Watch Demo</a>
     ·
     <a href="https://github.com/veronika1977/digital_wardrobe_team_44/issues">Report Bug</a>
     ·
@@ -334,7 +334,7 @@ SOFTWARE.
 [issues-url]: https://github.com/veronika1977/digital_wardrobe_team_44/issues
 [license-shield]: https://img.shields.io/github/license/veronika1977/digital_wardrobe_team_44.svg?style=for-the-badge
 [license-url]: https://github.com/veronika1977/digital_wardrobe_team_44/blob/main/LICENSE
-[ci-shield]: https://img.shields.io/github/actions/workflow/status/veronika1977/digital_wardrobe_team_44/ci.yml?style=for-the-badge&label=CI
+[ci-shield]: https://shields.io
 [ci-url]: https://github.com/veronika1977/digital_wardrobe_team_44/actions
 [product-screenshot]: images/main_DW.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
