@@ -11,6 +11,7 @@ To help users easily organize their wardrobe directly in Telegram, without compl
 - **Dates:** 15.06.2026 – 21.06.2026
 - **Sprint Goal:** Deliver a functional MVP v1 that allows users to log in via Telegram, add clothing items with photos, and choose tags.
 - **Focus:** Core infrastructure, Telegram auth, and basic item management.
+- **Release:** MVP v1
 
 **Planned Items:**
 
@@ -57,6 +58,7 @@ while establishing quality automation infrastructure (CI/CD, quality requirement
 
 
 ## Sprint 3: Assignment 5
+
 - **Milestone:** [Sprint 3](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/3)
 - **Dates:** 29.06.2026 – 05.07.2026
 - **Sprint Goal:** Deliver MVP v2 with weather information display (US-12) and calendar/outfit planning (US-13), while documenting system architecture through three architectural views, creating ADRs, and establishing hosted documentation.
@@ -106,31 +108,78 @@ while establishing quality automation infrastructure (CI/CD, quality requirement
 
 **Total Sprint 3 velocity:** 13 SP (user stories only) + architecture work
 
-## Future Sprints
 
-### Sprint 4: AI Stylist & Daily Wear Tracking
+### Sprint 4: AI Stylist, Daily Wear Tracking & Trial Release
+
+- **Milestone:** [Sprint 4](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/4)
+- **Dates:** 06.07.2026 – 12.07.2026
+- **Sprint Goal:** Deliver stable trial release with AI Stylist and Daily Wear Tracking, complete customer-facing documentation, conduct customer trial session, and establish transition-readiness evidence for Assignment 6.
 - **Focus:** AI-powered outfit suggestions and daily wear tracking
+- **Release:** MVP v1.2.0
 
-**Planned User Stories:**
-- [US-14: AI Stylist for Outfit Generation](https://github.com/veronika1977/digital_wardrobe_team_44/issues/217) (13 SP)
-  - AI-generated outfit suggestions based on wardrobe, weather, and occasion
-  - User can save or reject suggestions
-  - AI learns from user preferences
-- [US-15: Telegram Bot Daily Wear Tracking](https://github.com/veronika1977/digital_wardrobe_team_44/issues/218) (8 SP)
-  - Daily reminder at 7:00 PM: "What did you wear today?"
-  - Quick marking of worn items
-  - Wear statistics and analytics
+**Planned Items:**
 
-### Sprint 5: Sharing & AI Material Detection
+*User Stories:*
+
+**US-14: AI Stylist for Outfit Generation (13 SP)** — [Issue #217](https://github.com/veronika1977/digital_wardrobe_team_44/issues/217)
+- AI-generated outfit suggestions based on wardrobe, weather, and occasion
+- User can save or reject suggestions
+- AI learns from user preferences
+- **PBI: Backend API & AI Service for Outfit Generation (8 SP)**
+  - Endpoint that returns structured outfit suggestions within 3 seconds
+  - Robust error handling and fallback logic for AI unavailability
+  - Input validation and caching
+- **PBI: Frontend UI & State for AI Outfit Generator (5 SP)**
+  - Complete UI for AI outfit generation with state management
+  - Loading states and user interaction for saving/rejecting suggestions
+
+**US-15: Telegram Bot Daily Wear Tracking (8 SP)** — [Issue #218](https://github.com/veronika1977/digital_wardrobe_team_44/issues/218)
+- Daily reminder at 7:00 PM: "What did you wear today?"
+- Quick marking of worn items
+- Wear statistics and analytics
+
+*Supporting PBIs:*
+- [PBI: Persist user-defined outfit arrangement](https://github.com/veronika1977/digital_wardrobe_team_44/issues/271#issue-4805020609) (5 SP)
+  - Backend schema updates to store layout coordinates/order
+  - Frontend state persistence to restore exact user-defined arrangement
+- [PBI: Display outfits as complete grouped sets](https://github.com/veronika1977/digital_wardrobe_team_44/issues/270#issue-4804987098) (3 SP)
+  - Outfits displayed as complete, visually grouped sets
+  - Consistent grouping across Calendar, Main screen, and Capsules
+
+**Total Sprint 4 velocity:** 29 SP (user stories + supporting PBIs)
+
+### Sprint 5: Sharing, AI Material Detection, Monetization & Final Transition
+
+- **Milestone:** [Sprint 5](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/5)
+- **Dates:** 13.07.2026 – 19.07.2026
+- **Sprint Goal:** Complete final transition based on Week 6 feedback, deliver MVP v3 with sharing, AI material detection, and monetization features, confirm handover with customer, and prepare for Demo Day.
 - **Focus:** Social features and advanced AI capabilities
+- **Release:** MVP v3
 
-**Planned User Stories:**
-- [US-10: Share Outfit by Link](https://github.com/veronika1977/digital_wardrobe_team_44/issues/91) (3 SP)
-  - Share outfits with friends via Telegram
-  - Public wardrobe profiles (optional)
-- [US-07: AI Material Detection](https://github.com/veronika1977/digital_wardrobe_team_44/issues/90) (13 SP)
-  - Automatic material detection from photos
-  - Integration with existing material tags
+**Planned Items:**
+
+*User Stories:*
+
+**US-10: Share Outfit by Link (3 SP)** — [Issue #91](https://github.com/veronika1977/digital_wardrobe_team_44/issues/91)
+- Share outfits with friends via Telegram
+- Public wardrobe profiles (optional)
+**US-07: AI Material Detection (13 SP)** — [Issue #90](https://github.com/veronika1977/digital_wardrobe_team_44/issues/90)
+- Automatic material detection from photos
+- Integration with existing material tags
+
+**US-16: Monetization (8 SP)** — [Issue #284](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284#issue-4820828254)
+- Premium subscription model with free tier limits
+- Telegram Payments integration for 490₽ Premium upgrade
+- **PBI: Backend: Monetization (5 SP)**
+  - Enforce free tier limits (1 capsule, 3 outfits, 10 items, no AI Stylist)
+  - Process Telegram payments for Premium upgrade
+  - Expose API endpoints for frontend usage stats and checkout
+- **PBI: Frontend: Monetization (3 SP)**
+  - Display paywall screens when users hit free tier limits
+  - One-tap upgrade flow via Telegram Payments
+  - Premium status indicator and usage meter
+
+**Total Sprint 5 velocity:** 24 SP (user stories + supporting PBIs)
 
 ## Removed 
 
