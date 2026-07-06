@@ -4,7 +4,6 @@
 <!-- PROJECT SHIELDS -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![CI Status][ci-shield]][ci-url]
@@ -331,8 +330,6 @@ SOFTWARE.
 [contributors-url]: https://github.com/veronika1977/digital_wardrobe_team_44/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/veronika1977/digital_wardrobe_team_44.svg?style=for-the-badge
 [forks-url]: https://github.com/veronika1977/digital_wardrobe_team_44/network/members
-[stars-shield]: https://img.shields.io/github/stars/veronika1977/digital_wardrobe_team_44.svg?style=for-the-badge
-[stars-url]: https://github.com/veronika1977/digital_wardrobe_team_44/stargazers
 [issues-shield]: https://img.shields.io/github/issues/veronika1977/digital_wardrobe_team_44.svg?style=for-the-badge
 [issues-url]: https://github.com/veronika1977/digital_wardrobe_team_44/issues
 [license-shield]: https://img.shields.io/github/license/veronika1977/digital_wardrobe_team_44.svg?style=for-the-badge
