@@ -23,9 +23,9 @@
     <a href="https://veronika1977.github.io/digital_wardrobe_team_44/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://t.me/digital_wardrobe_app_bot">📱 Try Live Product</a>
+    <a href="https://t.me/digital_wardrobe_app_bot">Try Live Product</a>
     ·
-    <a href="<Demo Video Link>">🎥 Watch Demo</a>
+    <a href="<Demo Video Link>">Watch Demo</a>
     ·
     <a href="https://github.com/veronika1977/digital_wardrobe_team_44/issues">Report Bug</a>
     ·
@@ -208,12 +208,13 @@ See the [open issues](https://github.com/veronika1977/digital_wardrobe_team_44/i
 ## Quality & Assurance
 
 ### Quality Assurance
+
 - **Automated Tests:** 64+ backend unit/integration tests, frontend Vitest suite
 - **Coverage:** 66% backend overall, 72-100% critical modules
 - **CI Gates:** linting (flake8/ESLint), type-check (mypy/tsc), build, tests, coverage, Lychee link check
 - **Additional QA:** Vulture dead-code detection, dependency vulnerability scanning
 
-[Testing Status](docs/testing.md) | [QRT Definitions](docs/quality-requirement-tests.md) | [CI Pipeline](https://github.com/Mrxfg/digital-wardrobe/actions)
+[Testing Status](docs/testing.md) | [QRT Definitions](docs/quality-requirement-tests.md) | [Backend CI Pipeline](https://github.com/Mrxfg/digital-wardrobe/actions)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -257,14 +258,6 @@ Contributions are what make the open source community such an amazing place to l
 </a>
 
 [Development Process](docs/development-process.md) | [Definition of Done](docs/definition-of-done.md)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -334,8 +327,8 @@ SOFTWARE.
 [issues-url]: https://github.com/veronika1977/digital_wardrobe_team_44/issues
 [license-shield]: https://img.shields.io/github/license/veronika1977/digital_wardrobe_team_44.svg?style=for-the-badge
 [license-url]: https://github.com/veronika1977/digital_wardrobe_team_44/blob/main/LICENSE
-[ci-shield]: https://img.shields.io/github/actions/workflow/status/veronika1977/digital_wardrobe_team_44/ci.yml?style=for-the-badge&label=CI
-[ci-url]: https://github.com/veronika1977/digital_wardrobe_team_44/actions
+[ci-shield]: https://github.com/veronika1977/digital_wardrobe_team_44/actions/workflows/lychee.yml/badge.svg
+[ci-url]: https://github.com/veronika1977/digital_wardrobe_team_44/actions/workflows/lychee.yml
 [product-screenshot]: images/main_DW.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
