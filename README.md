@@ -219,6 +219,7 @@ See the [open issues](https://github.com/veronika1977/digital_wardrobe_team_44/i
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ARCHITECTURE -->
+
 | View | Description | Link |
 | :--- | :--- | :--- |
 | **Static** | Component boundaries & interfaces | [View](docs/architecture/static.md) |
