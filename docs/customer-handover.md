@@ -20,7 +20,7 @@ The customer confirmed acceptance with the following follow-up items to be addre
 
 | # | Follow-up Item | Priority | PBI/Issue | Status |
 |---|----------------|----------|-----------|--------|
-| 1 | Add monetization | High | [US-16](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284#issue-4820828254) | Planned for Sprint 5 |
+| 1 | Add monetization | High | [US-16](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284) | Planned for Sprint 5 |
 | 2 | [Например: Add dark mode] | Medium | [#XXX](link) | Planned for Sprint 5 |
 | 3 | [Например: Export wardrobe to PDF] | Low | [#XXX](link) | Post-course consideration |
 
@@ -96,8 +96,8 @@ If the customer wants full ownership after the course, the following can be tran
 ### Frontend (Local Development)
 
 ```bash
-git clone https://github.com/veronika1977/digital_wardrobe_team_44.git
-cd digital_wardrobe_team_44/frontend
+git clone https://github.com/veronika1977/digital_wardrobe_777.git
+cd digital_wardrobe_777
 npm install
 npm run dev
 ```
@@ -105,8 +105,8 @@ npm run dev
 ### Backend (Local Development)
 
 ``` bash
-git clone https://github.com/veronika1977/digital_wardrobe_team_44.git
-cd digital_wardrobe_team_44/backend
+git clone https://github.com/Mrxfg/digital-wardrobe.git
+cd digital-wardrobe
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
@@ -147,19 +147,16 @@ docker-compose restart
 
 ## Main Entry Points for Customer Use
 
-- [Product Access (Telegram Mini App)](https://t.me/digital_wardrobe_app_bot)
-- [Repository with documentation](https://github.com/veronika1977/digital_wardrobe_team_44)
-- [Backend repository](https://github.com/Mrxfg/digital-wardrobe)
-- [Frontend repository](https://github.com/veronika1977/digital_wardrobe_777)
-- [Issue Tracker](https://github.com/veronika1977/digital_wardrobe_team_44/issues)
-- [Contributing Guide](../CONTRIBUTING.md)
-- [AI Agent Rules](../AGENTS.md)
+| Purpose | Link | Documentation |
+|---------|------|---------------|
+| Product Access (Telegram Mini App) | [@digital_wardrobe_app_bot](https://t.me/digital_wardrobe_app_bot) | — |
+| Documentation repository (this repo) | [digital_wardrobe_team_44](https://github.com/veronika1977/digital_wardrobe_team_44) | [CONTRIBUTING.md](CONTRIBUTING.md) · [AGENTS.md](AGENTS.md) |
+| Frontend repository | [digital_wardrobe_777](https://github.com/veronika1977/digital_wardrobe_777) | [CONTRIBUTING.md](https://github.com/veronika1977/digital_wardrobe_777/blob/main/CONTRIBUTING.md) · [AGENTS.md](https://github.com/veronika1977/digital_wardrobe_777/blob/main/AGENTS.md) |
+| Backend repository | [digital-wardrobe](https://github.com/Mrxfg/digital-wardrobe) | [CONTRIBUTING.md](https://github.com/Mrxfg/digital-wardrobe/blob/main/CONTRIBUTING.md) · [AGENTS.md](https://github.com/Mrxfg/digital-wardrobe/blob/main/AGENTS.md) |
+| Hosted Documentation | [GitHub Pages](https://veronika1977.github.io/digital_wardrobe_team_44/) | — |
+| Issue Tracker | [GitHub Issues](https://github.com/veronika1977/digital_wardrobe_team_44/issues) | — |
 
-> **Note:** This project consists of three repositories due to historical development:
-> - `digital_wardrobe_team_44` — primary repo for Assignments (docs, reports, coordination)
-> - `digital_wardrobe_777` — frontend code (legacy)
-> - `digital-wardrobe` — backend code (legacy)
-
+> **Note:** This project uses a multi-repo architecture. Each code repository has its own `CONTRIBUTING.md` and `AGENTS.md` tailored to its tech stack (React/Vite for frontend, Python/FastAPI for backend). This repository contains only documentation, reports, and architectural artifacts.
 
 ## Usage Instructions
 

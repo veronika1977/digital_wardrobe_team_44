@@ -8,6 +8,19 @@
 - **Sprint 4 Backlog:** [Sprint 4 View](https://github.com/users/veronika1977/projects/1/views/10)
 - **Sprint 4 Milestone:** [Sprint 4](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/4)
 
+## Repository Structure
+
+This project uses a **multi-repo architecture** with three independent repositories. Each code repository has its own contribution guidelines and AI agent instructions tailored to its tech stack.
+
+| Repository | Purpose | Tech Stack | Contribution Guide |
+|------------|---------|------------|-------------------|
+| **This repo** ([digital_wardrobe_team_44](https://github.com/veronika1977/digital_wardrobe_team_44)) | Coordination: ADRs, reports, handover docs, roadmap | Markdown | [CONTRIBUTING.md](CONTRIBUTING.md) \| [AGENTS.md](AGENTS.md) |
+| [digital_wardrobe_777](https://github.com/veronika1977/digital_wardrobe_777) | Frontend: Telegram Mini App UI | React 18, TypeScript, Vite, TailwindCSS | [CONTRIBUTING.md](https://github.com/veronika1977/digital_wardrobe_777/blob/main/CONTRIBUTING.md) \| [AGENTS.md](https://github.com/veronika1977/digital_wardrobe_777/blob/main/AGENTS.md) |
+| [digital-wardrobe](https://github.com/Mrxfg/digital-wardrobe) | Backend: API server | Python 3.10+, FastAPI, PostgreSQL, Rembg | [CONTRIBUTING.md](https://github.com/Mrxfg/digital-wardrobe/blob/main/CONTRIBUTING.md) \| [AGENTS.md](https://github.com/Mrxfg/digital-wardrobe/blob/main/AGENTS.md) |
+
+> **Note:** Code contributions go to the frontend or backend repositories (see their respective `CONTRIBUTING.md`). This repository contains only documentation, reports, and architectural artifacts.
+
+
 ## Sprint 4 Scope & Planning
 
 - **Sprint Goal:** Deliver a stable trial release with AI Stylist and Daily Wear Tracking, complete customer-facing documentation, conduct a transition-readiness meeting, and establish evidence for independent customer use.
@@ -20,6 +33,7 @@
 - **SemVer Release:** [v2.1.0 — Trial Release](link)
 - **Product Access:** [@digital_wardrobe_app_bot](https://t.me/digital_wardrobe_app_bot) (Telegram Mini App)
 - **Run/Access Instructions:** [README.md](../../README.md#getting-started)
+
 - **Repository Entry Points:** 
 
   - [README.md](../../README.md)
@@ -86,7 +100,7 @@ The product is functionally complete for core user workflows (add items, plan ou
 |-------------|---------------|-----------|-----------------|--------------|----------------------------|
 | @veronika1977 | Sprint mgmt, US-16 | 4 | 6 | CI setup, Lychee | Handover docs, roadmap, reports |
 | @Mrxfg | US-14a, US-15a, US-16a | 5 | 3 | Backend tests, QRTs | ADR-004, ADR-005, API docs |
-| @Evgeni1a | US-14b, US-15b, US-16b | 4 | 2 | Frontend tests, Vitest | UI components, CONTRIBUTING.md |
+| @Evgeni1a | US-14| 4 | 2 | Frontend tests, Vitest | UI components, CONTRIBUTING.md |
 | @CatherineHar | Docs, QA, UAT | 2 | 4 | UAT execution | customer-handover.md, AGENTS.md |
 | @DarinaLuch | Customer feedback, UAT | - | - | Trial execution | Feedback collection, validation |
 
