@@ -33,6 +33,7 @@ digital_wardrobe_team_44/
 ### Local Development Setup
 
 **Clone the repository**
+
 ```bash
 git clone https://github.com/veronika1977/digital_wardrobe_team_44.git
 cd digital_wardrobe_team_44
@@ -40,14 +41,16 @@ cd digital_wardrobe_team_44
 
 **Frontend setup**
 ```bash
-cd frontend
+git clone https://github.com/veronika1977/digital_wardrobe_777.git
+cd digital_wardrobe_777
 npm install
 npm run dev
 ```
 
 **Backend setup (in another terminal)**
 ```bash
-cd ../backend
+git clone https://github.com/Mrxfg/digital-wardrobe.git
+cd digital-wardrobe
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt

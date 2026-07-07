@@ -8,15 +8,15 @@ This document provides operating instructions for AI coding agents working on th
 
 ## Repository Map
 
-This project uses multiple repositories. Identify which repository you are working in before making changes:
+This project uses multiple repositories. **Each repository has its own AGENTS.md and CONTRIBUTING.md with repo-specific instructions.** Identify which repository you are working in before making changes.
 
-| Repository | URL | Purpose |
-|------------|-----|---------|
-| **Coordination (this repo)** | `digital_wardrobe_team_44` | Assignment reports, documentation, ADRs, roadmap, handover docs |
-| **Frontend** | `digital_wardrobe_777` | React + TypeScript + Vite Telegram Mini App |
-| **Backend** | `digital-wardrobe` | FastAPI + PostgreSQL API server |
+| Repository | Purpose | AGENTS.md | CONTRIBUTING.md |
+|------------|---------|-----------|-----------------|
+| **This repo** (`digital_wardrobe_team_44`) | Coordination: docs, reports, ADRs, roadmap | [AGENTS.md](AGENTS.md) | [CONTRIBUTING.md](CONTRIBUTING.md) |
+| **Frontend** (`digital_wardrobe_777`) | React + TypeScript + Vite Mini App | [AGENTS.md](https://github.com/veronika1977/digital_wardrobe_777/blob/main/AGENTS.md) | [CONTRIBUTING.md](https://github.com/veronika1977/digital_wardrobe_777/blob/main/CONTRIBUTING.md) |
+| **Backend** (`digital-wardrobe`) | FastAPI + PostgreSQL API server | [AGENTS.md](https://github.com/Mrxfg/digital-wardrobe/blob/main/AGENTS.md) | [CONTRIBUTING.md](https://github.com/Mrxfg/digital-wardrobe/blob/main/CONTRIBUTING.md) |
 
-**Important:** This `AGENTS.md` file lives in the coordination repository (`digital_wardrobe_team_44`). 
+**Important:** Always use the `AGENTS.md` and `CONTRIBUTING.md` from the repository you are working in — they contain tech-stack-specific commands, constraints, and workflow rules.
 
 ---
 
