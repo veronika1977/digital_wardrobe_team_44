@@ -330,7 +330,7 @@ SOFTWARE.
 [license-url]: https://github.com/veronika1977/digital_wardrobe_team_44/blob/main/LICENSE
 [ci-shield]: https://github.com/veronika1977/digital_wardrobe_team_44/actions/workflows/lychee.yml/badge.svg
 [ci-url]: https://github.com/veronika1977/digital_wardrobe_team_44/actions/workflows/lychee.yml
-[product-screenshot]: images/main_DW.png
+[product-screenshot]: reports/week5/images/main_DW.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [TypeScript]: https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white
