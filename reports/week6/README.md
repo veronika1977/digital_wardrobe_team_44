@@ -4,8 +4,8 @@
 
 - **Project Name:** Digital Wardrobe (Team 44)
 - **Description:** Telegram Mini App for personal wardrobe management with AI-powered outfit suggestions, calendar planning, and daily wear tracking.
-- **Product Backlog:** [GitHub Projects Board](https://github.com/veronika1977/digital_wardrobe_team_44/projects)
-- **Sprint 4 Backlog:** [Sprint 4 View](https://github.com/veronika1977/digital_wardrobe_team_44/projects?query=sprint%204)
+- **Product Backlog:** [GitHub Projects Board](https://github.com/users/veronika1977/projects/1/views/1)
+- **Sprint 4 Backlog:** [Sprint 4 View](https://github.com/users/veronika1977/projects/1/views/10)
 - **Sprint 4 Milestone:** [Sprint 4](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/4)
 
 ## Sprint 4 Scope & Planning
@@ -17,10 +17,11 @@
 
 ## Week 6 Trial Release (v2.1.0)
 
-- **SemVer Release:** [v2.1.0 — Trial Release](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v2.1.0)
+- **SemVer Release:** [v2.1.0 — Trial Release](link)
 - **Product Access:** [@digital_wardrobe_app_bot](https://t.me/digital_wardrobe_app_bot) (Telegram Mini App)
 - **Run/Access Instructions:** [README.md](../../README.md#getting-started)
 - **Repository Entry Points:** 
+
   - [README.md](../../README.md)
   - [CONTRIBUTING.md](../../CONTRIBUTING.md)
   - [AGENTS.md](../../AGENTS.md)

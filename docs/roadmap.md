@@ -120,7 +120,7 @@ To help users easily organize their wardrobe directly in Telegram, without compl
 - **Dates:** 06.07.2026 – 12.07.2026
 - **Sprint Goal:** Deliver stable trial release with AI Stylist and Daily Wear Tracking, complete customer-facing documentation, conduct customer trial session, and establish transition-readiness evidence for Assignment 6.
 - **Focus:** AI-powered outfit suggestions and daily wear tracking
-- **Release:** [v2.1.0 (Trial Release for Assignment 6 Week 6)](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v2.1.0)
+- **Release:** [v2.1.0 (Trial Release for Assignment 6 Week 6)](link)
 - **Status:** Completed
 
 **Planned Items:**
@@ -172,7 +172,7 @@ To help users easily organize their wardrobe directly in Telegram, without compl
 - **Dates:** 13.07.2026 – 19.07.2026
 - **Sprint Goal:** Complete final transition based on Week 6 feedback, deliver MVP v3 with sharing, AI material detection, and monetization features, confirm handover with customer, and prepare for Demo Day.
 - **Focus:** Social features, advanced AI capabilities, monetization, and final transition
-- **Release:** [v3.0.0 (MVP v3 — Final Course Version)](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v3.0.0)
+- **Release:** [v3.0.0 (MVP v3 — Final Course Version)](link)
 - **Status:** Planned (Starts: 13.07.2026)
 
 **Planned Items:**

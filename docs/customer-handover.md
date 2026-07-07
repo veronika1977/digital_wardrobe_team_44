@@ -153,7 +153,7 @@ docker-compose restart
 - [Frontend repository](https://github.com/veronika1977/digital_wardrobe_777)
 - [Issue Tracker](https://github.com/veronika1977/digital_wardrobe_team_44/issues)
 - [Contributing Guide](https://github.com/veronika1977/digital_wardrobe_team_44/blob/main/CONTRIBUTING.md)
-- [AI Agent Rules](https://github.com/veronika1977/digital_wardrobe_team_44/blob/main/AGENTS.md)
+- [AI Agent Rules](-)
 
 > **Note:** This project consists of three repositories due to historical development:
 > - `digital_wardrobe_team_44` — primary repo for Assignments (docs, reports, coordination)
