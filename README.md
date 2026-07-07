@@ -54,7 +54,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Screenshot][product-screenshot]](https://t.me/digital_wardrobe_app_bot)
+[![Product Screenshot][product-screenshot]](reports/week5/images/main_DW.png)
 
 **Goal:** Help users easily organize their wardrobe directly in Telegram, without complex registration or extra apps.
 
@@ -219,6 +219,7 @@ See the [open issues](https://github.com/veronika1977/digital_wardrobe_team_44/i
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ARCHITECTURE -->
+
 | View | Description | Link |
 | :--- | :--- | :--- |
 | **Static** | Component boundaries & interfaces | [View](docs/architecture/static.md) |
