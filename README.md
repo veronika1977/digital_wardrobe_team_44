@@ -219,21 +219,21 @@ See the [open issues](https://github.com/veronika1977/digital_wardrobe_team_44/i
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ARCHITECTURE -->
-## Architecture
-
-### High-Level Views
 | View | Description | Link |
-|------|-------------|------|
-| **Static** | Component boundaries & interfaces | [View](docs/architecture/static-view/README.md) |
-| **Dynamic** | Critical flows (auth, upload, weather) | [View](docs/architecture/dynamic-view/README.md) |
-| **Deployment** | Runtime topology (Cloudflare Pages + Docker) | [View](docs/architecture/deployment-view/README.md) |
+| :--- | :--- | :--- |
+| **Static** | Component boundaries & interfaces | [View](docs/architecture/static.md) |
+| **Dynamic** | Critical flows (auth, upload, weather) | [View](docs/architecture/dynamic.md) |
+| **Deployment** | Runtime topology (Cloudflare Pages + Docker) | [View](docs/architecture/deployment.md) |
 
 ### Architecture Decision Records (ADRs)
+
 | ADR | Decision | Impact |
-|-----|----------|--------|
+| :--- | :--- | :--- |
 | [ADR-001](docs/architecture/adr/ADR-001-fastapi-backend.md) | FastAPI + PostgreSQL | Async API, testability via DI |
 | [ADR-002](docs/architecture/adr/ADR-002-rembg-background-removal.md) | CPU-based Rembg | Fault tolerance via fallback |
 | [ADR-003](docs/architecture/adr/ADR-003-telegram-authentication.md) | Telegram Mini App Auth | JWT/HMAC flow, low-latency UX |
+| [ADR-004](docs/architecture/adr/ADR-004-ai-strategy.md) | LLM provider for AI Stylist | AI suggestions with fallback when LLM is unavailable |
+| [ADR-005](docs/architecture/adr/ADR-005-bot-architecture.md) | Telegram Bot scheduler | Daily reminders at 19:00 with inline buttons |
 
 [Full Architecture Documentation](docs/architecture/README.md)
 
