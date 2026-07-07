@@ -65,7 +65,7 @@ During Week 6, the customer reviewed the updated documentation set.
 
 ## Release & Changelog
 
-- **Week 6 Trial Release:** [v2.1.0](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v2.1.0)
+- **Week 6 Trial Release:** [v2.1.0](link)
 - **Changelog:** [CHANGELOG.md](../../CHANGELOG.md)
 
 ## Sprint Review & Process Artifacts
@@ -92,8 +92,8 @@ The product is functionally complete for core user workflows (add items, plan ou
 
 ## Evidence Screenshots
 
-![Sprint 4 Milestone](images/milestone-sprint4.png)
-![v2.1.0 Release](images/release-v2.1.0.png)
-![Reviewed PR Example](images/reviewed-pr-example.png)
-![CI Pipeline Status](images/ci-status.png)
-![Customer Handover Doc](images/handover-preview.png)
+![Sprint 4 Milestone](link)
+![v2.1.0 Release](link)
+![Reviewed PR Example](link)
+![CI Pipeline Status](link)
+![Customer Handover Doc](link)
