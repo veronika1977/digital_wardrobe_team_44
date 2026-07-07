@@ -6,22 +6,25 @@ It serves as a lightweight, traceable guide to our delivery cadence.
 ## Product Vision
 To help users easily organize their wardrobe directly in Telegram, without complex registration or extra apps.
 
-## Sprint 1: MVP v1 Core Delivery
+## Sprint 1: MVP v1 Core Delivery 
 - **Milestone:** [Sprint 1](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/1)
 - **Dates:** 15.06.2026 – 21.06.2026
 - **Sprint Goal:** Deliver a functional MVP v1 that allows users to log in via Telegram, add clothing items with photos, and choose tags.
 - **Focus:** Core infrastructure, Telegram auth, and basic item management.
 - **Release:** MVP v1
+- **Status:** Completed
 
 **Planned Items:**
 
 *User Stories:*
+
 - [US-01: Telegram Authentication](https://github.com/veronika1977/digital_wardrobe_team_44/issues/84)
 - [US-02: Add Clothing Item with Photo](https://github.com/veronika1977/digital_wardrobe_team_44/issues/85)
 - [US-11: Delete Item (Soft Delete)](https://github.com/veronika1977/digital_wardrobe_team_44/issues/77)
 - [US-04: Tags for Clothing Items](https://github.com/veronika1977/digital_wardrobe_team_44/issues/87)
 
 *Supporting PBIs (Technical/Infrastructure):*
+
 - [API Documentation and Setup Instructions](https://github.com/veronika1977/digital_wardrobe_team_44/issues/97)
 - [Research and document AI background](https://github.com/veronika1977/digital_wardrobe_team_44/issues/96)
 - [Create UI Kit and Design System for Telegram Mini App](https://github.com/veronika1977/digital_wardrobe_team_44/issues/98)
@@ -32,10 +35,10 @@ To help users easily organize their wardrobe directly in Telegram, without compl
 ## Sprint 2: Organization & Filtering
 - **Milestone:** [Sprint 2](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/2)
 - **Dates:** 22.06.2026 – 28.06.2026
-- **Sprint Goal:** Enable users to organize their added items using tags and edit existing items, improving the usability of the digital wardrobe, 
-while establishing quality automation infrastructure (CI/CD, quality requirements, automated tests).
+- **Sprint Goal:** Enable users to organize their added items using tags and edit existing items, improving the usability of the digital wardrobe, while establishing quality automation infrastructure (CI/CD, quality requirements, automated tests).
 - **Focus:** Item metadata, filtering, and edit capabilities.
-- **Release:** v1.1.0 (MVP v2)
+- **Release:** [v1.1.0 (MVP v2)](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v1.1.0)
+- **Status:** Completed
 
 **Planned Items:**
 
@@ -50,6 +53,7 @@ while establishing quality automation infrastructure (CI/CD, quality requirement
 - [#172: Days remaining in basket (backend)](https://github.com/veronika1977/digital_wardrobe_team_44/issues/172)
 
 *Quality & Automation Work:*
+
 - CI/CD pipeline configuration for frontend, backend, and docs repositories
 - Quality Requirements definition (QR-001, QR-002, QR-003)
 - Automated Quality Requirement Tests in backend (QRT-001, QRT-002, QRT-003)
@@ -57,13 +61,13 @@ while establishing quality automation infrastructure (CI/CD, quality requirement
 - Branch protection rules for all repositories
 
 
-## Sprint 3: Assignment 5
-
+## Sprint 3: Weather, Calendar & Architecture 
 - **Milestone:** [Sprint 3](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/3)
 - **Dates:** 29.06.2026 – 05.07.2026
 - **Sprint Goal:** Deliver MVP v2 with weather information display (US-12) and calendar/outfit planning (US-13), while documenting system architecture through three architectural views, creating ADRs, and establishing hosted documentation.
 - **Focus:** Weather display, calendar/outfit planning, architecture documentation, ADRs, hosted docs.
-- **Release:** MVP v2
+- **Release:** [v2.0.0 (MVP v2)](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v2.0.0)
+- **Status:** Completed
 
 **Planned Items:**
 
@@ -95,6 +99,7 @@ while establishing quality automation infrastructure (CI/CD, quality requirement
   - Navigation between months
 
 *Architecture Work:*
+
 - Component diagram (static view)
 - Sequence diagram (dynamic view)
 - Deployment diagram (deployment view)
@@ -103,6 +108,7 @@ while establishing quality automation infrastructure (CI/CD, quality requirement
 - Hosted documentation site (GitHub Pages / Netlify)
 
 *Quality & Testing:*
+
 - Extend tests for US-12, US-13
 - Update `docs/testing.md`, `docs/quality-requirement-tests.md`, `docs/definition-of-done.md`
 
@@ -110,12 +116,12 @@ while establishing quality automation infrastructure (CI/CD, quality requirement
 
 
 ### Sprint 4: AI Stylist, Daily Wear Tracking & Trial Release
-
 - **Milestone:** [Sprint 4](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/4)
 - **Dates:** 06.07.2026 – 12.07.2026
 - **Sprint Goal:** Deliver stable trial release with AI Stylist and Daily Wear Tracking, complete customer-facing documentation, conduct customer trial session, and establish transition-readiness evidence for Assignment 6.
 - **Focus:** AI-powered outfit suggestions and daily wear tracking
-- **Release:** MVP v1.2.0
+- **Release:** [v2.1.0 (Trial Release for Assignment 6 Week 6)](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v2.1.0)
+- **Status:** Completed
 
 **Planned Items:**
 
@@ -139,6 +145,7 @@ while establishing quality automation infrastructure (CI/CD, quality requirement
 - Wear statistics and analytics
 
 *Supporting PBIs:*
+
 - [PBI: Persist user-defined outfit arrangement](https://github.com/veronika1977/digital_wardrobe_team_44/issues/271#issue-4805020609) (5 SP)
   - Backend schema updates to store layout coordinates/order
   - Frontend state persistence to restore exact user-defined arrangement
@@ -146,15 +153,27 @@ while establishing quality automation infrastructure (CI/CD, quality requirement
   - Outfits displayed as complete, visually grouped sets
   - Consistent grouping across Calendar, Main screen, and Capsules
 
-**Total Sprint 4 velocity:** 29 SP (user stories + supporting PBIs)
+*Documentation & Transition Work:*
 
-### Sprint 5: Sharing, AI Material Detection, Monetization & Final Transition
+- `docs/customer-handover.md` — maintained customer-handover artifact
+- `CONTRIBUTING.md` — contributor guidance
+- `AGENTS.md` — rules for AI assistants
+- `docs/user-acceptance-tests.md` — UAT scenarios
+- ADR-004: AI Strategy (LLM provider selection, fallback)
+- ADR-005: Bot Architecture (scheduler, inline buttons)
+- Transition-readiness meeting with customer
+- Customer trial of v2.1.0
+- Customer feedback collection → Sprint 5 PBIs
 
+**Total Sprint 4 velocity:** 29 SP (user stories + supporting PBIs) + documentation + transition work
+
+### Sprint 5: Sharing, AI Material Detection, Monetization & Final Transition 
 - **Milestone:** [Sprint 5](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/5)
 - **Dates:** 13.07.2026 – 19.07.2026
 - **Sprint Goal:** Complete final transition based on Week 6 feedback, deliver MVP v3 with sharing, AI material detection, and monetization features, confirm handover with customer, and prepare for Demo Day.
-- **Focus:** Social features and advanced AI capabilities
-- **Release:** MVP v3
+- **Focus:** Social features, advanced AI capabilities, monetization, and final transition
+- **Release:** [v3.0.0 (MVP v3 — Final Course Version)](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v3.0.0)
+- **Status:** Planned (Starts: 13.07.2026)
 
 **Planned Items:**
 
@@ -163,6 +182,7 @@ while establishing quality automation infrastructure (CI/CD, quality requirement
 **US-10: Share Outfit by Link (3 SP)** — [Issue #91](https://github.com/veronika1977/digital_wardrobe_team_44/issues/91)
 - Share outfits with friends via Telegram
 - Public wardrobe profiles (optional)
+
 **US-07: AI Material Detection (13 SP)** — [Issue #90](https://github.com/veronika1977/digital_wardrobe_team_44/issues/90)
 - Automatic material detection from photos
 - Integration with existing material tags
@@ -179,7 +199,26 @@ while establishing quality automation infrastructure (CI/CD, quality requirement
   - One-tap upgrade flow via Telegram Payments
   - Premium status indicator and usage meter
 
-**Total Sprint 5 velocity:** 24 SP (user stories + supporting PBIs)
+*Customer Feedback Integration:*
+
+- Apply critical feedback from Week 6 trial
+- Bug fixes discovered during customer trial
+- Documentation updates based on customer review
+
+*Transition & Final Delivery:*
+
+- Finalize `docs/customer-handover.md` with explicit handover level + confirmation status
+- Confirm transition outcome with customer (Accepted / Accepted with follow-up / Not yet accepted)
+- Record public sanitized demo video for MVP v3
+- Create SemVer release v3.0.0 on `main`
+
+*Demo Day Preparation:*
+- Slide deck (8 slides, updated)
+- Rehearsed presentation video (team standing, 5-7 min)
+- Week 7 lab rehearsal (5+3 min)
+- Week 8 Demo Day presentation (7+7 min)
+
+**Total Sprint 5 velocity:** 24 SP (user stories + monetization) + customer feedback + transition + Demo Day prep
 
 ## Removed 
 

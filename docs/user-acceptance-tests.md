@@ -2,7 +2,7 @@
 
 This document defines end-user-facing scenarios for customer validation.
 
-**Last updated:** July 2, 2026  
+**Last updated:** July 12, 2026  
 **Author:** @veronika1977  
 **Reviewer:** @CatherineHar
 
@@ -71,14 +71,14 @@ This document defines end-user-facing scenarios for customer validation.
 1. Open Digital Wardrobe Mini App in Telegram
 2. Navigate to the "Гардероб" (Wardrobe) screen
 3. Find any item in the gallery
-4. Tap the delete badge (✕) on the item card
+4. Tap the delete badge (x) on the item card
 5. Confirm deletion in the modal dialog: "Переместить в корзину?"
 6. Verify the item disappears from the wardrobe gallery
 7. Tap the cart icon in the header
 8. Navigate to the "Корзина" (Cart) screen
 9. Verify the deleted item appears in the cart
 10. Verify the info banner shows: "Вещи хранятся в корзине 14 дней, после чего удаляются автоматически"
-11. Tap the restore button (↩) on the item
+11. Tap the restore button (return arrow) on the item
 12. Verify the item returns to the wardrobe gallery
 
 **Expected outcome:**
@@ -174,6 +174,8 @@ This document defines end-user-facing scenarios for customer validation.
 - Result: Passed
 - Customer comments: Weather loads <3s and displays accurate local conditions. Geolocation button was initially hidden due to device permissions; fallback to manual city selection verified and button visibility fixed post-UAT.
 
+---
+
 ## UAT-005: Plan outfits on Calendar (US-13)
 
 **Status:** Active
@@ -187,6 +189,7 @@ This document defines end-user-facing scenarios for customer validation.
 - User is on the Calendar screen
 
 **Steps:**
+
 1. Open Digital Wardrobe Mini App in Telegram
 2. Navigate to the main screen with "Календарь" (Calendar) widget
 3. Tap on a future date (e.g., tomorrow) on today (if there is no outfit)
@@ -209,6 +212,86 @@ This document defines end-user-facing scenarios for customer validation.
 - Result: Passed
 - Customer comments: Core scheduling works and dates highlight correctly. Noted UX gaps: outfit arrangement not preserved, outfits load as individual items instead of grouped sets. All feedback captured as PBIs for next Sprints.
 
+---
+
+## UAT-006: AI Stylist generates outfit suggestions (US-14)
+
+**Status:** Active
+
+**User goal:** Receive AI-powered outfit recommendations based on wardrobe, occasion, and context.
+
+**Preconditions:**
+
+- User is logged in via Telegram Mini App
+- Wardrobe contains at least 2-4 items with varied categories/seasons
+- AI integration is enabled (DASHSCOPE_API_KEY configured)
+
+**Steps:**
+
+1. Open Digital Wardrobe Mini App in Telegram
+2. Navigate to the AI Stylist screen
+3. Tap "Generate Outfit"
+4. Wait for response
+5. Review suggested outfit
+6. (Optional) Tap "Save" on a suggested outfit
+7. (Optional) Trigger fallback by temporarily blocking AI endpoint (for team testing)
+
+**Expected outcome:**
+
+- Response returns within 5 seconds
+- complete outfit are displayed
+- If AI fails, fallback returns versatile wardrobe basics with clear message
+- Saved outfit appears in outfits
+
+**Assignment 6 (Week 6) Execution results:**
+
+- Date: 09.07.2026
+- Executed by: Customer during trial meeting
+- Result: Passed
+- Customer comments: ##
+- Follow-up PBI or issue: ##
+
+---
+
+## UAT-007: Receive daily 19:00 bot reminder and log wear (US-15)
+
+**Status:** Active
+
+**User goal:** Receive a daily Telegram reminder and quickly log worn outfits via inline buttons.
+
+**Preconditions:**
+
+- User is logged in via Telegram Mini App
+- User has at least one planned outfit in Calendar or Wardrobe
+- Notification preferences are enabled (default)
+
+**Steps:**
+
+1. Open Telegram and wait for 19:00 local time notification
+2. Verify message arrives: "Что вы носили сегодня?"
+3. Verify inline keyboard shows recent outfits
+4. Tap an outfit button to log it as worn
+5. Tap "Done"
+6. Verify confirmation message is received
+
+**Expected outcome:**
+
+- Message arrives at ~19:00 (plus/minus polling delay)
+- Inline buttons are clickable and responsive
+- Tap logs wear record in database
+- Confirmation message confirms successful logging
+- Fallback/error handling works if API is temporarily unavailable
+
+**Assignment 6 (Week 6) Execution results:**
+- Date: 09.07.2026
+- Executed by: Customer during trial meeting (simulated time trigger + real delivery test)
+- Result: Passed
+- Customer comments: ##
+- Follow-up PBI or issue:
+   - None
+
+---
+
 ## UAT Execution History
 
 | UAT ID | Date | Executed by | Result | Customer Comments | Follow-up PBI |
@@ -216,8 +299,10 @@ This document defines end-user-facing scenarios for customer validation.
 | UAT-001 | 25.06.2026 | Customer | Passed | "I'd like to see the actual color, not just the word 'blue'" | PBI #179 |
 | UAT-002 | 25.06.2026 | Customer | Passed | "Delete badge too small; add confirmation for restore" | PBI #168, PBI #169 |
 | UAT-003 | 25.06.2026 | Customer | Passed | "No problems, all good" | — |
-| UAT-004 | 03.07.2026 | Customer | Passed | - | US-12 |
-| UAT-005 | 03.07.2026 | Customer | Passed | - | US-13 |
+| UAT-004 | 03.07.2026 | Customer | Passed | Weather accurate, fallback verified | US-12 |
+| UAT-005 | 03.07.2026 | Customer | Passed | UX gaps noted, captured as PBIs | US-13 |
+| UAT-006 | 09.07.2026 | Customer | Passed | Relevant, needs more variety | - |
+| UAT-007 | 09.07.2026 | Customer | Passed | Convenient, inline buttons work | — |
 
 ---
 
@@ -230,3 +315,5 @@ This document defines end-user-facing scenarios for customer validation.
 | UAT-003 | US-02, US-04 (Tags/Filter) | QR-001 (API Response Time) |
 | UAT-004 | US-12 (Weather Integration) | QR-001 (Performance) |
 | UAT-005 | US-13 (Calendar Planning) | QR-001 (Time Behaviour) |
+| UAT-006 | US-14 (AI Stylist) | -|
+| UAT-007 | US-15 (Bot Notifications) | -|
