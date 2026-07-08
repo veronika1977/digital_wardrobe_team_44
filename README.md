@@ -191,12 +191,18 @@ _For more examples, please refer to the [Hosted Documentation](https://veronika1
 - [x] **64 backend tests + 3 frontend tests**
 
 ### MVP v2 (Assignment 5 / Sprint 3)
+
 - [x] [SemVer Release v2.0.0](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v2.0.0)
 - [x] **US-12:** Weather Integration — display current weather based on user location with manual fallback
 - [x] **US-13:** Calendar Planning — schedule outfits for specific dates with instant UI sync
 
+### MVP v2.1.0 (Assignment 5 / Sprint 4)
+
+- [x] [SemVer Release v2.1.0](link)
+- [x] **US-14:** AI Stylist for Outfit Generation
+- [x] **US-15:** Telegram Bot Notifications for Daily Outfits
+
 ### Future Sprints
-- [ ] **Sprint 4:** AI stylist suggestions, daily wear tracking bot
 - [ ] **Sprint 5:** Outfit sharing by link, AI material detection
 
 See the [open issues](https://github.com/veronika1977/digital_wardrobe_team_44/issues) for a full list of proposed features.

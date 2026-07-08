@@ -13,7 +13,7 @@ Getting Started
 - Create Outfits: Go to the "Outfits" tab. Select items from your wardrobe to combine them into a saved look.
 - Crete Capsules 8/3, 10/5: Go to "Capsules". Select items from your wardrobe to combine them into a saved clothes capsule.
 - Calendar: plan your outfits for special events or general use
-- AI-stylist: chat with integrated AI to collect the most suitable outfit.  
+- AI-stylist: chat with integrated AI to collect the most suitable outfits.  
 
 ### Bot Commands
 
