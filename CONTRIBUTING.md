@@ -174,11 +174,13 @@ Closes #<issue_number>
 - [ ] Tests
 
 ## Testing
+
 - [ ] Unit tests added/updated
 - [ ] Integration tests pass
 - [ ] Manual testing completed (screenshots if UI)
 
 ## Checklist
+
 - [ ] Code follows project style guide
 - [ ] Self-reviewed my code
 - [ ] Added comments for complex logic
@@ -246,6 +248,7 @@ npm run test -- --watch
 ```
 
 **Requirements:**
+
 - Component tests for all user-facing UI
 - Integration tests for critical flows (auth, item creation)
 

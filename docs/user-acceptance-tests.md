@@ -218,12 +218,12 @@ This document defines end-user-facing scenarios for customer validation.
 
 **Status:** Active
 
-**User goal:** Receive AI-powered outfit recommendations based on wardrobe, occasion, and context.
+**User goal:** Receive AI-powered outfits recommendations based on wardrobe.
 
 **Preconditions:**
 
 - User is logged in via Telegram Mini App
-- Wardrobe contains at least 2-4 items with varied categories/seasons
+- Wardrobe contains at least 3 items with varied categories/seasons
 - AI integration is enabled (DASHSCOPE_API_KEY configured)
 
 **Steps:**
@@ -232,14 +232,14 @@ This document defines end-user-facing scenarios for customer validation.
 2. Navigate to the AI Stylist screen
 3. Tap "Generate Outfit"
 4. Wait for response
-5. Review suggested outfit
+5. Review suggested outfits
 6. (Optional) Tap "Save" on a suggested outfit
 7. (Optional) Trigger fallback by temporarily blocking AI endpoint (for team testing)
 
 **Expected outcome:**
 
 - Response returns within 5 seconds
-- complete outfit are displayed
+- 3 completed outfits are displayed
 - If AI fails, fallback returns versatile wardrobe basics with clear message
 - Saved outfit appears in outfits
 

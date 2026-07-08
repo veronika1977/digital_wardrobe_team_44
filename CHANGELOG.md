@@ -4,7 +4,26 @@ All notable changes to the Digital Wardrobe project will be documented in this f
 
 ## [Unreleased]
 
-*No unreleased changes at this time.*
+## [2.1.0] - 2026-07-12
+
+Sprint 4 Trial Release — AI Stylist & Telegram Bot Notifications for Daily Outfits
+
+### Added
+
+- **AI Stylist (US-14):** Qwen-powered outfit suggestions with occasion-based filtering (work, casual, sport) and graceful fallback when LLM is unavailable ([#217](https://github.com/veronika1977/digital_wardrobe_team_44/issues/217), [ADR-004](docs/architecture/adr/ADR-004-ai-strategy.md))
+- Backend: `POST /api/ai/suggest-outfit` endpoint with 10s timeout, Qwen (DashScope) integration, fallback to versatile wardrobe basics
+  - Frontend: AI Stylist screen with occasion selector, loading state, graceful error handling
+  - Architecture: Polling-based notification worker, direct HTTP to Telegram Bot API
+  - Testing: QRT for response time, fallback strategy tests, integration tests for AI service
+  - Docs: ADR-004 (AI Strategy), updated API documentation
+- **Telegram Bot Notifications for Daily Outfits (US-15):** Daily reminders at 19:00 (user's local time) with inline buttons for quick wear logging ([#218](https://github.com/veronika1977/digital_wardrobe_team_44/issues/218), [ADR-005](docs/architecture/adr/ADR-005-bot-architecture.md))
+
+### Fixed
+
+- Outfits now display as grouped sets instead of individual items ([PBI #270](https://github.com/veronika1977/digital_wardrobe_team_44/issues/270))
+- Calendar layout persistence across sessions ([PBI #271](https://github.com/veronika1977/digital_wardrobe_team_44/issues/271))
+
+
 
 ## [2.0.0] - 2026-07-03
 
@@ -31,6 +50,7 @@ All notable changes to the Digital Wardrobe project will be documented in this f
 - Updated `docs/testing.md`, `docs/quality-requirements.md`, `docs/definition-of-done.md` for MVP v2 scope
 
 ### Documentation
+
 - Added Traceability Matrix (`ADR ↔ QR ↔ Views`) to `docs/architecture/README.md`
 - Completed `docs/development-process.md` (branching, PR workflow, CI/CD, release strategy)
 - Added MVP v2 Testing Scope + Evidence Summary to `docs/testing.md`
@@ -39,7 +59,9 @@ All notable changes to the Digital Wardrobe project will be documented in this f
 - Added MVP v2 Additions checklist to `docs/definition-of-done.md`
 
 ## [1.1.0] - 2026-06-25
+
 ### Added
+
 - Confirmation dialog for restoring items from cart (PBI #169)
 - **US-08: Automatic Background Removal** — integrated Rembg AI to automatically remove backgrounds from uploaded clothing photos [#86](https://github.com/veronika1977/digital_wardrobe_team_44/issues/86)
   - Unified `/upload` endpoint: accepts image, processes it, saves both original and processed versions
@@ -54,6 +76,7 @@ All notable changes to the Digital Wardrobe project will be documented in this f
   - Backend: new `capsules` and `capsule_items` tables, REST API (`POST/GET/PUT/DELETE /api/capsules`)
   - Frontend: creation modal, multi-select item picker, capsule gallery view
   - Validation: prevents duplicate names, requires at least 1 item, isolates capsules per user
+
 -  **Quality Requirements & CI/CD** — established automated quality gates based on ISO/IEC 25010 in backend repository (https://github.com/Mrxfg/digital-wardrobe/pull/27)
   - QR-001 (Time Behaviour): API response time < 3 seconds, verified by QRT-001
   - QR-002 (Fault Tolerance): Rembg failures preserve original photo, verified by QRT-002
@@ -90,4 +113,5 @@ All notable changes to the Digital Wardrobe project will be documented in this f
 - Telegram Bot Setup [#94](https://github.com/veronika1977/digital_wardrobe_team_44/issues/94#issue-4683945852), [#95](https://github.com/veronika1977/digital_wardrobe_team_44/issues/95#issue-4683990483)
 
 ### Changed
+
 - Initial release of the Digital Wardrobe Telegram Mini App (MVP v1).

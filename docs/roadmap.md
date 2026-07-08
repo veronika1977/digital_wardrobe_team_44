@@ -33,6 +33,7 @@ To help users easily organize their wardrobe directly in Telegram, without compl
 
 
 ## Sprint 2: Organization & Filtering
+
 - **Milestone:** [Sprint 2](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/2)
 - **Dates:** 22.06.2026 – 28.06.2026
 - **Sprint Goal:** Enable users to organize their added items using tags and edit existing items, improving the usability of the digital wardrobe, while establishing quality automation infrastructure (CI/CD, quality requirements, automated tests).
@@ -62,6 +63,7 @@ To help users easily organize their wardrobe directly in Telegram, without compl
 
 
 ## Sprint 3: Weather, Calendar & Architecture 
+
 - **Milestone:** [Sprint 3](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/3)
 - **Dates:** 29.06.2026 – 05.07.2026
 - **Sprint Goal:** Deliver MVP v2 with weather information display (US-12) and calendar/outfit planning (US-13), while documenting system architecture through three architectural views, creating ADRs, and establishing hosted documentation.
@@ -116,10 +118,11 @@ To help users easily organize their wardrobe directly in Telegram, without compl
 
 
 ### Sprint 4: AI Stylist, Daily Wear Tracking & Trial Release
+
 - **Milestone:** [Sprint 4](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/4)
 - **Dates:** 06.07.2026 – 12.07.2026
 - **Sprint Goal:** Deliver stable trial release with AI Stylist and Daily Wear Tracking, complete customer-facing documentation, conduct customer trial session, and establish transition-readiness evidence for Assignment 6.
-- **Focus:** AI-powered outfit suggestions and daily wear tracking
+- **Focus:** AI-powered outfit suggestions and Telegram Bot Notifications for daily outfits
 - **Release:** [v2.1.0 (Trial Release for Assignment 6 Week 6)](link)
 - **Status:** Completed
 
@@ -128,7 +131,7 @@ To help users easily organize their wardrobe directly in Telegram, without compl
 *User Stories:*
 
 **US-14: AI Stylist for Outfit Generation (13 SP)** — [Issue #217](https://github.com/veronika1977/digital_wardrobe_team_44/issues/217)
-- AI-generated outfit suggestions based on wardrobe, weather, and occasion
+- AI-generated outfits suggestions based on wardrobe
 - User can save or reject suggestions
 - AI learns from user preferences
 - **PBI: Backend API & AI Service for Outfit Generation (8 SP)**
@@ -136,13 +139,12 @@ To help users easily organize their wardrobe directly in Telegram, without compl
   - Robust error handling and fallback logic for AI unavailability
   - Input validation and caching
 - **PBI: Frontend UI & State for AI Outfit Generator (5 SP)**
-  - Complete UI for AI outfit generation with state management
+  - Complete UI for AI outfits generation with state management
   - Loading states and user interaction for saving/rejecting suggestions
 
 **US-15: Telegram Bot Daily Wear Tracking (8 SP)** — [Issue #218](https://github.com/veronika1977/digital_wardrobe_team_44/issues/218)
 - Daily reminder at 7:00 PM: "What did you wear today?"
 - Quick marking of worn items
-- Wear statistics and analytics
 
 *Supporting PBIs:*
 

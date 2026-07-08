@@ -8,7 +8,7 @@ Accepted
 
 ## Context
 
-The Digital Wardrobe application requires an AI-powered outfit suggestion feature that generates personalized outfit recommendations based on:
+The Digital Wardrobe application requires an AI-powered outfits suggestion feature that generates personalized outfits recommendations based on:
 
 - User's existing wardrobe inventory
 
