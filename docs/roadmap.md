@@ -154,6 +154,12 @@ To help users easily organize their wardrobe directly in Telegram, without compl
 - [PBI: Display outfits as complete grouped sets](https://github.com/veronika1977/digital_wardrobe_team_44/issues/270#issue-4804987098) (3 SP)
   - Outfits displayed as complete, visually grouped sets
   - Consistent grouping across Calendar, Main screen, and Capsules
+- **Customer feedback applied (Week 6 meeting):**
+  - [PBI: Swap Home and AI Stylist pages in navigation](https://github.com/veronika1977/digital_wardrobe_team_44/issues/300#issue-4844843915)
+  - [PBI: Add conversational AI chat](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301#issue-4844864763)
+  - [PBI: Add "Outfit for Today" quick-action on Home screen](https://github.com/veronika1977/digital_wardrobe_team_44/issues/302#issue-4844894138)
+  - [PBI: Change bot reminder to prompt planning for tomorrow](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303#issue-4844932945) (breaking change to US-15)
+
 
 *Documentation & Transition Work:*
 
@@ -167,7 +173,7 @@ To help users easily organize their wardrobe directly in Telegram, without compl
 - Customer trial of v2.1.0
 - Customer feedback collection → Sprint 5 PBIs
 
-**Total Sprint 4 velocity:** 29 SP (user stories + supporting PBIs) + documentation + transition work
+**Total Sprint 4 velocity:** 47 SP (user stories + supporting PBIs) + documentation + transition work
 
 ### Sprint 5: Sharing, AI Material Detection, Monetization & Final Transition 
 - **Milestone:** [Sprint 5](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/5)

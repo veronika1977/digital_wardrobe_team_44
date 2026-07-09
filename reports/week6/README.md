@@ -25,7 +25,7 @@ This project uses a **multi-repo architecture** with three independent repositor
 
 - **Sprint Goal:** Deliver a stable trial release with AI Stylist and Daily Wear Tracking, complete customer-facing documentation, conduct a transition-readiness meeting, and establish evidence for independent customer use.
 - **Dates:** 06.07.2026 – 12.07.2026
-- **Total Story Points:** 29 SP
+- **Total Story Points:** 47 SP
 - **Scope Summary:** Implemented AI-powered outfit generation (US-14), Telegram bot daily reminders with wear logging (US-15), outfit layout persistence, grouped outfit display, and finalized all customer-facing documentation (handover, contributing, agent guidelines, ADRs).
 
 ## Week 6 Trial Release (v2.1.0)
@@ -52,15 +52,27 @@ During Week 6, the customer reviewed the updated documentation set.
 ## Transition-Readiness Summary
 
 - **Current Handover Level:** Ready for independent use
-- **What is Ready:** Full access to Telegram Mini App, complete setup/deployment instructions, documented architecture decisions, CI pipeline stability, customer handover document.
-- **What Must Happen in Week 7:** Apply customer trial feedback, implement monetization (US-16), finalize transition confirmation, release MVP v3, prepare Demo Day materials.
-- **Blockers:** None. Customer confirmed willingness to adopt after Week 7 adjustments.
+- **Customer Confirmation:** Accepted with follow-up items
+- **What is Ready:** Full access to Telegram Mini App, complete setup/deployment instructions, documented architecture decisions, CI pipeline stability, customer handover document. Customer confirmed willingness to use the product independently.
+- **What remains partial:** Monetization (US-16) not yet implemented; AI Stylist prompt variety planned for Sprint 5; share-by-link feature deferred to post-course.
+- **What Must Happen in Week 7:** Implement monetization (US-16), apply remaining customer trial feedback (PBIs #300-303), obtain final customer confirmation, release MVP v3, prepare Demo Day materials.
+- **Blockers:** None that prevent independent use. All remaining items are enhancements that the team will deliver in Sprint 5 or defer to post-course work.
 
 ## Customer Feedback & Response
+
+All feedback from the Week 6 customer meeting (2026-07-09) was applied mid-sprint and included in v2.1.0 release:
+
 | Feedback Point | Resulting PBI / Issue | Status |
 |----------------|----------------------|--------|
-| - | - | Planned for Sprint 5 |
+| Navigation layout unintuitive — Home should be leftmost, AI Stylist should be in the middle | [#300: Reorder bottom navigation tabs](https://github.com/veronika1977/digital_wardrobe_team_44/issues/300) | Completed in v2.1.0 |
+| Want conversational AI chat, not just outfit generation | [#301: Add conversational AI chat](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301) | Completed in v2.1.0 |
+| Need faster way to plan today's outfit from Home screen | [#302: Add "Outfit for Today" widget](https://github.com/veronika1977/digital_wardrobe_team_44/issues/302) | Completed in v2.1.0 |
+| Bot should prompt planning tomorrow's outfit, not ask what was worn today | [#303: Change bot reminder to prompt planning](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303) | Completed in v2.1.0 (breaking change to US-15) |
+| Monetization tier for premium features | [#284: Add monetization (US-16)](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284) | Deferred to Sprint 5 |
 
+**Feedback Deferred to Sprint 5:**
+
+- **Monetization (PBI #284):** Deferred to Sprint 5 to prioritize applying customer feedback from Week 6 meeting. Monetization is not a blocker for handover or transition-readiness — it's a business enhancement.
 
 
 ## Roadmap & Supporting Documentation

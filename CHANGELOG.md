@@ -18,6 +18,11 @@ Sprint 4 Trial Release — AI Stylist & Telegram Bot Notifications for Daily Out
   - Docs: ADR-004 (AI Strategy), updated API documentation
 - **Telegram Bot Notifications for Daily Outfits (US-15):** Daily reminders at 19:00 (user's local time) with inline buttons for quick wear logging ([#218](https://github.com/veronika1977/digital_wardrobe_team_44/issues/218), [ADR-005](docs/architecture/adr/ADR-005-bot-architecture.md))
 
+### Changed
+
+- **Bot Reminder Behavior (PBI #303, breaking change to US-15):** Daily 19:00 reminder now prompts user to plan tomorrow's outfit instead of asking "what did you wear today?".([#303](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303), [ADR-005](docs/architecture/adr/ADR-005-bot-architecture.md))
+
+
 ### Fixed
 
 - Outfits now display as grouped sets instead of individual items ([PBI #270](https://github.com/veronika1977/digital_wardrobe_team_44/issues/270))
