@@ -9,8 +9,35 @@
 
 - **Current level:** Ready for independent use
 - **Customer confirmation:** Accepted with follow-up
-- **Confirmation date:** 2026-07-12
-- **Confirmed by:** [Customer name/role]
+- **Confirmation date:** 2026-07-09
+- **Confirmed by:** Customer
+
+
+### What "Ready for independent use" means in our case
+
+The customer can start using the product independently via the Telegram Mini App without assistance from the team. All core user workflows (add items, plan outfits) are functional and documented.
+
+### What remains partial
+
+The product is ready for independent use in its current state, but the following aspects are not yet finalized and will be addressed in Sprint 5 (Week 7) or post-course:
+
+- **Monetization (US-16):** Paywall and Premium tier not yet implemented — free tier fully functional
+- **AI Stylist variety:** Suggestions work but prompt tuning for color/style diversity is planned (PBI #285)
+- **Outfit sharing:** Share-by-link feature is deferred to post-course (PBI #287)
+
+## Blockers analysis
+
+- **Blocker owner:** Team side (not customer or external)
+- **Evidence of readiness obtained:** 
+  - Customer independently tested the trial release during Week 6 meeting
+  - All 7 UAT scenarios passed during trial meeting
+  - Customer confirmed willingness to adopt after Sprint 5 adjustments
+  - CI pipeline stable, documentation complete, deployment verified
+- **Remaining actions for full acceptance:**
+  - Implement monetization (PBI #284) in Sprint 5
+  - Apply customer trial feedback (PBIs #300-303) in Sprint 4 final days
+  - Obtain final customer confirmation after Sprint 5 changes
+
 
 ---
 
@@ -21,10 +48,9 @@ The customer confirmed acceptance with the following follow-up items to be addre
 | # | Follow-up Item | Priority | PBI/Issue | Status |
 |---|----------------|----------|-----------|--------|
 | 1 | Add monetization | High | [US-16](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284) | Planned for Sprint 5 |
-| 2 | [Например: Add dark mode] | Medium | [#XXX](link) | Planned for Sprint 5 |
-| 3 | [Например: Export wardrobe to PDF] | Low | [#XXX](link) | Post-course consideration |
 
-**Note:** These items were collected during the Week 6 customer meeting (2026-07-09) and converted into PBIs in the Sprint 5 backlog.
+
+**Note:** All other customer feedback from Week 6 meeting (navigation reorder, conversational AI, Outfit for Today widget, bot planning prompt) was applied mid-sprint and included in v2.1.0 release.
 
 ## What Is Available to Customer Right Now
 
@@ -182,6 +208,10 @@ The following features are fully functional and included in the handover:
 - US-13: Calendar with Outfits
 - US-14: AI Stylist (Sprint 4)
 - US-15: Telegram Bot Daily Wear Tracking (Sprint 4)
+- PBI #300: Reordered Navigation (Sprint 4)
+- PBI #301: Conversational AI Chat (Sprint 4)
+- PBI #302: Outfit for Today Widget (Sprint 4)
+- PBI #303: Bot Prompts Planning for Tomorrow (Sprint 4)
 
 ## Architecture & Technical Decisions
 
