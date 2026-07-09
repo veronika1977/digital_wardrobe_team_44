@@ -154,11 +154,14 @@ To help users easily organize their wardrobe directly in Telegram, without compl
 - [PBI: Display outfits as complete grouped sets](https://github.com/veronika1977/digital_wardrobe_team_44/issues/270#issue-4804987098) (3 SP)
   - Outfits displayed as complete, visually grouped sets
   - Consistent grouping across Calendar, Main screen, and Capsules
-- **Customer feedback applied (Week 6 meeting):**
+- **Customer feedback (completing in Sprint 4 final days):**
   - [PBI: Swap Home and AI Stylist pages in navigation](https://github.com/veronika1977/digital_wardrobe_team_44/issues/300#issue-4844843915)
-  - [PBI: Add conversational AI chat](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301#issue-4844864763)
-  - [PBI: Add "Outfit for Today" quick-action on Home screen](https://github.com/veronika1977/digital_wardrobe_team_44/issues/302#issue-4844894138)
-  - [PBI: Change bot reminder to prompt planning for tomorrow](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303#issue-4844932945) (breaking change to US-15)
+  - [PBI: Add conversational AI chat backend](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301)
+  - [PBI: Add "Outfit for Today" quick-action on Home screen](https://github.com/veronika1977/digital_wardrobe_team_44/issues/302)
+
+  - **Customer feedback deferred to Sprint 5:**
+  - [PBI: Change bot reminder to prompt planning (breaking change to US-15)](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303)
+  - [PBI: Add conversational AI chat frontend (completes #301)](https://github.com/veronika1977/digital_wardrobe_team_44/issues/322)
 
 
 *Documentation & Transition Work:*
@@ -173,9 +176,10 @@ To help users easily organize their wardrobe directly in Telegram, without compl
 - Customer trial of v2.1.0
 - Customer feedback collection → Sprint 5 PBIs
 
-**Total Sprint 4 velocity:** 47 SP (user stories + supporting PBIs) + documentation + transition work
+**Total Sprint 4 velocity:** 42 SP (user stories + supporting PBIs) + documentation + transition work
 
 ### Sprint 5: Sharing, AI Material Detection, Monetization & Final Transition 
+
 - **Milestone:** [Sprint 5](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/5)
 - **Dates:** 13.07.2026 – 19.07.2026
 - **Sprint Goal:** Complete final transition based on Week 6 feedback, deliver MVP v3 with sharing, AI material detection, and monetization features, confirm handover with customer, and prepare for Demo Day.
@@ -206,6 +210,9 @@ To help users easily organize their wardrobe directly in Telegram, without compl
   - Display paywall screens when users hit free tier limits
   - One-tap upgrade flow via Telegram Payments
   - Premium status indicator and usage meter
+- **Customer feedback deferred to Sprint 5 (Week 6 meeting):**
+  - [#303: Change bot reminder to prompt planning (breaking change to US-15)](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303)
+  - [#322: Add conversational AI chat frontend (completes #301)](https://github.com/veronika1977/digital_wardrobe_team_44/issues/322)
 
 *Customer Feedback Integration:*
 
@@ -226,7 +233,7 @@ To help users easily organize their wardrobe directly in Telegram, without compl
 - Week 7 lab rehearsal (5+3 min)
 - Week 8 Demo Day presentation (7+7 min)
 
-**Total Sprint 5 velocity:** 24 SP (user stories + monetization) + customer feedback + transition + Demo Day prep
+**Total Sprint 5 velocity:** 32 SP (user stories + monetization) + customer feedback + transition + Demo Day prep
 
 ## Removed 
 

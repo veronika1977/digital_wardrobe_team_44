@@ -1,7 +1,7 @@
 # Customer Handover — Digital Wardrobe
 
 > **Document version:** Week 6 (Sprint 4) — Trial Release v2.1.0
-> **Last updated:** 2026-07-12
+> **Last updated:** 2026-07-09
 > **Next update:** Week 7 (Sprint 5) — Final Release v3.0.0
 > **Maintained by:** @veronika1977
 
@@ -35,7 +35,8 @@ The product is ready for independent use in its current state, but the following
   - CI pipeline stable, documentation complete, deployment verified
 - **Remaining actions for full acceptance:**
   - Implement monetization (PBI #284) in Sprint 5
-  - Apply customer trial feedback (PBIs #300-303) in Sprint 4 final days
+  - Apply customer trial feedback (PBIs #300-302) in Sprint 4 final days
+  - Apply customer trial feedback (PBIs #303 and #322) in Sprint 5
   - Obtain final customer confirmation after Sprint 5 changes
 
 
@@ -43,14 +44,21 @@ The product is ready for independent use in its current state, but the following
 
 ## Follow-up Items (Customer-Requested)
 
-The customer confirmed acceptance with the following follow-up items to be addressed in Sprint 5:
+The customer confirmed acceptance with the following follow-up items to be addressed in Sprint 5 or post-course:
 
 | # | Follow-up Item | Priority | PBI/Issue | Status |
 |---|----------------|----------|-----------|--------|
-| 1 | Add monetization | High | [US-16](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284) | Planned for Sprint 5 |
+| 1 | Add monetization (Free + Premium tiers, 490₽) | High | [#284 (US-16)](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284) | Planned for Sprint 5 |
+| 2 | Reorder bottom navigation (Home leftmost, AI middle) | Medium | [#300](https://github.com/veronika1977/digital_wardrobe_team_44/issues/300) | Completing in Sprint 4 |
+| 3 | Add conversational AI chat to AI Stylist (backend API) | Medium | [#301](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301) | Completing in Sprint 4 |
+| 4 | Add "Outfit for Today" widget on Home | Medium | [#302](https://github.com/veronika1977/digital_wardrobe_team_44/issues/302) | Completing in Sprint 4 |
+| 5 | Add conversational AI chat to AI Stylist (frontend UI) | Medium | [#322](https://github.com/veronika1977/digital_wardrobe_team_44/issues/322) | Planned for Sprint 5 |
+| 6 | Change bot reminder to prompt planning for tomorrow | High | [#303](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303) | Planned for Sprint 5 |
+| 7 | AI Stylist prompt diversity tuning | Low | [#285](https://github.com/veronika1977/digital_wardrobe_team_44/issues/285) | Post-course |
+| 8 | Share outfit by link | Low | [#287](https://github.com/veronika1977/digital_wardrobe_team_44/issues/287) | Post-course |
 
 
-**Note:** All other customer feedback from Week 6 meeting (navigation reorder, conversational AI, Outfit for Today widget, bot planning prompt) was applied mid-sprint and included in v2.1.0 release.
+**Note:** All customer feedback from Week 6 meeting (navigation reorder, conversational AI, Outfit for Today widget, bot planning prompt) has been converted to traceable PBIs. PBIs #300-302 are completing in Sprint 4 final days before v2.1.0 release; PBIs #303 and #322 are planned for Sprint 5. See "Included Features" section for detailed status breakdown.
 
 ## What Is Available to Customer Right Now
 
@@ -196,6 +204,8 @@ For more examples, please refer to the [Hosted Documentation](https://veronika19
 
 ## Included Features (Scope of Handover)
 
+### Currently Available (fully functional)
+
 The following features are fully functional and included in the handover:
 - US-01: Telegram Authentication
 - US-02: Add Clothing Item with Photo
@@ -208,10 +218,20 @@ The following features are fully functional and included in the handover:
 - US-13: Calendar with Outfits
 - US-14: AI Stylist (Sprint 4)
 - US-15: Telegram Bot Daily Wear Tracking (Sprint 4)
-- PBI #300: Reordered Navigation (Sprint 4)
-- PBI #301: Conversational AI Chat (Sprint 4)
-- PBI #302: Outfit for Today Widget (Sprint 4)
-- PBI #303: Bot Prompts Planning for Tomorrow (Sprint 4)
+
+### Completing in Sprint 4 (final days)
+
+The following features are in progress and will be completed before v2.1.0 release:
+- PBI #300: Reordered Navigation (Home leftmost, AI middle)
+- PBI #301: Conversational AI Chat backend (API endpoints ready, frontend pending)
+- PBI #302: Outfit for Today Widget
+
+### Planned for Sprint 5
+
+The following features will be implemented in Week 7:
+- PBI #303: Bot Prompts Planning for Tomorrow (breaking change to US-15)
+- PBI #322: Conversational AI Chat frontend (completes PBI #301)
+- US-16: Monetization (490₽ Premium tier)
 
 ## Architecture & Technical Decisions
 

@@ -25,7 +25,7 @@ This project uses a **multi-repo architecture** with three independent repositor
 
 - **Sprint Goal:** Deliver a stable trial release with AI Stylist and Daily Wear Tracking, complete customer-facing documentation, conduct a transition-readiness meeting, and establish evidence for independent customer use.
 - **Dates:** 06.07.2026 – 12.07.2026
-- **Total Story Points:** 47 SP
+- **Total Story Points:** 42 SP
 - **Scope Summary:** Implemented AI-powered outfit generation (US-14), Telegram bot daily reminders with wear logging (US-15), outfit layout persistence, grouped outfit display, and finalized all customer-facing documentation (handover, contributing, agent guidelines, ADRs).
 
 ## Week 6 Trial Release (v2.1.0)
@@ -57,7 +57,7 @@ During Week 6, the customer reviewed the updated documentation set.
 - **Customer Confirmation:** Accepted with follow-up items
 - **What is Ready:** Full access to Telegram Mini App, complete setup/deployment instructions, documented architecture decisions, CI pipeline stability, customer handover document. Customer confirmed willingness to use the product independently.
 - **What remains partial:** Monetization (US-16) not yet implemented; AI Stylist prompt variety planned for Sprint 5; share-by-link feature deferred to post-course.
-- **What Must Happen in Week 7:** Implement monetization (US-16), obtain final customer confirmation, release MVP v3, prepare Demo Day materials.
+- **What Must Happen in Week 7:** Implement monetization (US-16), complete deferred customer feedback PBIs (#301, #303, #322), obtain final customer confirmation, release MVP v3, prepare Demo Day materials.
 - **Blockers:** None that prevent independent use. All remaining items are enhancements that the team will deliver in Sprint 5 or defer to post-course work.
 
 ## Customer Feedback & Response
@@ -67,15 +67,16 @@ All feedback from the Week 6 customer meeting (2026-07-09) was applied mid-sprin
 | Feedback Point | Resulting PBI / Issue | Status |
 |----------------|----------------------|--------|
 | Navigation layout unintuitive — Home should be leftmost, AI Stylist should be in the middle | [#300: Reorder bottom navigation tabs](https://github.com/veronika1977/digital_wardrobe_team_44/issues/300) | Completed in v2.1.0 |
-| Want conversational AI chat, not just outfit generation | [#301: Add conversational AI chat](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301) | Completed in v2.1.0 |
-| Need faster way to plan today's outfit from Home screen | [#302: Add "Outfit for Today" widget](https://github.com/veronika1977/digital_wardrobe_team_44/issues/302) | Completed in v2.1.0 |
-| Bot should prompt planning tomorrow's outfit, not ask what was worn today | [#303: Change bot reminder to prompt planning](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303) | Completed in v2.1.0 (breaking change to US-15) |
-| Monetization tier for premium features | [#284: Add monetization (US-16)](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284) | Deferred to Sprint 5 |
+| Want conversational AI chat, not just outfit generation | [PBI #301: Add conversational AI chat backend](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301), [PBI #322: Add conversational AI chat frontend](https://github.com/veronika1977/digital_wardrobe_team_44/issues/322) | Deferred to Sprint 5 |
+| Need faster way to plan today's outfit from Home screen | [PBI #302: Add "Outfit for Today" widget](https://github.com/veronika1977/digital_wardrobe_team_44/issues/302) | Completed in v2.1.0 |
+| Bot should prompt planning tomorrow's outfit, not ask what was worn today | [PBI #303: Change bot reminder to prompt planning](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303) | Deferred to Sprint 5 (breaking change to US-15) |
+| Monetization tier for premium features | [PBI #284: Add monetization (US-16)](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284) | Deferred to Sprint 5 |
 
 **Feedback Deferred to Sprint 5:**
 
 - **Monetization (PBI #284):** Deferred to Sprint 5 to prioritize applying customer feedback from Week 6 meeting. Monetization is not a blocker for handover or transition-readiness — it's a business enhancement.
-
+- **Conversational AI chat (PBI #301 backend, #322 frontend):** Deferred to Sprint 5 — requires significant backend+frontend work.
+- **Bot reminder reframing (PBI #303):** Deferred to Sprint 5 — breaking change to US-15 requires careful migration.
 
 ## Roadmap & Supporting Documentation
 
@@ -88,7 +89,7 @@ All feedback from the Week 6 customer meeting (2026-07-09) was applied mid-sprin
 
 - Executed 7 maintained UAT scenarios during Week 6 trial meeting.
 - **Result:** 7/7 passed. No critical blockers identified.
-- **Key Feedback:** AI Stylist works but needs conversational chat interface (not just button) — addressed via PBI #301; 19:00 bot reminder timing is highly convenient; inline buttons for planning work smoothly; navigation must follow Instagram/Duolingo pattern (Home leftmost) — addressed via PBI #300.
+- **Key Feedback:** AI Stylist works but needs conversational chat interface (not just button) — PBI #301 (backend) and #322 (frontend) created, deferred to Sprint 5; 19:00 bot reminder timing is highly convenient; inline buttons for planning work smoothly; navigation must follow Instagram/Duolingo pattern (Home leftmost) — addressed via PBI #300 (completed in v2.1.0).
 - **Full UAT Document:** [docs/user-acceptance-tests.md](../../docs/user-acceptance-tests.md)
 
 ## Release & Changelog
@@ -98,7 +99,7 @@ All feedback from the Week 6 customer meeting (2026-07-09) was applied mid-sprin
 
 ## Sprint Review & Process Artifacts
 
-- **Sprint Review Transcript:** [reports/week6/sprint-review-transcript.md](sprint-review-transcript.md)(recording permitted, public transcript publication permitted, private instructor sharing permitted)
+- **Sprint Review Transcript:** [reports/week6/sprint-review-transcript.md](sprint-review-transcript.md) (recording permitted, public transcript publication permitted, private instructor sharing permitted)
 - **Sprint Review Summary:** [reports/week6/sprint-review-summary.md](sprint-review-summary.md)
 - **Reflection:** [reports/week6/reflection.md](reflection.md)
 - **Retrospective:** [reports/week6/retrospective.md](retrospective.md)
@@ -113,7 +114,7 @@ The product is functionally complete for core user workflows (add items, plan ou
 | Team Member | Role | Issues | PRs | Reviews Given | Comments |
 |-------------|------|--------|-----|--------------|----------|
 | @veronika1977 | Scrum Master | [#217](https://github.com/veronika1977/digital_wardrobe_team_44/issues/217), [#287](https://github.com/veronika1977/digital_wardrobe_team_44/issues/287#issue-4821414891), [#318](https://github.com/veronika1977/digital_wardrobe_team_44/issues/319), [#320](https://github.com/veronika1977/digital_wardrobe_team_44/issues/320#issue-4848371102) | [#217](https://github.com/veronika1977/digital_wardrobe_team_44/pull/297#issue-4838101679), [#288](https://github.com/veronika1977/digital_wardrobe_team_44/pull/288#issue-4821424154), [#319](https://github.com/veronika1977/digital_wardrobe_team_44/pull/319) | [#299](https://github.com/veronika1977/digital_wardrobe_team_44/pull/299), [#307](https://github.com/veronika1977/digital_wardrobe_team_44/pull/307), [#311](https://github.com/veronika1977/digital_wardrobe_team_44/pull/311), [#317](https://github.com/veronika1977/digital_wardrobe_team_44/pull/317) | [#299](https://github.com/veronika1977/digital_wardrobe_team_44/pull/299#pullrequestreview-4660828697), [#307](https://github.com/veronika1977/digital_wardrobe_team_44/pull/307#pullrequestreview-4662492840), [#311](https://github.com/veronika1977/digital_wardrobe_team_44/pull/311#pullrequestreview-4662710753) |
-| @Evgeni1a | Developer | [#306](https://github.com/veronika1977/digital_wardrobe_team_44/issues/306), [#309](https://github.com/veronika1977/digital_wardrobe_team_44/issues/309) | [#307](https://github.com/veronika1977/digital_wardrobe_team_44/pull/307), [#310]((https://github.com/veronika1977/digital_wardrobe_team_44/pull/310)) | [#297](https://github.com/veronika1977/digital_wardrobe_team_44/pull/297) | [#297](https://github.com/veronika1977/digital_wardrobe_team_44/pull/297#pullrequestreview-4654858984) |
+| @Evgeni1a | Developer | [#306](https://github.com/veronika1977/digital_wardrobe_team_44/issues/306), [#309](https://github.com/veronika1977/digital_wardrobe_team_44/issues/309) | [#307](https://github.com/veronika1977/digital_wardrobe_team_44/pull/307), [#310](https://github.com/veronika1977/digital_wardrobe_team_44/pull/310) | [#297](https://github.com/veronika1977/digital_wardrobe_team_44/pull/297) | [#297](https://github.com/veronika1977/digital_wardrobe_team_44/pull/297#pullrequestreview-4654858984) |
 | @Mrxfg | Developer | [#308](https://github.com/veronika1977/digital_wardrobe_team_44/issues/308) | [#311](https://github.com/veronika1977/digital_wardrobe_team_44/pull/311) | [#310](https://github.com/veronika1977/digital_wardrobe_team_44/pull/310)| [#310](https://github.com/veronika1977/digital_wardrobe_team_44/pull/310#pullrequestreview-4662657431) |
 | @CatherineHar | Developer | [#316](https://github.com/veronika1977/digital_wardrobe_team_44/issues/316) | [#317](https://github.com/veronika1977/digital_wardrobe_team_44/pull/317) | [#296](https://github.com/veronika1977/digital_wardrobe_team_44/pull/296), [#288](https://github.com/veronika1977/digital_wardrobe_team_44/pull/288) | [#296](https://github.com/veronika1977/digital_wardrobe_team_44/pull/296#pullrequestreview-4648378857) |
 | @DarinaLuch | Scrum Owner | [#298](https://github.com/veronika1977/digital_wardrobe_team_44/issues/298) | [#299](https://github.com/veronika1977/digital_wardrobe_team_44/pull/299) | [#319](https://github.com/veronika1977/digital_wardrobe_team_44/pull/319#issue-4848218185) | [#319](https://github.com/veronika1977/digital_wardrobe_team_44/pull/319#pullrequestreview-4665112386) |

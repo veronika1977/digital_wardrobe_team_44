@@ -10,10 +10,13 @@
 [00:15.00] Customer: Sure, go ahead.
 
 ## Sprint Review
+
 [00:25.00] Interviewers: Thank you. Today we want to show you the updated version of our application. The goals of this meeting are to demonstrate what's new in the product, discuss whether the product is ready for handover, give you an opportunity to try it, and collect your feedback. For this Sprint Review, we implemented the AI stylist, implemented daily reminders from the bot, fixed the outfit image display error you mentioned last time, and added some documentation. Now we will go through the UAT scenarios.
 
 ---
+
 ## UAT tests
+
 [00:52.00] Interviewers: Yes, user acceptance tests – as I mentioned, we need to go through them. We need to add an item, delete it, use filters, use the calendar, use the new AI stylist, and then test the reminder functionality.
 
 [customer looks through items in the app]
