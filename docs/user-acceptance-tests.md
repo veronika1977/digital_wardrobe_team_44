@@ -2,7 +2,7 @@
 
 This document defines end-user-facing scenarios for customer validation.
 
-**Last updated:** July 12, 2026  
+**Last updated:** July 9, 2026  
 **Author:** @veronika1977  
 **Reviewer:** @CatherineHar
 
@@ -71,7 +71,7 @@ This document defines end-user-facing scenarios for customer validation.
 1. Open Digital Wardrobe Mini App in Telegram
 2. Navigate to the "Гардероб" (Wardrobe) screen
 3. Find any item in the gallery
-4. Tap the delete badge (x) on the item card
+4.  Tap the "Удалить" button on the item card
 5. Confirm deletion in the modal dialog: "Переместить в корзину?"
 6. Verify the item disappears from the wardrobe gallery
 7. Tap the cart icon in the header
@@ -82,6 +82,7 @@ This document defines end-user-facing scenarios for customer validation.
 12. Verify the item returns to the wardrobe gallery
 
 **Expected outcome:**
+
 - Deleted item is no longer visible in the main wardrobe
 - Deleted item appears in the cart with restore option
 - Info banner about 14-day retention is visible
@@ -134,6 +135,7 @@ This document defines end-user-facing scenarios for customer validation.
 - Filter works without page reload (instant UI update)
 
 **Execution results:**
+
 - Date: 25.06.2026
 - Executed by: Customer
 - Result: Passed
@@ -155,6 +157,7 @@ This document defines end-user-facing scenarios for customer validation.
 - Frontend has valid weather API configuration
 
 **Steps:**
+
 1. Open Digital Wardrobe Mini App in Telegram
 2. Observe the weather widget on the main screen
 3. Verify temperature, weather icons
@@ -169,6 +172,7 @@ This document defines end-user-facing scenarios for customer validation.
 - Manual location overrides Telegram location correctly
 
 **Execution results:**
+
 - Date: 03.07.2026
 - Executed by: Customer
 - Result: Passed
@@ -192,7 +196,7 @@ This document defines end-user-facing scenarios for customer validation.
 
 1. Open Digital Wardrobe Mini App in Telegram
 2. Navigate to the main screen with "Календарь" (Calendar) widget
-3. Tap on a future date (e.g., tomorrow) on today (if there is no outfit)
+3. Tap on a future date (e.g., tomorrow) or on today (if there is no outfit)
 4. Tap "Создать новый образ" (Create Outfit) or choose from existing outfits
 5. Select outfit or create
 6. Tap "Сохранить" (Save)
@@ -207,6 +211,7 @@ This document defines end-user-facing scenarios for customer validation.
 - Operation completes in < 3 seconds (QR-001)
 
 **Execution results:**
+
 - Date: 03.07.2026
 - Executed by: Customer
 - Result: Passed
@@ -247,17 +252,22 @@ This document defines end-user-facing scenarios for customer validation.
 
 - Date: 09.07.2026
 - Executed by: Customer during trial meeting
-- Result: Passed
-- Customer comments: ##
-- Follow-up PBI or issue: ##
+- Result: Passed (functionally)
+- Customer comments:
+    - *"Not just a generic model like DeepSeek, but a stylist who understands color theory, materials, and how to combine them."*
+    - AI Stylist works, but the feature is "not the core value" without conversational chat interface. Customer expects a chat with System Prompt, not just a button.
+- Follow-up PBI or issue:
+    - [PBI #301](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301): Add conversational AI chat to AI Stylist (completed mid-sprint before v2.1.0)
 
 ---
 
-## UAT-007: Receive daily 19:00 bot reminder and log wear (US-15)
+## UAT-007: Receive daily 19:00 bot reminder and plan tomorrow's outfit (US-15, post-PBI #303)
 
 **Status:** Active
 
-**User goal:** Receive a daily Telegram reminder and quickly log worn outfits via inline buttons.
+**User goal:** Receive a daily Telegram reminder to plan tomorrow's outfit and quickly set it via inline buttons.
+
+**Note:** This scenario describes the current (post-Sprint 4) behavior after PBI #303. The historical version tested on 09.07.2026 asked "what did you wear today" — that framing was rejected by the customer and replaced with prospective planning. See Execution results below.
 
 **Preconditions:**
 
@@ -267,28 +277,34 @@ This document defines end-user-facing scenarios for customer validation.
 
 **Steps:**
 
-1. Open Telegram and wait for 19:00 local time notification
-2. Verify message arrives: "Что вы носили сегодня?"
-3. Verify inline keyboard shows recent outfits
-4. Tap an outfit button to log it as worn
-5. Tap "Done"
-6. Verify confirmation message is received
+1. Wait for 19:00 notification
+2. Message: "Не забудьте запланировать образ на завтра! Что вы будете носить?"
+3. Inline buttons: "Выбрать образ"
+4. Tap "Выбрать образ" → verify Mini App opens screen with items
+5. Select or create a new outfit from the wardrobe items
+6. Plan outfit for tomorrow
+7. Navigate to the Calendar screen and verify the outfit is saved to tomorrow's date
+8. Verify all items in the planned outfit are auto-marked as worn on tomorrow's date
 
 **Expected outcome:**
 
-- Message arrives at ~19:00 (plus/minus polling delay)
+- Message arrives at 19:00
 - Inline buttons are clickable and responsive
-- Tap logs wear record in database
-- Confirmation message confirms successful logging
-- Fallback/error handling works if API is temporarily unavailable
+- Prospective planning (plan tomorrow)
+- Auto-marking planned outfits as worn
+- No separate "log worn today" flow
 
 **Assignment 6 (Week 6) Execution results:**
+
 - Date: 09.07.2026
 - Executed by: Customer during trial meeting (simulated time trigger + real delivery test)
-- Result: Passed
-- Customer comments: ##
+- Result: Passed (functionally) — but framing rejected by customer
+- Customer comments:
+    - *"It's not like calorie tracking where you mark what you ate today — this is forward-looking."*
+    - *"If there's no outfit for the next day, it sends a reminder to choose an outfit for tomorrow. And if there is an outfit, it sends a morning notification saying 'Today you have outfit X.'"*
+    - Customer rejected retrospective "what did you wear today" framing; specified prospective planning behavior implemented in PBI #303.
 - Follow-up PBI or issue:
-   - None
+    - [PBI #303](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303): Change bot reminder to prompt planning for tomorrow (breaking change to US-15, completed mid-sprint before v2.1.0)
 
 ---
 
@@ -296,13 +312,14 @@ This document defines end-user-facing scenarios for customer validation.
 
 | UAT ID | Date | Executed by | Result | Customer Comments | Follow-up PBI |
 |--------|------|-------------|--------|-------------------|---------------|
-| UAT-001 | 25.06.2026 | Customer | Passed | "I'd like to see the actual color, not just the word 'blue'" | PBI #179 |
-| UAT-002 | 25.06.2026 | Customer | Passed | "Delete badge too small; add confirmation for restore" | PBI #168, PBI #169 |
+| UAT-001 | 25.06.2026 | Customer | Passed | "I'd like to see the actual color, not just the word 'blue'" | [#179](https://github.com/veronika1977/digital_wardrobe_team_44/issues/179) |
+| UAT-002 | 25.06.2026 | Customer | Passed | "Delete badge too small; add confirmation for restore" | [#168](https://github.com/veronika1977/digital_wardrobe_team_44/issues/168), [#169](https://github.com/veronika1977/digital_wardrobe_team_44/issues/169) |
 | UAT-003 | 25.06.2026 | Customer | Passed | "No problems, all good" | — |
-| UAT-004 | 03.07.2026 | Customer | Passed | Weather accurate, fallback verified | US-12 |
-| UAT-005 | 03.07.2026 | Customer | Passed | UX gaps noted, captured as PBIs | US-13 |
-| UAT-006 | 09.07.2026 | Customer | Passed | Relevant, needs more variety | - |
-| UAT-007 | 09.07.2026 | Customer | Passed | Convenient, inline buttons work | — |
+| UAT-004 | 03.07.2026 | Customer | Passed | Weather accurate, fallback verified | [US-12](https://github.com/veronika1977/digital_wardrobe_team_44/issues/82) |
+| UAT-005 | 03.07.2026 | Customer | Passed | UX gaps noted, captured as PBIs | [US-13](https://github.com/veronika1977/digital_wardrobe_team_44/issues/215) |
+| UAT-006 | 09.07.2026 | Customer | Passed (functionally) | "Not the core value" — chat interface missing | [#301](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301) |
+| UAT-007 | 09.07.2026 | Customer | Passed (functionally, framing rejected) | "It's not calorie tracking — this is forward-looking" | [#303](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303) |
+
 
 ---
 
@@ -310,10 +327,10 @@ This document defines end-user-facing scenarios for customer validation.
 
 | UAT ID | Related User Stories | Related Quality Requirements |
 |--------|----------------------|------------------------------|
-| UAT-001 | US-02 (Add Clothing Item) | QR-001 (API Response Time) |
-| UAT-002 | US-11 (Delete Item) | QR-002 (Fault Tolerance) |
-| UAT-003 | US-02, US-04 (Tags/Filter) | QR-001 (API Response Time) |
-| UAT-004 | US-12 (Weather Integration) | QR-001 (Performance) |
-| UAT-005 | US-13 (Calendar Planning) | QR-001 (Time Behaviour) |
-| UAT-006 | US-14 (AI Stylist) | -|
-| UAT-007 | US-15 (Bot Notifications) | -|
+| UAT-001 | [US-02](https://github.com/veronika1977/digital_wardrobe_team_44/issues/85) (Add Clothing Item) | QR-001 (API Response Time) |
+| UAT-002 | [US-11](https://github.com/veronika1977/digital_wardrobe_team_44/issues/77) (Delete Item) | QR-002 (Fault Tolerance) |
+| UAT-003 | [US-02](https://github.com/veronika1977/digital_wardrobe_team_44/issues/85), [US-04](https://github.com/veronika1977/digital_wardrobe_team_44/issues/87) (Tags/Filter) | QR-001 (API Response Time) |
+| UAT-004 | [US-12](https://github.com/veronika1977/digital_wardrobe_team_44/issues/82) (Weather Integration) | QR-001 (Performance), [QRT-004](quality-requirement-tests.md#qrt-004-weather-location) |
+| UAT-005 | [US-13](https://github.com/veronika1977/digital_wardrobe_team_44/issues/216) (Calendar Planning) | QR-001 (Time Behaviour), [QRT-005](quality-requirement-tests.md#qrt-005-calendar-outfit) |
+| UAT-006 | [US-14](https://github.com/veronika1977/digital_wardrobe_team_44/issues/217) (AI Stylist) | QR-001 (Response time < 5s), QR-002 (Fallback when LLM unavailable) |
+| UAT-007 | [US-15](https://github.com/veronika1977/digital_wardrobe_team_44/issues/218) (Bot Notifications) | QR-001 (Response time), QR-002 (Bot fault tolerance) |
