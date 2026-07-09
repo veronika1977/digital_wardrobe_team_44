@@ -31,4 +31,6 @@
 
 * **Specific Tasks:**
   * Finding bugs in backend and include tests.
+  * Structurisation of hole project for the presentation
+  * Help with text for the presentation
 
