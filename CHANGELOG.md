@@ -4,31 +4,30 @@ All notable changes to the Digital Wardrobe project will be documented in this f
 
 ## [Unreleased]
 
-## [2.1.0] - 2026-07-12
+## [2.1.0] - 2026-07-09
 
 Sprint 4 Trial Release — AI Stylist & Telegram Bot Notifications for Daily Outfits
 
 ### Added
 
 - **AI Stylist (US-14):** Qwen-powered outfit suggestions with occasion-based filtering (work, casual, sport) and graceful fallback when LLM is unavailable ([#217](https://github.com/veronika1977/digital_wardrobe_team_44/issues/217), [ADR-004](docs/architecture/adr/ADR-004-ai-strategy.md))
-- Backend: `POST /api/ai/suggest-outfit` endpoint with 10s timeout, Qwen (DashScope) integration, fallback to versatile wardrobe basics
+  - Backend: `POST /api/ai/suggest-outfit` endpoint with 10s timeout, Qwen (DashScope) integration, fallback to versatile wardrobe basics
   - Frontend: AI Stylist screen with occasion selector, loading state, graceful error handling
   - Architecture: Polling-based notification worker, direct HTTP to Telegram Bot API
   - Testing: QRT for response time, fallback strategy tests, integration tests for AI service
   - Docs: ADR-004 (AI Strategy), updated API documentation
 - **Telegram Bot Notifications for Daily Outfits (US-15):** Daily reminders at 19:00 (user's local time) with inline buttons for quick wear logging ([#218](https://github.com/veronika1977/digital_wardrobe_team_44/issues/218), [ADR-005](docs/architecture/adr/ADR-005-bot-architecture.md))
+- **Conversational AI Chat backend (PBI #301):** Backend API endpoints for conversational AI stylist chat with context-aware responses ([#301](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301))
+- **Outfit for Today widget (PBI #302):** Quick-access widget on Home screen for planning today's outfit without navigating to Calendar ([#302](https://github.com/veronika1977/digital_wardrobe_team_44/issues/302))
 
 ### Changed
 
-- **Bot Reminder Behavior (PBI #303, breaking change to US-15):** Daily 19:00 reminder now prompts user to plan tomorrow's outfit instead of asking "what did you wear today?".([#303](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303), [ADR-005](docs/architecture/adr/ADR-005-bot-architecture.md))
-
+- **Navigation reorder (PBI #300):** Home tab moved to leftmost position, AI Stylist to middle position per customer feedback on UX patterns ([#300](https://github.com/veronika1977/digital_wardrobe_team_44/issues/300))
 
 ### Fixed
 
 - Outfits now display as grouped sets instead of individual items ([PBI #270](https://github.com/veronika1977/digital_wardrobe_team_44/issues/270))
 - Calendar layout persistence across sessions ([PBI #271](https://github.com/veronika1977/digital_wardrobe_team_44/issues/271))
-
-
 
 ## [2.0.0] - 2026-07-03
 

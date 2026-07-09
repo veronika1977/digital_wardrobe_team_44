@@ -257,7 +257,8 @@ This document defines end-user-facing scenarios for customer validation.
     - *"Not just a generic model like DeepSeek, but a stylist who understands color theory, materials, and how to combine them."*
     - AI Stylist works, but the feature is "not the core value" without conversational chat interface. Customer expects a chat with System Prompt, not just a button.
 - Follow-up PBI or issue:
-    - [PBI #301](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301): Add conversational AI chat to AI Stylist (completed mid-sprint before v2.1.0)
+    - [PBI #301](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301): Add conversational AI chat to AI Stylist in backend
+    - [PBI #322](https://github.com/veronika1977/digital_wardrobe_team_44/issues/322#issue-4849508694): Add conversational AI chat to AI Stylist in frontend
 
 ---
 
@@ -304,7 +305,7 @@ This document defines end-user-facing scenarios for customer validation.
     - *"If there's no outfit for the next day, it sends a reminder to choose an outfit for tomorrow. And if there is an outfit, it sends a morning notification saying 'Today you have outfit X.'"*
     - Customer rejected retrospective "what did you wear today" framing; specified prospective planning behavior implemented in PBI #303.
 - Follow-up PBI or issue:
-    - [PBI #303](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303): Change bot reminder to prompt planning for tomorrow (breaking change to US-15, completed mid-sprint before v2.1.0)
+    - [PBI #303](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303): Change bot reminder to prompt planning for tomorrow (breaking change to US-15)
 
 ---
 
@@ -317,7 +318,7 @@ This document defines end-user-facing scenarios for customer validation.
 | UAT-003 | 25.06.2026 | Customer | Passed | "No problems, all good" | — |
 | UAT-004 | 03.07.2026 | Customer | Passed | Weather accurate, fallback verified | [US-12](https://github.com/veronika1977/digital_wardrobe_team_44/issues/82) |
 | UAT-005 | 03.07.2026 | Customer | Passed | UX gaps noted, captured as PBIs | [US-13](https://github.com/veronika1977/digital_wardrobe_team_44/issues/215) |
-| UAT-006 | 09.07.2026 | Customer | Passed (functionally) | "Not the core value" — chat interface missing | [#301](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301) |
+| UAT-006 | 09.07.2026 | Customer | Passed (functionally) | "Not the core value" — chat interface missing | [#301](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301), [#322](https://github.com/veronika1977/digital_wardrobe_team_44/issues/322#issue-4849508694) |
 | UAT-007 | 09.07.2026 | Customer | Passed (functionally, framing rejected) | "It's not calorie tracking — this is forward-looking" | [#303](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303) |
 
 

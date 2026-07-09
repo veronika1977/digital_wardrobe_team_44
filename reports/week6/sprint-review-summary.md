@@ -68,12 +68,14 @@ Two scenarios triggered significant feature-feedback:
 
 ## Requested Changes (converted to PBIs)
 
+
 | Change | PBI | Priority | Sprint |
 |--------|-----|----------|--------|
-| Add conversational AI chat | [#301](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301) | Should Have | Sprint 4 (completed mid-sprint) |
-| Reorder navigation (Home left, AI middle) | [#300](https://github.com/veronika1977/digital_wardrobe_team_44/issues/300) | Should Have | Sprint 4 (completed mid-sprint) |
-| Add "Outfit for Today" widget | [#302](https://github.com/veronika1977/digital_wardrobe_team_44/issues/302) | Should Have | Sprint 4 (completed mid-sprint) |
-| Change bot to prompt planning for tomorrow (breaking change to US-15) | [#303](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303) | Must Have | Sprint 4 (completed mid-sprint) |
+| Reorder navigation (Home left, AI middle) | [#300](https://github.com/veronika1977/digital_wardrobe_team_44/issues/300) | Should Have | Completing in Sprint 4 |
+| Add conversational AI chat backend | [#301](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301) | Should Have | Completing in Sprint 4 |
+| Add "Outfit for Today" widget | [#302](https://github.com/veronika1977/digital_wardrobe_team_44/issues/302) | Should Have | Completing in Sprint 4 |
+| Change bot to prompt planning (breaking change to US-15) | [#303](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303) | Must Have | Deferred to Sprint 5 |
+| Add conversational AI chat frontend (completes #301) | [#322](https://github.com/veronika1977/digital_wardrobe_team_44/issues/322) | Should Have | Deferred to Sprint 5 |
 | Implement monetization (490₽ Premium) | [#284](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284) | Should Have | Sprint 5 |
 
 ## Action Points
@@ -86,19 +88,22 @@ Two scenarios triggered significant feature-feedback:
 
 ## Risks
 
-1. **Sprint 4 scope expanded mid-sprint** from 29 SP to 47 SP. Team absorbed all 4 customer-requested PBIs without dropping committed scope, but future sprints should explicitly reserve capacity for feedback.
-2. **US-15 breaking change (PBI #303)** shipped in same sprint as original US-15. Documented explicitly in [CHANGELOG.md](../../CHANGELOG.md) under `Changed` category with ADR-005 reference.
+1. **Sprint 4 scope expanded mid-sprint** from 29 SP to 42 SP. Team is absorbing PBIs #300-302 in Sprint 4 final days; PBIs #303 and #322 deferred to Sprint 5.
+2. **US-15 breaking change (PBI #303)** in Sprint 5.
 3. **Handover ZIP package not yet prepared.** Customer prefers ZIP over GitHub collaborator access due to secrets-hygiene concerns.
 
 ## Resulting Product Backlog Changes
 
-### Added mid-sprint (completed before v2.1.0)
-- [#300](https://github.com/veronika1977/digital_wardrobe_team_44/issues/300) — Reorder navigation
-- [#301](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301) — Conversational AI chat
-- [#302](https://github.com/veronika1977/digital_wardrobe_team_44/issues/302) — Outfit for Today widget
-- [#303](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303) — Bot prompts planning (breaking change to US-15)
+### Added mid-sprint (completing before v2.1.0)
 
-### Confirmed for Sprint 5
+- [#300](https://github.com/veronika1977/digital_wardrobe_team_44/issues/300) — Reorder navigation
+- [#301](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301) — Conversational AI chat backend
+- [#302](https://github.com/veronika1977/digital_wardrobe_team_44/issues/302) — Outfit for Today widget
+
+### Deferred to Sprint 5
+
+- [#303](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303) — Bot prompts planning (breaking change to US-15)
+- [#322](https://github.com/veronika1977/digital_wardrobe_team_44/issues/322) — Conversational AI chat frontend (completes #301)
 - [#284](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284) (US-16) — Monetization (490₽ one-time Premium)
 
 ## Publication Status
