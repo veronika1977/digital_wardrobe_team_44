@@ -2,7 +2,7 @@
 
 **Date:** 2026-07-09
 **Sprint:** Sprint 4 (06.07.2026 – 12.07.2026)
-**Release reviewed:** [v2.1.0](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v2.1.0) (Trial Release)
+**Release reviewed:** [v2.1.0](link) (Trial Release)
 **Sprint Goal reviewed:** Enable intelligent outfit recommendations and daily wear tracking ([Sprint 4 milestone](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/4))
 
 ## Participants
@@ -17,7 +17,7 @@
 ## Artifacts Demonstrated
 
 - **Live product:** [@digital_wardrobe_app_bot](https://t.me/digital_wardrobe_app_bot) (Telegram Mini App)
-- **Trial release:** [v2.1.0](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v2.1.0)
+- **Trial release:** [v2.1.0](link)
 - **Documentation reviewed:**
   - [customer-handover.md](../../docs/customer-handover.md)
   - CONTRIBUTING.md and AGENTS.md (across all three repositories)
