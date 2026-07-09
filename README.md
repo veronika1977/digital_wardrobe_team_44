@@ -25,7 +25,7 @@
     <br />
     <a href="https://t.me/digital_wardrobe_app_bot">Try Live Product</a>
     ·
-    <a href="<Demo Video Link>">Watch Demo</a>
+    <a href="https://drive.google.com/drive/folders/1QmeQpMIMS3NxZ2RVd2gaNRPiYpNO2f7B?usp=sharing">Watch Demo</a>
     ·
     <a href="https://github.com/veronika1977/digital_wardrobe_team_44/issues">Report Bug</a>
     ·
