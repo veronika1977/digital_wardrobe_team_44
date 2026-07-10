@@ -123,7 +123,7 @@ To help users easily organize their wardrobe directly in Telegram, without compl
 - **Dates:** 06.07.2026 – 12.07.2026
 - **Sprint Goal:** Deliver stable trial release with AI Stylist and Daily Wear Tracking, complete customer-facing documentation, conduct customer trial session, and establish transition-readiness evidence for Assignment 6.
 - **Focus:** AI-powered outfit suggestions and Telegram Bot Notifications for daily outfits
-- **Release:** [v2.1.0 (Trial Release for Assignment 6 Week 6)](link)
+- **Release:** [v2.1.0 (Trial Release for Assignment 6 Week 6)](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v2.1.0)
 - **Status:** Completed
 
 **Planned Items:**
