@@ -54,7 +54,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Screenshot][product-screenshot]](reports/week5/images/main_DW.png)
+[![Product Screenshot][product-screenshot]](reports/week6/images/main.png)
 
 **Goal:** Help users easily organize their wardrobe directly in Telegram, without complex registration or extra apps.
 
@@ -198,7 +198,7 @@ _For more examples, please refer to the [Hosted Documentation](https://veronika1
 
 ### MVP v2.1.0 (Assignment 5 / Sprint 4)
 
-- [x] [SemVer Release v2.1.0](link)
+- [x] [SemVer Release v2.1.0](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v2.1.0)
 - [x] **US-14:** AI Stylist for Outfit Generation
 - [x] **US-15:** Telegram Bot Notifications for Daily Outfits
 

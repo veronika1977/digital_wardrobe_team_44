@@ -30,7 +30,7 @@ This project uses a **multi-repo architecture** with three independent repositor
 
 ## Week 6 Trial Release (v2.1.0)
 
-- **SemVer Release:** [v2.1.0 — Trial Release](link)
+- **SemVer Release:** [v2.1.0 — Trial Release](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v2.1.0)
 - **Changelog:** [CHANGELOG.md](../../CHANGELOG.md)
 - **Product Access:** [@digital_wardrobe_app_bot](https://t.me/digital_wardrobe_app_bot) (Telegram Mini App)
 - [**Demo Video:**](https://drive.google.com/drive/folders/1QmeQpMIMS3NxZ2RVd2gaNRPiYpNO2f7B?usp=sharing)(< 2 min, sanitized)
@@ -94,7 +94,7 @@ All feedback from the Week 6 customer meeting (2026-07-09) was applied mid-sprin
 
 ## Release & Changelog
 
-- **Week 6 Trial Release:** [v2.1.0](link)
+- **Week 6 Trial Release:** [v2.1.0](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v2.1.0)
 - **Changelog:** [CHANGELOG.md](../../CHANGELOG.md)
 
 ## Sprint Review & Process Artifacts
@@ -123,8 +123,40 @@ The product is functionally complete for core user workflows (add items, plan ou
 
 ## Evidence Screenshots
 
-![Sprint 4 Milestone](link)
-![v2.1.0 Release](link)
-![Reviewed PR Example](link)
-![CI Pipeline Status](link)
-![Customer Handover Doc](link)
+![v2.1.0 Release](../week6/images/Release.png)
+
+![Product Screenshot Bot](images/Bot.png)
+
+![Product Screenshot Notifications](images/Notification.png)
+
+![Product Screenshot Choose Your Time](images/Choose_your_time.png)
+
+![Product Screenshot Choose Clothes](images/Tag_clothes.png)
+
+![Product Screenshot Main](images/main.PNG)
+
+![Product Screenshot Add Item](images/add.png)
+
+![Product Screenshot Wardrobe](images/WD.PNG)
+
+![Product Screenshot Outfit](images/Outfit.PNG)
+
+![Product Screenshot AI-stylist](images/AI.PNG)
+
+![Product Screenshot Basket](images/Basket.PNG)
+
+![Sprint 4 Milestone](../week6/images/Milestone4.png)
+
+![Sprint 4 Backlog](../week6/images/Sprint_4.png)
+
+![Product Backlog](../week6/images/Backlog.png)
+
+![Reviewed PR Example 1](../week6/images/PR1.png)
+
+![Reviewed PR Example 2](../week6/images/PR2.png)
+
+![Reviewed PR Example 3](../week6/images/PR3.png)
+
+![CI Pipeline Status](../week6/images/CI.png)
+
+![Customer Handover Doc](../week6/images/customer.png)

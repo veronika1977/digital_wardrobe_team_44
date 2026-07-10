@@ -3,7 +3,7 @@
 **Author:** @CatherineHar
 **Date:** 2026-07-12
 **Sprint:** 4 (MVP v2.1.0 Trial Release)
-**Release:** [v2.1.0](link)
+**Release:** [v2.1.0](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v2.1.0)
 **Velocity:** 47 SP delivered
 
 ## What went well
