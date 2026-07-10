@@ -4,7 +4,7 @@ All notable changes to the Digital Wardrobe project will be documented in this f
 
 ## [Unreleased]
 
-## [2.1.0] - 2026-07-09
+## [2.1.0] - 2026-07-10
 
 Sprint 4 Trial Release — AI Stylist & Telegram Bot Notifications for Daily Outfits
 

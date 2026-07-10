@@ -21,14 +21,24 @@ This document outlines the process for contributing to the project. Please read 
 
 ```
 digital_wardrobe_team_44/
-├── frontend/          # React + TypeScript + Vite
-├── backend/           # FastAPI + PostgreSQL
 ├── docs/              # Documentation (ADRs, handover, etc.)
 ├── reports/           # Weekly reports for Assignment 6
 ├── CONTRIBUTING.md    # This file
 ├── AGENTS.md          # Rules for AI assistants
 └── README.md          # Project overview
+
+
 ```
+
+This project uses a **multi-repo architecture**:
+
+| Repository | Purpose |
+|------------|---------|
+| **This repo** (`digital_wardrobe_team_44`) | Coordination: ADRs, reports, handover docs, roadmap |
+| [`digital_wardrobe_777`](https://github.com/veronika1977/digital_wardrobe_777) | Frontend: React + TypeScript + Vite |
+| [`digital-wardrobe`](https://github.com/Mrxfg/digital-wardrobe) | Backend: FastAPI + PostgreSQL |
+
+> **Note:** Code contributions go to the frontend or backend repositories. This repository contains only documentation, reports, and architectural artifacts. See each repo's `CONTRIBUTING.md` for code-specific guidelines.
 
 ### Local Development Setup
 
@@ -76,11 +86,9 @@ We use a simplified Git Flow:
 
 | Branch | Purpose |
 |--------|---------|
-| `main` | Protected. Only merged PRs from `develop` or hotfixes. Tags for releases (v2.1.0, v3.0.0). |
-| `develop` | Integration branch. All features merge here first. |
-| `feature/*` | New features (e.g., `feature/us-14-ai-stylist`). Branch from `develop`. |
-| `fix/*` | Bug fixes (e.g., `fix/telegram-auth-timeout`). Branch from `develop` or `main`. |
-| `docs/*` | Documentation updates (e.g., `docs/update-handover`). |
+| `main` | Protected default branch. All PRs merge here. Tags for releases. |
+| `<issue-number>-short-description` | Feature/fix branches. Branch from `main`. |
+| `docs/*` | Documentation updates in this coordination repo. |
 
 ### Branch Naming Convention
 
@@ -141,20 +149,12 @@ wip
 ### Before Creating a PR
 
 1. Create an issue (or link existing one) describing the change
-2. Branch from `develop` (not `main`)
+2. Branch from `main` (protected default branch)
 3. Write tests for new functionality
-4. Run local checks:
-   ```bash
-   # Backend
-   cd backend
-   pytest --cov=src
-   
-   # Frontend
-   cd frontend
-   npm run test
-   npm run lint
-   ```
-
+4. Run local checks in the respective code repository:
+   - **Backend:** See [digital-wardrobe/CONTRIBUTING.md](https://github.com/Mrxfg/digital-wardrobe/blob/main/CONTRIBUTING.md#pull-request-process)
+   - **Frontend:** See [digital_wardrobe_777/CONTRIBUTING.md](https://github.com/veronika1977/digital_wardrobe_777/blob/main/CONTRIBUTING.md#pull-request-process)
+   - **This repo (docs):** `lychee .` to verify all links are valid.
 ### PR Template
 
 Every PR must include:
@@ -200,7 +200,7 @@ Closes #<issue_number>
 
 A PBI/issue is "Done" when:
 
-- [ ] Code is merged to `develop` (or `main` for hotfixes)
+- [ ] Code is merged to `main`
 - [ ] All tests pass (unit + integration)
 - [ ] CI pipeline is green
 - [ ] Documentation updated (if applicable)
@@ -214,47 +214,39 @@ See [Definition of Done](docs/definition-of-done.md) for details.
 
 ## Testing Requirements
 
+Code testing is performed in the respective code repositories, not in this coordination repo.
+
 ### Backend (FastAPI)
 
+Run from the [`digital-wardrobe`](https://github.com/Mrxfg/digital-wardrobe) repository:
+
 ```bash
-# Run all tests
 cd backend
-pytest
-
-# With coverage
-pytest --cov=src --cov-report=html
-
-# Specific test file
-pytest tests/test_auth.py
+pytest --cov=app --cov-report=html
 ```
-
-**Requirements:**
-- Minimum 30% overall coverage (QRT-001)
-- Critical modules: >=70% coverage
-- All new code must have tests
+See [digital-wardrobe/CONTRIBUTING.md](https://github.com/Mrxfg/digital-wardrobe/blob/main/CONTRIBUTING.md) for full details.
 
 ### Frontend (React + Vitest)
 
+Run from the [digital_wardrobe_777](https://github.com/veronika1977/digital_wardrobe_777) repository:
+
 ```bash
-# Run tests
-cd frontend
-npm run test
-
-# With coverage
 npm run test -- --coverage
-
-# Watch mode
-npm run test -- --watch
 ```
+See [digital_wardrobe_777/CONTRIBUTING.md](https://github.com/veronika1977/digital_wardrobe_777/blob/main/CONTRIBUTING.md) for full details.
 
-**Requirements:**
+### This Coordination Repository
 
-- Component tests for all user-facing UI
-- Integration tests for critical flows (auth, item creation)
+For documentation-only changes in this repo, ensure:
+
+- Lychee link checker passes (`lychee .`)
+- All markdown files are well-formed
+- Cross-repo links point to correct URLs
 
 ### End-to-End (Manual)
 
 Before merging, verify in staging:
+
 1. Telegram Mini App loads correctly
 2. Auth flow works (new + existing user)
 3. Core features functional (add item, create outfit, etc.)

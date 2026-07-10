@@ -1,10 +1,10 @@
 # Sprint Retrospective — Week 6
 
 **Author:** @CatherineHar
-**Date:** 2026-07-12
+**Date:** 2026-07-10
 **Sprint:** 4 (MVP v2.1.0 Trial Release)
 **Release:** [v2.1.0](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v2.1.0)
-**Velocity:** 47 SP delivered
+**Velocity:** 42 SP delivered
 
 ## What went well
 
@@ -28,7 +28,7 @@ In the [Week 5 retrospective](../week5/retrospective.md), the team committed to:
    - **Result:** Vitest unit tests added for AI Stylist ([#217](https://github.com/veronika1977/digital_wardrobe_team_44/issues/217)) and bot notification ([#218](https://github.com/veronika1977/digital_wardrobe_team_44/issues/218)) components. Frontend coverage reached 48% (close to target). Full RTL + MSW integration still planned for Sprint 5. Related: [Definition of Done](../../docs/definition-of-done.md), [Testing Status](../../docs/testing.md).
 
 2. **Implement automated OpenAPI contract validation in CI** (fail build if backend endpoint changes break frontend types).
-   - **Result:** Not implemented. Deferred to Sprint 5 due to Sprint 4 scope expansion (47 SP vs 29 SP planned) — team prioritized absorbing customer feedback (PBIs #300-303) over infrastructure work. Related: [Development Process](../../docs/development-process.md).
+   - **Result:** Not implemented. Deferred to Sprint 5 due to Sprint 4 scope expansion (42 SP vs 29 SP planned) — team prioritized absorbing customer feedback (PBIs #300-303) over infrastructure work. Related: [Development Process](../../docs/development-process.md).
 
 ## Action points
 
