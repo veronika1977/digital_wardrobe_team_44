@@ -17,8 +17,8 @@ Full details, live status, and acceptance criteria are maintained in the GitHub 
 | **US-14** | AI Stylist for Outfit Generation | Should Have | [#217](https://github.com/veronika1977/digital_wardrobe_team_44/issues/217) | Active | Done | [Sprint 4](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/4) |
 | **US-15** | Telegram Bot Daily Wear Tracking | Must Have | [#218](https://github.com/veronika1977/digital_wardrobe_team_44/issues/218) | Active | Done | [Sprint 4](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/4) |
 | **US-16** | Monetization (Free + Premium) | Should Have | [#284](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284) | Active | To Do | [Sprint 5](https://github.com/veronika1977/digital_wardrobe_team_44/milestone/5) |
-| **US-07** | AI Material and Season Detection | Could Have | [#90](https://github.com/veronika1977/digital_wardrobe_team_44/issues/90) | Active | To Do | Sprint 5 |
-| **US-10** | Share Outfit by Link | Could Have | [#91](https://github.com/veronika1977/digital_wardrobe_team_44/issues/91) | Active | To Do | Sprint 5 |
+| **US-07** | AI Material and Season Detection | Could Have | - | - | Removed | - |
+| **US-10** | Share Outfit by Link | Could Have | - | - | Removed | - |
 | **US-03** | AI Outfit Generation (original) | — | — | Removed | — | — |
 | **US-09** | Social Network | — | — | Removed | — | — |
 
@@ -29,5 +29,7 @@ Full details, live status, and acceptance criteria are maintained in the GitHub 
 | ID | Short title | Reason for removal |
 | :--- | :--- | :--- |
 | **US-03** | AI Outfit Generation (original) | Replaced by US-14 (AI Stylist) with refined scope and Qwen integration |
+| **US-07** | AI Material and Season Detection | Out of MVP scope |
 | **US-09** | Social Network | Out of MVP scope; customer deprioritized social features |
+| **US-10** | Share Outfit by Link | Out of MVP scope  |
 

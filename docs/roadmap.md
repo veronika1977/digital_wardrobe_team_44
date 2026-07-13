@@ -191,14 +191,6 @@ To help users easily organize their wardrobe directly in Telegram, without compl
 
 *User Stories:*
 
-**US-10: Share Outfit by Link (3 SP)** — [Issue #91](https://github.com/veronika1977/digital_wardrobe_team_44/issues/91)
-- Share outfits with friends via Telegram
-- Public wardrobe profiles (optional)
-
-**US-07: AI Material Detection (13 SP)** — [Issue #90](https://github.com/veronika1977/digital_wardrobe_team_44/issues/90)
-- Automatic material detection from photos
-- Integration with existing material tags
-
 **US-16: Monetization (8 SP)** — [Issue #284](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284#issue-4820828254)
 - Premium subscription model with free tier limits
 - Telegram Payments integration for 490₽ Premium upgrade
@@ -228,14 +220,16 @@ To help users easily organize their wardrobe directly in Telegram, without compl
 - Create SemVer release v3.0.0 on `main`
 
 *Demo Day Preparation:*
-- Slide deck (8 slides, updated)
-- Rehearsed presentation video (team standing, 5-7 min)
-- Week 7 lab rehearsal (5+3 min)
-- Week 8 Demo Day presentation (7+7 min)
+- Slide deck 
+- Rehearsed presentation video 
+- Week 7 lab rehearsal
+- Week 8 Demo Day presentation
 
-**Total Sprint 5 velocity:** 32 SP (user stories + monetization) + customer feedback + transition + Demo Day prep
+**Total Sprint 5 velocity:** 16 SP (user stories + monetization) + customer feedback + transition + Demo Day prep
 
 ## Removed 
 
 - **US-03:** AI Outfit Generation (Removed: Out of scope for current MVP vision)
+- **US-07:** AI Material Detection (Removed: Out of scope for current MVP vision)
 - **US-09:** Social Network (Removed: Replaced by simple link sharing in US-10)
+- **US-10:** Share Outfit by Link (Removed: Out of scope for current MVP vision)
