@@ -309,17 +309,126 @@ This document defines end-user-facing scenarios for customer validation.
 
 ---
 
+## UAT-008: Monetization Paywall for Free Tier Users
+
+**Status:** Active
+
+**User goal:** Verify that free tier limits are enforced and paywall is displayed correctly.
+
+**Preconditions:**
+
+- User is logged in as free tier user
+- User has reached at least one free tier limit (e.g., 10 items, 3 outfits, 1 capsule)
+
+**Steps:**
+
+1. Open Digital Wardrobe Mini App
+2. Attempt to add an 11th clothing item (or create 2nd capsule / 4th outfit / open AI Stylist)
+3. Verify paywall screen appears with message about specific limit
+4. Verify "Upgrade to Premium" button is visible and clickable
+5. Tap "Upgrade to Premium" → verify Telegram Payments flow initiates
+
+**Expected outcome:**
+
+- Creation/addition is blocked before paywall
+- Paywall shows correct limit message (e.g., "Free tier allows only 10 items")
+- Upgrade button opens Telegram Payments
+- No data loss or error state during blocking
+
+**Execution results:**
+- Date: 18.07.2026
+- Executed by: Customer
+- Result: [Pending]
+- Customer comments: [fill after execution]
+- Follow-up PBI or issue: —
+
+
+## UAT-009: Premium Upgrade via Telegram Payments
+
+**Status:** Active
+
+**User goal:** Upgrade from Free to Premium tier using Telegram Payments.
+
+**Preconditions:**
+
+- User is logged in as free tier user
+- User has seen paywall screen (UAT-008)
+
+**Steps:**
+
+1. Open Digital Wardrobe Mini App
+2. Trigger any free tier limit to see paywall
+3. Tap "Upgrade to Premium" button
+4. Verify Telegram Payments sheet opens with 490₽ price
+5. Complete payment flow (promocode or real card)
+6. Return to app
+7. Verify previously blocked action now works without paywall
+
+**Expected outcome:**
+
+- Telegram Payments initiates correctly with 490₽
+- After successful payment, Premium badge visible
+- All free tier limits removed immediately
+- No duplicate charges or error states
+
+**Execution results:**
+
+- Date: 18.07.2026
+- Executed by: Customer
+- Result: [Pending]
+- Customer comments: [fill after execution]
+- Follow-up PBI or issue: —
+
+## UAT-010: Conversational AI Stylist Chat
+
+**Status:** Active
+
+**User goal:** Get personalized styling advice through conversational chat interface.
+
+**Preconditions:**
+
+- User is logged in as Premium user (AI Stylist unlocked)
+- Wardrobe contains at least 3 items
+
+**Steps:**
+1. Navigate to AI Stylist screen
+2. Tap "Chat with AI Stylist" button
+3. Type "What should I wear for casual Friday at work?"
+4. Wait for response (< 5 seconds)
+5. Verify response includes specific item recommendations from wardrobe
+6. Ask follow-up: "Can I pair this with my blue sneakers?"
+7. Verify context-aware response referencing previous outfit
+
+**Expected outcome:**
+
+- Chat interface opens with welcome message
+- Response arrives within 5 seconds (QR-001)
+- Recommendations reference actual wardrobe items
+- Follow-up questions maintain conversation context
+- Graceful fallback if AI unavailable (QR-002)
+
+**Execution results:**
+
+- Date: 18.07.2026
+- Executed by: Customer
+- Result: [Pending]
+- Customer comments: [fill after execution]
+- Follow-up PBI or issue: —
+
 ## UAT Execution History
 
 | UAT ID | Date | Executed by | Result | Customer Comments | Follow-up PBI |
 |--------|------|-------------|--------|-------------------|---------------|
-| UAT-001 | 25.06.2026 | Customer | Passed | "I'd like to see the actual color, not just the word 'blue'" | [#179](https://github.com/veronika1977/digital_wardrobe_team_44/issues/179) |
-| UAT-002 | 25.06.2026 | Customer | Passed | "Delete badge too small; add confirmation for restore" | [#168](https://github.com/veronika1977/digital_wardrobe_team_44/issues/168), [#169](https://github.com/veronika1977/digital_wardrobe_team_44/issues/169) |
+| UAT-001 | 25.06.2026 | Customer | Passed | "I'd like to see the actual color" | [#179](https://github.com/veronika1977/digital_wardrobe_team_44/issues/179) |
+| UAT-002 | 25.06.2026 | Customer | Passed | "Delete badge too small" | [#168](https://github.com/veronika1977/digital_wardrobe_team_44/issues/168), [#169](https://github.com/veronika1977/digital_wardrobe_team_44/issues/169) |
 | UAT-003 | 25.06.2026 | Customer | Passed | "No problems, all good" | — |
 | UAT-004 | 03.07.2026 | Customer | Passed | Weather accurate, fallback verified | [US-12](https://github.com/veronika1977/digital_wardrobe_team_44/issues/82) |
-| UAT-005 | 03.07.2026 | Customer | Passed | UX gaps noted, captured as PBIs | [US-13](https://github.com/veronika1977/digital_wardrobe_team_44/issues/215) |
-| UAT-006 | 09.07.2026 | Customer | Passed (functionally) | "Not the core value" — chat interface missing | [#301](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301), [#322](https://github.com/veronika1977/digital_wardrobe_team_44/issues/322#issue-4849508694) |
-| UAT-007 | 09.07.2026 | Customer | Passed (functionally, framing rejected) | "It's not calorie tracking — this is forward-looking" | [#303](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303) |
+| UAT-005 | 03.07.2026 | Customer | Passed | UX gaps noted | [US-13](https://github.com/veronika1977/digital_wardrobe_team_44/issues/215) |
+| UAT-006 | 09.07.2026 | Customer | Passed (functionally) | "Not the core value" — chat missing | [#301](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301), [#322](https://github.com/veronika1977/digital_wardrobe_team_44/issues/322) |
+| UAT-007 | 09.07.2026 | Customer | Passed (framing rejected) | "Forward-looking, not calorie tracking" | [#303](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303) |
+| UAT-008 | 18.07.2026 | Customer | [Pending] | [fill after execution] | — |
+| UAT-009 | 18.07.2026 | Customer | [Pending] | [fill after execution] | — |
+| UAT-010 | 18.07.2026 | Customer | [Pending] | [fill after execution] | — |
 
 
 ---
@@ -335,3 +444,6 @@ This document defines end-user-facing scenarios for customer validation.
 | UAT-005 | [US-13](https://github.com/veronika1977/digital_wardrobe_team_44/issues/216) (Calendar Planning) | QR-001 (Time Behaviour), [QRT-005](quality-requirement-tests.md#qrt-005-calendar-outfit) |
 | UAT-006 | [US-14](https://github.com/veronika1977/digital_wardrobe_team_44/issues/217) (AI Stylist) | QR-001 (Response time < 5s), QR-002 (Fallback when LLM unavailable) |
 | UAT-007 | [US-15](https://github.com/veronika1977/digital_wardrobe_team_44/issues/218) (Bot Notifications) | QR-001 (Response time), QR-002 (Bot fault tolerance) |
+| UAT-008 | [US-16](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284) (Monetization) | QR-001 (Response time), QR-002 (Fault tolerance) |
+| UAT-009 | [US-16](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284) (Monetization) | QR-001 (Payment flow < 3s) |
+| UAT-010 | [US-14](https://github.com/veronika1977/digital_wardrobe_team_44/issues/217) (AI Stylist Chat) | QR-001 (Response < 5s), QR-002 (Fallback) |
