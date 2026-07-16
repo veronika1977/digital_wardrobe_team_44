@@ -4,6 +4,40 @@ All notable changes to the Digital Wardrobe project will be documented in this f
 
 ## [Unreleased]
 
+## [3.0.0] - 2026-07-16
+
+MVP v3 — Final Course Version: Monetization, Conversational AI Chat, Prospective Bot Planning
+
+### Added
+
+- **Monetization (US-16):** Free/Premium tier system with Telegram Payments integration for 490₽ one-time Premium upgrade ([#284](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284))
+  - Backend: Free tier limits enforcement (1 capsule, 3 outfits, 10 items, no AI Stylist), payment processing API, usage stats endpoints ([#285](https://github.com/veronika1977/digital_wardrobe_team_44/issues/285))
+  - Frontend: Paywall screens on limit breach, one-tap upgrade flow via Telegram Payments, Premium status indicator and usage meter ([#286](https://github.com/veronika1977/digital_wardrobe_team_44/issues/286))
+- **Conversational AI Chat Frontend (PBI #322):** Chat interface for AI Stylist with context-aware responses, completing backend API from Sprint 4 ([#322](https://github.com/veronika1977/digital_wardrobe_team_44/issues/322))
+
+### Changed
+
+- **Bot Reminder Reframed (PBI #303):** Daily 19:00 notification now prompts planning tomorrow's outfit instead of logging today's worn items (breaking change to US-15) ([#303](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303))
+  - If tomorrow has no planned outfit → "Choose an outfit for tomorrow"
+  - If tomorrow has a planned outfit → "Tomorrow you have outfit X"
+  - Planned outfits auto-marked as worn on target date
+  - Removed retrospective "log worn items" modal from frontend
+
+### Documentation
+
+- Updated `docs/customer-handover.md` with final handover level and customer confirmation status
+- Updated `docs/roadmap.md` — Sprint 5 completed, MVP v3 delivered
+- Updated `docs/user-stories.md` — US-16 active, US-07 and US-10 removed
+- Recorded public sanitized demo video for MVP v3
+
+### Links
+
+- **Release:** [v3.0.0](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v3.0.0)
+- **Product:** [@digital_wardrobe_app_bot](https://t.me/digital_wardrobe_app_bot)
+- **Hosted Docs:** [GitHub Pages](https://veronika1977.github.io/digital_wardrobe_team_44/)
+- **Demo Video:** [Google Drive](https://drive.google.com/drive/folders/1QmeQpMIMS3NxZ2RVd2gaNRPiYpNO2f7B?usp=sharing)
+- **Full Changelog:** [CHANGELOG.md](CHANGELOG.md)
+
 ## [2.1.0] - 2026-07-10
 
 Sprint 4 Trial Release — AI Stylist & Telegram Bot Notifications for Daily Outfits

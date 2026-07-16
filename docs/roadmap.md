@@ -184,8 +184,8 @@ To help users easily organize their wardrobe directly in Telegram, without compl
 - **Dates:** 13.07.2026 – 19.07.2026
 - **Sprint Goal:** Complete final transition based on Week 6 feedback, deliver MVP v3 with sharing, AI material detection, and monetization features, confirm handover with customer, and prepare for Demo Day.
 - **Focus:** Social features, advanced AI capabilities, monetization, and final transition
-- **Release:** v3.0.0 (MVP v3 — Final Course Version)
-- **Status:** Planned (Starts: 13.07.2026)
+- **Release:** [v3.0.0 (MVP v3 — Final Course Version)](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v3.0.0)
+- **Status:** Completed
 
 **Planned Items:**
 
