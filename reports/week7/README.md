@@ -152,7 +152,15 @@ MVP v3 is the final course version. All Sprint 5 PBIs completed. Product is read
 ## Evidence Screenshots
 
 ![v3.0.0 Release](images/Release.png)
-![Sprint 5 Milestone](link)
+
+![Sprint 5 Milestone](images/Milestone_5.png)
+
+![Sprint 5 Board](images/Sprint_5.png)
+
+![Board](images/Product_Backlog.png)
+
 ![Monetization Paywall](link)
+
 ![AI Chat Interface](link)
+
 ![Bot Planning Reminder](link)
