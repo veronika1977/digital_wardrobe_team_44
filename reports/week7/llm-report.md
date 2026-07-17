@@ -31,3 +31,5 @@
 
 * **Specific Tasks:**
   * Finding bugs in backend and include tests.
+  * Structurise information for the presentation.
+  * Suggest the structure of the presentation.
