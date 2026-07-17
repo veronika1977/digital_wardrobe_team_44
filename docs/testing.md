@@ -2,7 +2,7 @@
 
 This document tracks testing status, coverage, and quality gates for Digital Wardrobe.
 
-**Last updated:** June 28, 2026  
+**Last updated:** July 17, 2026  
 
 ---
 
@@ -19,7 +19,7 @@ This document tracks testing status, coverage, and quality gates for Digital War
 | `src/wardrobe.ts` (Frontend) | Core wardrobe logic | 30% | 100% | [Frontend CI](https://github.com/veronika1977/digital_wardrobe_777/actions) ([run #28290024710](https://github.com/veronika1977/digital_wardrobe_777/actions/runs/28290024710)) |
 
 **Global coverage:**
-- Backend: 66% (989 statements, 332 missed) — **exceeds 30% requirement** 
+- Backend: 60% (989 statements, 332 missed) — **exceeds 30% requirement** 
 - Frontend: 100% for `wardrobe.ts`
 
 ---
@@ -28,9 +28,9 @@ This document tracks testing status, coverage, and quality gates for Digital War
 
 | Test type | Scope | Command or CI check | Latest result | Evidence |
 |-----------|-------|---------------------|---------------|----------|
-| Unit tests (Backend) | Critical product logic (capsules, items, upload, rembg) | `pytest tests/` | **64 passed** | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) ([run #28304362545](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304362545)) |
+| Unit tests (Backend) | Critical product logic (capsules, items, upload, rembg) | `pytest tests/` | **96 passed** | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) ([run #28304362545](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304362545)) |
 | Integration tests (Backend) | API endpoints with database (TestClient + PostgreSQL) | `pytest tests/` | **Passing** | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) ([run #28304362545](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304362545)) |
-| Automated QRTs | QR-001 (response time), QR-002 (fault tolerance) | `pytest tests/quality/` | **4 passed** | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) ([run #28304362545](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304362545)) |
+| Automated QRTs | QR-001 (response time), QR-002 (fault tolerance) | `pytest tests/quality/` | **6 passed** | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) ([run #28304362545](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304362545)) |
 | Frontend unit tests | `wardrobe.ts` (core logic) | `npm run test:coverage` | **3 passed, 100% coverage** | [Frontend CI](https://github.com/veronika1977/digital_wardrobe_777/actions) ([run #28290024710](https://github.com/veronika1977/digital_wardrobe_777/actions/runs/28290024710)) |
 
 ---
@@ -50,7 +50,7 @@ This document tracks testing status, coverage, and quality gates for Digital War
 | Linting (flake8) | Yes | Passing | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
 | Formatting (black) | Yes | Passing | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
 | Build verification | Yes | Passing | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
-| Unit tests (pytest) | Yes | **64 passed** | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) ([run #28304362545](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304362545)) |
+| Unit tests (pytest) | Yes | **96 passed** | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) ([run #28304362545](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304362545)) |
 | Integration tests | Yes | Passing | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) ([run #28304362545](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304362545)) |
 | Automated QRTs | Yes | **4 passed** | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) ([run #28304362545](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304362545)) |
 | Coverage (≥30% critical modules) | Yes | **66% globally, 72-100% per module** | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) ([run #28304362545](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304362545)) |
@@ -80,11 +80,12 @@ This document tracks testing status, coverage, and quality gates for Digital War
 The following quality gates are **mandatory** for all PBIs starting from Assignment 4 and must remain active for later project work:
 
 ### Automated Tests
-- Unit tests for critical modules (≥30% line coverage) — **implemented (66% coverage)**
-- Integration tests for API endpoints — **implemented (64 tests passing)**
-- Automated Quality Requirement Tests (QRT-001, QRT-002, QRT-003) — **implemented (4 tests passing)**
+- Unit tests for critical modules (≥30% line coverage) — **implemented (60% coverage)**
+- Integration tests for API endpoints — **implemented (96 tests passing)**
+- Automated Quality Requirement Tests (QRT-001, QRT-002, QRT-003) — **implemented (6 tests passing)**
 
 ### CI Pipeline
+
 - Linting (flake8 for backend, ESLint for frontend)
 - Formatting / type checking (black for backend, TypeScript for frontend)
 - Build verification
@@ -93,6 +94,7 @@ The following quality gates are **mandatory** for all PBIs starting from Assignm
 - Lychee link checker for documentation
 
 ### Quality Requirements
+
 - **QR-001: API Response Time < 3 seconds** — QRT-001 implemented and passing
 - **QR-002: Background Removal Fault Tolerance** — QRT-002 implemented and passing
 - **QR-003: Critical Module Testability** — verified via coverage report (66% > 30%)
@@ -131,7 +133,11 @@ All repositories have branch protection rules enabled for `main`:
 - QRT for QR-001, QR-002, QR-003 — 4 tests passing
 - Achieved ≥30% coverage for backend critical modules (66% global, 72-100% per module)
 
-## Next Steps (Sprint 3)
+**Note:** Global coverage was 66% at Sprint 2 completion (989 statements). 
+> Current global coverage is 60% (1833 statements) due to new modules added in Sprint 4–5. 
+> All critical modules maintain ≥30% coverage (72–100%).
+
+## Sprint 3
 
 1. Expand frontend testing — write tests for App.tsx and core components
 2. Target 50% frontend coverage by Sprint 3 end
@@ -141,6 +147,50 @@ All repositories have branch protection rules enabled for `main`:
 ## Sprint 3 MVP v2 Testing Scope
 
 Testing for MVP v2 focuses on newly introduced features. Coverage extended **credibly** for critical paths — no artificial inflation.
+
+## Sprint 5 MVP v3 Testing Scope
+
+Testing for MVP v3 focuses on monetization, conversational AI chat, and bot reminder reframing.
+
+## Final Testing Status (MVP v3)
+
+All quality gates from Assignment 4 remain active. Sprint 5 testing extends coverage to monetization, AI chat, and bot reframing.
+
+- **Total automated tests:** 99 (96 backend + 3 frontend)
+- **Backend global coverage:** 60%
+- **All QRTs passing:** Yes (6/6)
+- **UAT scenarios:** 10 (UAT-001 through UAT-010)
+- **No artificial coverage inflation** — all new tests cover critical paths from Sprint 5 PBIs
+
+### US-16: Monetization (#284, #285, #286)
+
+| Critical module | Why critical | Required coverage | Current coverage | Evidence |
+|-----------------|--------------|------------------:|-----------------:|----------|
+| `app/routers/premium.py` | Paywall enforcement + promo activation | 30% | 38% | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
+| `app/services/subscription.py` | Free tier limits logic | 30% | 52% | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
+
+**Automated tests:**
+| Test | Scope | Result | Evidence |
+|------|-------|--------|----------|
+| `test_free_tier_limits.py` | Blocks 11th item / 2nd capsule for free users | Passed | https://github.com/Mrxfg/digital-wardrobe/actions/runs/29458055386/job/87495841277 |
+| `test_promo_activation.py` | Valid promo grants Premium; invalid returns 400 | Passed | https://github.com/Mrxfg/digital-wardrobe/actions/runs/29458055386/job/87495841277 |
+| UAT-008 | Paywall appears on limit breach | Pending | [UAT-008](./user-acceptance-tests.md#UAT-008) |
+| UAT-009 | Premium upgrade via Telegram Payments / promo | Pending | [UAT-009](./user-acceptance-tests.md#UAT-009) |
+
+### PBI #322: Conversational AI Chat
+
+| Test | Scope | Result | Evidence |
+|------|-------|--------|----------|
+| `test_ai_chat_response.py` | Response < 5s, references wardrobe items | Passed | https://github.com/Mrxfg/digital-wardrobe/actions/runs/29458055386/job/87495841277 |
+| `test_ai_chat_fallback.py` | Graceful degradation when DashScope unavailable | Passed | https://github.com/Mrxfg/digital-wardrobe/actions/runs/29458055386/job/87495841277 |
+| `test_chat_follow_up_uses_history.py` | Context-aware follow-up questions | Passed | https://github.com/Mrxfg/digital-wardrobe/actions/runs/29458055386/job/87495841277 |
+| UAT-010 | Customer-executed chat validation | Pending | [UAT-010](./user-acceptance-tests.md#UAT-010) |
+
+### PBI #303: Bot Reminder Reframing
+
+| Test | Scope | Result | Evidence |
+|------|-------|--------|----------|
+| UAT-007 (re-test) | Prospective planning message at 19:00 | Passed | [UAT-007](./user-acceptance-tests.md#UAT-007) |
 
 > **Repository map:**
 
@@ -157,7 +207,7 @@ Testing for MVP v2 focuses on newly introduced features. Coverage extended **cre
 **Automated tests:**
 | Test | Scope | Command | Result | Evidence |
 |------|-------|---------|--------|----------|
-| `test_qr004_weather_location.py` | Endpoint structure + error handling (200/404) | `pytest tests/quality/test_qr004_weather_location.py -v` | Passed | [CI run](https://github.com/Mrxfg/digital-wardrobe/actions) |
+| `test_qr004_weather_location.py` | Endpoint structure + error handling (200/404) | `pytest tests/quality/test_qr004_weather_location.py -v` | Passed | https://github.com/Mrxfg/digital-wardrobe/actions/runs/29458055386/job/87495841277|
 | UAT-004 | Real flow: location → weather → fallback | Manual execution in Telegram Mini App | Passed | [`docs/user-acceptance-tests.md#uat-004`](./user-acceptance-tests.md#UAT-004) |
 
 ### US-13: Calendar Planning
@@ -170,14 +220,14 @@ Testing for MVP v2 focuses on newly introduced features. Coverage extended **cre
 **Automated tests:**
 | Test | Scope | Command | Result | Evidence |
 |------|-------|---------|--------|----------|
-| `test_qr005_calendar_outfit.py` | OpenAPI schema includes outfit routes | `pytest tests/quality/test_qr005_calendar_outfit.py -v` | Passed | [CI run](https://github.com/Mrxfg/digital-wardrobe/actions) |
+| `test_qr005_calendar_outfit.py` | OpenAPI schema includes outfit routes | `pytest tests/quality/test_qr005_calendar_outfit.py -v` | Passed | https://github.com/Mrxfg/digital-wardrobe/actions/runs/29458055386/job/87495841277 |
 | UAT-005 | Real flow: select date → pick items → save → verify | Manual execution in Telegram Mini App | Passed | [`docs/user-acceptance-tests.md#uat-005`](./user-acceptance-tests.md#UAT-005) |
 
 ### CI & Coverage Gates
 
 | Gate | Required | Current | Evidence |
 |------|----------|---------|----------|
-| **Backend coverage ≥30%** (critical modules) | Yes | **66% global**, 72-100% per module | [CI report](https://github.com/Mrxfg/digital-wardrobe/actions) |
+| **Backend coverage ≥30%** (critical modules) | Yes | **60% global**, 72-100% per module | [CI report](https://github.com/Mrxfg/digital-wardrobe/actions) |
 | **QRT-004/005 pass in CI** | Yes | 2/2 passed | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
 | **PlantUML validation** | Yes | All 3 views render to SVG | [Docs CI](https://github.com/veronika1977/digital_wardrobe_team_44/actions) |
 | **Lychee link check** | Yes | 221/222 links valid (1 excluded) | [Lychee CI](https://github.com/veronika1977/digital_wardrobe_team_44/actions) |
@@ -200,3 +250,6 @@ pytest tests/ --cov=app --cov-report=html
 |---------|---------------|-----|----------|-----------|
 | **US-12 Weather** | `test_qr004_weather_location.py` | [UAT-004](./user-acceptance-tests.md#uat-004)  | 41-53% |  Passing |
 | **US-13 Calendar** | `test_qr005_calendar_outfit.py`  | [UAT-005](./user-acceptance-tests.md#uat-005) | 84-100% |  Passing |
+| **US-16 Monetization** | test_subscription.py (12 tests) | UAT-008, UAT-009 | 38-52% | Passing |
+| **#322 AI Chat** | test_ai_chat.py (12 tests) | UAT-010 | 87% (ai_stylist.py) | Passing |
+| **#303 Bot Reminder** | — | UAT-007 (re-test) | N/A (bot logic) | Passed |

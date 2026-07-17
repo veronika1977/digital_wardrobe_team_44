@@ -189,7 +189,7 @@ _For more examples, please refer to the [Hosted Documentation](https://veronika1
 - [x] **US-08:** Automatic Background Removal — AI-powered background removal with fallback
 - [x] **Quality Gates:** CI/CD pipelines, automated tests, QRT, Vulture
 - [x] **66% code coverage** (exceeds 30% requirement)
-- [x] **64 backend tests + 3 frontend tests**
+- [x] **96 backend tests + 3 frontend tests**
 
 ### MVP v2 (Assignment 5 / Sprint 3)
 
