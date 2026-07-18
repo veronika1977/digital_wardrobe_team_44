@@ -2,7 +2,7 @@
 
 This document tracks testing status, coverage, and quality gates for Digital Wardrobe.
 
-**Last updated:** July 17, 2026  
+**Last updated:** July 18, 2026  
 
 ---
 
@@ -19,7 +19,7 @@ This document tracks testing status, coverage, and quality gates for Digital War
 | `src/wardrobe.ts` (Frontend) | Core wardrobe logic | 30% | 100% | [Frontend CI](https://github.com/veronika1977/digital_wardrobe_777/actions) ([run #28290024710](https://github.com/veronika1977/digital_wardrobe_777/actions/runs/28290024710)) |
 
 **Global coverage:**
-- Backend: 60% (989 statements, 332 missed) — **exceeds 30% requirement** 
+- Backend: 60% (1833 statements, 728 missed) — **exceeds 30% requirement** 
 - Frontend: 100% for `wardrobe.ts`
 
 ---
@@ -50,10 +50,10 @@ This document tracks testing status, coverage, and quality gates for Digital War
 | Linting (flake8) | Yes | Passing | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
 | Formatting (black) | Yes | Passing | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
 | Build verification | Yes | Passing | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) |
-| Unit tests (pytest) | Yes | **96 passed** | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) ([run #28304362545](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304362545)) |
-| Integration tests | Yes | Passing | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) ([run #28304362545](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304362545)) |
-| Automated QRTs | Yes | **4 passed** | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) ([run #28304362545](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304362545)) |
-| Coverage (≥30% critical modules) | Yes | **66% globally, 72-100% per module** | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) ([run #28304362545](https://github.com/Mrxfg/digital-wardrobe/actions/runs/28304362545)) |
+| Unit tests (pytest) | Yes | **96 passed** | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) ([run #29458055386](https://github.com/Mrxfg/digital-wardrobe/actions/runs/29458055386/job/87495841277)) |
+| Integration tests | Yes | Passing | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) ([run #29458055386](https://github.com/Mrxfg/digital-wardrobe/actions/runs/29458055386/job/87495841277)) |
+| Automated QRTs | Yes | **6 passed** | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) ([run #29458055386](https://github.com/Mrxfg/digital-wardrobe/actions/runs/29458055386/job/87495841277)) |
+| Coverage (≥30% critical modules) | Yes | **60% globally, 72-100% per module** | [Backend CI](https://github.com/Mrxfg/digital-wardrobe/actions) ([run #29458055386](https://github.com/Mrxfg/digital-wardrobe/actions/runs/29458055386/job/87495841277)) |
 | **Documentation CI** | | | |
 | Lychee link checker | Yes | Passing | [Lychee CI](https://github.com/veronika1977/digital_wardrobe_team_44/actions) |
 
@@ -79,10 +79,9 @@ This document tracks testing status, coverage, and quality gates for Digital War
 
 The following quality gates are **mandatory** for all PBIs starting from Assignment 4 and must remain active for later project work:
 
-### Automated Tests
-- Unit tests for critical modules (≥30% line coverage) — **implemented (60% coverage)**
-- Integration tests for API endpoints — **implemented (96 tests passing)**
-- Automated Quality Requirement Tests (QRT-001, QRT-002, QRT-003) — **implemented (6 tests passing)**
+### Automated Tests (at time of Assignment 4 completion)
+- Unit tests for critical modules (≥30% line coverage) — **implemented (66% coverage at Sprint 2; current: 60%)**
+- Automated Quality Requirement Tests — **implemented (4 tests passing at Sprint 2; current: 6 tests passing)**
 
 ### CI Pipeline
 
@@ -174,8 +173,8 @@ All quality gates from Assignment 4 remain active. Sprint 5 testing extends cove
 |------|-------|--------|----------|
 | `test_free_tier_limits.py` | Blocks 11th item / 2nd capsule for free users | Passed | https://github.com/Mrxfg/digital-wardrobe/actions/runs/29458055386/job/87495841277 |
 | `test_promo_activation.py` | Valid promo grants Premium; invalid returns 400 | Passed | https://github.com/Mrxfg/digital-wardrobe/actions/runs/29458055386/job/87495841277 |
-| UAT-008 | Paywall appears on limit breach | Pending | [UAT-008](./user-acceptance-tests.md#UAT-008) |
-| UAT-009 | Premium upgrade via Telegram Payments / promo | Pending | [UAT-009](./user-acceptance-tests.md#UAT-009) |
+| UAT-008 | Paywall appears on limit breach | Passed | [UAT-008](./user-acceptance-tests.md#UAT-008) |
+| UAT-009 | Premium upgrade via Telegram Payments / promo | Passed | [UAT-009](./user-acceptance-tests.md#UAT-009) |
 
 ### PBI #322: Conversational AI Chat
 
@@ -184,7 +183,7 @@ All quality gates from Assignment 4 remain active. Sprint 5 testing extends cove
 | `test_ai_chat_response.py` | Response < 5s, references wardrobe items | Passed | https://github.com/Mrxfg/digital-wardrobe/actions/runs/29458055386/job/87495841277 |
 | `test_ai_chat_fallback.py` | Graceful degradation when DashScope unavailable | Passed | https://github.com/Mrxfg/digital-wardrobe/actions/runs/29458055386/job/87495841277 |
 | `test_chat_follow_up_uses_history.py` | Context-aware follow-up questions | Passed | https://github.com/Mrxfg/digital-wardrobe/actions/runs/29458055386/job/87495841277 |
-| UAT-010 | Customer-executed chat validation | Pending | [UAT-010](./user-acceptance-tests.md#UAT-010) |
+| UAT-010 | Customer-executed chat validation | Passed | [UAT-010](./user-acceptance-tests.md#UAT-010) |
 
 ### PBI #303: Bot Reminder Reframing
 
