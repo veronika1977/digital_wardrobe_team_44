@@ -54,7 +54,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Screenshot][product-screenshot]](reports/week6/images/main.png)
+[![Product Screenshot][product-screenshot]](reports/week7/images/main.png)
 
 **Goal:** Help users easily organize their wardrobe directly in Telegram, without complex registration or extra apps.
 

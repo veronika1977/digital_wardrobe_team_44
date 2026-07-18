@@ -67,7 +67,6 @@
 - **What Was Transferred:**
   - Full product access via Telegram Mini App ([@digital_wardrobe_app_bot](https://t.me/digital_wardrobe_app_bot))
   - Hosted documentation site ([GitHub Pages](https://veronika1977.github.io/digital_wardrobe_team_44/))
-  - Sanitized ZIP export with `.env.example` (no secrets, no git history)
   - [`docs/customer-handover.md`](../../docs/customer-handover.md) with setup/deployment instructions
 - **Remaining Limitations:** US-07 (AI Material Detection) and US-10 (Share by Link) deferred to post-course as out of MVP scope
 
