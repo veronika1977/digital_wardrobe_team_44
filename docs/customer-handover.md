@@ -1,44 +1,20 @@
 # Customer Handover — Digital Wardrobe
 
-> **Document version:** Week 6 (Sprint 4) — Trial Release v2.1.0
-> **Last updated:** 2026-07-09
-> **Next update:** Week 7 (Sprint 5) — Final Release v3.0.0
+> **Document version:** Week 7 (Sprint 5) — Final Release v3.0.0
+> **Last updated:** 2026-07-18
 > **Maintained by:** @veronika1977
 
 ## Handover Status
 
 - **Current level:** Ready for independent use
-- **Customer confirmation:** Accepted with follow-up
-- **Confirmation date:** 2026-07-09
+- **Customer confirmation:** Accepted
+- **Confirmation date:** 2026-07-18
 - **Confirmed by:** Customer
-
+- **Delivery method:** GitHub Fork Sync (customer forked repo, team pushes updates to main, customer syncs)
 
 ### What "Ready for independent use" means in our case
 
 The customer can start using the product independently via the Telegram Mini App without assistance from the team. All core user workflows (add items, plan outfits) are functional and documented.
-
-### What remains partial
-
-The product is ready for independent use in its current state, but the following aspects are not yet finalized and will be addressed in Sprint 5 (Week 7) or post-course:
-
-- **Monetization (US-16):** Paywall and Premium tier not yet implemented — free tier fully functional
-- **AI Stylist variety:** Suggestions work but prompt tuning for color/style diversity is planned (PBI #285)
-- **Outfit sharing:** Share-by-link feature is deferred to post-course (PBI #287)
-
-## Blockers analysis
-
-- **Blocker owner:** Team side (not customer or external)
-- **Evidence of readiness obtained:** 
-  - Customer independently tested the trial release during Week 6 meeting
-  - All 7 UAT scenarios passed during trial meeting
-  - Customer confirmed willingness to adopt after Sprint 5 adjustments
-  - CI pipeline stable, documentation complete, deployment verified
-- **Remaining actions for full acceptance:**
-  - Implement monetization (PBI #284) in Sprint 5
-  - Apply customer trial feedback (PBIs #300-302) in Sprint 4 final days
-  - Apply customer trial feedback (PBIs #303 and #322) in Sprint 5
-  - Obtain final customer confirmation after Sprint 5 changes
-
 
 ---
 
@@ -48,14 +24,14 @@ The customer confirmed acceptance with the following follow-up items to be addre
 
 | # | Follow-up Item | Priority | PBI/Issue | Status |
 |---|----------------|----------|-----------|--------|
-| 1 | Add monetization (Free + Premium tiers, 490₽) | High | [#284 (US-16)](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284) | Planned for Sprint 5 |
-| 2 | Reorder bottom navigation (Home leftmost, AI middle) | Medium | [#300](https://github.com/veronika1977/digital_wardrobe_team_44/issues/300) | Completing in Sprint 4 |
-| 3 | Add conversational AI chat to AI Stylist (backend API) | Medium | [#301](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301) | Completing in Sprint 4 |
-| 4 | Add "Outfit for Today" widget on Home | Medium | [#302](https://github.com/veronika1977/digital_wardrobe_team_44/issues/302) | Completing in Sprint 4 |
-| 5 | Add conversational AI chat to AI Stylist (frontend UI) | Medium | [#322](https://github.com/veronika1977/digital_wardrobe_team_44/issues/322) | Planned for Sprint 5 |
-| 6 | Change bot reminder to prompt planning for tomorrow | High | [#303](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303) | Planned for Sprint 5 |
-| 7 | AI Stylist prompt diversity tuning | Low | [#285](https://github.com/veronika1977/digital_wardrobe_team_44/issues/285) | Post-course |
-| 8 | Share outfit by link | Low | [#287](https://github.com/veronika1977/digital_wardrobe_team_44/issues/287) | Post-course |
+| 1 | Add monetization (Free + Premium tiers, 490₽) | High | [#284 (US-16)](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284) | Completed in Sprint 5 |
+| 2 | Reorder bottom navigation (Home leftmost, AI middle) | Medium | [#300](https://github.com/veronika1977/digital_wardrobe_team_44/issues/300) | Completed in Sprint 4 |
+| 3 | Add conversational AI chat to AI Stylist (backend API) | Medium | [#301](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301) | Completed in Sprint 4 |
+| 4 | Add "Outfit for Today" widget on Home | Medium | [#302](https://github.com/veronika1977/digital_wardrobe_team_44/issues/302) | Completed Sprint 4 |
+| 5 | Add conversational AI chat to AI Stylist (frontend UI) | Medium | [#322](https://github.com/veronika1977/digital_wardrobe_team_44/issues/322) | Completed in Sprint 5 |
+| 6 | Change bot reminder to prompt planning for tomorrow | High | [#303](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303) | Completed in Sprint 5 |
+| 7 | AI Stylist prompt diversity tuning | Post-course| [#285](https://github.com/veronika1977/digital_wardrobe_team_44/issues/285) | Post-course |
+| 8 | Share outfit by link | Post-course | [#287](https://github.com/veronika1977/digital_wardrobe_team_44/issues/287) | Post-course |
 
 
 **Note:** All customer feedback from Week 6 meeting (navigation reorder, conversational AI, Outfit for Today widget, bot planning prompt) has been converted to traceable PBIs. PBIs #300-302 are completing in Sprint 4 final days before v2.1.0 release; PBIs #303 and #322 are planned for Sprint 5. See "Included Features" section for detailed status breakdown.
@@ -66,7 +42,7 @@ The customer confirmed acceptance with the following follow-up items to be addre
 |-------|-------------|--------|
 | Telegram Bot | Public access via [@digital_wardrobe_app_bot](https://t.me/digital_wardrobe_app_bot) | Available |
 | Hosted Documentation | Public access via [GitHub Pages](https://veronika1977.github.io/digital_wardrobe_team_44/) | Available |
-| Product Features | Full access to all current features (US-01 to US-15) |  Available |
+| Product Features | Full access to all current features (US-01 to US-16 + PBIs #300-303, #322) |  Available |
 
 **Note:** The customer can independently use the product via the Telegram Mini App without any assistance from the team. All core features are functional and documented.
 
@@ -105,6 +81,15 @@ If the customer wants full ownership after the course, the following can be tran
 
 ---
 
+## Readiness Evidence
+
+- **Customer confirmation:** Accepted (2026-07-18, verbal on meeting + written via Telegram)
+- **UAT execution:** 7 scenarios tested during Week 7 meeting, all passed (including monetization via promo code)
+- **Delivery method:** GitHub Fork Sync (customer forked repos, team pushes to main, customer syncs)
+- **CI pipeline:** Stable, 99 automated tests passing, 60% global coverage, 6 QRTs green
+- **Documentation:** Complete set reviewed by customer ("Все понятно сразу, вообще идеально" [14:35])
+- **Deployment:** Verified on production VPS + Cloudflare Pages
+
 ## Environment Variables Required
 
 | Variable | Purpose | How to obtain |
@@ -118,6 +103,20 @@ If the customer wants full ownership after the course, the following can be tran
 **Security Note:** Never commit `.env` files to the repository. Use environment-specific configuration management.
 
 ---
+
+## Code Delivery: GitHub Fork Sync
+
+The customer has forked all repositories and prefers synchronization via GitHub over ZIP exports ([16:20–16:57] from Week 7 meeting).
+
+**How it works:**
+1. Team pushes final v3.0.0 code to `main` branch
+2. Customer syncs their fork from upstream via GitHub UI
+3. No ZIP files needed
+
+**Repositories to sync:**
+- Frontend: https://github.com/veronika1977/digital_wardrobe_777
+- Backend: https://github.com/Mrxfg/digital-wardrobe
+- Documentation: https://github.com/veronika1977/digital_wardrobe_team_44
 
 ## Setup & Deployment Steps
 
@@ -198,13 +197,13 @@ docker-compose restart
 2. Tap **Start** → automatic login via Telegram
 3. **Add items:** Tap `+` → upload photo → fill attributes → save
 4. **Plan outfits:** Open `Calendar` → pick date → select items → save
-5. **Track wear:** Respond to daily 19:00 bot messages to log worn items
+5. **Plan tomorrow:** Respond to daily 19:00 bot reminder to plan tomorrow's outfit (PBI #303)
 
 For more examples, please refer to the [Hosted Documentation](https://veronika1977.github.io/digital_wardrobe_team_44/)
 
 ## Included Features (Scope of Handover)
 
-### Currently Available (fully functional)
+### Currently Available (fully functional in v3.0.0)
 
 The following features are fully functional and included in the handover:
 - US-01: Telegram Authentication
@@ -218,20 +217,12 @@ The following features are fully functional and included in the handover:
 - US-13: Calendar with Outfits
 - US-14: AI Stylist (Sprint 4)
 - US-15: Telegram Bot Daily Wear Tracking (Sprint 4)
-
-### Completing in Sprint 4 (final days)
-
-The following features are in progress and will be completed before v2.1.0 release:
+- US-16: Monetization (490₽ Premium tier)
 - PBI #300: Reordered Navigation (Home leftmost, AI middle)
-- PBI #301: Conversational AI Chat backend (API endpoints ready, frontend pending)
+- PBI #301: Conversational AI Chat backend
 - PBI #302: Outfit for Today Widget
-
-### Planned for Sprint 5
-
-The following features will be implemented in Week 7:
 - PBI #303: Bot Prompts Planning for Tomorrow (breaking change to US-15)
 - PBI #322: Conversational AI Chat frontend (completes PBI #301)
-- US-16: Monetization (490₽ Premium tier)
 
 ## Architecture & Technical Decisions
 
@@ -251,7 +242,7 @@ The following quality requirements are verified by automated tests:
 
 | QRT | Requirement | Target | Status |
 |-----|-------------|--------|--------|
-| QRT-001 | Backend test coverage | ≥30% | 66% achieved |
+| QRT-001 | Backend test coverage | ≥30% | 60% achieved |
 | QRT-002 | CI pipeline stability | 100% green on main | Verified |
 
 
