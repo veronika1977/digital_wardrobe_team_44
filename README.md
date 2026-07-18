@@ -154,7 +154,7 @@ python main.py
 2. Tap **Start** → automatic login via Telegram
 3. **Add items:** Tap `+` → upload photo → fill attributes → save
 4. **Plan outfits:** Open `Calendar` → pick date → select items → save
-5. **Track wear:** Respond to daily 19:00 bot messages to log worn items
+5. **Plan tomorrow:** Respond to daily 19:00 bot reminder to plan tomorrow's outfit
 
 _For more examples, please refer to the [Hosted Documentation](https://veronika1977.github.io/digital_wardrobe_team_44/)_
 
@@ -203,8 +203,20 @@ _For more examples, please refer to the [Hosted Documentation](https://veronika1
 - [x] **US-14:** AI Stylist for Outfit Generation
 - [x] **US-15:** Telegram Bot Notifications for Daily Outfits
 
-### Future Sprints
-- [ ] **Sprint 5:** Outfit sharing by link, AI material detection
+### MVP v3.0.0 (Assignment 6 / Sprint 5 — Final Release)
+
+- [x] [SemVer Release v3.0.0](https://github.com/veronika1977/digital_wardrobe_team_44/releases/tag/v3.0.0)
+- [x] [Public Demo Video (MVP v3)](https://drive.google.com/drive/folders/1slmyk5JNNGHeZXyPf43AhcDTEw-fdkta?usp=share_link)
+- [x] **US-16:** Monetization — Free/Premium tiers with Telegram Payments (490₽ one-time)
+- [x] **PBI #322:** Conversational AI Stylist Chat — context-aware frontend completing backend API
+- [x] **PBI #303:** Bot Reminder Reframed — prospective planning for tomorrow (breaking change to US-15)
+- [x] Customer handover accepted — Ready for independent use (2026-07-18)
+- [x] All 10 UAT scenarios passed during final transition meeting
+
+### Post-Course (Out of MVP Scope)
+
+- [ ] **AI Material Detection** (US-07) — deferred, low priority
+- [ ] **Share Outfit by Link** (US-10) — deferred, low priority
 
 See the [open issues](https://github.com/veronika1977/digital_wardrobe_team_44/issues) for a full list of proposed features.
 
@@ -216,8 +228,8 @@ See the [open issues](https://github.com/veronika1977/digital_wardrobe_team_44/i
 
 ### Quality Assurance
 
-- **Automated Tests:** 64+ backend unit/integration tests, frontend Vitest suite
-- **Coverage:** 66% backend overall, 72-100% critical modules
+- **Automated Tests:** 99 total (96 backend + 3 frontend), 6 automated QRTs in CI
+- **Coverage:** 60% backend overall, 72-100% critical modules
 - **CI Gates:** linting (flake8/ESLint), type-check (mypy/tsc), build, tests, coverage, Lychee link check
 - **Additional QA:** Vulture dead-code detection, dependency vulnerability scanning
 
@@ -229,9 +241,9 @@ See the [open issues](https://github.com/veronika1977/digital_wardrobe_team_44/i
 
 | View | Description | Link |
 | :--- | :--- | :--- |
-| **Static** | Component boundaries & interfaces | [View](docs/architecture/static.md) |
-| **Dynamic** | Critical flows (auth, upload, weather) | [View](docs/architecture/dynamic.md) |
-| **Deployment** | Runtime topology (Cloudflare Pages + Docker) | [View](docs/architecture/deployment.md) |
+| **Static** | Component boundaries & interfaces | [View](docs/architecture/static-view/static_view_diagram.svg) |
+| **Dynamic** | Critical flows (auth, upload, weather) | [View](docs/architecture/dynamic-view/sequence-diagram.svg) |
+| **Deployment** | Runtime topology (Cloudflare Pages + Docker) | [View](docs/architecture/deployment-view/deployment_diagram.svg) |
 
 ### Architecture Decision Records (ADRs)
 
