@@ -39,9 +39,9 @@
 
 | PBI | Title | SP | Assignee | Reviewer | Status |
 |-----|-------|----|----------|----------|--------|
-| [#284](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284) | Monetization (US-16) | 8 | @Mrxfg | @Evheni1a | Done |
+| [#284](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284) | Monetization (US-16) | 8 | @Mrxfg | @CatherineHar, @Mrxfg | Done |
 | [#285](https://github.com/veronika1977/digital_wardrobe_team_44/issues/285) | Monetization Backend Limits | 5 | @Mrxfg | @DarinaLuch | Done |
-| [#286](https://github.com/veronika1977/digital_wardrobe_team_44/issues/286) | Monetization Frontend Paywall | 3 | @Evgeni1a | *[assign reviewer]* | Done |
+| [#286](https://github.com/veronika1977/digital_wardrobe_team_44/issues/286) | Monetization Frontend Paywall | 3 | @CatherineHar | @veronika1977 | Done |
 | [#303](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303) | Bot reminder → planning tomorrow | 5 | @Evgeni1a | @Mrxfg | Done |
 | [#322](https://github.com/veronika1977/digital_wardrobe_team_44/issues/322) | Conversational AI chat frontend | 3 | @CatherineHar | @DarinaLuch | Done |
 
@@ -63,7 +63,7 @@
 ## Final Transition Outcome
 
 - **Handover Level Reached:** Ready for independent use
-- **Customer Confirmation Status:** Accepted *(update after final meeting)*
+- **Customer Confirmation Status:** Accepted
 - **What Was Transferred:**
   - Full product access via Telegram Mini App ([@digital_wardrobe_app_bot](https://t.me/digital_wardrobe_app_bot))
   - Hosted documentation site ([GitHub Pages](https://veronika1977.github.io/digital_wardrobe_team_44/))
@@ -85,8 +85,8 @@
 ## UAT / Customer Trial Results (Week 7)
 
 - Executed relevant UAT scenarios during final transition confirmation meeting
-- **Result:** *[fill after meeting]*
-- **Key Feedback:** *[fill after meeting]*
+- **Result:** All 10 scenarios passed
+- **Key Feedback:** «Все понятно сразу, вообще идеально» (All good)
 - **Full UAT Document:** [docs/user-acceptance-tests.md](../../docs/user-acceptance-tests.md)
 
 ---
@@ -138,13 +138,13 @@ MVP v3 is the final course version. All Sprint 5 PBIs completed. Product is read
 
 ## Contribution Traceability
 
-| Team Member | Role | Issues | PRs | Reviews | Week 7 Contributions |
+| Team Member | Role | Issues | PRs | Reviews |
 |-------------|------|--------|-----|---------|---------------------|
-| @veronika1977 | Scrum Master | ... | ... | ... | Transition confirmation, handover docs update |
-| @Mrxfg | Developer | #284, #285 | ... | ... | Monetization backend + payments API |
-| @Evgeni1a | Developer | - | ... | ... | Paywall UI, bot reframing |
-| @CatherineHar | Developer | #322 | ... | ... | AI chat frontend |
-| @DarinaLuch | QA / Documentation | ... | ... | ... | Testing, demo video, slides |
+| @veronika1977 | Scrum Master | [#284](https://github.com/veronika1977/digital_wardrobe_team_44/issues/284#issue-4820828254), [#332](https://github.com/veronika1977/digital_wardrobe_team_44/issues/332), [#334](https://github.com/veronika1977/digital_wardrobe_team_44/issues/334), [#342](https://github.com/veronika1977/digital_wardrobe_team_44/issues/342) | [#331](https://github.com/veronika1977/digital_wardrobe_team_44/pull/331), [#333](https://github.com/veronika1977/digital_wardrobe_team_44/pull/333), [#335](https://github.com/veronika1977/digital_wardrobe_team_44/pull/335), [#345](https://github.com/veronika1977/digital_wardrobe_team_44/pull/345) | [#339](https://github.com/veronika1977/digital_wardrobe_team_44/pull/339#pullrequestreview-4723300132), [#341](https://github.com/veronika1977/digital_wardrobe_team_44/pull/341#pullrequestreview-4728699859), [#344](https://github.com/veronika1977/digital_wardrobe_team_44/pull/344#pullrequestreview-4728752064), [#349](https://github.com/veronika1977/digital_wardrobe_team_44/pull/349#pullrequestreview-4728811564) |
+| @Mrxfg | Developer |  [#346](https://github.com/veronika1977/digital_wardrobe_team_44/issues/346) | [#347](https://github.com/veronika1977/digital_wardrobe_team_44/pull/347) | [#345](https://github.com/veronika1977/digital_wardrobe_team_44/pull/345#pullrequestreview-4728742418) |
+| @Evgeni1a | Developer | [#340](https://github.com/veronika1977/digital_wardrobe_team_44/issues/340), [#343](https://github.com/veronika1977/digital_wardrobe_team_44/issues/343)| [#341](https://github.com/veronika1977/digital_wardrobe_team_44/pull/341), [#344](https://github.com/veronika1977/digital_wardrobe_team_44/pull/344) | [#333](https://github.com/veronika1977/digital_wardrobe_team_44/pull/333#issue-4905039778) |
+| @CatherineHar | Developer | [#348](https://github.com/veronika1977/digital_wardrobe_team_44/issues/348) | [#349](https://github.com/veronika1977/digital_wardrobe_team_44/pull/349) | [#331](https://github.com/veronika1977/digital_wardrobe_team_44/pull/331#pullrequestreview-4716669654), [#335](https://github.com/veronika1977/digital_wardrobe_team_44/pull/335#issue-4905370742) |
+| @DarinaLuch | Product Owner | [#338](https://github.com/veronika1977/digital_wardrobe_team_44/issues/338) | [#339](https://github.com/veronika1977/digital_wardrobe_team_44/pull/339) | [#347](https://github.com/veronika1977/digital_wardrobe_team_44/pull/347#pullrequestreview-4728800330) |
 
 ---
 
@@ -158,8 +158,12 @@ MVP v3 is the final course version. All Sprint 5 PBIs completed. Product is read
 
 ![Board](images/Product_Backlog.png)
 
-![Monetization Paywall](link)
+![Monetization Paywall](images/Payment.png)
 
-![AI Chat Interface](link)
+![AI Chat Block](images/Block.png)
 
-![Bot Planning Reminder](link)
+![AI Chat Interface](images/AI-chat.png)
+
+![Bot Planning Reminder](images/BOT.png)
+
+![Planning](images/Planning.png)
