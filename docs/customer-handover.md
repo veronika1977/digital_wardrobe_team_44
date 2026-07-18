@@ -34,7 +34,7 @@ The customer confirmed acceptance with the following follow-up items to be addre
 | 8 | Share outfit by link | Post-course | [#287](https://github.com/veronika1977/digital_wardrobe_team_44/issues/287) | Post-course |
 
 
-**Note:** All customer feedback from Week 6 meeting (navigation reorder, conversational AI, Outfit for Today widget, bot planning prompt) has been converted to traceable PBIs. PBIs #300-302 are completing in Sprint 4 final days before v2.1.0 release; PBIs #303 and #322 are planned for Sprint 5. See "Included Features" section for detailed status breakdown.
+**Note:** All customer feedback from Week 6 meeting has been converted to traceable PBIs. PBIs #300–303 and #322 are completed and included in v3.0.0. PBIs #285 and #287 are deferred to post-course.
 
 ## What Is Available to Customer Right Now
 
