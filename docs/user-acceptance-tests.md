@@ -2,7 +2,7 @@
 
 This document defines end-user-facing scenarios for customer validation.
 
-**Last updated:** July 9, 2026  
+**Last updated:** July 18, 2026  
 **Author:** @veronika1977  
 **Reviewer:** @CatherineHar
 
@@ -338,8 +338,8 @@ This document defines end-user-facing scenarios for customer validation.
 **Execution results:**
 - Date: 18.07.2026
 - Executed by: Customer
-- Result: [Pending]
-- Customer comments: [fill after execution]
+- Result: Passed
+- Customer comments: Verified free tier limits (1 capsule, 10 items, 3 outfits). Paywall displays correctly with upgrade prompt.
 - Follow-up PBI or issue: —
 
 
@@ -375,8 +375,8 @@ This document defines end-user-facing scenarios for customer validation.
 
 - Date: 18.07.2026
 - Executed by: Customer
-- Result: [Pending]
-- Customer comments: [fill after execution]
+- Result: Passed
+- Customer comments: Activated Premium via promo code
 - Follow-up PBI or issue: —
 
 ## UAT-010: Conversational AI Stylist Chat
@@ -411,8 +411,8 @@ This document defines end-user-facing scenarios for customer validation.
 
 - Date: 18.07.2026
 - Executed by: Customer
-- Result: [Pending]
-- Customer comments: [fill after execution]
+- Result: Passed
+- Customer comments: Chat interface opens correctly, responds with wardrobe-based recommendations. Context-aware follow-up working as expected.
 - Follow-up PBI or issue: —
 
 ## UAT Execution History
@@ -426,9 +426,9 @@ This document defines end-user-facing scenarios for customer validation.
 | UAT-005 | 03.07.2026 | Customer | Passed | UX gaps noted | [US-13](https://github.com/veronika1977/digital_wardrobe_team_44/issues/215) |
 | UAT-006 | 09.07.2026 | Customer | Passed (functionally) | "Not the core value" — chat missing | [#301](https://github.com/veronika1977/digital_wardrobe_team_44/issues/301), [#322](https://github.com/veronika1977/digital_wardrobe_team_44/issues/322) |
 | UAT-007 | 09.07.2026 | Customer | Passed (framing rejected) | "Forward-looking, not calorie tracking" | [#303](https://github.com/veronika1977/digital_wardrobe_team_44/issues/303) |
-| UAT-008 | 18.07.2026 | Customer | [Pending] | [fill after execution] | — |
-| UAT-009 | 18.07.2026 | Customer | [Pending] | [fill after execution] | — |
-| UAT-010 | 18.07.2026 | Customer | [Pending] | [fill after execution] | — |
+| UAT-008 | 18.07.2026 | Customer | Passed | Free tier limits verified, paywall correct | — |
+| UAT-009 | 18.07.2026 | Customer | Passed | Promo activation works, limits removed | — |
+| UAT-010 | 18.07.2026 | Customer | Passed | Chat context-aware, recommendations relevant | — |
 
 
 ---
